@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 # Maplins wind direction sensor
-import json
+import json, subprocess
 
 # Small class to convert a resistance value to a compass point
 class winddir:
@@ -9,7 +9,8 @@ class winddir:
     def __init__(self):
         # Amount to brack ether side of the 'sweet spot'
         self.bracket = 10
-    
+        self.msg = ''
+
     # Now grab some data
     def grabdir(self):
          # First grab a value from the adc
@@ -18,6 +19,7 @@ class winddir:
             adc=json.loads(jsonstr)
             val = adc['5']
         except Exception as e:
+            self.msg = str(e)
             return False
         # Now convert it to a compass reading
         point = self.compass(val)
@@ -41,7 +43,7 @@ class winddir:
 
     
 if __name__=='__main__':
-    import subprocess, time
+    import time
     wind = winddir()
     # Read the wind direction
     while True:

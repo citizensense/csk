@@ -21,6 +21,7 @@ from Alphasense import *
 from AM2315 import *
 from PostData import *
 from database import *
+from winddir import winddir
 
 # The application class
 class GrabSensors:
@@ -31,7 +32,7 @@ class GrabSensors:
         self.log('INFO', 'Attempt to load the config')
         self.CONFIG = config.init()
         # Setup logging
-        logging.basicConfig(filename='csk.log', level=logging.DEBUG)
+        logging.basicConfig(filename='/home/csk/csk/csk.log', level=logging.DEBUG)
         self.log('INFO', 'Started script')
         # Setup means to save and post data to the server
         dbstruct = self.dbstructure()
@@ -91,6 +92,7 @@ class GrabSensors:
         threads.append(threading.Thread(target=self.savedata) )         # Save Data to webGUI ans LogFile
         threads.append(threading.Thread(target=self.grabtemphumid) )    # Grab External temperature and humidity
         threads.append(threading.Thread(target=self.grabalphasense) )   # Grab data from alphasense via an ABEelectronics ADC 
+        threads.append(threading.Thread(target=self.grabwinddir) )      # Grab data from wind direction sensor
         threads.append(threading.Thread(target=self.postdata) )         # Post data to server
         threads.append(threading.Thread(target=self.setweb) )           # Set data on the web interface
         for item in threads:
@@ -173,17 +175,17 @@ class GrabSensors:
                     resp = poster.send(url, data)
                     if resp is not False:
                         if len(resp['errors']) > 0: 
-                            print(resp['errors'])
+                            self.log('WARN', str(resp['errors']) )
                         else:
                             # Update database as we have successfully uploaded all data
-                            print('Sucessfully uploaded')
+                            self.log('DEBUG', 'Sucessfully uploaded')
                             where = 'cid='+' OR cid='.join(map(str, cids))
                             qry = "UPDATE csvs SET uploaded=1 WHERE {}".format(where)
                             rows = db.query(qry)
                             #print(db.msg)
                     else:
-                        print(resp)
-                        print(poster.msg)
+                        sefl.log('DEBUG', str(resp))
+                        self.log('DEBUG', poster.msg)
                         # Lets pause a bit and wait again
                         toupload = 0
                 time.sleep(1)
@@ -313,6 +315,18 @@ class GrabSensors:
             except Exception as e:
                 self.log('DEBUG', 'app.py | Exception | grabtemphumid() | '+str(e) )
             time.sleep(10)
+   
+    # Grab temperature / Humidity values
+    def grabwinddir(self):
+        wind = winddir()
+        # Read the wind direction
+        while True:
+            compass = wind.grabdir()
+            if compass is not False:
+                self.newdata('winddir', compass)
+            else:
+                self.log('WARN', 'Wind dir is false:{}'.format(wind.msg))
+            time.sleep(5)
 
     # Grab GPS data 
     def grabgps(self):
