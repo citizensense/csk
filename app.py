@@ -5,9 +5,9 @@
 #	2. Save to local csv file					   							#
 #	3. Send to server						   								#
 #############################################################################
-# Include the 'libraries folder' in the systrem path
-import sys, os
-sys.path.insert(0, '/home/csk/sensorcoms/libraries')
+# Include the 'libraries folder' in the system path
+import sys, os, subprocess
+sys.path.insert(0, '/home/csk/sensorcoms/libraries') #TODO:Make generic
 import time, threading
 import wiringpi2
 from Adafruit_MPL115A2 import *
@@ -16,16 +16,30 @@ class GrabSensors:
 	
 	# Initialise the object
 	def __init__(self):
+		status = []
 		# Initialise a list of threads so data can be aquired asynchronosly
 		threads = []
+		threads.append(threading.Thread(target=self.healthcheck) ) # Check device status
 		threads.append(threading.Thread(target=self.barom) ) # Start baromerter thread
-		threads.append(threading.Thread(target=self.redled) ) # Start baromerter thread
+		threads.append(threading.Thread(target=self.redled) ) # Blink the LED
 		for item in threads:
 			item.start()
 		# Setup GPOI Pin access
 		#wiringpi2.wiringPiSetup() # For sequencial pin numbering i.e [] in pin layout below
 		wiringpi2.wiringPiSetupGpio() # For GPIO pin numbering
-			   
+	
+	# Thread to check the health of the systemn
+	def healthCheck(selk):
+		# Check if network connection is up/availablke
+		thebytes = subprocess.check_output("ip a | grep eth1 | grep inet", shell=True)
+		string = thebytes.decode("utf-8").strip()	
+		if string != "":
+			status['devices']['Huawei']['status'] = 1
+			status['devices']['Huawei']['msg'] = 'Connected'
+		elif:
+			status['devices']['Huawei']['status'] = 0
+			status['devices']['Huawei']['msg'] = 'Not Connected'
+
 	# Thread to blink an led
 	def redled(self):
 		gpiopin=23
@@ -48,7 +62,7 @@ class GrabSensors:
 			#i2c.write(0x60, 0x00)
 			#print('i2cX60: '+str( i2c.read(dev2) ) )
 			time.sleep(2)
-
+	
 # Start grabbing sensors
 GrabSensors()
 
