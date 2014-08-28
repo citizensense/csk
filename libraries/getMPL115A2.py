@@ -14,14 +14,14 @@ gain = 512   # +/- 0.512V
 #gain = 256   # +/- 0.256V
 
 # Select the sample rate
-# sps = 8    # 8 samples per second
+sps = 8    # 8 samples per second
 # sps = 16   # 16 samples per second
 # sps = 32   # 32 samples per second
 # sps = 64   # 64 samples per second
 # sps = 128  # 128 samples per second
 # sps = 250  # 250 samples per second
 # sps = 475  # 475 samples per second
-sps = 860  # 860 samples per second
+# sps = 860  # 860 samples per second
 
 # Initialise the ADC using the default mode (use default I2C address)
 # Set this to ADS1015 or ADS1115 depending on the ADC you are using!
@@ -37,7 +37,6 @@ a3 = adc.readADCSingleEnded(3, gain, sps)
 # volts = adc.readADCSingleEnded(3, 1024, 860)
 print "A0:WE2,A1:WE3,A2:(pot)AE3,A3:PT+"
 print "{0},{1},{2},{3}".format(a0, a1, a2, a3)
-print 'Press Ctrl+C to exit'
 
 #========CONNECTIONS:AEF->Adafruit 16-bit ADC
 # 
