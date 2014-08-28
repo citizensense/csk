@@ -1,27 +1,33 @@
 #!/usr/bin/python3
 #############################################################################
 # Small application used to Asynchronously: 					   			#
-# 	1. Grab sensor data						   								#
+# 	1. Grab sensor data	
+#	2. Check status of network and devices
 #	2. Save to local csv file					   							#
 #	3. Send to server						   								#
 #############################################################################
 # Include the 'libraries folder' in the system path
-import sys, os, subprocess
+import sys, os, time, threading, subprocess, urllib
 sys.path.insert(0, '/home/csk/sensorcoms/libraries') #TODO:Make generic
-import time, threading, wiringpi2
+import wiringpi2
 #from Adafruit_MPL115A2 import *
 from Huawei3G import *
+from ND1000S import *
 
 class GrabSensors:
 	
 	# Initialise the object
 	def __init__(self):
 		# Setup some base varibles
+		self.ND1000S = DN1000S() 
 		self.H3G = Huawei3G()
 		self.status = {'devices':{'Huawei':{'status':'0','msg':'Unchecked'}}}
+		self.data = {}
+		self.startlocalserver()
 		# Initialise a list of threads so data can be aquired asynchronosly
 		threads = []
 		threads.append(threading.Thread(target=self.healthcheck) ) # Check device status
+		threads.append(threading.Thread(target=self.grabgps) ) # Grab GPS data
 		#threads.append(threading.Thread(target=self.barom) ) # Start baromerter thread
 		threads.append(threading.Thread(target=self.redled) ) # Blink the LED
 		for item in threads:
@@ -30,16 +36,26 @@ class GrabSensors:
 		#wiringpi2.wiringPiSetup() # For sequencial pin numbering i.e [] in pin layout below
 		wiringpi2.wiringPiSetupGpio() # For GPIO pin numbering
 	
+	def grabgps(self){
+		while True:
+			data = self.ND1000S.grabdata()
+			print(data)
+	}
+
 	# Thread to check the health of the systemn
 	def healthcheck(self):
 		while True:
+			#self.checklocalserver()
 			self.checknetwork()
+	
+	def checklocalserver(self):
+		print('Chec')
 
 	def checknetwork(self):
 		# CHECK NETWORK / 3G DONGLE IS CONNECTED
 		network = self.H3G.checkconnection()
 		lsusb = self.H3G.lsusb()
-		print(network+'\n'+lsusb)
+		#print(network+'\n'+lsusb)
 		if network != "":
 			self.status['devices']['Huawei']['status'] = 1
 			self.status['devices']['Huawei']['msg'] = 'Connected'
@@ -47,6 +63,10 @@ class GrabSensors:
 			self.status['devices']['Huawei']['status'] = 0
 			self.status['devices']['Huawei']['msg'] = 'Not Connected'
 		time.sleep(20)
+	
+	def startlocalserver(self):
+		# Start an ultra minimal local server	
+		cmd = "cd /home/csk/sensorcoms/public;python -m http.server 80 > /dev/null 2>&1"
 
 	# Thread to blink an led
 	def redled(self):
@@ -105,3 +125,4 @@ GrabSensors()
 #      -------  -------														 #
 # 																			 #
 ##############################################################################
+
