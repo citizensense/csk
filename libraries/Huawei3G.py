@@ -1,31 +1,36 @@
 #!/usr/bin/python3
-import subprocess, sys
+import subprocess, sys, time
 
 # Class to grab data from a ND100S GPS unit
 class Huawei3G:
 
-	# Lets start things up
-	def __init__(self):
-		self.checkconnection()
-
 	def checkconnection(self):
-		output = ""
-		output = subprocess.check_output("lsusb", shell=True).decode("utf-8")
-		devicepresent = output.find("Huawei")
-		if devicepresent > -1:
-			msg = output+"3G Device found! Checking it's in the correct mode... \n"
-			mode = output.find("(Mass storage mode)")
-			if mode > -1:
-				msg = msg+"3G Device In Mass Storage Mode"
+		ipa = subprocess.check_output("ip a", shell=True).decode("utf-8")
+		network = ipa.find("eth1")
+		# If eth1 isnt found then restart the usb bus
+		if network == -1:
+			self.resetUSBbus()
+			return "No network present on Eth1. Restart USB bus"
 		else:
-			msg = output+"3G Device Not Found"
-		print(msg)
+			return "Network OK"
 
-	def resetUSBbusPower(self):
-		subprocess.check_output("lsusb", shell=True).decode("utf-8")
+	def resetUSBbus(self):
+		on = 'echo 1 > /sys/devices/platform/bcm2708_usb/buspower' 
+		off = 'echo 0 > /sys/devices/platform/bcm2708_usb/buspower' 
+		subprocess.check_output(off, shell=True).decode("utf-8")
+		time.sleep(0.1)
+		subprocess.check_output(on, shell=True)
+		# Restart the systemd service to allow auto connect of the network
+		subprocess.check_output("netctl start eth1static", shell=True)
+
+	def lsusb(self):
+		lsusb = subprocess.check_output("lsusb", shell=True).decode("utf-8")
+		return lsusb
 
 if __name__ == "__main__":
-	Huawei3G()
+	h3g = Huawei3G()
+	print( h3g.lsusb )
+	print( h3g.checkconnection() )
 
 #Bus 001 Device 024: ID 12d1:14db Huawei Technologies Co., Ltd. E353/E3131
 #Bus 001 Device 005: ID 046d:c52b Logitech, Inc. Unifying Receiver
@@ -35,3 +40,4 @@ if __name__ == "__main__":
 #Bus 001 Device 001: ID 1d6b:0002 Linux Foundation 2.0 root hub
 #3G Device found! 
 
+#echo "Bus Suspend = 0x1" > /sys/devices/platform/bcm2708_usb/bussuspend
