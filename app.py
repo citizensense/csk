@@ -8,9 +8,8 @@
 #############################################################################
 # Include the 'libraries folder' in the system path
 import sys, os, time, threading, subprocess, urllib
-sys.path.insert(0, '/home/csk/sensorcoms/libraries') #TODO:Make generic
+sys.path.insert(0, '/home/csk/sensorcoms/libraries') #TODO:Make path generic
 import wiringpi2
-#from Adafruit_MPL115A2 import *
 from Huawei3G import *
 from ND1000S import *
 
@@ -19,7 +18,7 @@ class GrabSensors:
 	# Initialise the object
 	def __init__(self):
 		# Setup some base varibles
-		self.ND1000S = DN1000S() 
+		self.ND1000S = ND1000S() 
 		self.H3G = Huawei3G()
 		self.status = {'devices':{'Huawei':{'status':'0','msg':'Unchecked'}}}
 		self.data = {}
@@ -36,11 +35,10 @@ class GrabSensors:
 		#wiringpi2.wiringPiSetup() # For sequencial pin numbering i.e [] in pin layout below
 		wiringpi2.wiringPiSetupGpio() # For GPIO pin numbering
 	
-	def grabgps(self){
+	def grabgps(self):
 		while True:
 			data = self.ND1000S.grabdata()
 			print(data)
-	}
 
 	# Thread to check the health of the systemn
 	def healthcheck(self):
@@ -49,7 +47,7 @@ class GrabSensors:
 			self.checknetwork()
 	
 	def checklocalserver(self):
-		print('Chec')
+		print('Check Server')
 
 	def checknetwork(self):
 		# CHECK NETWORK / 3G DONGLE IS CONNECTED
