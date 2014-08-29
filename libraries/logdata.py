@@ -17,18 +17,16 @@ class LogData:
 		else:
 			return "Network OK"
 
-	def resetUSBbus(self):
-		on = 'echo 1 > /sys/devices/platform/bcm2708_usb/buspower' 
-		off = 'echo 0 > /sys/devices/platform/bcm2708_usb/buspower' 
-		subprocess.check_output(off, shell=True).decode("utf-8")
-		time.sleep(0.1)
-		subprocess.check_output(on, shell=True)
-		# Restart the systemd service to allow auto connect of the network
-		subprocess.check_output("netctl start eth1static", shell=True)
+	# Grab the first #n numer of lines.
+    def grabheader(self, fullfilepath, nlines):
+        if os.path.exists(fullfilepath):  
+            thebytes = subprocess.check_output("head -n1 "+fullfilepath, shell=True)
+            return thebytes.decode("utf-8").strip()
+        else:
+            return 'no file found at: '+fullfilepath
 
-	def lsusb(self):
-		lsusb = subprocess.check_output("lsusb", shell=True).decode("utf-8")
-		return lsusb
+
+
 
 if __name__ == "__main__":
 	LG = LogData()
