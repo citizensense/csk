@@ -1,0 +1,73 @@
+INFO:root:01/09/2014 18:05:55 Started script
+INFO:root:01/09/2014 18:06:17 Started script
+INFO:cherrypy.error:[01/Sep/2014:18:06:17] ENGINE Bus STARTING
+INFO:cherrypy.error:[01/Sep/2014:18:06:17] ENGINE Started monitor thread 'Autoreloader'.
+INFO:cherrypy.error:[01/Sep/2014:18:06:17] ENGINE Started monitor thread '_TimeoutMonitor'.
+INFO:cherrypy.error:[01/Sep/2014:18:06:18] ENGINE Serving on http://0.0.0.0
+INFO:cherrypy.error:[01/Sep/2014:18:06:18] ENGINE Bus STARTED
+INFO:cherrypy.access.3056765200:192.168.1.100 - - [01/Sep/2014:18:06:19] "GET / HTTP/1.1" 200 540 "" "Mozilla/5.0 (Linux; Android 4.4.2; Nexus 10 Build/KOT49H) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/36.0.1985.135 Safari/537.36"
+DEBUG:root:01/09/2014 18:06:19 app.py | ValueError | GrabGPS() | {"lat":51.474449568,"lon":-0.034253991,"time":1995-01-16T17:06:19.000Z,"alt":102.064,"speed":0.0}
+DEBUG:root:01/09/2014 18:06:20 Checking network connection: Bus 001 Device 005: ID 067b:2303 Prolific Technology, Inc. PL2303 Serial Port
+Bus 001 Device 004: ID 046d:c52b Logitech, Inc. Unifying Receiver
+Bus 001 Device 007: ID 12d1:14db Huawei Technologies Co., Ltd. E353/E3131
+Bus 001 Device 003: ID 0424:ec00 Standard Microsystems Corp. SMSC9512/9514 Fast Ethernet Adapter
+Bus 001 Device 002: ID 0424:9514 Standard Microsystems Corp. SMC9514 Hub
+Bus 001 Device 001: ID 1d6b:0002 Linux Foundation 2.0 root hub
+
+DEBUG:root:01/09/2014 18:06:20 Network OK
+INFO:cherrypy.access.3056765200:192.168.1.100 - - [01/Sep/2014:18:06:25] "GET / HTTP/1.1" 200 540 "http://192.168.1.99/" "Mozilla/5.0 (Linux; Android 4.4.2; Nexus 10 Build/KOT49H) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/36.0.1985.135 Safari/537.36"
+DEBUG:root:01/09/2014 18:06:28 app.py | ValueError | GrabGPS() | NO GPS FOUND: {"class":"SKY","tag":"MID4","device":"/dev/ttyUSB0","time":"1995-01-16T17:06:27.000Z","xdop":0.90,"ydop":1.20,"vdop":4.17,"tdop":1.73,"hdop":5.40,"gdop":4.75,"pdop":4.43,"satellites":[{"PRN":32,"el":66,"az":187,"ss":13,"used":true},{"PRN":19,"el":42,"az":151,"ss":30,"used":true},{"PRN":20,"el":26,"az":223,"ss":16,"used":false},{"PRN":27,"el":12,"az":147,"ss":34,"used":true},{"PRN":14,"el":32,"az":69,"ss":25,"used":true}]}
+INFO:cherrypy.access.3056765200:192.168.1.100 - - [01/Sep/2014:18:06:30] "GET / HTTP/1.1" 200 540 "http://192.168.1.99/" "Mozilla/5.0 (Linux; Android 4.4.2; Nexus 10 Build/KOT49H) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/36.0.1985.135 Safari/537.36"
+INFO:cherrypy.access.3056765200:192.168.1.100 - - [01/Sep/2014:18:06:35] "GET / HTTP/1.1" 200 540 "http://192.168.1.99/" "Mozilla/5.0 (Linux; Android 4.4.2; Nexus 10 Build/KOT49H) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/36.0.1985.135 Safari/537.36"
+DEBUG:root:01/09/2014 18:06:35 app.py | ValueError | GrabGPS() | {"lat":51.474478942,"lon":-0.034426709,"time":1995-01-16T17:06:35.000Z,"alt":104.574,"speed":0.0}
+INFO:root:01/09/2014 18:09:55 Started script
+INFO:cherrypy.error:[01/Sep/2014:18:09:55] ENGINE Bus STARTING
+INFO:cherrypy.error:[01/Sep/2014:18:09:56] ENGINE Started monitor thread 'Autoreloader'.
+INFO:cherrypy.error:[01/Sep/2014:18:09:56] ENGINE Started monitor thread '_TimeoutMonitor'.
+INFO:cherrypy.error:[01/Sep/2014:18:09:56] ENGINE Serving on http://0.0.0.0
+INFO:cherrypy.error:[01/Sep/2014:18:09:56] ENGINE Bus STARTED
+DEBUG:root:01/09/2014 18:09:58 app.py | ValueError | GrabGPS() | NO GPS FOUND: {"class":"SKY","tag":"MID4","device":"/dev/ttyUSB0","time":"1995-01-16T17:09:57.000Z","xdop":0.90,"ydop":1.20,"vdop":4.17,"tdop":1.73,"hdop":2.00,"gdop":4.75,"pdop":4.43,"satellites":[{"PRN":19,"el":40,"az":151,"ss":29,"used":true},{"PRN":32,"el":67,"az":186,"ss":22,"used":true},{"PRN":27,"el":11,"az":147,"ss":33,"used":true},{"PRN":20,"el":28,"az":225,"ss":21,"used":false},{"PRN":1,"el":64,"az":285,"ss":15,"used":true}]}
+INFO:cherrypy.access.3056867280:192.168.1.100 - - [01/Sep/2014:18:09:58] "GET / HTTP/1.1" 200 540 "" "Mozilla/5.0 (Linux; Android 4.4.2; Nexus 10 Build/KOT49H) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/36.0.1985.135 Safari/537.36"
+DEBUG:root:01/09/2014 18:09:58 Checking network connection: Bus 001 Device 005: ID 067b:2303 Prolific Technology, Inc. PL2303 Serial Port
+Bus 001 Device 004: ID 046d:c52b Logitech, Inc. Unifying Receiver
+Bus 001 Device 007: ID 12d1:14db Huawei Technologies Co., Ltd. E353/E3131
+Bus 001 Device 003: ID 0424:ec00 Standard Microsystems Corp. SMSC9512/9514 Fast Ethernet Adapter
+Bus 001 Device 002: ID 0424:9514 Standard Microsystems Corp. SMC9514 Hub
+Bus 001 Device 001: ID 1d6b:0002 Linux Foundation 2.0 root hub
+
+DEBUG:root:01/09/2014 18:09:58 Network OK
+INFO:cherrypy.access.3056867280:192.168.1.100 - - [01/Sep/2014:18:10:04] "GET / HTTP/1.1" 200 540 "http://192.168.1.99/" "Mozilla/5.0 (Linux; Android 4.4.2; Nexus 10 Build/KOT49H) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/36.0.1985.135 Safari/537.36"
+DEBUG:root:01/09/2014 18:10:05 app.py | ValueError | GrabGPS() | {"lat":51.474446831,"lon":-0.033807809,"time":1995-01-16T17:10:05.000Z,"alt":104.863,"speed":1.174}
+INFO:cherrypy.access.3056867280:192.168.1.100 - - [01/Sep/2014:18:10:09] "GET / HTTP/1.1" 200 540 "http://192.168.1.99/" "Mozilla/5.0 (Linux; Android 4.4.2; Nexus 10 Build/KOT49H) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/36.0.1985.135 Safari/537.36"
+DEBUG:root:01/09/2014 18:10:13 app.py | ValueError | GrabGPS() | {"lat":51.474392101,"lon":-0.0339661,"time":1995-01-16T17:10:12.000Z,"alt":102.041,"speed":0.0}
+INFO:cherrypy.access.3056867280:192.168.1.100 - - [01/Sep/2014:18:10:14] "GET / HTTP/1.1" 200 540 "http://192.168.1.99/" "Mozilla/5.0 (Linux; Android 4.4.2; Nexus 10 Build/KOT49H) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/36.0.1985.135 Safari/537.36"
+INFO:cherrypy.access.3056867280:192.168.1.100 - - [01/Sep/2014:18:10:19] "GET / HTTP/1.1" 200 540 "http://192.168.1.99/" "Mozilla/5.0 (Linux; Android 4.4.2; Nexus 10 Build/KOT49H) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/36.0.1985.135 Safari/537.36"
+DEBUG:root:01/09/2014 18:10:22 Checking network connection: Bus 001 Device 005: ID 067b:2303 Prolific Technology, Inc. PL2303 Serial Port
+Bus 001 Device 004: ID 046d:c52b Logitech, Inc. Unifying Receiver
+Bus 001 Device 007: ID 12d1:14db Huawei Technologies Co., Ltd. E353/E3131
+Bus 001 Device 003: ID 0424:ec00 Standard Microsystems Corp. SMSC9512/9514 Fast Ethernet Adapter
+Bus 001 Device 002: ID 0424:9514 Standard Microsystems Corp. SMC9514 Hub
+Bus 001 Device 001: ID 1d6b:0002 Linux Foundation 2.0 root hub
+
+DEBUG:root:01/09/2014 18:10:22 Network OK
+INFO:cherrypy.access.3056867280:192.168.1.100 - - [01/Sep/2014:18:10:25] "GET / HTTP/1.1" 200 540 "http://192.168.1.99/" "Mozilla/5.0 (Linux; Android 4.4.2; Nexus 10 Build/KOT49H) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/36.0.1985.135 Safari/537.36"
+INFO:cherrypy.access.3056867280:192.168.1.100 - - [01/Sep/2014:18:10:30] "GET / HTTP/1.1" 200 540 "http://192.168.1.99/" "Mozilla/5.0 (Linux; Android 4.4.2; Nexus 10 Build/KOT49H) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/36.0.1985.135 Safari/537.36"
+INFO:cherrypy.access.3056867280:192.168.1.100 - - [01/Sep/2014:18:10:35] "GET / HTTP/1.1" 200 540 "http://192.168.1.99/" "Mozilla/5.0 (Linux; Android 4.4.2; Nexus 10 Build/KOT49H) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/36.0.1985.135 Safari/537.36"
+INFO:cherrypy.access.3056867280:192.168.1.100 - - [01/Sep/2014:18:10:40] "GET / HTTP/1.1" 200 540 "http://192.168.1.99/" "Mozilla/5.0 (Linux; Android 4.4.2; Nexus 10 Build/KOT49H) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/36.0.1985.135 Safari/537.36"
+DEBUG:root:01/09/2014 18:10:44 Checking network connection: Bus 001 Device 005: ID 067b:2303 Prolific Technology, Inc. PL2303 Serial Port
+Bus 001 Device 004: ID 046d:c52b Logitech, Inc. Unifying Receiver
+Bus 001 Device 007: ID 12d1:14db Huawei Technologies Co., Ltd. E353/E3131
+Bus 001 Device 003: ID 0424:ec00 Standard Microsystems Corp. SMSC9512/9514 Fast Ethernet Adapter
+Bus 001 Device 002: ID 0424:9514 Standard Microsystems Corp. SMC9514 Hub
+Bus 001 Device 001: ID 1d6b:0002 Linux Foundation 2.0 root hub
+
+DEBUG:root:01/09/2014 18:10:44 Network OK
+INFO:cherrypy.access.3056867280:192.168.1.100 - - [01/Sep/2014:18:10:46] "GET / HTTP/1.1" 200 540 "http://192.168.1.99/" "Mozilla/5.0 (Linux; Android 4.4.2; Nexus 10 Build/KOT49H) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/36.0.1985.135 Safari/537.36"
+INFO:cherrypy.access.3056867280:192.168.1.100 - - [01/Sep/2014:18:10:51] "GET / HTTP/1.1" 200 540 "http://192.168.1.99/" "Mozilla/5.0 (Linux; Android 4.4.2; Nexus 10 Build/KOT49H) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/36.0.1985.135 Safari/537.36"
+INFO:cherrypy.error:[01/Sep/2014:18:10:53] ENGINE Bus STOPPING
+INFO:cherrypy.error:[01/Sep/2014:18:10:55] ENGINE HTTP Server cherrypy._cpwsgi_server.CPWSGIServer(('0.0.0.0', 80)) shut down
+INFO:cherrypy.error:[01/Sep/2014:18:10:55] ENGINE Stopped thread '_TimeoutMonitor'.
+INFO:cherrypy.error:[01/Sep/2014:18:10:55] ENGINE Stopped thread 'Autoreloader'.
+INFO:cherrypy.error:[01/Sep/2014:18:10:55] ENGINE Bus STOPPED
+INFO:cherrypy.error:[01/Sep/2014:18:10:55] ENGINE Bus EXITING
+INFO:cherrypy.error:[01/Sep/2014:18:10:55] ENGINE Bus EXITED

@@ -28,29 +28,28 @@ class GrabSensors:
 		self.ND1000S = ND1000S() 
 		self.H3G = Huawei3G()
 		self.save = SaveData()
-		self.startlocalserver()
 		# Data model
 		self.datamodel = {
 			'Huawei':"Not connected",
-			'ND1000S-LAT':[],
-			'ND1000S-LON':[],
-			'ND1000S-SPEED':[],
-			'ND1000S-ALT':[],
-			'I2C-16ADC-A0-AS':[],
-			'I2C-16ADC-A1-AS':[],
-			'I2C-16ADC-A2-AS':[],
-			'I2C-16ADC-A3-AS':[],
-			'I2C-16ADC-A4-AS':[],
-			'I2C-16ADC-A5-AS':[],
-			'I2C-16ADC-A6-AS':[],
-			'I2C-16ADC-A7-AS':[],
-			'RPI-WindSpeed':[],
-			'SPI-8ADC--MCP3008-WindDirection':[],
-			'SPI-8ADC-SparkfunSoundDetector-SoundEnv':[],
-			'RPI-SparkfunSoundDetector-SoundGate':[],
-			'I2C-AN2315-Temp':[],
-			'AN2315-Humid':[],
-			'ADC-A7-AS':[]
+			'ND1000S-LAT':{'title':'lat', 'values':[]},
+			'ND1000S-LON':{'title':'lat', 'values':[]},
+			'ND1000S-SPEED':{'title':'lat', 'values':[]},
+			'ND1000S-ALT':{'title':'lat', 'values':[]},
+			'I2C-16ADC-A0':{'title':'lat', 'values':[]},
+			'I2C-16ADC-A1-AS-':{'title':'lat', 'values':[]},
+			'I2C-16ADC-A2-AS-':{'title':'lat', 'values':[]},
+			'I2C-16ADC-A3-AS-':{'title':'lat', 'values':[]},
+			'I2C-16ADC-A4-AS-':{'title':'lat', 'values':[]},
+			'I2C-16ADC-A5-AS-':{'title':'lat', 'values':[]},
+			'I2C-16ADC-A6-AS-':{'title':'lat', 'values':[]},
+			'I2C-16ADC-A7-AS-':{'title':'lat', 'values':[]},
+			'RPI-WindSpeed':{'title':'lat', 'values':[]},
+			'SPI-8ADC--MCP3008-WindDirection':{'title':'lat', 'values':[]},
+			'SPI-8ADC-SparkfunSoundDetector-SoundEnv':{'title':'lat', 'values':[]},
+			'RPI-SparkfunSoundDetector-SoundGate':{'title':'lat', 'values':[]},
+			'I2C-AN2315-Temp':{'title':'lat', 'values':[]},
+			'AN2315-Humid':{'title':'lat', 'values':[]},
+			'ADC-A7-AS':{'title':'lat', 'values':[]}
 		}			
 		# Initialise a list of threads so data can be aquired asynchronosly
 		threads = []
@@ -70,8 +69,9 @@ class GrabSensors:
 	
 	# If any threads have new data, then send it here
 	def newdata(self, data):
+		string = json.encode(self.datamodel)
 		# Display the latest data
-		self.webserver.setcontent('View latest content', 'From within app.py')
+		self.webserver.setcontent(string, 'From within app.py')
 		# Save data to the log file
 		self.save.log(self.datapath, self.csvheader, csv)
 
@@ -107,8 +107,6 @@ class GrabSensors:
 			#self.checklocalserver()
 			self.checknetwork()
 	
-	def writedata():
-			
 	def checknetwork(self):
 		# CHECK NETWORK / 3G DONGLE IS CONNECTED
 		network = self.H3G.checkconnection()
@@ -116,12 +114,10 @@ class GrabSensors:
 		self.log('DEBUG','Checking network connection: '+lsusb)
 		if network == "Network OK":
 			self.log('DEBUG','Network OK')
-			self.data['status']['Huawei']['active'] = 1
-			self.data['status']['Huawei']['msg'] = 'Connected'
+			self.datamodel['network'] = 'Huawei Connected'
 		else:
 			self.log('WARN','USB HAS BEEN reset: Network not connected')
-			self.data['status']['Huawei']['active'] = 0
-			self.data['status']['Huawei']['msg'] = 'Not Connected'
+			self.datamodel['network'] = 'Huawei Connected'
 		time.sleep(20)
 
 	# Thread to blink an led
