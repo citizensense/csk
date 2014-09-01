@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-import subprocess, sys, time
+import subprocess, logging, sys, time
 
 # Class to grab data from a ND100S GPS unit
 class Huawei3G:

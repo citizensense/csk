@@ -9,9 +9,9 @@ chmod 777 /sys/devices/platform/bcm2708_usb/bussuspend
 chmod 777 /sys/devices/platform/bcm2708_usb/buspower
 
 # Start an ultra minimal local server	
-killall python
-cd /home/csk/sensorcoms/public	 
-python -m http.server 80 &
+#killall python
+#cd /home/csk/sensorcoms/public	 
+#python -m http.server 80 &
 
 # Run the sensor app 
 #/home/csk/sensorcoms/app.py > /dev/null 2>&1

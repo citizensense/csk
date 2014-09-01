@@ -1,0 +1,1457 @@
+DEBUG:root:01:09:58Started script
+INFO:root:Recieved from GPS dongle:
+NO GPS FOUND: {"class":"DEVICE","path":"/dev/ttyUSB0","activated":601.494102}
+INFO:root:Recieved from GPS dongle:
+NO GPS FOUND: {"class":"SKY","tag":"MID4","device":"/dev/ttyUSB0","time":"1995-01-13T14:45:14.610Z","satellites":[{"PRN":22,"el":52,"az":121,"ss":4,"used":true}]}
+INFO:root:Recieved from GPS dongle:
+NO GPS FOUND: {"class":"TPV","tag":"MID2","device":"/dev/ttyUSB0","mode":1,"time":"1995-01-13T14:45:15.610Z","ept":0.005}
+INFO:root:Recieved from GPS dongle:
+NO GPS FOUND: {"class":"SKY","tag":"MID4","device":"/dev/ttyUSB0","time":"1995-01-13T14:45:17.610Z","hdop":0.00,"satellites":[{"PRN":22,"el":52,"az":121,"ss":41,"used":false}]}
+INFO:root:Recieved from GPS dongle:
+NO GPS FOUND: {"class":"TPV","tag":"MID2","device":"/dev/ttyUSB0","mode":1,"time":"1995-01-13T14:45:19.610Z","ept":0.005}
+INFO:root:Recieved from GPS dongle:
+NO GPS FOUND: {"class":"TPV","tag":"MID2","device":"/dev/ttyUSB0","mode":1,"time":"1995-01-13T14:45:20.610Z","ept":0.005}
+INFO:root:Recieved from GPS dongle:
+{'lat':0.1,'lon':0.4,'speed':0.6,'alt':55}
+INFO:root:Recieved from GPS dongle:
+{'lat':0.1,'lon':0.4,'speed':0.6,'alt':55}
+INFO:root:Recieved from GPS dongle:
+{'lat':0.1,'lon':0.4,'speed':0.6,'alt':55}
+INFO:root:Recieved from GPS dongle:
+{'lat':0.1,'lon':0.4,'speed':0.6,'alt':55}
+INFO:root:Recieved from GPS dongle:
+{'lat':0.1,'lon':0.4,'speed':0.6,'alt':55}
+INFO:root:Recieved from GPS dongle:
+{'lat':0.1,'lon':0.4,'speed':0.6,'alt':55}
+INFO:root:Recieved from GPS dongle:
+{'lat':0.1,'lon':0.4,'speed':0.6,'alt':55}
+INFO:root:Recieved from GPS dongle:
+{'lat':0.1,'lon':0.4,'speed':0.6,'alt':55}
+INFO:root:Recieved from GPS dongle:
+{'lat':0.1,'lon':0.4,'speed':0.6,'alt':55}
+INFO:root:Recieved from GPS dongle:
+{'lat':0.1,'lon':0.4,'speed':0.6,'alt':55}
+INFO:root:Recieved from GPS dongle:
+{'lat':0.1,'lon':0.4,'speed':0.6,'alt':55}
+INFO:root:Recieved from GPS dongle:
+{'lat':0.1,'lon':0.4,'speed':0.6,'alt':55}
+INFO:root:Recieved from GPS dongle:
+{'lat':0.1,'lon':0.4,'speed':0.6,'alt':55}
+INFO:root:Recieved from GPS dongle:
+{'lat':0.1,'lon':0.4,'speed':0.6,'alt':55}
+INFO:root:Recieved from GPS dongle:
+{'lat':0.1,'lon':0.4,'speed':0.6,'alt':55}
+INFO:root:Recieved from GPS dongle:
+{'lat':0.1,'lon':0.4,'speed':0.6,'alt':55}
+INFO:root:Recieved from GPS dongle:
+{'lat':0.1,'lon':0.4,'speed':0.6,'alt':55}
+INFO:root:Recieved from GPS dongle:
+{'lat':0.1,'lon':0.4,'speed':0.6,'alt':55}
+INFO:root:Recieved from GPS dongle:
+{'lat':0.1,'lon':0.4,'speed':0.6,'alt':55}
+INFO:root:Recieved from GPS dongle:
+{'lat':0.1,'lon':0.4,'speed':0.6,'alt':55}
+INFO:root:Recieved from GPS dongle:
+{'lat':0.1,'lon':0.4,'speed':0.6,'alt':55}
+INFO:root:Recieved from GPS dongle:
+{'lat':0.1,'lon':0.4,'speed':0.6,'alt':55}
+INFO:root:Recieved from GPS dongle:
+{'lat':0.1,'lon':0.4,'speed':0.6,'alt':55}
+INFO:root:Recieved from GPS dongle:
+{'lat':0.1,'lon':0.4,'speed':0.6,'alt':55}
+INFO:root:Recieved from GPS dongle:
+{'lat':0.1,'lon':0.4,'speed':0.6,'alt':55}
+INFO:root:Recieved from GPS dongle:
+{'lat':0.1,'lon':0.4,'speed':0.6,'alt':55}
+INFO:root:Recieved from GPS dongle:
+{'lat':0.1,'lon':0.4,'speed':0.6,'alt':55}
+INFO:root:Recieved from GPS dongle:
+{'lat':0.1,'lon':0.4,'speed':0.6,'alt':55}
+INFO:root:Recieved from GPS dongle:
+{'lat':0.1,'lon':0.4,'speed':0.6,'alt':55}
+INFO:root:Recieved from GPS dongle:
+{'lat':0.1,'lon':0.4,'speed':0.6,'alt':55}
+INFO:root:Recieved from GPS dongle:
+{'lat':0.1,'lon':0.4,'speed':0.6,'alt':55}
+INFO:root:Recieved from GPS dongle:
+NO GPS FOUND: {"class":"TPV","tag":"MID2","device":"/dev/ttyUSB0","mode":1,"time":"1995-01-13T14:46:08.600Z","ept":0.005}
+INFO:root:Recieved from GPS dongle:
+NO GPS FOUND: {"class":"TPV","tag":"MID2","device":"/dev/ttyUSB0","mode":1,"time":"1995-01-13T14:46:10.600Z","ept":0.005}
+INFO:root:Recieved from GPS dongle:
+NO GPS FOUND: {"class":"TPV","tag":"MID2","device":"/dev/ttyUSB0","mode":1,"time":"1995-01-13T14:46:11.600Z","ept":0.005}
+INFO:root:Recieved from GPS dongle:
+NO GPS FOUND: {"class":"TPV","tag":"MID2","device":"/dev/ttyUSB0","mode":1,"time":"1995-01-13T14:46:13.600Z","ept":0.005}
+INFO:root:Recieved from GPS dongle:
+NO GPS FOUND: {"class":"TPV","tag":"MID2","device":"/dev/ttyUSB0","mode":1,"time":"1995-01-13T14:46:14.600Z","ept":0.005}
+DEBUG:root:15:51:01Started script
+INFO:root:Recieved from GPS dongle:
+NO GPS FOUND: {"class":"SKY","tag":"MID4","device":"/dev/ttyUSB0","time":"1995-01-13T14:51:02.470Z","hdop":0.00,"satellites":[{"PRN":22,"el":53,"az":120,"ss":37,"used":false},{"PRN":16,"el":35,"az":180,"ss":30,"used":false},{"PRN":18,"el":38,"az":63,"ss":23,"used":false},{"PRN":27,"el":81,"az":111,"ss":23,"used":false},{"PRN":11,"el":20,"az":259,"ss":24,"used":false},{"PRN":8,"el":20,"az":283,"ss":22,"used":false}]}
+INFO:root:Recieved from GPS dongle:
+NO GPS FOUND: {"class":"TPV","tag":"MID2","device":"/dev/ttyUSB0","mode":1,"time":"1995-01-13T14:51:04.470Z","ept":0.005}
+INFO:root:Recieved from GPS dongle:
+NO GPS FOUND: {"class":"TPV","tag":"MID2","device":"/dev/ttyUSB0","mode":1,"time":"1995-01-13T14:51:05.470Z","ept":0.005}
+INFO:root:Recieved from GPS dongle:
+NO GPS FOUND: {"class":"TPV","tag":"MID2","device":"/dev/ttyUSB0","mode":1,"time":"1995-01-13T14:51:07.470Z","ept":0.005}
+INFO:root:Recieved from GPS dongle:
+NO GPS FOUND: {"class":"TPV","tag":"MID2","device":"/dev/ttyUSB0","mode":1,"time":"1995-01-13T14:51:08.470Z","ept":0.005}
+INFO:root:Recieved from GPS dongle:
+NO GPS FOUND: {"class":"TPV","tag":"MID2","device":"/dev/ttyUSB0","mode":1,"time":"1995-01-13T14:51:10.470Z","ept":0.005}
+INFO:root:Recieved from GPS dongle:
+NO GPS FOUND: {"class":"TPV","tag":"MID2","device":"/dev/ttyUSB0","mode":1,"time":"1995-01-13T14:51:11.470Z","ept":0.005}
+INFO:root:Recieved from GPS dongle:
+NO GPS FOUND: {"class":"TPV","tag":"MID2","device":"/dev/ttyUSB0","mode":1,"time":"1995-01-13T14:51:13.470Z","ept":0.005}
+INFO:root:Recieved from GPS dongle:
+NO GPS FOUND: {"class":"TPV","tag":"MID2","device":"/dev/ttyUSB0","mode":1,"time":"1995-01-13T14:51:14.470Z","ept":0.005}
+INFO:root:Recieved from GPS dongle:
+NO GPS FOUND: {"class":"TPV","tag":"MID2","device":"/dev/ttyUSB0","mode":1,"time":"1995-01-13T14:51:16.470Z","ept":0.005}
+INFO:root:Recieved from GPS dongle:
+NO GPS FOUND: {"class":"TPV","tag":"MID2","device":"/dev/ttyUSB0","mode":1,"time":"1995-01-13T14:51:17.470Z","ept":0.005}
+INFO:root:Recieved from GPS dongle:
+NO GPS FOUND: {"class":"SKY","tag":"MID4","device":"/dev/ttyUSB0","time":"1995-01-13T14:51:19.470Z","hdop":0.00,"satellites":[{"PRN":22,"el":53,"az":120,"ss":37,"used":false},{"PRN":16,"el":35,"az":180,"ss":29,"used":false},{"PRN":18,"el":38,"az":63,"ss":23,"used":false},{"PRN":27,"el":81,"az":111,"ss":21,"used":false},{"PRN":11,"el":20,"az":259,"ss":22,"used":false},{"PRN":8,"el":20,"az":283,"ss":18,"used":false},{"PRN":21,"el":20,"az":66,"ss":14,"used":false},{"PRN":7,"el":15,"az":283,"ss":12,"used":false},{"PRN":127,"el":12,"az":118,"ss":17,"used":false}]}
+INFO:root:Recieved from GPS dongle:
+NO GPS FOUND: {"class":"TPV","tag":"MID2","device":"/dev/ttyUSB0","mode":1,"time":"1995-01-13T14:51:21.470Z","ept":0.005}
+DEBUG:root:15:51:27Started script
+INFO:root:Recieved from GPS dongle:
+NO GPS FOUND: {"class":"SKY","tag":"MID4","device":"/dev/ttyUSB0","time":"1995-01-13T14:51:28.470Z","hdop":0.00,"satellites":[{"PRN":22,"el":53,"az":117,"ss":36,"used":false},{"PRN":16,"el":34,"az":180,"ss":30,"used":false},{"PRN":18,"el":37,"az":61,"ss":22,"used":false},{"PRN":27,"el":80,"az":114,"ss":21,"used":false},{"PRN":11,"el":21,"az":259,"ss":24,"used":false},{"PRN":21,"el":18,"az":66,"ss":18,"used":false},{"PRN":127,"el":12,"az":118,"ss":29,"used":false}]}
+INFO:root:Recieved from GPS dongle:
+NO GPS FOUND: {"class":"TPV","tag":"MID2","device":"/dev/ttyUSB0","mode":1,"time":"1995-01-13T14:51:30.470Z","ept":0.005}
+INFO:root:Recieved from GPS dongle:
+NO GPS FOUND: {"class":"TPV","tag":"MID2","device":"/dev/ttyUSB0","mode":1,"time":"1995-01-13T14:51:31.470Z","ept":0.005}
+INFO:root:Recieved from GPS dongle:
+NO GPS FOUND: {"class":"TPV","tag":"MID2","device":"/dev/ttyUSB0","mode":1,"time":"1995-01-13T14:51:33.470Z","ept":0.005}
+INFO:root:Recieved from GPS dongle:
+NO GPS FOUND: {"class":"TPV","tag":"MID2","device":"/dev/ttyUSB0","mode":1,"time":"1995-01-13T14:51:34.470Z","ept":0.005}
+INFO:root:Recieved from GPS dongle:
+NO GPS FOUND: {"class":"TPV","tag":"MID2","device":"/dev/ttyUSB0","mode":1,"time":"1995-01-13T14:51:36.470Z","ept":0.005}
+INFO:root:Recieved from GPS dongle:
+NO GPS FOUND: {"class":"TPV","tag":"MID2","device":"/dev/ttyUSB0","mode":1,"time":"1995-01-13T14:51:37.470Z","ept":0.005}
+INFO:root:Recieved from GPS dongle:
+NO GPS FOUND: {"class":"TPV","tag":"MID2","device":"/dev/ttyUSB0","mode":1,"time":"1995-01-13T14:51:39.470Z","ept":0.005}
+INFO:root:Recieved from GPS dongle:
+NO GPS FOUND: {"class":"TPV","tag":"MID2","device":"/dev/ttyUSB0","mode":1,"time":"1995-01-13T14:51:40.470Z","ept":0.005}
+INFO:root:Recieved from GPS dongle:
+NO GPS FOUND: {"class":"TPV","tag":"MID2","device":"/dev/ttyUSB0","mode":1,"time":"1995-01-13T14:51:42.470Z","ept":0.005}
+INFO:root:Recieved from GPS dongle:
+NO GPS FOUND: {"class":"TPV","tag":"MID2","device":"/dev/ttyUSB0","mode":1,"time":"1995-01-13T14:51:43.470Z","ept":0.005}
+INFO:root:Recieved from GPS dongle:
+NO GPS FOUND: {"class":"TPV","tag":"MID2","device":"/dev/ttyUSB0","mode":1,"time":"1995-01-13T14:51:45.470Z","ept":0.005}
+INFO:root:Recieved from GPS dongle:
+NO GPS FOUND: {"class":"TPV","tag":"MID2","device":"/dev/ttyUSB0","mode":1,"time":"1995-01-13T14:51:46.470Z","ept":0.005}
+INFO:root:Recieved from GPS dongle:
+NO GPS FOUND: {"class":"TPV","tag":"MID2","device":"/dev/ttyUSB0","mode":1,"time":"1995-01-13T14:51:48.470Z","ept":0.005}
+INFO:root:Recieved from GPS dongle:
+NO GPS FOUND: {"class":"TPV","tag":"MID2","device":"/dev/ttyUSB0","mode":1,"time":"1995-01-13T14:51:49.470Z","ept":0.005}
+INFO:root:Recieved from GPS dongle:
+NO GPS FOUND: {"class":"TPV","tag":"MID2","device":"/dev/ttyUSB0","mode":1,"time":"1995-01-13T14:51:51.470Z","ept":0.005}
+INFO:root:Recieved from GPS dongle:
+NO GPS FOUND: {"class":"TPV","tag":"MID2","device":"/dev/ttyUSB0","mode":1,"time":"1995-01-13T14:51:52.470Z","ept":0.005}
+INFO:root:Recieved from GPS dongle:
+NO GPS FOUND: {"class":"TPV","tag":"MID2","device":"/dev/ttyUSB0","mode":1,"time":"1995-01-13T14:51:54.470Z","ept":0.005}
+INFO:root:Recieved from GPS dongle:
+NO GPS FOUND: {"class":"TPV","tag":"MID2","device":"/dev/ttyUSB0","mode":1,"time":"1995-01-13T14:51:55.470Z","ept":0.005}
+INFO:root:Recieved from GPS dongle:
+NO GPS FOUND: {"class":"TPV","tag":"MID2","device":"/dev/ttyUSB0","mode":1,"time":"1995-01-13T14:51:57.470Z","ept":0.005}
+INFO:root:Recieved from GPS dongle:
+NO GPS FOUND: {"class":"TPV","tag":"MID2","device":"/dev/ttyUSB0","mode":1,"time":"1995-01-13T14:51:58.470Z","ept":0.005}
+INFO:root:Recieved from GPS dongle:
+NO GPS FOUND: {"class":"TPV","tag":"MID2","device":"/dev/ttyUSB0","mode":1,"time":"1995-01-13T14:52:00.470Z","ept":0.005}
+INFO:root:Recieved from GPS dongle:
+NO GPS FOUND: {"class":"TPV","tag":"MID2","device":"/dev/ttyUSB0","mode":1,"time":"1995-01-13T14:52:01.470Z","ept":0.005}
+INFO:root:Recieved from GPS dongle:
+{'lat':0.1,'lon':0.4,'speed':0.6,'alt':55}
+INFO:root:Recieved from GPS dongle:
+{'lat':0.1,'lon':0.4,'speed':0.6,'alt':55}
+INFO:root:Recieved from GPS dongle:
+{'lat':0.1,'lon':0.4,'speed':0.6,'alt':55}
+INFO:root:Recieved from GPS dongle:
+{'lat':0.1,'lon':0.4,'speed':0.6,'alt':55}
+INFO:root:Recieved from GPS dongle:
+{'lat':0.1,'lon':0.4,'speed':0.6,'alt':55}
+INFO:root:Recieved from GPS dongle:
+{'lat':0.1,'lon':0.4,'speed':0.6,'alt':55}
+INFO:root:Recieved from GPS dongle:
+{'lat':0.1,'lon':0.4,'speed':0.6,'alt':55}
+INFO:root:Recieved from GPS dongle:
+{'lat':0.1,'lon':0.4,'speed':0.6,'alt':55}
+INFO:root:Recieved from GPS dongle:
+{'lat':0.1,'lon':0.4,'speed':0.6,'alt':55}
+INFO:root:Recieved from GPS dongle:
+{'lat':0.1,'lon':0.4,'speed':0.6,'alt':55}
+INFO:root:Recieved from GPS dongle:
+{'lat':0.1,'lon':0.4,'speed':0.6,'alt':55}
+INFO:root:Recieved from GPS dongle:
+{'lat':0.1,'lon':0.4,'speed':0.6,'alt':55}
+INFO:root:Recieved from GPS dongle:
+{'lat':0.1,'lon':0.4,'speed':0.6,'alt':55}
+INFO:root:Recieved from GPS dongle:
+{'lat':0.1,'lon':0.4,'speed':0.6,'alt':55}
+INFO:root:Recieved from GPS dongle:
+{'lat':0.1,'lon':0.4,'speed':0.6,'alt':55}
+INFO:root:Recieved from GPS dongle:
+{'lat':0.1,'lon':0.4,'speed':0.6,'alt':55}
+INFO:root:Recieved from GPS dongle:
+{'lat':0.1,'lon':0.4,'speed':0.6,'alt':55}
+INFO:root:Recieved from GPS dongle:
+{'lat':0.1,'lon':0.4,'speed':0.6,'alt':55}
+INFO:root:Recieved from GPS dongle:
+{'lat':0.1,'lon':0.4,'speed':0.6,'alt':55}
+INFO:root:Recieved from GPS dongle:
+{'lat':0.1,'lon':0.4,'speed':0.6,'alt':55}
+INFO:root:Recieved from GPS dongle:
+{'lat':0.1,'lon':0.4,'speed':0.6,'alt':55}
+INFO:root:Recieved from GPS dongle:
+{'lat':0.1,'lon':0.4,'speed':0.6,'alt':55}
+INFO:root:Recieved from GPS dongle:
+{'lat':0.1,'lon':0.4,'speed':0.6,'alt':55}
+INFO:root:Recieved from GPS dongle:
+{'lat':0.1,'lon':0.4,'speed':0.6,'alt':55}
+INFO:root:Recieved from GPS dongle:
+{'lat':0.1,'lon':0.4,'speed':0.6,'alt':55}
+INFO:root:Recieved from GPS dongle:
+{'lat':0.1,'lon':0.4,'speed':0.6,'alt':55}
+INFO:root:Recieved from GPS dongle:
+{'lat':0.1,'lon':0.4,'speed':0.6,'alt':55}
+INFO:root:Recieved from GPS dongle:
+{'lat':0.1,'lon':0.4,'speed':0.6,'alt':55}
+INFO:root:Recieved from GPS dongle:
+{'lat':0.1,'lon':0.4,'speed':0.6,'alt':55}
+INFO:root:Recieved from GPS dongle:
+{'lat':0.1,'lon':0.4,'speed':0.6,'alt':55}
+DEBUG:root:15:52:52Started script
+INFO:root:Recieved from GPS dongle:
+{'lat':0.1,'lon':0.4,'speed':0.6,'alt':55}
+INFO:root:Recieved from GPS dongle:
+{'lat':0.1,'lon':0.4,'speed':0.6,'alt':55}
+INFO:root:Recieved from GPS dongle:
+{'lat':0.1,'lon':0.4,'speed':0.6,'alt':55}
+INFO:root:Recieved from GPS dongle:
+{'lat':0.1,'lon':0.4,'speed':0.6,'alt':55}
+INFO:root:Recieved from GPS dongle:
+{'lat':0.1,'lon':0.4,'speed':0.6,'alt':55}
+INFO:root:Recieved from GPS dongle:
+{'lat':0.1,'lon':0.4,'speed':0.6,'alt':55}
+INFO:root:Recieved from GPS dongle:
+{'lat':0.1,'lon':0.4,'speed':0.6,'alt':55}
+INFO:root:Recieved from GPS dongle:
+{'lat':0.1,'lon':0.4,'speed':0.6,'alt':55}
+INFO:root:Recieved from GPS dongle:
+{'lat':0.1,'lon':0.4,'speed':0.6,'alt':55}
+INFO:root:Recieved from GPS dongle:
+{'lat':0.1,'lon':0.4,'speed':0.6,'alt':55}
+INFO:root:Recieved from GPS dongle:
+{'lat':0.1,'lon':0.4,'speed':0.6,'alt':55}
+INFO:root:Recieved from GPS dongle:
+{'lat':0.1,'lon':0.4,'speed':0.6,'alt':55}
+INFO:root:Recieved from GPS dongle:
+{'lat':0.1,'lon':0.4,'speed':0.6,'alt':55}
+INFO:root:Recieved from GPS dongle:
+{'lat':0.1,'lon':0.4,'speed':0.6,'alt':55}
+INFO:root:Recieved from GPS dongle:
+{'lat':0.1,'lon':0.4,'speed':0.6,'alt':55}
+INFO:root:Recieved from GPS dongle:
+{'lat':0.1,'lon':0.4,'speed':0.6,'alt':55}
+INFO:root:Recieved from GPS dongle:
+{'lat':0.1,'lon':0.4,'speed':0.6,'alt':55}
+INFO:root:Recieved from GPS dongle:
+{'lat':0.1,'lon':0.4,'speed':0.6,'alt':55}
+INFO:root:Recieved from GPS dongle:
+{'lat':0.1,'lon':0.4,'speed':0.6,'alt':55}
+INFO:root:Recieved from GPS dongle:
+{'lat':0.1,'lon':0.4,'speed':0.6,'alt':55}
+INFO:root:Recieved from GPS dongle:
+NO GPS FOUND: {"class":"SKY","tag":"MID4","device":"/dev/ttyUSB0","time":"1995-01-13T14:53:23.470Z","xdop":3.23,"ydop":2.11,"vdop":3.36,"tdop":3.47,"hdop":2.20,"gdop":6.19,"pdop":5.12,"satellites":[{"PRN":22,"el":53,"az":117,"ss":36,"used":true},{"PRN":16,"el":34,"az":180,"ss":28,"used":true},{"PRN":18,"el":37,"az":61,"ss":24,"used":true},{"PRN":27,"el":80,"az":114,"ss":22,"used":false},{"PRN":11,"el":21,"az":259,"ss":22,"used":true},{"PRN":7,"el":14,"az":282,"ss":18,"used":false},{"PRN":8,"el":19,"az":282,"ss":18,"used":false},{"PRN":21,"el":18,"az":67,"ss":20,"used":false}]}
+INFO:root:Recieved from GPS dongle:
+{'lat':0.1,'lon':0.4,'speed':0.6,'alt':55}
+INFO:root:Recieved from GPS dongle:
+{'lat':0.1,'lon':0.4,'speed':0.6,'alt':55}
+INFO:root:Recieved from GPS dongle:
+{'lat':0.1,'lon':0.4,'speed':0.6,'alt':55}
+INFO:root:Recieved from GPS dongle:
+{'lat':0.1,'lon':0.4,'speed':0.6,'alt':55}
+INFO:root:Recieved from GPS dongle:
+{'lat':0.1,'lon':0.4,'speed':0.6,'alt':55}
+INFO:root:Recieved from GPS dongle:
+{'lat':0.1,'lon':0.4,'speed':0.6,'alt':55}
+INFO:root:Recieved from GPS dongle:
+{'lat':0.1,'lon':0.4,'speed':0.6,'alt':55}
+INFO:root:Recieved from GPS dongle:
+{'lat':0.1,'lon':0.4,'speed':0.6,'alt':55}
+INFO:root:Recieved from GPS dongle:
+{'lat':0.1,'lon':0.4,'speed':0.6,'alt':55}
+INFO:root:Recieved from GPS dongle:
+{'lat':0.1,'lon':0.4,'speed':0.6,'alt':55}
+INFO:root:Recieved from GPS dongle:
+{'lat':0.1,'lon':0.4,'speed':0.6,'alt':55}
+INFO:root:Recieved from GPS dongle:
+{'lat':0.1,'lon':0.4,'speed':0.6,'alt':55}
+INFO:root:Recieved from GPS dongle:
+{'lat':0.1,'lon':0.4,'speed':0.6,'alt':55}
+INFO:root:Recieved from GPS dongle:
+{'lat':0.1,'lon':0.4,'speed':0.6,'alt':55}
+INFO:root:Recieved from GPS dongle:
+{'lat':0.1,'lon':0.4,'speed':0.6,'alt':55}
+INFO:root:Recieved from GPS dongle:
+{'lat':0.1,'lon':0.4,'speed':0.6,'alt':55}
+INFO:root:Recieved from GPS dongle:
+{'lat':0.1,'lon':0.4,'speed':0.6,'alt':55}
+INFO:root:Recieved from GPS dongle:
+{'lat':0.1,'lon':0.4,'speed':0.6,'alt':55}
+INFO:root:Recieved from GPS dongle:
+{'lat':0.1,'lon':0.4,'speed':0.6,'alt':55}
+INFO:root:Recieved from GPS dongle:
+{'lat':0.1,'lon':0.4,'speed':0.6,'alt':55}
+INFO:root:Recieved from GPS dongle:
+{'lat':0.1,'lon':0.4,'speed':0.6,'alt':55}
+INFO:root:Recieved from GPS dongle:
+{'lat':0.1,'lon':0.4,'speed':0.6,'alt':55}
+INFO:root:Recieved from GPS dongle:
+{'lat':0.1,'lon':0.4,'speed':0.6,'alt':55}
+INFO:root:Recieved from GPS dongle:
+{'lat':0.1,'lon':0.4,'speed':0.6,'alt':55}
+INFO:root:Recieved from GPS dongle:
+{'lat':0.1,'lon':0.4,'speed':0.6,'alt':55}
+INFO:root:Recieved from GPS dongle:
+{'lat':0.1,'lon':0.4,'speed':0.6,'alt':55}
+INFO:root:Recieved from GPS dongle:
+{'lat':0.1,'lon':0.4,'speed':0.6,'alt':55}
+INFO:root:Recieved from GPS dongle:
+{'lat':0.1,'lon':0.4,'speed':0.6,'alt':55}
+INFO:root:Recieved from GPS dongle:
+{'lat':0.1,'lon':0.4,'speed':0.6,'alt':55}
+INFO:root:01/01/1970 H:49:22 Started script
+DEBUG:root:01/01/1970 H:49:23 app.py | ValueError | GrabGPS() | NO GPS FOUND: {"class":"SKY","tag":"MID4","device":"/dev/ttyUSB0","time":"1989-07-02T00:04:41.040Z"}
+WARNING:root:01/01/1970 H:49:24 USB HAS BEEN RESET
+DEBUG:root:01/01/1970 H:49:24 app.py | ValueError | GrabGPS() | NO GPS FOUND: {"class":"TPV","tag":"MID2","device":"/dev/ttyUSB0","mode":1,"time":"1989-07-02T00:04:42.040Z","ept":0.005}
+DEBUG:root:01/01/1970 H:49:26 app.py | ValueError | GrabGPS() | NO GPS FOUND: {"class":"SKY","tag":"MID4","device":"/dev/ttyUSB0","time":"1989-07-02T00:04:44.040Z","hdop":0.00}
+DEBUG:root:01/01/1970 H:49:28 app.py | ValueError | GrabGPS() | NO GPS FOUND: {"class":"TPV","tag":"MID2","device":"/dev/ttyUSB0","mode":1,"time":"1989-07-02T00:04:46.040Z","ept":0.005}
+DEBUG:root:01/01/1970 H:49:29 app.py | ValueError | GrabGPS() | NO GPS FOUND: {"class":"TPV","tag":"MID2","device":"/dev/ttyUSB0","mode":1,"time":"1989-07-02T00:04:47.040Z","ept":0.005}
+DEBUG:root:01/01/1970 H:49:31 app.py | ValueError | GrabGPS() | NO GPS FOUND: {"class":"TPV","tag":"MID2","device":"/dev/ttyUSB0","mode":1,"time":"1989-07-02T00:04:49.040Z","ept":0.005}
+DEBUG:root:01/01/1970 H:49:32 app.py | ValueError | GrabGPS() | NO GPS FOUND: {"class":"TPV","tag":"MID2","device":"/dev/ttyUSB0","mode":1,"time":"1989-07-02T00:04:50.040Z","ept":0.005}
+DEBUG:root:01/01/1970 H:49:34 app.py | ValueError | GrabGPS() | NO GPS FOUND: {"class":"TPV","tag":"MID2","device":"/dev/ttyUSB0","mode":1,"time":"1989-07-02T00:04:52.040Z","ept":0.005}
+DEBUG:root:01/01/1970 H:49:35 app.py | ValueError | GrabGPS() | NO GPS FOUND: {"class":"TPV","tag":"MID2","device":"/dev/ttyUSB0","mode":1,"time":"1989-07-02T00:04:53.040Z","ept":0.005}
+DEBUG:root:01/01/1970 H:49:37 app.py | ValueError | GrabGPS() | NO GPS FOUND: {"class":"TPV","tag":"MID2","device":"/dev/ttyUSB0","mode":1,"time":"1989-07-02T00:04:55.040Z","ept":0.005}
+DEBUG:root:01/01/1970 H:49:38 app.py | ValueError | GrabGPS() | NO GPS FOUND: {"class":"TPV","tag":"MID2","device":"/dev/ttyUSB0","mode":1,"time":"1989-07-02T00:04:56.040Z","ept":0.005}
+DEBUG:root:01/01/1970 H:49:40 app.py | ValueError | GrabGPS() | NO GPS FOUND: {"class":"TPV","tag":"MID2","device":"/dev/ttyUSB0","mode":1,"time":"1989-07-02T00:04:58.040Z","ept":0.005}
+DEBUG:root:01/01/1970 H:49:41 app.py | ValueError | GrabGPS() | NO GPS FOUND: {"class":"TPV","tag":"MID2","device":"/dev/ttyUSB0","mode":1,"time":"1989-07-02T00:04:59.040Z","ept":0.005}
+DEBUG:root:01/01/1970 H:49:43 app.py | ValueError | GrabGPS() | NO GPS FOUND: {"class":"TPV","tag":"MID2","device":"/dev/ttyUSB0","mode":1,"time":"1989-07-02T00:05:01.040Z","ept":0.005}
+DEBUG:root:01/01/1970 H:49:44 app.py | ValueError | GrabGPS() | NO GPS FOUND: {"class":"TPV","tag":"MID2","device":"/dev/ttyUSB0","mode":1,"time":"1989-07-02T00:05:02.040Z","ept":0.005}
+DEBUG:root:01/01/1970 H:49:46 app.py | ValueError | GrabGPS() | NO GPS FOUND: {"class":"TPV","tag":"MID2","device":"/dev/ttyUSB0","mode":1,"time":"1989-07-02T00:05:04.040Z","ept":0.005}
+WARNING:root:01/01/1970 H:49:47 USB HAS BEEN RESET
+DEBUG:root:01/01/1970 H:49:47 app.py | ValueError | GrabGPS() | NO GPS FOUND: {"class":"TPV","tag":"MID2","device":"/dev/ttyUSB0","mode":1,"time":"1989-07-02T00:05:05.040Z","ept":0.005}
+DEBUG:root:01/01/1970 H:49:49 app.py | ValueError | GrabGPS() | NO GPS FOUND: {"class":"TPV","tag":"MID2","device":"/dev/ttyUSB0","mode":1,"time":"1989-07-02T00:05:07.040Z","ept":0.005}
+DEBUG:root:01/01/1970 H:49:50 app.py | ValueError | GrabGPS() | NO GPS FOUND: {"class":"TPV","tag":"MID2","device":"/dev/ttyUSB0","mode":1,"time":"1989-07-02T00:05:08.040Z","ept":0.005}
+DEBUG:root:01/01/1970 H:49:52 app.py | ValueError | GrabGPS() | NO GPS FOUND: {"class":"TPV","tag":"MID2","device":"/dev/ttyUSB0","mode":1,"time":"1989-07-02T00:05:10.040Z","ept":0.005}
+DEBUG:root:01/01/1970 H:49:53 app.py | ValueError | GrabGPS() | NO GPS FOUND: {"class":"TPV","tag":"MID2","device":"/dev/ttyUSB0","mode":1,"time":"1989-07-02T00:05:11.040Z","ept":0.005}
+DEBUG:root:01/01/1970 H:49:55 app.py | ValueError | GrabGPS() | NO GPS FOUND: {"class":"TPV","tag":"MID2","device":"/dev/ttyUSB0","mode":1,"time":"1989-07-02T00:05:13.040Z","ept":0.005}
+DEBUG:root:01/01/1970 H:49:56 app.py | ValueError | GrabGPS() | NO GPS FOUND: {"class":"TPV","tag":"MID2","device":"/dev/ttyUSB0","mode":1,"time":"1989-07-02T00:05:14.040Z","ept":0.005}
+DEBUG:root:01/01/1970 H:49:58 app.py | ValueError | GrabGPS() | NO GPS FOUND: {"class":"TPV","tag":"MID2","device":"/dev/ttyUSB0","mode":1,"time":"1989-07-02T00:05:16.040Z","ept":0.005}
+DEBUG:root:01/01/1970 H:49:59 app.py | ValueError | GrabGPS() | NO GPS FOUND: {"class":"TPV","tag":"MID2","device":"/dev/ttyUSB0","mode":1,"time":"1989-07-02T00:05:17.040Z","ept":0.005}
+DEBUG:root:01/01/1970 H:50:01 app.py | ValueError | GrabGPS() | NO GPS FOUND: {"class":"TPV","tag":"MID2","device":"/dev/ttyUSB0","mode":1,"time":"1989-07-02T00:05:19.040Z","ept":0.005}
+DEBUG:root:01/01/1970 H:50:02 app.py | ValueError | GrabGPS() | NO GPS FOUND: {"class":"TPV","tag":"MID2","device":"/dev/ttyUSB0","mode":1,"time":"1989-07-02T00:05:20.040Z","ept":0.005}
+DEBUG:root:01/01/1970 H:50:04 app.py | ValueError | GrabGPS() | NO GPS FOUND: {"class":"TPV","tag":"MID2","device":"/dev/ttyUSB0","mode":1,"time":"1989-07-02T00:05:22.040Z","ept":0.005}
+DEBUG:root:01/01/1970 H:50:05 app.py | ValueError | GrabGPS() | NO GPS FOUND: {"class":"TPV","tag":"MID2","device":"/dev/ttyUSB0","mode":1,"time":"1989-07-02T00:05:23.040Z","ept":0.005}
+DEBUG:root:01/01/1970 H:50:07 app.py | ValueError | GrabGPS() | NO GPS FOUND: {"class":"TPV","tag":"MID2","device":"/dev/ttyUSB0","mode":1,"time":"1989-07-02T00:05:25.040Z","ept":0.005}
+DEBUG:root:01/01/1970 H:50:08 app.py | ValueError | GrabGPS() | NO GPS FOUND: {"class":"TPV","tag":"MID2","device":"/dev/ttyUSB0","mode":1,"time":"1989-07-02T00:05:26.040Z","ept":0.005}
+WARNING:root:01/01/1970 H:50:09 USB HAS BEEN RESET
+DEBUG:root:01/01/1970 H:50:10 app.py | ValueError | GrabGPS() | NO GPS FOUND: {"class":"TPV","tag":"MID2","device":"/dev/ttyUSB0","mode":1,"time":"1989-07-02T00:05:28.040Z","ept":0.005}
+DEBUG:root:01/01/1970 H:50:11 app.py | ValueError | GrabGPS() | NO GPS FOUND: {"class":"TPV","tag":"MID2","device":"/dev/ttyUSB0","mode":1,"time":"1989-07-02T00:05:29.040Z","ept":0.005}
+DEBUG:root:01/01/1970 H:50:13 app.py | ValueError | GrabGPS() | NO GPS FOUND: {"class":"TPV","tag":"MID2","device":"/dev/ttyUSB0","mode":1,"time":"1989-07-02T00:05:31.040Z","ept":0.005}
+DEBUG:root:01/01/1970 H:50:14 app.py | ValueError | GrabGPS() | NO GPS FOUND: {"class":"TPV","tag":"MID2","device":"/dev/ttyUSB0","mode":1,"time":"1989-07-02T00:05:32.040Z","ept":0.005}
+DEBUG:root:01/01/1970 H:50:16 app.py | ValueError | GrabGPS() | NO GPS FOUND: {"class":"TPV","tag":"MID2","device":"/dev/ttyUSB0","mode":1,"time":"1989-07-02T00:05:34.040Z","ept":0.005}
+DEBUG:root:01/01/1970 H:50:17 app.py | ValueError | GrabGPS() | NO GPS FOUND: {"class":"TPV","tag":"MID2","device":"/dev/ttyUSB0","mode":1,"time":"1989-07-02T00:05:35.040Z","ept":0.005}
+DEBUG:root:01/01/1970 H:50:19 app.py | ValueError | GrabGPS() | NO GPS FOUND: {"class":"TPV","tag":"MID2","device":"/dev/ttyUSB0","mode":1,"time":"1989-07-02T00:05:37.040Z","ept":0.005}
+DEBUG:root:01/01/1970 H:50:20 app.py | ValueError | GrabGPS() | NO GPS FOUND: {"class":"TPV","tag":"MID2","device":"/dev/ttyUSB0","mode":1,"time":"1989-07-02T00:05:38.040Z","ept":0.005}
+DEBUG:root:01/01/1970 H:50:22 app.py | ValueError | GrabGPS() | NO GPS FOUND: {"class":"TPV","tag":"MID2","device":"/dev/ttyUSB0","mode":1,"time":"1989-07-02T00:05:40.040Z","ept":0.005}
+DEBUG:root:01/01/1970 H:50:23 app.py | ValueError | GrabGPS() | NO GPS FOUND: {"class":"TPV","tag":"MID2","device":"/dev/ttyUSB0","mode":1,"time":"1989-07-02T00:05:41.040Z","ept":0.005}
+DEBUG:root:01/01/1970 H:50:25 app.py | ValueError | GrabGPS() | NO GPS FOUND: {"class":"TPV","tag":"MID2","device":"/dev/ttyUSB0","mode":1,"time":"1989-07-02T00:05:43.040Z","ept":0.005}
+DEBUG:root:01/01/1970 H:50:26 app.py | ValueError | GrabGPS() | NO GPS FOUND: {"class":"TPV","tag":"MID2","device":"/dev/ttyUSB0","mode":1,"time":"1989-07-02T00:05:44.040Z","ept":0.005}
+DEBUG:root:01/01/1970 H:50:28 app.py | ValueError | GrabGPS() | NO GPS FOUND: {"class":"SKY","tag":"MID4","device":"/dev/ttyUSB0","time":"1989-07-02T00:05:46.040Z","hdop":0.00}
+DEBUG:root:01/01/1970 H:50:30 app.py | ValueError | GrabGPS() | NO GPS FOUND: {"class":"DEVICE","path":"/dev/ttyUSB0","activated":0}
+DEBUG:root:01/01/1970 H:50:33 app.py | ValueError | GrabGPS() | NO GPS FOUND: {"class":"DEVICE","path":"/dev/ttyUSB0","activated":"1970-01-01T00:50:33.362Z","driver":"SiRF binary","subtype":"GSW3.5.0_3.5.00.00-SDK-3EP2.01 ","native":1,"bps":4800,"parity":"N","stopbits":1,"cycle":1.00}
+DEBUG:root:01/01/1970 H:50:34 app.py | ValueError | GrabGPS() | NO GPS FOUND: {"class":"TPV","tag":"MID2","device":"/dev/ttyUSB0","mode":1,"time":"1989-07-01T23:59:46.040Z","ept":0.005}
+DEBUG:root:01/01/1970 H:50:35 app.py | ValueError | GrabGPS() | NO GPS FOUND: {"class":"TPV","tag":"MID2","device":"/dev/ttyUSB0","mode":1,"time":"1989-07-01T23:59:47.050Z","ept":0.005}
+DEBUG:root:01/01/1970 H:50:36 app.py | ValueError | GrabGPS() | NO GPS FOUND: {"class":"SKY","tag":"MID4","device":"/dev/ttyUSB0","time":"1989-07-01T23:59:49.050Z","hdop":0.00}
+DEBUG:root:01/01/1970 H:50:38 app.py | ValueError | GrabGPS() | NO GPS FOUND: {"class":"TPV","tag":"MID2","device":"/dev/ttyUSB0","mode":1,"time":"1989-07-01T23:59:51.050Z","ept":0.005}
+DEBUG:root:01/01/1970 H:50:39 app.py | ValueError | GrabGPS() | NO GPS FOUND: {"class":"TPV","tag":"MID2","device":"/dev/ttyUSB0","mode":1,"time":"1989-07-01T23:59:52.050Z","ept":0.005}
+DEBUG:root:01/01/1970 H:50:41 app.py | ValueError | GrabGPS() | NO GPS FOUND: {"class":"TPV","tag":"MID2","device":"/dev/ttyUSB0","mode":1,"time":"1989-07-01T23:59:54.050Z","ept":0.005}
+DEBUG:root:01/01/1970 H:50:42 app.py | ValueError | GrabGPS() | NO GPS FOUND: {"class":"TPV","tag":"MID2","device":"/dev/ttyUSB0","mode":1,"time":"1989-07-01T23:59:55.040Z","ept":0.005}
+DEBUG:root:01/01/1970 H:50:44 app.py | ValueError | GrabGPS() | NO GPS FOUND: {"class":"TPV","tag":"MID2","device":"/dev/ttyUSB0","mode":1,"time":"1989-07-01T23:59:57.050Z","ept":0.005}
+DEBUG:root:01/01/1970 H:50:45 app.py | ValueError | GrabGPS() | NO GPS FOUND: {"class":"TPV","tag":"MID2","device":"/dev/ttyUSB0","mode":1,"time":"1989-07-01T23:59:58.040Z","ept":0.005}
+DEBUG:root:01/01/1970 H:50:47 app.py | ValueError | GrabGPS() | NO GPS FOUND: {"class":"TPV","tag":"MID2","device":"/dev/ttyUSB0","mode":1,"time":"1989-07-02T00:00:00.050Z","ept":0.005}
+DEBUG:root:01/01/1970 H:50:48 app.py | ValueError | GrabGPS() | NO GPS FOUND: {"class":"TPV","tag":"MID2","device":"/dev/ttyUSB0","mode":1,"time":"1989-07-02T00:00:01.040Z","ept":0.005}
+DEBUG:root:01/01/1970 H:50:50 app.py | ValueError | GrabGPS() | NO GPS FOUND: {"class":"TPV","tag":"MID2","device":"/dev/ttyUSB0","mode":1,"time":"1989-07-02T00:00:03.050Z","ept":0.005}
+DEBUG:root:01/01/1970 H:50:51 app.py | ValueError | GrabGPS() | NO GPS FOUND: {"class":"TPV","tag":"MID2","device":"/dev/ttyUSB0","mode":1,"time":"1989-07-02T00:00:04.040Z","ept":0.005}
+DEBUG:root:01/01/1970 H:50:53 app.py | ValueError | GrabGPS() | NO GPS FOUND: {"class":"TPV","tag":"MID2","device":"/dev/ttyUSB0","mode":1,"time":"1989-07-02T00:00:06.030Z","ept":0.005}
+DEBUG:root:01/01/1970 H:50:54 app.py | ValueError | GrabGPS() | NO GPS FOUND: {"class":"TPV","tag":"MID2","device":"/dev/ttyUSB0","mode":1,"time":"1989-07-02T00:00:07.040Z","ept":0.005}
+DEBUG:root:01/01/1970 H:50:56 app.py | ValueError | GrabGPS() | NO GPS FOUND: {"class":"TPV","tag":"MID2","device":"/dev/ttyUSB0","mode":1,"time":"1989-07-02T00:00:09.050Z","ept":0.005}
+DEBUG:root:01/01/1970 H:50:57 app.py | ValueError | GrabGPS() | NO GPS FOUND: {"class":"TPV","tag":"MID2","device":"/dev/ttyUSB0","mode":1,"time":"1989-07-02T00:00:10.040Z","ept":0.005}
+INFO:root:01/01/1970 H:51:07 Started script
+WARNING:root:01/01/1970 H:51:09 USB HAS BEEN RESET
+DEBUG:root:01/01/1970 H:51:09 app.py | ValueError | GrabGPS() | NO GPS FOUND: {"class":"SKY","tag":"MID4","device":"/dev/ttyUSB0","time":"1989-07-02T00:00:22.040Z","hdop":0.00}
+DEBUG:root:01/01/1970 H:51:11 app.py | ValueError | GrabGPS() | NO GPS FOUND: {"class":"TPV","tag":"MID2","device":"/dev/ttyUSB0","mode":1,"time":"1989-07-02T00:00:24.050Z","ept":0.005}
+DEBUG:root:01/01/1970 H:51:12 app.py | ValueError | GrabGPS() | NO GPS FOUND: {"class":"TPV","tag":"MID2","device":"/dev/ttyUSB0","mode":1,"time":"1989-07-02T00:00:25.040Z","ept":0.005}
+DEBUG:root:01/01/1970 H:51:14 app.py | ValueError | GrabGPS() | NO GPS FOUND: {"class":"TPV","tag":"MID2","device":"/dev/ttyUSB0","mode":1,"time":"1989-07-02T00:00:27.050Z","ept":0.005}
+DEBUG:root:01/01/1970 H:51:15 app.py | ValueError | GrabGPS() | NO GPS FOUND: {"class":"TPV","tag":"MID2","device":"/dev/ttyUSB0","mode":1,"time":"1989-07-02T00:00:28.040Z","ept":0.005}
+DEBUG:root:01/01/1970 H:51:17 app.py | ValueError | GrabGPS() | NO GPS FOUND: {"class":"TPV","tag":"MID2","device":"/dev/ttyUSB0","mode":1,"time":"1989-07-02T00:00:30.050Z","ept":0.005}
+DEBUG:root:01/01/1970 H:51:18 app.py | ValueError | GrabGPS() | NO GPS FOUND: {"class":"TPV","tag":"MID2","device":"/dev/ttyUSB0","mode":1,"time":"1989-07-02T00:00:31.040Z","ept":0.005}
+DEBUG:root:01/01/1970 H:51:20 app.py | ValueError | GrabGPS() | NO GPS FOUND: {"class":"TPV","tag":"MID2","device":"/dev/ttyUSB0","mode":1,"time":"1989-07-02T00:00:33.050Z","ept":0.005}
+DEBUG:root:01/01/1970 H:51:21 app.py | ValueError | GrabGPS() | NO GPS FOUND: {"class":"TPV","tag":"MID2","device":"/dev/ttyUSB0","mode":1,"time":"1989-07-02T00:00:34.040Z","ept":0.005}
+DEBUG:root:01/01/1970 H:51:23 app.py | ValueError | GrabGPS() | NO GPS FOUND: {"class":"TPV","tag":"MID2","device":"/dev/ttyUSB0","mode":1,"time":"1989-07-02T00:00:36.050Z","ept":0.005}
+DEBUG:root:01/01/1970 H:51:24 app.py | ValueError | GrabGPS() | NO GPS FOUND: {"class":"TPV","tag":"MID2","device":"/dev/ttyUSB0","mode":1,"time":"1989-07-02T00:00:37.040Z","ept":0.005}
+DEBUG:root:01/01/1970 H:51:26 app.py | ValueError | GrabGPS() | NO GPS FOUND: {"class":"TPV","tag":"MID2","device":"/dev/ttyUSB0","mode":1,"time":"1989-07-02T00:00:39.050Z","ept":0.005}
+DEBUG:root:01/01/1970 H:51:27 app.py | ValueError | GrabGPS() | NO GPS FOUND: {"class":"TPV","tag":"MID2","device":"/dev/ttyUSB0","mode":1,"time":"1989-07-02T00:00:40.040Z","ept":0.005}
+DEBUG:root:01/01/1970 H:51:29 app.py | ValueError | GrabGPS() | NO GPS FOUND: {"class":"TPV","tag":"MID2","device":"/dev/ttyUSB0","mode":1,"time":"1989-07-02T00:00:42.050Z","ept":0.005}
+DEBUG:root:01/01/1970 H:51:30 app.py | ValueError | GrabGPS() | NO GPS FOUND: {"class":"TPV","tag":"MID2","device":"/dev/ttyUSB0","mode":1,"time":"1989-07-02T00:00:43.040Z","ept":0.005}
+WARNING:root:01/01/1970 H:51:31 USB HAS BEEN RESET
+DEBUG:root:01/01/1970 H:51:32 app.py | ValueError | GrabGPS() | NO GPS FOUND: {"class":"TPV","tag":"MID2","device":"/dev/ttyUSB0","mode":1,"time":"1989-07-02T00:00:45.050Z","ept":0.005}
+DEBUG:root:01/01/1970 H:51:33 app.py | ValueError | GrabGPS() | NO GPS FOUND: {"class":"TPV","tag":"MID2","device":"/dev/ttyUSB0","mode":1,"time":"1989-07-02T00:00:46.040Z","ept":0.005}
+DEBUG:root:01/01/1970 H:51:37 app.py | ValueError | GrabGPS() | NO GPS FOUND: {"class":"DEVICE","path":"/dev/ttyUSB0","activated":3097.257783}
+DEBUG:root:01/01/1970 H:51:38 app.py | ValueError | GrabGPS() | NO GPS FOUND: {"class":"TPV","tag":"MID2","device":"/dev/ttyUSB0","mode":1,"time":"1989-07-01T23:59:46.040Z","ept":0.005}
+DEBUG:root:01/01/1970 H:51:38 app.py | ValueError | GrabGPS() | NO GPS FOUND: {"class":"TPV","tag":"MID2","device":"/dev/ttyUSB0","mode":1,"time":"1989-07-01T23:59:47.050Z","ept":0.005}
+DEBUG:root:01/01/1970 H:51:39 app.py | ValueError | GrabGPS() | NO GPS FOUND: {"class":"TPV","tag":"MID2","device":"/dev/ttyUSB0","mode":1,"time":"1989-07-01T23:59:48.050Z","ept":0.005}
+DEBUG:root:01/01/1970 H:51:41 app.py | ValueError | GrabGPS() | NO GPS FOUND: {"class":"SKY","tag":"MID4","device":"/dev/ttyUSB0","time":"1989-07-01T23:59:50.050Z","hdop":0.00}
+DEBUG:root:01/01/1970 H:51:43 app.py | ValueError | GrabGPS() | NO GPS FOUND: {"class":"TPV","tag":"MID2","device":"/dev/ttyUSB0","mode":1,"time":"1989-07-01T23:59:52.050Z","ept":0.005}
+DEBUG:root:01/01/1970 H:51:44 app.py | ValueError | GrabGPS() | NO GPS FOUND: {"class":"TPV","tag":"MID2","device":"/dev/ttyUSB0","mode":1,"time":"1989-07-01T23:59:53.040Z","ept":0.005}
+DEBUG:root:01/01/1970 H:51:46 app.py | ValueError | GrabGPS() | NO GPS FOUND: {"class":"TPV","tag":"MID2","device":"/dev/ttyUSB0","mode":1,"time":"1989-07-01T23:59:55.040Z","ept":0.005}
+DEBUG:root:01/01/1970 H:51:47 app.py | ValueError | GrabGPS() | NO GPS FOUND: {"class":"TPV","tag":"MID2","device":"/dev/ttyUSB0","mode":1,"time":"1989-07-01T23:59:56.040Z","ept":0.005}
+DEBUG:root:01/01/1970 H:51:49 app.py | ValueError | GrabGPS() | NO GPS FOUND: {"class":"TPV","tag":"MID2","device":"/dev/ttyUSB0","mode":1,"time":"1989-07-01T23:59:58.040Z","ept":0.005}
+DEBUG:root:01/01/1970 H:51:50 app.py | ValueError | GrabGPS() | NO GPS FOUND: {"class":"TPV","tag":"MID2","device":"/dev/ttyUSB0","mode":1,"time":"1989-07-01T23:59:59.040Z","ept":0.005}
+DEBUG:root:01/01/1970 H:51:52 app.py | ValueError | GrabGPS() | NO GPS FOUND: {"class":"TPV","tag":"MID2","device":"/dev/ttyUSB0","mode":1,"time":"1989-07-02T00:00:01.040Z","ept":0.005}
+DEBUG:root:01/01/1970 H:51:53 app.py | ValueError | GrabGPS() | NO GPS FOUND: {"class":"TPV","tag":"MID2","device":"/dev/ttyUSB0","mode":1,"time":"1989-07-02T00:00:02.040Z","ept":0.005}
+WARNING:root:01/01/1970 H:51:54 USB HAS BEEN RESET
+DEBUG:root:01/01/1970 H:51:55 app.py | ValueError | GrabGPS() | NO GPS FOUND: {"class":"TPV","tag":"MID2","device":"/dev/ttyUSB0","mode":1,"time":"1989-07-02T00:00:04.040Z","ept":0.005}
+DEBUG:root:01/01/1970 H:51:56 app.py | ValueError | GrabGPS() | NO GPS FOUND: {"class":"TPV","tag":"MID2","device":"/dev/ttyUSB0","mode":1,"time":"1989-07-02T00:00:05.040Z","ept":0.005}
+DEBUG:root:01/01/1970 H:51:58 app.py | ValueError | GrabGPS() | NO GPS FOUND: {"class":"TPV","tag":"MID2","device":"/dev/ttyUSB0","mode":1,"time":"1989-07-02T00:00:07.040Z","ept":0.005}
+DEBUG:root:01/01/1970 H:51:59 app.py | ValueError | GrabGPS() | NO GPS FOUND: {"class":"TPV","tag":"MID2","device":"/dev/ttyUSB0","mode":1,"time":"1989-07-02T00:00:08.040Z","ept":0.005}
+DEBUG:root:01/01/1970 H:52:01 app.py | ValueError | GrabGPS() | NO GPS FOUND: {"class":"TPV","tag":"MID2","device":"/dev/ttyUSB0","mode":1,"time":"1989-07-02T00:00:10.040Z","ept":0.005}
+DEBUG:root:01/01/1970 H:52:02 app.py | ValueError | GrabGPS() | NO GPS FOUND: {"class":"TPV","tag":"MID2","device":"/dev/ttyUSB0","mode":1,"time":"1989-07-02T00:00:11.040Z","ept":0.005}
+DEBUG:root:01/01/1970 H:52:04 app.py | ValueError | GrabGPS() | NO GPS FOUND: {"class":"TPV","tag":"MID2","device":"/dev/ttyUSB0","mode":1,"time":"1989-07-02T00:00:13.040Z","ept":0.005}
+DEBUG:root:01/01/1970 H:52:05 app.py | ValueError | GrabGPS() | NO GPS FOUND: {"class":"TPV","tag":"MID2","device":"/dev/ttyUSB0","mode":1,"time":"1989-07-02T00:00:14.040Z","ept":0.005}
+DEBUG:root:01/01/1970 H:52:07 app.py | ValueError | GrabGPS() | NO GPS FOUND: {"class":"TPV","tag":"MID2","device":"/dev/ttyUSB0","mode":1,"time":"1989-07-02T00:00:16.040Z","ept":0.005}
+DEBUG:root:01/01/1970 H:52:08 app.py | ValueError | GrabGPS() | NO GPS FOUND: {"class":"TPV","tag":"MID2","device":"/dev/ttyUSB0","mode":1,"time":"1989-07-02T00:00:17.040Z","ept":0.005}
+DEBUG:root:01/01/1970 H:52:10 app.py | ValueError | GrabGPS() | NO GPS FOUND: {"class":"TPV","tag":"MID2","device":"/dev/ttyUSB0","mode":1,"time":"1989-07-02T00:00:19.040Z","ept":0.005}
+DEBUG:root:01/01/1970 H:52:11 app.py | ValueError | GrabGPS() | NO GPS FOUND: {"class":"TPV","tag":"MID2","device":"/dev/ttyUSB0","mode":1,"time":"1989-07-02T00:00:20.040Z","ept":0.005}
+DEBUG:root:01/01/1970 H:52:13 app.py | ValueError | GrabGPS() | NO GPS FOUND: {"class":"TPV","tag":"MID2","device":"/dev/ttyUSB0","mode":1,"time":"1989-07-02T00:00:22.040Z","ept":0.005}
+DEBUG:root:01/01/1970 H:52:14 app.py | ValueError | GrabGPS() | NO GPS FOUND: {"class":"TPV","tag":"MID2","device":"/dev/ttyUSB0","mode":1,"time":"1989-07-02T00:00:23.040Z","ept":0.005}
+DEBUG:root:01/01/1970 H:52:16 app.py | ValueError | GrabGPS() | NO GPS FOUND: {"class":"TPV","tag":"MID2","device":"/dev/ttyUSB0","mode":1,"time":"1989-07-02T00:00:25.040Z","ept":0.005}
+WARNING:root:01/01/1970 H:52:16 USB HAS BEEN RESET
+DEBUG:root:01/01/1970 H:52:17 app.py | ValueError | GrabGPS() | NO GPS FOUND: {"class":"TPV","tag":"MID2","device":"/dev/ttyUSB0","mode":1,"time":"1989-07-02T00:00:26.040Z","ept":0.005}
+DEBUG:root:01/01/1970 H:52:19 app.py | ValueError | GrabGPS() | NO GPS FOUND: {"class":"TPV","tag":"MID2","device":"/dev/ttyUSB0","mode":1,"time":"1989-07-02T00:00:28.040Z","ept":0.005}
+DEBUG:root:01/01/1970 H:52:20 app.py | ValueError | GrabGPS() | NO GPS FOUND: {"class":"TPV","tag":"MID2","device":"/dev/ttyUSB0","mode":1,"time":"1989-07-02T00:00:29.040Z","ept":0.005}
+DEBUG:root:01/01/1970 H:52:22 app.py | ValueError | GrabGPS() | NO GPS FOUND: {"class":"TPV","tag":"MID2","device":"/dev/ttyUSB0","mode":1,"time":"1989-07-02T00:00:31.040Z","ept":0.005}
+DEBUG:root:01/01/1970 H:52:23 app.py | ValueError | GrabGPS() | NO GPS FOUND: {"class":"TPV","tag":"MID2","device":"/dev/ttyUSB0","mode":1,"time":"1989-07-02T00:00:32.040Z","ept":0.005}
+DEBUG:root:01/01/1970 H:52:25 app.py | ValueError | GrabGPS() | NO GPS FOUND: {"class":"TPV","tag":"MID2","device":"/dev/ttyUSB0","mode":1,"time":"1989-07-02T00:00:34.040Z","ept":0.005}
+DEBUG:root:01/01/1970 H:52:26 app.py | ValueError | GrabGPS() | NO GPS FOUND: {"class":"TPV","tag":"MID2","device":"/dev/ttyUSB0","mode":1,"time":"1989-07-02T00:00:35.040Z","ept":0.005}
+DEBUG:root:01/01/1970 H:52:28 app.py | ValueError | GrabGPS() | NO GPS FOUND: {"class":"TPV","tag":"MID2","device":"/dev/ttyUSB0","mode":1,"time":"1989-07-02T00:00:37.040Z","ept":0.005}
+DEBUG:root:01/01/1970 H:52:29 app.py | ValueError | GrabGPS() | NO GPS FOUND: {"class":"TPV","tag":"MID2","device":"/dev/ttyUSB0","mode":1,"time":"1989-07-02T00:00:38.040Z","ept":0.005}
+DEBUG:root:01/01/1970 H:52:31 app.py | ValueError | GrabGPS() | NO GPS FOUND: {"class":"TPV","tag":"MID2","device":"/dev/ttyUSB0","mode":1,"time":"1989-07-02T00:00:40.040Z","ept":0.005}
+DEBUG:root:01/01/1970 H:52:32 app.py | ValueError | GrabGPS() | NO GPS FOUND: {"class":"TPV","tag":"MID2","device":"/dev/ttyUSB0","mode":1,"time":"1989-07-02T00:00:41.040Z","ept":0.005}
+DEBUG:root:01/01/1970 H:52:34 app.py | ValueError | GrabGPS() | NO GPS FOUND: {"class":"TPV","tag":"MID2","device":"/dev/ttyUSB0","mode":1,"time":"1989-07-02T00:00:43.040Z","ept":0.005}
+DEBUG:root:01/01/1970 H:52:35 app.py | ValueError | GrabGPS() | NO GPS FOUND: {"class":"TPV","tag":"MID2","device":"/dev/ttyUSB0","mode":1,"time":"1989-07-02T00:00:44.040Z","ept":0.005}
+DEBUG:root:01/01/1970 H:52:37 app.py | ValueError | GrabGPS() | NO GPS FOUND: {"class":"TPV","tag":"MID2","device":"/dev/ttyUSB0","mode":1,"time":"1989-07-02T00:00:46.040Z","ept":0.005}
+DEBUG:root:01/01/1970 H:52:38 app.py | ValueError | GrabGPS() | NO GPS FOUND: {"class":"TPV","tag":"MID2","device":"/dev/ttyUSB0","mode":1,"time":"1989-07-02T00:00:47.040Z","ept":0.005}
+WARNING:root:01/01/1970 H:52:38 USB HAS BEEN RESET
+DEBUG:root:01/01/1970 H:52:40 app.py | ValueError | GrabGPS() | NO GPS FOUND: {"class":"TPV","tag":"MID2","device":"/dev/ttyUSB0","mode":1,"time":"1989-07-02T00:00:49.040Z","ept":0.005}
+DEBUG:root:01/01/1970 H:52:41 app.py | ValueError | GrabGPS() | NO GPS FOUND: {"class":"TPV","tag":"MID2","device":"/dev/ttyUSB0","mode":1,"time":"1989-07-02T00:00:50.040Z","ept":0.005}
+DEBUG:root:01/01/1970 H:52:43 app.py | ValueError | GrabGPS() | NO GPS FOUND: {"class":"SKY","tag":"MID4","device":"/dev/ttyUSB0","time":"1989-07-02T00:00:52.040Z","hdop":0.00}
+DEBUG:root:01/01/1970 H:52:45 app.py | ValueError | GrabGPS() | NO GPS FOUND: {"class":"TPV","tag":"MID2","device":"/dev/ttyUSB0","mode":1,"time":"1989-07-02T00:00:54.050Z","ept":0.005}
+DEBUG:root:01/01/1970 H:52:46 app.py | ValueError | GrabGPS() | NO GPS FOUND: {"class":"TPV","tag":"MID2","device":"/dev/ttyUSB0","mode":1,"time":"1989-07-02T00:00:55.040Z","ept":0.005}
+DEBUG:root:01/01/1970 H:52:48 app.py | ValueError | GrabGPS() | NO GPS FOUND: {"class":"TPV","tag":"MID2","device":"/dev/ttyUSB0","mode":1,"time":"1989-07-02T00:00:57.050Z","ept":0.005}
+DEBUG:root:01/01/1970 H:52:49 app.py | ValueError | GrabGPS() | NO GPS FOUND: {"class":"TPV","tag":"MID2","device":"/dev/ttyUSB0","mode":1,"time":"1989-07-02T00:00:58.040Z","ept":0.005}
+DEBUG:root:01/01/1970 H:52:51 app.py | ValueError | GrabGPS() | NO GPS FOUND: {"class":"TPV","tag":"MID2","device":"/dev/ttyUSB0","mode":1,"time":"1989-07-02T00:01:00.050Z","ept":0.005}
+DEBUG:root:01/01/1970 H:52:52 app.py | ValueError | GrabGPS() | NO GPS FOUND: {"class":"TPV","tag":"MID2","device":"/dev/ttyUSB0","mode":1,"time":"1989-07-02T00:01:01.040Z","ept":0.005}
+DEBUG:root:01/01/1970 H:52:54 app.py | ValueError | GrabGPS() | NO GPS FOUND: {"class":"TPV","tag":"MID2","device":"/dev/ttyUSB0","mode":1,"time":"1989-07-02T00:01:03.060Z","ept":0.005}
+DEBUG:root:01/01/1970 H:52:55 app.py | ValueError | GrabGPS() | NO GPS FOUND: {"class":"TPV","tag":"MID2","device":"/dev/ttyUSB0","mode":1,"time":"1989-07-02T00:01:04.040Z","ept":0.005}
+DEBUG:root:01/01/1970 H:52:57 app.py | ValueError | GrabGPS() | NO GPS FOUND: {"class":"TPV","tag":"MID2","device":"/dev/ttyUSB0","mode":1,"time":"1989-07-02T00:01:06.050Z","ept":0.005}
+DEBUG:root:01/01/1970 H:52:58 app.py | ValueError | GrabGPS() | NO GPS FOUND: {"class":"TPV","tag":"MID2","device":"/dev/ttyUSB0","mode":1,"time":"1989-07-02T00:01:07.040Z","ept":0.005}
+DEBUG:root:01/01/1970 H:53:00 app.py | ValueError | GrabGPS() | NO GPS FOUND: {"class":"TPV","tag":"MID2","device":"/dev/ttyUSB0","mode":1,"time":"1989-07-02T00:01:09.050Z","ept":0.005}
+WARNING:root:01/01/1970 H:53:01 USB HAS BEEN RESET
+DEBUG:root:01/01/1970 H:53:01 app.py | ValueError | GrabGPS() | NO GPS FOUND: {"class":"TPV","tag":"MID2","device":"/dev/ttyUSB0","mode":1,"time":"1989-07-02T00:01:10.040Z","ept":0.005}
+DEBUG:root:01/01/1970 H:53:03 app.py | ValueError | GrabGPS() | NO GPS FOUND: {"class":"TPV","tag":"MID2","device":"/dev/ttyUSB0","mode":1,"time":"1989-07-02T00:01:12.050Z","ept":0.005}
+DEBUG:root:01/01/1970 H:53:04 app.py | ValueError | GrabGPS() | NO GPS FOUND: {"class":"TPV","tag":"MID2","device":"/dev/ttyUSB0","mode":1,"time":"1989-07-02T00:01:13.040Z","ept":0.005}
+DEBUG:root:01/01/1970 H:53:06 app.py | ValueError | GrabGPS() | NO GPS FOUND: {"class":"TPV","tag":"MID2","device":"/dev/ttyUSB0","mode":1,"time":"1989-07-02T00:01:15.050Z","ept":0.005}
+DEBUG:root:01/01/1970 H:53:07 app.py | ValueError | GrabGPS() | NO GPS FOUND: {"class":"TPV","tag":"MID2","device":"/dev/ttyUSB0","mode":1,"time":"1989-07-02T00:01:16.040Z","ept":0.005}
+DEBUG:root:01/01/1970 H:53:09 app.py | ValueError | GrabGPS() | NO GPS FOUND: {"class":"TPV","tag":"MID2","device":"/dev/ttyUSB0","mode":1,"time":"1989-07-02T00:01:18.050Z","ept":0.005}
+DEBUG:root:01/01/1970 H:53:10 app.py | ValueError | GrabGPS() | NO GPS FOUND: {"class":"TPV","tag":"MID2","device":"/dev/ttyUSB0","mode":1,"time":"1989-07-02T00:01:19.040Z","ept":0.005}
+DEBUG:root:01/01/1970 H:53:12 app.py | ValueError | GrabGPS() | NO GPS FOUND: {"class":"TPV","tag":"MID2","device":"/dev/ttyUSB0","mode":1,"time":"1989-07-02T00:01:21.050Z","ept":0.005}
+DEBUG:root:01/01/1970 H:53:13 app.py | ValueError | GrabGPS() | NO GPS FOUND: {"class":"TPV","tag":"MID2","device":"/dev/ttyUSB0","mode":1,"time":"1989-07-02T00:01:22.040Z","ept":0.005}
+DEBUG:root:01/01/1970 H:53:15 app.py | ValueError | GrabGPS() | NO GPS FOUND: {"class":"TPV","tag":"MID2","device":"/dev/ttyUSB0","mode":1,"time":"1989-07-02T00:01:24.050Z","ept":0.005}
+DEBUG:root:01/01/1970 H:53:16 app.py | ValueError | GrabGPS() | NO GPS FOUND: {"class":"TPV","tag":"MID2","device":"/dev/ttyUSB0","mode":1,"time":"1989-07-02T00:01:25.040Z","ept":0.005}
+DEBUG:root:01/01/1970 H:53:18 app.py | ValueError | GrabGPS() | NO GPS FOUND: {"class":"TPV","tag":"MID2","device":"/dev/ttyUSB0","mode":1,"time":"1989-07-02T00:01:27.050Z","ept":0.005}
+DEBUG:root:01/01/1970 H:53:19 app.py | ValueError | GrabGPS() | NO GPS FOUND: {"class":"TPV","tag":"MID2","device":"/dev/ttyUSB0","mode":1,"time":"1989-07-02T00:01:28.040Z","ept":0.005}
+DEBUG:root:01/01/1970 H:53:21 app.py | ValueError | GrabGPS() | NO GPS FOUND: {"class":"TPV","tag":"MID2","device":"/dev/ttyUSB0","mode":1,"time":"1989-07-02T00:01:30.050Z","ept":0.005}
+DEBUG:root:01/01/1970 H:53:22 app.py | ValueError | GrabGPS() | NO GPS FOUND: {"class":"TPV","tag":"MID2","device":"/dev/ttyUSB0","mode":1,"time":"1989-07-02T00:01:31.040Z","ept":0.005}
+WARNING:root:01/01/1970 H:53:23 USB HAS BEEN RESET
+DEBUG:root:01/01/1970 H:53:24 app.py | ValueError | GrabGPS() | NO GPS FOUND: {"class":"TPV","tag":"MID2","device":"/dev/ttyUSB0","mode":1,"time":"1989-07-02T00:01:33.040Z","ept":0.005}
+DEBUG:root:01/01/1970 H:53:25 app.py | ValueError | GrabGPS() | NO GPS FOUND: {"class":"TPV","tag":"MID2","device":"/dev/ttyUSB0","mode":1,"time":"1989-07-02T00:01:34.040Z","ept":0.005}
+DEBUG:root:01/01/1970 H:53:27 app.py | ValueError | GrabGPS() | NO GPS FOUND: {"class":"TPV","tag":"MID2","device":"/dev/ttyUSB0","mode":1,"time":"1989-07-02T00:01:36.040Z","ept":0.005}
+DEBUG:root:01/01/1970 H:53:28 app.py | ValueError | GrabGPS() | NO GPS FOUND: {"class":"TPV","tag":"MID2","device":"/dev/ttyUSB0","mode":1,"time":"1989-07-02T00:01:37.040Z","ept":0.005}
+DEBUG:root:01/01/1970 H:53:30 app.py | ValueError | GrabGPS() | NO GPS FOUND: {"class":"TPV","tag":"MID2","device":"/dev/ttyUSB0","mode":1,"time":"1989-07-02T00:01:39.040Z","ept":0.005}
+DEBUG:root:01/01/1970 H:53:31 app.py | ValueError | GrabGPS() | NO GPS FOUND: {"class":"TPV","tag":"MID2","device":"/dev/ttyUSB0","mode":1,"time":"1989-07-02T00:01:40.040Z","ept":0.005}
+DEBUG:root:01/01/1970 H:53:33 app.py | ValueError | GrabGPS() | NO GPS FOUND: {"class":"TPV","tag":"MID2","device":"/dev/ttyUSB0","mode":1,"time":"1989-07-02T00:01:42.040Z","ept":0.005}
+DEBUG:root:01/01/1970 H:53:34 app.py | ValueError | GrabGPS() | NO GPS FOUND: {"class":"TPV","tag":"MID2","device":"/dev/ttyUSB0","mode":1,"time":"1989-07-02T00:01:43.040Z","ept":0.005}
+DEBUG:root:01/01/1970 H:53:36 app.py | ValueError | GrabGPS() | NO GPS FOUND: {"class":"TPV","tag":"MID2","device":"/dev/ttyUSB0","mode":1,"time":"1989-07-02T00:01:45.040Z","ept":0.005}
+DEBUG:root:01/01/1970 H:53:37 app.py | ValueError | GrabGPS() | NO GPS FOUND: {"class":"TPV","tag":"MID2","device":"/dev/ttyUSB0","mode":1,"time":"1989-07-02T00:01:46.040Z","ept":0.005}
+DEBUG:root:01/01/1970 H:53:39 app.py | ValueError | GrabGPS() | NO GPS FOUND: {"class":"TPV","tag":"MID2","device":"/dev/ttyUSB0","mode":1,"time":"1989-07-02T00:01:48.040Z","ept":0.005}
+DEBUG:root:01/01/1970 H:53:40 app.py | ValueError | GrabGPS() | NO GPS FOUND: {"class":"TPV","tag":"MID2","device":"/dev/ttyUSB0","mode":1,"time":"1989-07-02T00:01:49.040Z","ept":0.005}
+DEBUG:root:01/01/1970 H:53:42 app.py | ValueError | GrabGPS() | NO GPS FOUND: {"class":"TPV","tag":"MID2","device":"/dev/ttyUSB0","mode":1,"time":"1989-07-02T00:01:51.040Z","ept":0.005}
+DEBUG:root:01/01/1970 H:53:43 app.py | ValueError | GrabGPS() | NO GPS FOUND: {"class":"TPV","tag":"MID2","device":"/dev/ttyUSB0","mode":1,"time":"1989-07-02T00:01:52.040Z","ept":0.005}
+DEBUG:root:01/01/1970 H:53:45 app.py | ValueError | GrabGPS() | NO GPS FOUND: {"class":"SKY","tag":"MID4","device":"/dev/ttyUSB0","time":"1989-07-02T00:01:54.040Z","hdop":0.00}
+WARNING:root:01/01/1970 H:53:45 USB HAS BEEN RESET
+DEBUG:root:01/01/1970 H:53:47 app.py | ValueError | GrabGPS() | NO GPS FOUND: {"class":"TPV","tag":"MID2","device":"/dev/ttyUSB0","mode":1,"time":"1989-07-02T00:01:56.040Z","ept":0.005}
+DEBUG:root:01/01/1970 H:53:48 app.py | ValueError | GrabGPS() | NO GPS FOUND: {"class":"TPV","tag":"MID2","device":"/dev/ttyUSB0","mode":1,"time":"1989-07-02T00:01:57.040Z","ept":0.005}
+DEBUG:root:01/01/1970 H:53:50 app.py | ValueError | GrabGPS() | NO GPS FOUND: {"class":"TPV","tag":"MID2","device":"/dev/ttyUSB0","mode":1,"time":"1989-07-02T00:01:59.040Z","ept":0.005}
+DEBUG:root:01/01/1970 H:53:51 app.py | ValueError | GrabGPS() | NO GPS FOUND: {"class":"TPV","tag":"MID2","device":"/dev/ttyUSB0","mode":1,"time":"1989-07-02T00:02:00.040Z","ept":0.005}
+DEBUG:root:01/01/1970 H:53:53 app.py | ValueError | GrabGPS() | NO GPS FOUND: {"class":"TPV","tag":"MID2","device":"/dev/ttyUSB0","mode":1,"time":"1989-07-02T00:02:02.040Z","ept":0.005}
+DEBUG:root:01/01/1970 H:53:54 app.py | ValueError | GrabGPS() | NO GPS FOUND: {"class":"TPV","tag":"MID2","device":"/dev/ttyUSB0","mode":1,"time":"1989-07-02T00:02:03.040Z","ept":0.005}
+DEBUG:root:01/01/1970 H:53:56 app.py | ValueError | GrabGPS() | NO GPS FOUND: {"class":"TPV","tag":"MID2","device":"/dev/ttyUSB0","mode":1,"time":"1989-07-02T00:02:05.040Z","ept":0.005}
+DEBUG:root:01/01/1970 H:53:57 app.py | ValueError | GrabGPS() | NO GPS FOUND: {"class":"TPV","tag":"MID2","device":"/dev/ttyUSB0","mode":1,"time":"1989-07-02T00:02:06.040Z","ept":0.005}
+DEBUG:root:01/01/1970 H:53:59 app.py | ValueError | GrabGPS() | NO GPS FOUND: {"class":"TPV","tag":"MID2","device":"/dev/ttyUSB0","mode":1,"time":"1989-07-02T00:02:08.040Z","ept":0.005}
+DEBUG:root:01/01/1970 H:54:00 app.py | ValueError | GrabGPS() | NO GPS FOUND: {"class":"TPV","tag":"MID2","device":"/dev/ttyUSB0","mode":1,"time":"1989-07-02T00:02:09.040Z","ept":0.005}
+DEBUG:root:01/01/1970 H:54:02 app.py | ValueError | GrabGPS() | NO GPS FOUND: {"class":"TPV","tag":"MID2","device":"/dev/ttyUSB0","mode":1,"time":"1989-07-02T00:02:11.040Z","ept":0.005}
+DEBUG:root:01/01/1970 H:54:03 app.py | ValueError | GrabGPS() | NO GPS FOUND: {"class":"TPV","tag":"MID2","device":"/dev/ttyUSB0","mode":1,"time":"1989-07-02T00:02:12.040Z","ept":0.005}
+DEBUG:root:01/01/1970 H:54:05 app.py | ValueError | GrabGPS() | NO GPS FOUND: {"class":"TPV","tag":"MID2","device":"/dev/ttyUSB0","mode":1,"time":"1989-07-02T00:02:14.040Z","ept":0.005}
+DEBUG:root:01/01/1970 H:54:06 app.py | ValueError | GrabGPS() | NO GPS FOUND: {"class":"TPV","tag":"MID2","device":"/dev/ttyUSB0","mode":1,"time":"1989-07-02T00:02:15.040Z","ept":0.005}
+WARNING:root:01/01/1970 H:54:08 USB HAS BEEN RESET
+DEBUG:root:01/01/1970 H:54:08 app.py | ValueError | GrabGPS() | NO GPS FOUND: {"class":"TPV","tag":"MID2","device":"/dev/ttyUSB0","mode":1,"time":"1989-07-02T00:02:17.040Z","ept":0.005}
+DEBUG:root:01/01/1970 H:54:09 app.py | ValueError | GrabGPS() | NO GPS FOUND: {"class":"TPV","tag":"MID2","device":"/dev/ttyUSB0","mode":1,"time":"1989-07-02T00:02:18.040Z","ept":0.005}
+DEBUG:root:01/01/1970 H:54:11 app.py | ValueError | GrabGPS() | NO GPS FOUND: {"class":"TPV","tag":"MID2","device":"/dev/ttyUSB0","mode":1,"time":"1989-07-02T00:02:20.040Z","ept":0.005}
+DEBUG:root:01/01/1970 H:54:12 app.py | ValueError | GrabGPS() | NO GPS FOUND: {"class":"TPV","tag":"MID2","device":"/dev/ttyUSB0","mode":1,"time":"1989-07-02T00:02:21.040Z","ept":0.005}
+DEBUG:root:01/01/1970 H:54:14 app.py | ValueError | GrabGPS() | NO GPS FOUND: {"class":"TPV","tag":"MID2","device":"/dev/ttyUSB0","mode":1,"time":"1989-07-02T00:02:23.040Z","ept":0.005}
+DEBUG:root:01/01/1970 H:54:15 app.py | ValueError | GrabGPS() | NO GPS FOUND: {"class":"TPV","tag":"MID2","device":"/dev/ttyUSB0","mode":1,"time":"1989-07-02T00:02:24.040Z","ept":0.005}
+DEBUG:root:01/01/1970 H:54:17 app.py | ValueError | GrabGPS() | NO GPS FOUND: {"class":"TPV","tag":"MID2","device":"/dev/ttyUSB0","mode":1,"time":"1989-07-02T00:02:26.040Z","ept":0.005}
+DEBUG:root:01/01/1970 H:54:18 app.py | ValueError | GrabGPS() | NO GPS FOUND: {"class":"TPV","tag":"MID2","device":"/dev/ttyUSB0","mode":1,"time":"1989-07-02T00:02:27.040Z","ept":0.005}
+DEBUG:root:01/01/1970 H:54:20 app.py | ValueError | GrabGPS() | NO GPS FOUND: {"class":"TPV","tag":"MID2","device":"/dev/ttyUSB0","mode":1,"time":"1989-07-02T00:02:29.040Z","ept":0.005}
+DEBUG:root:01/01/1970 H:54:21 app.py | ValueError | GrabGPS() | NO GPS FOUND: {"class":"TPV","tag":"MID2","device":"/dev/ttyUSB0","mode":1,"time":"1989-07-02T00:02:30.040Z","ept":0.005}
+DEBUG:root:01/01/1970 H:54:23 app.py | ValueError | GrabGPS() | NO GPS FOUND: {"class":"TPV","tag":"MID2","device":"/dev/ttyUSB0","mode":1,"time":"1989-07-02T00:02:32.040Z","ept":0.005}
+DEBUG:root:01/01/1970 H:54:26 app.py | ValueError | GrabGPS() | NO GPS FOUND: {"class":"DEVICE","path":"/dev/ttyUSB0","activated":3266.431282}
+DEBUG:root:01/01/1970 H:54:27 app.py | ValueError | GrabGPS() | NO GPS FOUND: {"class":"TPV","tag":"MID2","device":"/dev/ttyUSB0","mode":1,"time":"1989-07-01T23:59:46.040Z","ept":0.005}
+DEBUG:root:01/01/1970 H:54:31 app.py | ValueError | GrabGPS() | NO GPS FOUND: {"class":"DEVICE","path":"/dev/ttyUSB0","activated":3271.171226}
+DEBUG:root:01/01/1970 H:54:31 app.py | ValueError | GrabGPS() | NO GPS FOUND: {"class":"TPV","tag":"MID2","device":"/dev/ttyUSB0","mode":1,"time":"1989-07-01T23:59:45.040Z","ept":0.005}
+DEBUG:root:01/01/1970 H:54:32 app.py | ValueError | GrabGPS() | NO GPS FOUND: {"class":"TPV","tag":"MID2","device":"/dev/ttyUSB0","mode":1,"time":"1989-07-01T23:59:46.040Z","ept":0.005}
+DEBUG:root:01/01/1970 H:54:33 app.py | ValueError | GrabGPS() | NO GPS FOUND: {"class":"TPV","tag":"MID2","device":"/dev/ttyUSB0","mode":1,"time":"1989-07-01T23:59:47.040Z","ept":0.005}
+DEBUG:root:01/01/1970 H:54:35 app.py | ValueError | GrabGPS() | NO GPS FOUND: {"class":"SKY","tag":"MID4","device":"/dev/ttyUSB0","time":"1989-07-01T23:59:49.040Z","hdop":0.00}
+DEBUG:root:01/01/1970 H:54:36 app.py | ValueError | GrabGPS() | NO GPS FOUND: {"class":"TPV","tag":"MID2","device":"/dev/ttyUSB0","mode":1,"time":"1989-07-01T23:59:51.050Z","ept":0.005}
+DEBUG:root:01/01/1970 H:54:38 app.py | ValueError | GrabGPS() | NO GPS FOUND: {"class":"TPV","tag":"MID2","device":"/dev/ttyUSB0","mode":1,"time":"1989-07-01T23:59:52.040Z","ept":0.005}
+DEBUG:root:01/01/1970 H:54:39 app.py | ValueError | GrabGPS() | NO GPS FOUND: {"class":"TPV","tag":"MID2","device":"/dev/ttyUSB0","mode":1,"time":"1989-07-01T23:59:54.050Z","ept":0.005}
+DEBUG:root:01/01/1970 H:54:43 app.py | ValueError | GrabGPS() | NO GPS FOUND: {"class":"DEVICE","path":"/dev/ttyUSB0","activated":3283.081394}
+DEBUG:root:01/01/1970 H:54:44 app.py | ValueError | GrabGPS() | NO GPS FOUND: {"class":"SKY","tag":"MID4","device":"/dev/ttyUSB0","time":"1989-07-01T23:59:46.040Z"}
+DEBUG:root:01/01/1970 H:54:45 app.py | ValueError | GrabGPS() | NO GPS FOUND: {"class":"TPV","tag":"MID2","device":"/dev/ttyUSB0","mode":1,"time":"1989-07-01T23:59:47.040Z","ept":0.005}
+DEBUG:root:01/01/1970 H:54:46 app.py | ValueError | GrabGPS() | NO GPS FOUND: {"class":"TPV","tag":"MID2","device":"/dev/ttyUSB0","mode":1,"time":"1989-07-01T23:59:48.050Z","ept":0.005}
+DEBUG:root:01/01/1970 H:54:47 app.py | ValueError | GrabGPS() | NO GPS FOUND: {"class":"SKY","tag":"MID4","device":"/dev/ttyUSB0","time":"1989-07-01T23:59:50.040Z","hdop":0.00}
+DEBUG:root:01/01/1970 H:54:49 app.py | ValueError | GrabGPS() | NO GPS FOUND: {"class":"TPV","tag":"MID2","device":"/dev/ttyUSB0","mode":1,"time":"1989-07-01T23:59:52.040Z","ept":0.005}
+DEBUG:root:01/01/1970 H:54:50 app.py | ValueError | GrabGPS() | NO GPS FOUND: {"class":"TPV","tag":"MID2","device":"/dev/ttyUSB0","mode":1,"time":"1989-07-01T23:59:53.040Z","ept":0.005}
+DEBUG:root:01/01/1970 H:54:52 app.py | ValueError | GrabGPS() | NO GPS FOUND: {"class":"TPV","tag":"MID2","device":"/dev/ttyUSB0","mode":1,"time":"1989-07-01T23:59:55.040Z","ept":0.005}
+DEBUG:root:01/01/1970 H:54:53 app.py | ValueError | GrabGPS() | NO GPS FOUND: {"class":"TPV","tag":"MID2","device":"/dev/ttyUSB0","mode":1,"time":"1989-07-01T23:59:56.040Z","ept":0.005}
+DEBUG:root:01/01/1970 H:54:55 app.py | ValueError | GrabGPS() | NO GPS FOUND: {"class":"TPV","tag":"MID2","device":"/dev/ttyUSB0","mode":1,"time":"1989-07-01T23:59:58.040Z","ept":0.005}
+DEBUG:root:01/01/1970 H:54:56 app.py | ValueError | GrabGPS() | NO GPS FOUND: {"class":"TPV","tag":"MID2","device":"/dev/ttyUSB0","mode":1,"time":"1989-07-01T23:59:59.040Z","ept":0.005}
+DEBUG:root:01/01/1970 H:54:58 app.py | ValueError | GrabGPS() | NO GPS FOUND: {"class":"TPV","tag":"MID2","device":"/dev/ttyUSB0","mode":1,"time":"1989-07-02T00:00:01.040Z","ept":0.005}
+DEBUG:root:01/01/1970 H:54:59 app.py | ValueError | GrabGPS() | NO GPS FOUND: {"class":"TPV","tag":"MID2","device":"/dev/ttyUSB0","mode":1,"time":"1989-07-02T00:00:02.040Z","ept":0.005}
+DEBUG:root:01/01/1970 H:55:01 app.py | ValueError | GrabGPS() | NO GPS FOUND: {"class":"TPV","tag":"MID2","device":"/dev/ttyUSB0","mode":1,"time":"1989-07-02T00:00:04.040Z","ept":0.005}
+DEBUG:root:01/01/1970 H:55:02 app.py | ValueError | GrabGPS() | NO GPS FOUND: {"class":"TPV","tag":"MID2","device":"/dev/ttyUSB0","mode":1,"time":"1989-07-02T00:00:05.040Z","ept":0.005}
+DEBUG:root:01/01/1970 H:55:04 app.py | ValueError | GrabGPS() | NO GPS FOUND: {"class":"TPV","tag":"MID2","device":"/dev/ttyUSB0","mode":1,"time":"1989-07-02T00:00:07.040Z","ept":0.005}
+DEBUG:root:01/01/1970 H:55:05 app.py | ValueError | GrabGPS() | NO GPS FOUND: {"class":"TPV","tag":"MID2","device":"/dev/ttyUSB0","mode":1,"time":"1989-07-02T00:00:08.040Z","ept":0.005}
+DEBUG:root:01/01/1970 H:55:07 app.py | ValueError | GrabGPS() | NO GPS FOUND: {"class":"TPV","tag":"MID2","device":"/dev/ttyUSB0","mode":1,"time":"1989-07-02T00:00:10.040Z","ept":0.005}
+DEBUG:root:01/01/1970 H:55:08 app.py | ValueError | GrabGPS() | NO GPS FOUND: {"class":"TPV","tag":"MID2","device":"/dev/ttyUSB0","mode":1,"time":"1989-07-02T00:00:11.040Z","ept":0.005}
+DEBUG:root:01/01/1970 H:55:10 app.py | ValueError | GrabGPS() | NO GPS FOUND: {"class":"TPV","tag":"MID2","device":"/dev/ttyUSB0","mode":1,"time":"1989-07-02T00:00:13.040Z","ept":0.005}
+DEBUG:root:01/01/1970 H:55:11 app.py | ValueError | GrabGPS() | NO GPS FOUND: {"class":"TPV","tag":"MID2","device":"/dev/ttyUSB0","mode":1,"time":"1989-07-02T00:00:14.040Z","ept":0.005}
+DEBUG:root:01/01/1970 H:55:13 app.py | ValueError | GrabGPS() | NO GPS FOUND: {"class":"TPV","tag":"MID2","device":"/dev/ttyUSB0","mode":1,"time":"1989-07-02T00:00:16.040Z","ept":0.005}
+DEBUG:root:01/01/1970 H:55:14 app.py | ValueError | GrabGPS() | NO GPS FOUND: {"class":"TPV","tag":"MID2","device":"/dev/ttyUSB0","mode":1,"time":"1989-07-02T00:00:17.040Z","ept":0.005}
+DEBUG:root:01/01/1970 H:55:16 app.py | ValueError | GrabGPS() | NO GPS FOUND: {"class":"TPV","tag":"MID2","device":"/dev/ttyUSB0","mode":1,"time":"1989-07-02T00:00:19.040Z","ept":0.005}
+DEBUG:root:01/01/1970 H:55:17 app.py | ValueError | GrabGPS() | NO GPS FOUND: {"class":"TPV","tag":"MID2","device":"/dev/ttyUSB0","mode":1,"time":"1989-07-02T00:00:20.040Z","ept":0.005}
+DEBUG:root:01/01/1970 H:55:19 app.py | ValueError | GrabGPS() | NO GPS FOUND: {"class":"TPV","tag":"MID2","device":"/dev/ttyUSB0","mode":1,"time":"1989-07-02T00:00:22.040Z","ept":0.005}
+DEBUG:root:01/01/1970 H:55:20 app.py | ValueError | GrabGPS() | NO GPS FOUND: {"class":"TPV","tag":"MID2","device":"/dev/ttyUSB0","mode":1,"time":"1989-07-02T00:00:23.040Z","ept":0.005}
+WARNING:root:01/01/1970 H:55:21 USB HAS BEEN RESET
+DEBUG:root:01/01/1970 H:55:22 app.py | ValueError | GrabGPS() | NO GPS FOUND: {"class":"TPV","tag":"MID2","device":"/dev/ttyUSB0","mode":1,"time":"1989-07-02T00:00:25.040Z","ept":0.005}
+DEBUG:root:01/01/1970 H:55:23 app.py | ValueError | GrabGPS() | NO GPS FOUND: {"class":"TPV","tag":"MID2","device":"/dev/ttyUSB0","mode":1,"time":"1989-07-02T00:00:26.040Z","ept":0.005}
+DEBUG:root:01/01/1970 H:55:25 app.py | ValueError | GrabGPS() | NO GPS FOUND: {"class":"TPV","tag":"MID2","device":"/dev/ttyUSB0","mode":1,"time":"1989-07-02T00:00:28.040Z","ept":0.005}
+DEBUG:root:01/01/1970 H:55:26 app.py | ValueError | GrabGPS() | NO GPS FOUND: {"class":"TPV","tag":"MID2","device":"/dev/ttyUSB0","mode":1,"time":"1989-07-02T00:00:29.040Z","ept":0.005}
+DEBUG:root:01/01/1970 H:55:28 app.py | ValueError | GrabGPS() | NO GPS FOUND: {"class":"TPV","tag":"MID2","device":"/dev/ttyUSB0","mode":1,"time":"1989-07-02T00:00:31.040Z","ept":0.005}
+DEBUG:root:01/01/1970 H:55:29 app.py | ValueError | GrabGPS() | NO GPS FOUND: {"class":"TPV","tag":"MID2","device":"/dev/ttyUSB0","mode":1,"time":"1989-07-02T00:00:32.040Z","ept":0.005}
+DEBUG:root:01/01/1970 H:55:31 app.py | ValueError | GrabGPS() | NO GPS FOUND: {"class":"TPV","tag":"MID2","device":"/dev/ttyUSB0","mode":1,"time":"1989-07-02T00:00:34.040Z","ept":0.005}
+DEBUG:root:01/01/1970 H:55:32 app.py | ValueError | GrabGPS() | NO GPS FOUND: {"class":"TPV","tag":"MID2","device":"/dev/ttyUSB0","mode":1,"time":"1989-07-02T00:00:35.040Z","ept":0.005}
+DEBUG:root:01/01/1970 H:55:34 app.py | ValueError | GrabGPS() | NO GPS FOUND: {"class":"TPV","tag":"MID2","device":"/dev/ttyUSB0","mode":1,"time":"1989-07-02T00:00:37.040Z","ept":0.005}
+DEBUG:root:01/01/1970 H:55:35 app.py | ValueError | GrabGPS() | NO GPS FOUND: {"class":"TPV","tag":"MID2","device":"/dev/ttyUSB0","mode":1,"time":"1989-07-02T00:00:38.040Z","ept":0.005}
+DEBUG:root:01/01/1970 H:55:37 app.py | ValueError | GrabGPS() | NO GPS FOUND: {"class":"TPV","tag":"MID2","device":"/dev/ttyUSB0","mode":1,"time":"1989-07-02T00:00:40.040Z","ept":0.005}
+DEBUG:root:01/01/1970 H:55:38 app.py | ValueError | GrabGPS() | NO GPS FOUND: {"class":"TPV","tag":"MID2","device":"/dev/ttyUSB0","mode":1,"time":"1989-07-02T00:00:41.040Z","ept":0.005}
+DEBUG:root:01/01/1970 H:55:40 app.py | ValueError | GrabGPS() | NO GPS FOUND: {"class":"TPV","tag":"MID2","device":"/dev/ttyUSB0","mode":1,"time":"1989-07-02T00:00:43.040Z","ept":0.005}
+DEBUG:root:01/01/1970 H:55:41 app.py | ValueError | GrabGPS() | NO GPS FOUND: {"class":"TPV","tag":"MID2","device":"/dev/ttyUSB0","mode":1,"time":"1989-07-02T00:00:44.040Z","ept":0.005}
+DEBUG:root:01/01/1970 H:55:43 app.py | ValueError | GrabGPS() | NO GPS FOUND: {"class":"TPV","tag":"MID2","device":"/dev/ttyUSB0","mode":1,"time":"1989-07-02T00:00:46.040Z","ept":0.005}
+WARNING:root:01/01/1970 H:55:43 USB HAS BEEN RESET
+DEBUG:root:01/01/1970 H:55:44 app.py | ValueError | GrabGPS() | NO GPS FOUND: {"class":"TPV","tag":"MID2","device":"/dev/ttyUSB0","mode":1,"time":"1989-07-02T00:00:47.040Z","ept":0.005}
+DEBUG:root:01/01/1970 H:55:46 app.py | ValueError | GrabGPS() | NO GPS FOUND: {"class":"TPV","tag":"MID2","device":"/dev/ttyUSB0","mode":1,"time":"1989-07-02T00:00:49.040Z","ept":0.005}
+DEBUG:root:01/01/1970 H:55:47 app.py | ValueError | GrabGPS() | NO GPS FOUND: {"class":"TPV","tag":"MID2","device":"/dev/ttyUSB0","mode":1,"time":"1989-07-02T00:00:50.040Z","ept":0.005}
+DEBUG:root:01/01/1970 H:55:49 app.py | ValueError | GrabGPS() | NO GPS FOUND: {"class":"SKY","tag":"MID4","device":"/dev/ttyUSB0","time":"1989-07-02T00:00:52.040Z","hdop":0.00}
+DEBUG:root:01/01/1970 H:55:51 app.py | ValueError | GrabGPS() | NO GPS FOUND: {"class":"TPV","tag":"MID2","device":"/dev/ttyUSB0","mode":1,"time":"1989-07-02T00:00:54.050Z","ept":0.005}
+DEBUG:root:01/01/1970 H:55:52 app.py | ValueError | GrabGPS() | NO GPS FOUND: {"class":"TPV","tag":"MID2","device":"/dev/ttyUSB0","mode":1,"time":"1989-07-02T00:00:55.040Z","ept":0.005}
+DEBUG:root:01/01/1970 H:55:54 app.py | ValueError | GrabGPS() | NO GPS FOUND: {"class":"TPV","tag":"MID2","device":"/dev/ttyUSB0","mode":1,"time":"1989-07-02T00:00:57.050Z","ept":0.005}
+DEBUG:root:01/01/1970 H:55:55 app.py | ValueError | GrabGPS() | NO GPS FOUND: {"class":"TPV","tag":"MID2","device":"/dev/ttyUSB0","mode":1,"time":"1989-07-02T00:00:58.040Z","ept":0.005}
+DEBUG:root:01/01/1970 H:55:57 app.py | ValueError | GrabGPS() | NO GPS FOUND: {"class":"TPV","tag":"MID2","device":"/dev/ttyUSB0","mode":1,"time":"1989-07-02T00:01:00.050Z","ept":0.005}
+DEBUG:root:01/01/1970 H:55:58 app.py | ValueError | GrabGPS() | NO GPS FOUND: {"class":"TPV","tag":"MID2","device":"/dev/ttyUSB0","mode":1,"time":"1989-07-02T00:01:01.040Z","ept":0.005}
+DEBUG:root:01/01/1970 H:56:00 app.py | ValueError | GrabGPS() | NO GPS FOUND: {"class":"TPV","tag":"MID2","device":"/dev/ttyUSB0","mode":1,"time":"1989-07-02T00:01:03.050Z","ept":0.005}
+DEBUG:root:01/01/1970 H:56:01 app.py | ValueError | GrabGPS() | NO GPS FOUND: {"class":"TPV","tag":"MID2","device":"/dev/ttyUSB0","mode":1,"time":"1989-07-02T00:01:04.040Z","ept":0.005}
+DEBUG:root:01/01/1970 H:56:03 app.py | ValueError | GrabGPS() | NO GPS FOUND: {"class":"TPV","tag":"MID2","device":"/dev/ttyUSB0","mode":1,"time":"1989-07-02T00:01:06.050Z","ept":0.005}
+DEBUG:root:01/01/1970 H:56:04 app.py | ValueError | GrabGPS() | NO GPS FOUND: {"class":"TPV","tag":"MID2","device":"/dev/ttyUSB0","mode":1,"time":"1989-07-02T00:01:07.040Z","ept":0.005}
+WARNING:root:01/01/1970 H:56:06 USB HAS BEEN RESET
+DEBUG:root:01/01/1970 H:56:06 app.py | ValueError | GrabGPS() | NO GPS FOUND: {"class":"TPV","tag":"MID2","device":"/dev/ttyUSB0","mode":1,"time":"1989-07-02T00:01:09.060Z","ept":0.005}
+DEBUG:root:01/01/1970 H:56:07 app.py | ValueError | GrabGPS() | NO GPS FOUND: {"class":"TPV","tag":"MID2","device":"/dev/ttyUSB0","mode":1,"time":"1989-07-02T00:01:10.040Z","ept":0.005}
+DEBUG:root:01/01/1970 H:56:09 app.py | ValueError | GrabGPS() | NO GPS FOUND: {"class":"TPV","tag":"MID2","device":"/dev/ttyUSB0","mode":1,"time":"1989-07-02T00:01:12.050Z","ept":0.005}
+DEBUG:root:01/01/1970 H:56:10 app.py | ValueError | GrabGPS() | NO GPS FOUND: {"class":"TPV","tag":"MID2","device":"/dev/ttyUSB0","mode":1,"time":"1989-07-02T00:01:13.040Z","ept":0.005}
+DEBUG:root:01/01/1970 H:56:12 app.py | ValueError | GrabGPS() | NO GPS FOUND: {"class":"TPV","tag":"MID2","device":"/dev/ttyUSB0","mode":1,"time":"1989-07-02T00:01:15.050Z","ept":0.005}
+DEBUG:root:01/01/1970 H:56:13 app.py | ValueError | GrabGPS() | NO GPS FOUND: {"class":"TPV","tag":"MID2","device":"/dev/ttyUSB0","mode":1,"time":"1989-07-02T00:01:16.040Z","ept":0.005}
+DEBUG:root:01/01/1970 H:56:15 app.py | ValueError | GrabGPS() | NO GPS FOUND: {"class":"TPV","tag":"MID2","device":"/dev/ttyUSB0","mode":1,"time":"1989-07-02T00:01:18.050Z","ept":0.005}
+DEBUG:root:01/01/1970 H:56:16 app.py | ValueError | GrabGPS() | NO GPS FOUND: {"class":"TPV","tag":"MID2","device":"/dev/ttyUSB0","mode":1,"time":"1989-07-02T00:01:19.040Z","ept":0.005}
+DEBUG:root:01/01/1970 H:56:18 app.py | ValueError | GrabGPS() | NO GPS FOUND: {"class":"TPV","tag":"MID2","device":"/dev/ttyUSB0","mode":1,"time":"1989-07-02T00:01:21.050Z","ept":0.005}
+DEBUG:root:01/01/1970 H:56:19 app.py | ValueError | GrabGPS() | NO GPS FOUND: {"class":"TPV","tag":"MID2","device":"/dev/ttyUSB0","mode":1,"time":"1989-07-02T00:01:22.040Z","ept":0.005}
+DEBUG:root:01/01/1970 H:56:21 app.py | ValueError | GrabGPS() | NO GPS FOUND: {"class":"TPV","tag":"MID2","device":"/dev/ttyUSB0","mode":1,"time":"1989-07-02T00:01:24.060Z","ept":0.005}
+DEBUG:root:01/01/1970 H:56:22 app.py | ValueError | GrabGPS() | NO GPS FOUND: {"class":"TPV","tag":"MID2","device":"/dev/ttyUSB0","mode":1,"time":"1989-07-02T00:01:25.040Z","ept":0.005}
+DEBUG:root:01/01/1970 H:56:24 app.py | ValueError | GrabGPS() | NO GPS FOUND: {"class":"TPV","tag":"MID2","device":"/dev/ttyUSB0","mode":1,"time":"1989-07-02T00:01:27.050Z","ept":0.005}
+DEBUG:root:01/01/1970 H:56:25 app.py | ValueError | GrabGPS() | NO GPS FOUND: {"class":"TPV","tag":"MID2","device":"/dev/ttyUSB0","mode":1,"time":"1989-07-02T00:01:28.040Z","ept":0.005}
+DEBUG:root:01/01/1970 H:56:27 app.py | ValueError | GrabGPS() | NO GPS FOUND: {"class":"TPV","tag":"MID2","device":"/dev/ttyUSB0","mode":1,"time":"1989-07-02T00:01:30.050Z","ept":0.005}
+WARNING:root:01/01/1970 H:56:28 USB HAS BEEN RESET
+DEBUG:root:01/01/1970 H:56:28 app.py | ValueError | GrabGPS() | NO GPS FOUND: {"class":"TPV","tag":"MID2","device":"/dev/ttyUSB0","mode":1,"time":"1989-07-02T00:01:31.040Z","ept":0.005}
+DEBUG:root:01/01/1970 H:56:30 app.py | ValueError | GrabGPS() | NO GPS FOUND: {"class":"TPV","tag":"MID2","device":"/dev/ttyUSB0","mode":1,"time":"1989-07-02T00:01:33.060Z","ept":0.005}
+DEBUG:root:01/01/1970 H:56:31 app.py | ValueError | GrabGPS() | NO GPS FOUND: {"class":"TPV","tag":"MID2","device":"/dev/ttyUSB0","mode":1,"time":"1989-07-02T00:01:34.040Z","ept":0.005}
+DEBUG:root:01/01/1970 H:56:33 app.py | ValueError | GrabGPS() | NO GPS FOUND: {"class":"TPV","tag":"MID2","device":"/dev/ttyUSB0","mode":1,"time":"1989-07-02T00:01:36.040Z","ept":0.005}
+DEBUG:root:01/01/1970 H:56:34 app.py | ValueError | GrabGPS() | NO GPS FOUND: {"class":"TPV","tag":"MID2","device":"/dev/ttyUSB0","mode":1,"time":"1989-07-02T00:01:37.040Z","ept":0.005}
+DEBUG:root:01/01/1970 H:56:36 app.py | ValueError | GrabGPS() | NO GPS FOUND: {"class":"TPV","tag":"MID2","device":"/dev/ttyUSB0","mode":1,"time":"1989-07-02T00:01:39.040Z","ept":0.005}
+DEBUG:root:01/01/1970 H:56:37 app.py | ValueError | GrabGPS() | NO GPS FOUND: {"class":"TPV","tag":"MID2","device":"/dev/ttyUSB0","mode":1,"time":"1989-07-02T00:01:40.040Z","ept":0.005}
+DEBUG:root:01/01/1970 H:56:39 app.py | ValueError | GrabGPS() | NO GPS FOUND: {"class":"TPV","tag":"MID2","device":"/dev/ttyUSB0","mode":1,"time":"1989-07-02T00:01:42.040Z","ept":0.005}
+DEBUG:root:01/01/1970 H:56:40 app.py | ValueError | GrabGPS() | NO GPS FOUND: {"class":"TPV","tag":"MID2","device":"/dev/ttyUSB0","mode":1,"time":"1989-07-02T00:01:43.040Z","ept":0.005}
+DEBUG:root:01/01/1970 H:56:42 app.py | ValueError | GrabGPS() | NO GPS FOUND: {"class":"TPV","tag":"MID2","device":"/dev/ttyUSB0","mode":1,"time":"1989-07-02T00:01:45.040Z","ept":0.005}
+DEBUG:root:01/01/1970 H:56:43 app.py | ValueError | GrabGPS() | NO GPS FOUND: {"class":"TPV","tag":"MID2","device":"/dev/ttyUSB0","mode":1,"time":"1989-07-02T00:01:46.040Z","ept":0.005}
+DEBUG:root:01/01/1970 H:56:45 app.py | ValueError | GrabGPS() | NO GPS FOUND: {"class":"TPV","tag":"MID2","device":"/dev/ttyUSB0","mode":1,"time":"1989-07-02T00:01:48.040Z","ept":0.005}
+DEBUG:root:01/01/1970 H:56:46 app.py | ValueError | GrabGPS() | NO GPS FOUND: {"class":"TPV","tag":"MID2","device":"/dev/ttyUSB0","mode":1,"time":"1989-07-02T00:01:49.040Z","ept":0.005}
+DEBUG:root:01/01/1970 H:56:48 app.py | ValueError | GrabGPS() | NO GPS FOUND: {"class":"TPV","tag":"MID2","device":"/dev/ttyUSB0","mode":1,"time":"1989-07-02T00:01:51.040Z","ept":0.005}
+DEBUG:root:01/01/1970 H:56:50 app.py | ValueError | GrabGPS() | NO GPS FOUND: {"class":"TPV","tag":"MID2","device":"/dev/ttyUSB0","mode":1,"time":"1989-07-02T00:01:53.040Z","ept":0.005}
+WARNING:root:01/01/1970 H:56:50 USB HAS BEEN RESET
+DEBUG:root:01/01/1970 H:56:51 app.py | ValueError | GrabGPS() | NO GPS FOUND: {"class":"TPV","tag":"MID2","device":"/dev/ttyUSB0","mode":1,"time":"1989-07-02T00:01:54.040Z","ept":0.005}
+DEBUG:root:01/01/1970 H:56:53 app.py | ValueError | GrabGPS() | NO GPS FOUND: {"class":"TPV","tag":"MID2","device":"/dev/ttyUSB0","mode":1,"time":"1989-07-02T00:01:56.040Z","ept":0.005}
+DEBUG:root:01/01/1970 H:56:54 app.py | ValueError | GrabGPS() | NO GPS FOUND: {"class":"TPV","tag":"MID2","device":"/dev/ttyUSB0","mode":1,"time":"1989-07-02T00:01:57.040Z","ept":0.005}
+DEBUG:root:01/01/1970 H:56:56 app.py | ValueError | GrabGPS() | NO GPS FOUND: {"class":"TPV","tag":"MID2","device":"/dev/ttyUSB0","mode":1,"time":"1989-07-02T00:01:59.040Z","ept":0.005}
+DEBUG:root:01/01/1970 H:56:57 app.py | ValueError | GrabGPS() | NO GPS FOUND: {"class":"TPV","tag":"MID2","device":"/dev/ttyUSB0","mode":1,"time":"1989-07-02T00:02:00.040Z","ept":0.005}
+DEBUG:root:01/01/1970 H:56:59 app.py | ValueError | GrabGPS() | NO GPS FOUND: {"class":"TPV","tag":"MID2","device":"/dev/ttyUSB0","mode":1,"time":"1989-07-02T00:02:02.040Z","ept":0.005}
+DEBUG:root:01/01/1970 H:57:00 app.py | ValueError | GrabGPS() | NO GPS FOUND: {"class":"TPV","tag":"MID2","device":"/dev/ttyUSB0","mode":1,"time":"1989-07-02T00:02:03.040Z","ept":0.005}
+DEBUG:root:01/01/1970 H:57:02 app.py | ValueError | GrabGPS() | NO GPS FOUND: {"class":"TPV","tag":"MID2","device":"/dev/ttyUSB0","mode":1,"time":"1989-07-02T00:02:05.040Z","ept":0.005}
+DEBUG:root:01/01/1970 H:57:03 app.py | ValueError | GrabGPS() | NO GPS FOUND: {"class":"TPV","tag":"MID2","device":"/dev/ttyUSB0","mode":1,"time":"1989-07-02T00:02:06.040Z","ept":0.005}
+DEBUG:root:01/01/1970 H:57:05 app.py | ValueError | GrabGPS() | NO GPS FOUND: {"class":"TPV","tag":"MID2","device":"/dev/ttyUSB0","mode":1,"time":"1989-07-02T00:02:08.040Z","ept":0.005}
+DEBUG:root:01/01/1970 H:57:06 app.py | ValueError | GrabGPS() | NO GPS FOUND: {"class":"TPV","tag":"MID2","device":"/dev/ttyUSB0","mode":1,"time":"1989-07-02T00:02:09.040Z","ept":0.005}
+DEBUG:root:01/01/1970 H:57:08 app.py | ValueError | GrabGPS() | NO GPS FOUND: {"class":"TPV","tag":"MID2","device":"/dev/ttyUSB0","mode":1,"time":"1989-07-02T00:02:11.040Z","ept":0.005}
+DEBUG:root:01/01/1970 H:57:09 app.py | ValueError | GrabGPS() | NO GPS FOUND: {"class":"TPV","tag":"MID2","device":"/dev/ttyUSB0","mode":1,"time":"1989-07-02T00:02:12.040Z","ept":0.005}
+DEBUG:root:01/01/1970 H:57:11 app.py | ValueError | GrabGPS() | NO GPS FOUND: {"class":"TPV","tag":"MID2","device":"/dev/ttyUSB0","mode":1,"time":"1989-07-02T00:02:14.040Z","ept":0.005}
+DEBUG:root:01/01/1970 H:57:12 app.py | ValueError | GrabGPS() | NO GPS FOUND: {"class":"TPV","tag":"MID2","device":"/dev/ttyUSB0","mode":1,"time":"1989-07-02T00:02:15.040Z","ept":0.005}
+WARNING:root:01/01/1970 H:57:13 USB HAS BEEN RESET
+DEBUG:root:01/01/1970 H:57:14 app.py | ValueError | GrabGPS() | NO GPS FOUND: {"class":"TPV","tag":"MID2","device":"/dev/ttyUSB0","mode":1,"time":"1989-07-02T00:02:17.040Z","ept":0.005}
+DEBUG:root:01/01/1970 H:57:15 app.py | ValueError | GrabGPS() | NO GPS FOUND: {"class":"TPV","tag":"MID2","device":"/dev/ttyUSB0","mode":1,"time":"1989-07-02T00:02:18.040Z","ept":0.005}
+DEBUG:root:01/01/1970 H:57:17 app.py | ValueError | GrabGPS() | NO GPS FOUND: {"class":"TPV","tag":"MID2","device":"/dev/ttyUSB0","mode":1,"time":"1989-07-02T00:02:20.040Z","ept":0.005}
+DEBUG:root:01/01/1970 H:57:18 app.py | ValueError | GrabGPS() | NO GPS FOUND: {"class":"TPV","tag":"MID2","device":"/dev/ttyUSB0","mode":1,"time":"1989-07-02T00:02:21.040Z","ept":0.005}
+DEBUG:root:01/01/1970 H:57:20 app.py | ValueError | GrabGPS() | NO GPS FOUND: {"class":"TPV","tag":"MID2","device":"/dev/ttyUSB0","mode":1,"time":"1989-07-02T00:02:23.040Z","ept":0.005}
+DEBUG:root:01/01/1970 H:57:21 app.py | ValueError | GrabGPS() | NO GPS FOUND: {"class":"TPV","tag":"MID2","device":"/dev/ttyUSB0","mode":1,"time":"1989-07-02T00:02:24.040Z","ept":0.005}
+DEBUG:root:01/01/1970 H:57:23 app.py | ValueError | GrabGPS() | NO GPS FOUND: {"class":"TPV","tag":"MID2","device":"/dev/ttyUSB0","mode":1,"time":"1989-07-02T00:02:26.040Z","ept":0.005}
+DEBUG:root:01/01/1970 H:57:24 app.py | ValueError | GrabGPS() | NO GPS FOUND: {"class":"TPV","tag":"MID2","device":"/dev/ttyUSB0","mode":1,"time":"1989-07-02T00:02:27.040Z","ept":0.005}
+DEBUG:root:01/01/1970 H:57:26 app.py | ValueError | GrabGPS() | NO GPS FOUND: {"class":"TPV","tag":"MID2","device":"/dev/ttyUSB0","mode":1,"time":"1989-07-02T00:02:29.040Z","ept":0.005}
+DEBUG:root:01/01/1970 H:57:27 app.py | ValueError | GrabGPS() | NO GPS FOUND: {"class":"TPV","tag":"MID2","device":"/dev/ttyUSB0","mode":1,"time":"1989-07-02T00:02:30.040Z","ept":0.005}
+DEBUG:root:01/01/1970 H:57:29 app.py | ValueError | GrabGPS() | NO GPS FOUND: {"class":"TPV","tag":"MID2","device":"/dev/ttyUSB0","mode":1,"time":"1989-07-02T00:02:32.040Z","ept":0.005}
+DEBUG:root:01/01/1970 H:57:30 app.py | ValueError | GrabGPS() | NO GPS FOUND: {"class":"TPV","tag":"MID2","device":"/dev/ttyUSB0","mode":1,"time":"1989-07-02T00:02:33.040Z","ept":0.005}
+DEBUG:root:01/01/1970 H:57:32 app.py | ValueError | GrabGPS() | NO GPS FOUND: {"class":"TPV","tag":"MID2","device":"/dev/ttyUSB0","mode":1,"time":"1989-07-02T00:02:35.040Z","ept":0.005}
+DEBUG:root:01/01/1970 H:57:33 app.py | ValueError | GrabGPS() | NO GPS FOUND: {"class":"TPV","tag":"MID2","device":"/dev/ttyUSB0","mode":1,"time":"1989-07-02T00:02:36.040Z","ept":0.005}
+DEBUG:root:01/01/1970 H:57:35 app.py | ValueError | GrabGPS() | NO GPS FOUND: {"class":"TPV","tag":"MID2","device":"/dev/ttyUSB0","mode":1,"time":"1989-07-02T00:02:38.040Z","ept":0.005}
+WARNING:root:01/01/1970 H:57:35 USB HAS BEEN RESET
+DEBUG:root:01/01/1970 H:57:36 app.py | ValueError | GrabGPS() | NO GPS FOUND: {"class":"TPV","tag":"MID2","device":"/dev/ttyUSB0","mode":1,"time":"1989-07-02T00:02:39.040Z","ept":0.005}
+DEBUG:root:01/01/1970 H:57:38 app.py | ValueError | GrabGPS() | NO GPS FOUND: {"class":"TPV","tag":"MID2","device":"/dev/ttyUSB0","mode":1,"time":"1989-07-02T00:02:41.040Z","ept":0.005}
+DEBUG:root:01/01/1970 H:57:39 app.py | ValueError | GrabGPS() | NO GPS FOUND: {"class":"TPV","tag":"MID2","device":"/dev/ttyUSB0","mode":1,"time":"1989-07-02T00:02:42.040Z","ept":0.005}
+DEBUG:root:01/01/1970 H:57:41 app.py | ValueError | GrabGPS() | NO GPS FOUND: {"class":"TPV","tag":"MID2","device":"/dev/ttyUSB0","mode":1,"time":"1989-07-02T00:02:44.040Z","ept":0.005}
+DEBUG:root:01/01/1970 H:57:42 app.py | ValueError | GrabGPS() | NO GPS FOUND: {"class":"TPV","tag":"MID2","device":"/dev/ttyUSB0","mode":1,"time":"1989-07-02T00:02:45.040Z","ept":0.005}
+DEBUG:root:01/01/1970 H:57:44 app.py | ValueError | GrabGPS() | NO GPS FOUND: {"class":"TPV","tag":"MID2","device":"/dev/ttyUSB0","mode":1,"time":"1989-07-02T00:02:47.040Z","ept":0.005}
+DEBUG:root:01/01/1970 H:57:45 app.py | ValueError | GrabGPS() | NO GPS FOUND: {"class":"TPV","tag":"MID2","device":"/dev/ttyUSB0","mode":1,"time":"1989-07-02T00:02:48.040Z","ept":0.005}
+DEBUG:root:01/01/1970 H:57:47 app.py | ValueError | GrabGPS() | NO GPS FOUND: {"class":"TPV","tag":"MID2","device":"/dev/ttyUSB0","mode":1,"time":"1989-07-02T00:02:50.040Z","ept":0.005}
+DEBUG:root:01/01/1970 H:57:48 app.py | ValueError | GrabGPS() | NO GPS FOUND: {"class":"TPV","tag":"MID2","device":"/dev/ttyUSB0","mode":1,"time":"1989-07-02T00:02:51.040Z","ept":0.005}
+DEBUG:root:01/01/1970 H:57:50 app.py | ValueError | GrabGPS() | NO GPS FOUND: {"class":"TPV","tag":"MID2","device":"/dev/ttyUSB0","mode":1,"time":"1989-07-02T00:02:53.040Z","ept":0.005}
+DEBUG:root:01/01/1970 H:57:51 app.py | ValueError | GrabGPS() | NO GPS FOUND: {"class":"TPV","tag":"MID2","device":"/dev/ttyUSB0","mode":1,"time":"1989-07-02T00:02:54.040Z","ept":0.005}
+DEBUG:root:01/01/1970 H:57:53 app.py | ValueError | GrabGPS() | NO GPS FOUND: {"class":"SKY","tag":"MID4","device":"/dev/ttyUSB0","time":"1989-07-02T00:02:56.040Z","hdop":0.00}
+DEBUG:root:01/01/1970 H:57:55 app.py | ValueError | GrabGPS() | NO GPS FOUND: {"class":"TPV","tag":"MID2","device":"/dev/ttyUSB0","mode":1,"time":"1989-07-02T00:02:58.040Z","ept":0.005}
+DEBUG:root:01/01/1970 H:57:56 app.py | ValueError | GrabGPS() | NO GPS FOUND: {"class":"TPV","tag":"MID2","device":"/dev/ttyUSB0","mode":1,"time":"1989-07-02T00:02:59.040Z","ept":0.005}
+WARNING:root:01/01/1970 H:57:57 USB HAS BEEN RESET
+DEBUG:root:01/01/1970 H:57:58 app.py | ValueError | GrabGPS() | NO GPS FOUND: {"class":"TPV","tag":"MID2","device":"/dev/ttyUSB0","mode":1,"time":"1989-07-02T00:03:01.040Z","ept":0.005}
+DEBUG:root:01/01/1970 H:57:59 app.py | ValueError | GrabGPS() | NO GPS FOUND: {"class":"TPV","tag":"MID2","device":"/dev/ttyUSB0","mode":1,"time":"1989-07-02T00:03:02.040Z","ept":0.005}
+DEBUG:root:01/01/1970 H:58:01 app.py | ValueError | GrabGPS() | NO GPS FOUND: {"class":"TPV","tag":"MID2","device":"/dev/ttyUSB0","mode":1,"time":"1989-07-02T00:03:04.040Z","ept":0.005}
+DEBUG:root:01/01/1970 H:58:02 app.py | ValueError | GrabGPS() | NO GPS FOUND: {"class":"TPV","tag":"MID2","device":"/dev/ttyUSB0","mode":1,"time":"1989-07-02T00:03:05.040Z","ept":0.005}
+DEBUG:root:01/01/1970 H:58:04 app.py | ValueError | GrabGPS() | NO GPS FOUND: {"class":"TPV","tag":"MID2","device":"/dev/ttyUSB0","mode":1,"time":"1989-07-02T00:03:07.040Z","ept":0.005}
+DEBUG:root:01/01/1970 H:58:05 app.py | ValueError | GrabGPS() | NO GPS FOUND: {"class":"TPV","tag":"MID2","device":"/dev/ttyUSB0","mode":1,"time":"1989-07-02T00:03:08.040Z","ept":0.005}
+DEBUG:root:01/01/1970 H:58:07 app.py | ValueError | GrabGPS() | NO GPS FOUND: {"class":"TPV","tag":"MID2","device":"/dev/ttyUSB0","mode":1,"time":"1989-07-02T00:03:10.040Z","ept":0.005}
+DEBUG:root:01/01/1970 H:58:08 app.py | ValueError | GrabGPS() | NO GPS FOUND: {"class":"TPV","tag":"MID2","device":"/dev/ttyUSB0","mode":1,"time":"1989-07-02T00:03:11.040Z","ept":0.005}
+DEBUG:root:01/01/1970 H:58:10 app.py | ValueError | GrabGPS() | NO GPS FOUND: {"class":"TPV","tag":"MID2","device":"/dev/ttyUSB0","mode":1,"time":"1989-07-02T00:03:13.040Z","ept":0.005}
+DEBUG:root:01/01/1970 H:58:11 app.py | ValueError | GrabGPS() | NO GPS FOUND: {"class":"TPV","tag":"MID2","device":"/dev/ttyUSB0","mode":1,"time":"1989-07-02T00:03:14.040Z","ept":0.005}
+DEBUG:root:01/01/1970 H:58:13 app.py | ValueError | GrabGPS() | NO GPS FOUND: {"class":"TPV","tag":"MID2","device":"/dev/ttyUSB0","mode":1,"time":"1989-07-02T00:03:16.040Z","ept":0.005}
+DEBUG:root:01/01/1970 H:58:14 app.py | ValueError | GrabGPS() | NO GPS FOUND: {"class":"TPV","tag":"MID2","device":"/dev/ttyUSB0","mode":1,"time":"1989-07-02T00:03:17.040Z","ept":0.005}
+DEBUG:root:01/01/1970 H:58:16 app.py | ValueError | GrabGPS() | NO GPS FOUND: {"class":"TPV","tag":"MID2","device":"/dev/ttyUSB0","mode":1,"time":"1989-07-02T00:03:19.040Z","ept":0.005}
+DEBUG:root:01/01/1970 H:58:17 app.py | ValueError | GrabGPS() | NO GPS FOUND: {"class":"TPV","tag":"MID2","device":"/dev/ttyUSB0","mode":1,"time":"1989-07-02T00:03:20.040Z","ept":0.005}
+DEBUG:root:01/01/1970 H:58:19 app.py | ValueError | GrabGPS() | NO GPS FOUND: {"class":"TPV","tag":"MID2","device":"/dev/ttyUSB0","mode":1,"time":"1989-07-02T00:03:22.040Z","ept":0.005}
+WARNING:root:01/01/1970 H:58:20 USB HAS BEEN RESET
+DEBUG:root:01/01/1970 H:58:20 app.py | ValueError | GrabGPS() | NO GPS FOUND: {"class":"TPV","tag":"MID2","device":"/dev/ttyUSB0","mode":1,"time":"1989-07-02T00:03:23.040Z","ept":0.005}
+DEBUG:root:01/01/1970 H:58:22 app.py | ValueError | GrabGPS() | NO GPS FOUND: {"class":"TPV","tag":"MID2","device":"/dev/ttyUSB0","mode":1,"time":"1989-07-02T00:03:25.040Z","ept":0.005}
+DEBUG:root:01/01/1970 H:58:23 app.py | ValueError | GrabGPS() | NO GPS FOUND: {"class":"TPV","tag":"MID2","device":"/dev/ttyUSB0","mode":1,"time":"1989-07-02T00:03:26.040Z","ept":0.005}
+DEBUG:root:01/01/1970 H:58:25 app.py | ValueError | GrabGPS() | NO GPS FOUND: {"class":"TPV","tag":"MID2","device":"/dev/ttyUSB0","mode":1,"time":"1989-07-02T00:03:28.040Z","ept":0.005}
+DEBUG:root:01/01/1970 H:58:26 app.py | ValueError | GrabGPS() | NO GPS FOUND: {"class":"TPV","tag":"MID2","device":"/dev/ttyUSB0","mode":1,"time":"1989-07-02T00:03:29.040Z","ept":0.005}
+DEBUG:root:01/01/1970 H:58:28 app.py | ValueError | GrabGPS() | NO GPS FOUND: {"class":"TPV","tag":"MID2","device":"/dev/ttyUSB0","mode":1,"time":"1989-07-02T00:03:31.040Z","ept":0.005}
+DEBUG:root:01/01/1970 H:58:29 app.py | ValueError | GrabGPS() | NO GPS FOUND: {"class":"TPV","tag":"MID2","device":"/dev/ttyUSB0","mode":1,"time":"1989-07-02T00:03:32.040Z","ept":0.005}
+DEBUG:root:01/01/1970 H:58:31 app.py | ValueError | GrabGPS() | NO GPS FOUND: {"class":"TPV","tag":"MID2","device":"/dev/ttyUSB0","mode":1,"time":"1989-07-02T00:03:34.040Z","ept":0.005}
+DEBUG:root:01/01/1970 H:58:32 app.py | ValueError | GrabGPS() | NO GPS FOUND: {"class":"TPV","tag":"MID2","device":"/dev/ttyUSB0","mode":1,"time":"1989-07-02T00:03:35.050Z","ept":0.005}
+DEBUG:root:01/01/1970 H:58:34 app.py | ValueError | GrabGPS() | NO GPS FOUND: {"class":"TPV","tag":"MID2","device":"/dev/ttyUSB0","mode":1,"time":"1989-07-02T00:03:37.040Z","ept":0.005}
+DEBUG:root:01/01/1970 H:58:35 app.py | ValueError | GrabGPS() | NO GPS FOUND: {"class":"TPV","tag":"MID2","device":"/dev/ttyUSB0","mode":1,"time":"1989-07-02T00:03:38.040Z","ept":0.005}
+DEBUG:root:01/01/1970 H:58:37 app.py | ValueError | GrabGPS() | NO GPS FOUND: {"class":"TPV","tag":"MID2","device":"/dev/ttyUSB0","mode":1,"time":"1989-07-02T00:03:40.040Z","ept":0.005}
+DEBUG:root:01/01/1970 H:58:38 app.py | ValueError | GrabGPS() | NO GPS FOUND: {"class":"TPV","tag":"MID2","device":"/dev/ttyUSB0","mode":1,"time":"1989-07-02T00:03:41.040Z","ept":0.005}
+DEBUG:root:01/01/1970 H:58:40 app.py | ValueError | GrabGPS() | NO GPS FOUND: {"class":"TPV","tag":"MID2","device":"/dev/ttyUSB0","mode":1,"time":"1989-07-02T00:03:43.040Z","ept":0.005}
+DEBUG:root:01/01/1970 H:58:41 app.py | ValueError | GrabGPS() | NO GPS FOUND: {"class":"TPV","tag":"MID2","device":"/dev/ttyUSB0","mode":1,"time":"1989-07-02T00:03:44.040Z","ept":0.005}
+WARNING:root:01/01/1970 H:58:42 USB HAS BEEN RESET
+DEBUG:root:01/01/1970 H:58:43 app.py | ValueError | GrabGPS() | NO GPS FOUND: {"class":"TPV","tag":"MID2","device":"/dev/ttyUSB0","mode":1,"time":"1989-07-02T00:03:46.040Z","ept":0.005}
+DEBUG:root:01/01/1970 H:58:44 app.py | ValueError | GrabGPS() | NO GPS FOUND: {"class":"TPV","tag":"MID2","device":"/dev/ttyUSB0","mode":1,"time":"1989-07-02T00:03:47.040Z","ept":0.005}
+DEBUG:root:01/01/1970 H:58:46 app.py | ValueError | GrabGPS() | NO GPS FOUND: {"class":"TPV","tag":"MID2","device":"/dev/ttyUSB0","mode":1,"time":"1989-07-02T00:03:49.040Z","ept":0.005}
+DEBUG:root:01/01/1970 H:58:47 app.py | ValueError | GrabGPS() | NO GPS FOUND: {"class":"TPV","tag":"MID2","device":"/dev/ttyUSB0","mode":1,"time":"1989-07-02T00:03:50.040Z","ept":0.005}
+DEBUG:root:01/01/1970 H:58:49 app.py | ValueError | GrabGPS() | NO GPS FOUND: {"class":"TPV","tag":"MID2","device":"/dev/ttyUSB0","mode":1,"time":"1989-07-02T00:03:52.040Z","ept":0.005}
+DEBUG:root:01/01/1970 H:58:50 app.py | ValueError | GrabGPS() | NO GPS FOUND: {"class":"TPV","tag":"MID2","device":"/dev/ttyUSB0","mode":1,"time":"1989-07-02T00:03:53.040Z","ept":0.005}
+DEBUG:root:01/01/1970 H:58:52 app.py | ValueError | GrabGPS() | NO GPS FOUND: {"class":"TPV","tag":"MID2","device":"/dev/ttyUSB0","mode":1,"time":"1989-07-02T00:03:55.040Z","ept":0.005}
+DEBUG:root:01/01/1970 H:58:53 app.py | ValueError | GrabGPS() | NO GPS FOUND: {"class":"TPV","tag":"MID2","device":"/dev/ttyUSB0","mode":1,"time":"1989-07-02T00:03:56.040Z","ept":0.005}
+DEBUG:root:01/01/1970 H:58:55 app.py | ValueError | GrabGPS() | NO GPS FOUND: {"class":"SKY","tag":"MID4","device":"/dev/ttyUSB0","time":"1989-07-02T00:03:58.040Z","hdop":0.00}
+DEBUG:root:01/01/1970 H:58:57 app.py | ValueError | GrabGPS() | NO GPS FOUND: {"class":"TPV","tag":"MID2","device":"/dev/ttyUSB0","mode":1,"time":"1989-07-02T00:04:00.040Z","ept":0.005}
+DEBUG:root:01/01/1970 H:58:58 app.py | ValueError | GrabGPS() | NO GPS FOUND: {"class":"TPV","tag":"MID2","device":"/dev/ttyUSB0","mode":1,"time":"1989-07-02T00:04:01.040Z","ept":0.005}
+DEBUG:root:01/01/1970 H:59:00 app.py | ValueError | GrabGPS() | NO GPS FOUND: {"class":"TPV","tag":"MID2","device":"/dev/ttyUSB0","mode":1,"time":"1989-07-02T00:04:03.040Z","ept":0.005}
+DEBUG:root:01/01/1970 H:59:01 app.py | ValueError | GrabGPS() | NO GPS FOUND: {"class":"TPV","tag":"MID2","device":"/dev/ttyUSB0","mode":1,"time":"1989-07-02T00:04:04.040Z","ept":0.005}
+DEBUG:root:01/01/1970 H:59:03 app.py | ValueError | GrabGPS() | NO GPS FOUND: {"class":"TPV","tag":"MID2","device":"/dev/ttyUSB0","mode":1,"time":"1989-07-02T00:04:06.040Z","ept":0.005}
+WARNING:root:01/01/1970 H:59:04 USB HAS BEEN RESET
+DEBUG:root:01/01/1970 H:59:04 app.py | ValueError | GrabGPS() | NO GPS FOUND: {"class":"TPV","tag":"MID2","device":"/dev/ttyUSB0","mode":1,"time":"1989-07-02T00:04:07.040Z","ept":0.005}
+DEBUG:root:01/01/1970 H:59:06 app.py | ValueError | GrabGPS() | NO GPS FOUND: {"class":"TPV","tag":"MID2","device":"/dev/ttyUSB0","mode":1,"time":"1989-07-02T00:04:09.040Z","ept":0.005}
+DEBUG:root:01/01/1970 H:59:07 app.py | ValueError | GrabGPS() | NO GPS FOUND: {"class":"TPV","tag":"MID2","device":"/dev/ttyUSB0","mode":1,"time":"1989-07-02T00:04:10.040Z","ept":0.005}
+DEBUG:root:01/01/1970 H:59:09 app.py | ValueError | GrabGPS() | NO GPS FOUND: {"class":"TPV","tag":"MID2","device":"/dev/ttyUSB0","mode":1,"time":"1989-07-02T00:04:12.040Z","ept":0.005}
+DEBUG:root:01/01/1970 H:59:10 app.py | ValueError | GrabGPS() | NO GPS FOUND: {"class":"TPV","tag":"MID2","device":"/dev/ttyUSB0","mode":1,"time":"1989-07-02T00:04:13.040Z","ept":0.005}
+DEBUG:root:01/01/1970 H:59:12 app.py | ValueError | GrabGPS() | NO GPS FOUND: {"class":"TPV","tag":"MID2","device":"/dev/ttyUSB0","mode":1,"time":"1989-07-02T00:04:15.040Z","ept":0.005}
+DEBUG:root:01/01/1970 H:59:13 app.py | ValueError | GrabGPS() | NO GPS FOUND: {"class":"TPV","tag":"MID2","device":"/dev/ttyUSB0","mode":1,"time":"1989-07-02T00:04:16.040Z","ept":0.005}
+DEBUG:root:01/01/1970 H:59:15 app.py | ValueError | GrabGPS() | NO GPS FOUND: {"class":"TPV","tag":"MID2","device":"/dev/ttyUSB0","mode":1,"time":"1989-07-02T00:04:18.040Z","ept":0.005}
+DEBUG:root:01/01/1970 H:59:16 app.py | ValueError | GrabGPS() | NO GPS FOUND: {"class":"TPV","tag":"MID2","device":"/dev/ttyUSB0","mode":1,"time":"1989-07-02T00:04:19.040Z","ept":0.005}
+DEBUG:root:01/01/1970 H:59:18 app.py | ValueError | GrabGPS() | NO GPS FOUND: {"class":"TPV","tag":"MID2","device":"/dev/ttyUSB0","mode":1,"time":"1989-07-02T00:04:21.040Z","ept":0.005}
+DEBUG:root:01/01/1970 H:59:19 app.py | ValueError | GrabGPS() | NO GPS FOUND: {"class":"TPV","tag":"MID2","device":"/dev/ttyUSB0","mode":1,"time":"1989-07-02T00:04:22.040Z","ept":0.005}
+DEBUG:root:01/01/1970 H:59:21 app.py | ValueError | GrabGPS() | NO GPS FOUND: {"class":"TPV","tag":"MID2","device":"/dev/ttyUSB0","mode":1,"time":"1989-07-02T00:04:24.040Z","ept":0.005}
+DEBUG:root:01/01/1970 H:59:22 app.py | ValueError | GrabGPS() | NO GPS FOUND: {"class":"TPV","tag":"MID2","device":"/dev/ttyUSB0","mode":1,"time":"1989-07-02T00:04:25.040Z","ept":0.005}
+DEBUG:root:01/01/1970 H:59:24 app.py | ValueError | GrabGPS() | NO GPS FOUND: {"class":"TPV","tag":"MID2","device":"/dev/ttyUSB0","mode":1,"time":"1989-07-02T00:04:27.040Z","ept":0.005}
+DEBUG:root:01/01/1970 H:59:25 app.py | ValueError | GrabGPS() | NO GPS FOUND: {"class":"TPV","tag":"MID2","device":"/dev/ttyUSB0","mode":1,"time":"1989-07-02T00:04:28.040Z","ept":0.005}
+WARNING:root:01/01/1970 H:59:26 USB HAS BEEN RESET
+DEBUG:root:01/01/1970 H:59:27 app.py | ValueError | GrabGPS() | NO GPS FOUND: {"class":"TPV","tag":"MID2","device":"/dev/ttyUSB0","mode":1,"time":"1989-07-02T00:04:30.040Z","ept":0.005}
+DEBUG:root:01/01/1970 H:59:28 app.py | ValueError | GrabGPS() | NO GPS FOUND: {"class":"TPV","tag":"MID2","device":"/dev/ttyUSB0","mode":1,"time":"1989-07-02T00:04:31.040Z","ept":0.005}
+DEBUG:root:01/01/1970 H:59:30 app.py | ValueError | GrabGPS() | NO GPS FOUND: {"class":"TPV","tag":"MID2","device":"/dev/ttyUSB0","mode":1,"time":"1989-07-02T00:04:33.040Z","ept":0.005}
+DEBUG:root:01/01/1970 H:59:31 app.py | ValueError | GrabGPS() | NO GPS FOUND: {"class":"TPV","tag":"MID2","device":"/dev/ttyUSB0","mode":1,"time":"1989-07-02T00:04:34.040Z","ept":0.005}
+DEBUG:root:01/01/1970 H:59:33 app.py | ValueError | GrabGPS() | NO GPS FOUND: {"class":"TPV","tag":"MID2","device":"/dev/ttyUSB0","mode":1,"time":"1989-07-02T00:04:36.040Z","ept":0.005}
+DEBUG:root:01/01/1970 H:59:34 app.py | ValueError | GrabGPS() | NO GPS FOUND: {"class":"TPV","tag":"MID2","device":"/dev/ttyUSB0","mode":1,"time":"1989-07-02T00:04:37.040Z","ept":0.005}
+DEBUG:root:01/01/1970 H:59:36 app.py | ValueError | GrabGPS() | NO GPS FOUND: {"class":"TPV","tag":"MID2","device":"/dev/ttyUSB0","mode":1,"time":"1989-07-02T00:04:39.040Z","ept":0.005}
+DEBUG:root:01/01/1970 H:59:37 app.py | ValueError | GrabGPS() | NO GPS FOUND: {"class":"TPV","tag":"MID2","device":"/dev/ttyUSB0","mode":1,"time":"1989-07-02T00:04:40.040Z","ept":0.005}
+DEBUG:root:01/01/1970 H:59:39 app.py | ValueError | GrabGPS() | NO GPS FOUND: {"class":"TPV","tag":"MID2","device":"/dev/ttyUSB0","mode":1,"time":"1989-07-02T00:04:42.040Z","ept":0.005}
+DEBUG:root:01/01/1970 H:59:40 app.py | ValueError | GrabGPS() | NO GPS FOUND: {"class":"TPV","tag":"MID2","device":"/dev/ttyUSB0","mode":1,"time":"1989-07-02T00:04:43.040Z","ept":0.005}
+DEBUG:root:01/01/1970 H:59:42 app.py | ValueError | GrabGPS() | NO GPS FOUND: {"class":"TPV","tag":"MID2","device":"/dev/ttyUSB0","mode":1,"time":"1989-07-02T00:04:45.040Z","ept":0.005}
+DEBUG:root:01/01/1970 H:59:43 app.py | ValueError | GrabGPS() | NO GPS FOUND: {"class":"TPV","tag":"MID2","device":"/dev/ttyUSB0","mode":1,"time":"1989-07-02T00:04:46.040Z","ept":0.005}
+                                                                                                                                                                                                       INFO:root:01/09/2014 11:38:39 Started script
+DEBUG:root:01/09/2014 11:38:41 Checking network connection: Bus 001 Device 014: ID 067b:2303 Prolific Technology, Inc. PL2303 Serial Port
+Bus 001 Device 013: ID 12d1:14db Huawei Technologies Co., Ltd. E353/E3131
+Bus 001 Device 009: ID 046d:c52b Logitech, Inc. Unifying Receiver
+Bus 001 Device 008: ID 0424:ec00 Standard Microsystems Corp. SMSC9512/9514 Fast Ethernet Adapter
+Bus 001 Device 007: ID 0424:9514 Standard Microsystems Corp. SMC9514 Hub
+Bus 001 Device 001: ID 1d6b:0002 Linux Foundation 2.0 root hub
+
+WARNING:root:01/09/2014 11:38:41 USB HAS BEEN RESET: Network OK
+DEBUG:root:01/09/2014 11:38:42 app.py | ValueError | GrabGPS() | NO GPS FOUND: {"class":"TPV","tag":"MID2","device":"/dev/ttyUSB0","mode":1,"time":"1995-01-16T10:38:41.680Z","ept":0.005}
+DEBUG:root:01/09/2014 11:38:44 app.py | ValueError | GrabGPS() | NO GPS FOUND: {"class":"SKY","tag":"MID4","device":"/dev/ttyUSB0","time":"1995-01-16T10:38:43.680Z","hdop":0.00,"satellites":[{"PRN":21,"el":38,"az":324,"ss":32,"used":false}]}
+DEBUG:root:01/09/2014 11:38:46 app.py | ValueError | GrabGPS() | NO GPS FOUND: {"class":"TPV","tag":"MID2","device":"/dev/ttyUSB0","mode":1,"time":"1995-01-16T10:38:45.680Z","ept":0.005}
+DEBUG:root:01/09/2014 11:38:47 app.py | ValueError | GrabGPS() | NO GPS FOUND: {"class":"TPV","tag":"MID2","device":"/dev/ttyUSB0","mode":1,"time":"1995-01-16T10:38:46.680Z","ept":0.005}
+DEBUG:root:01/09/2014 11:38:49 app.py | ValueError | GrabGPS() | NO GPS FOUND: {"class":"TPV","tag":"MID2","device":"/dev/ttyUSB0","mode":1,"time":"1995-01-16T10:38:48.680Z","ept":0.005}
+DEBUG:root:01/09/2014 11:38:50 app.py | ValueError | GrabGPS() | NO GPS FOUND: {"class":"TPV","tag":"MID2","device":"/dev/ttyUSB0","mode":1,"time":"1995-01-16T10:38:49.680Z","ept":0.005}
+DEBUG:root:01/09/2014 11:38:52 app.py | ValueError | GrabGPS() | NO GPS FOUND: {"class":"TPV","tag":"MID2","device":"/dev/ttyUSB0","mode":1,"time":"1995-01-16T10:38:51.680Z","ept":0.005}
+DEBUG:root:01/09/2014 11:38:53 app.py | ValueError | GrabGPS() | NO GPS FOUND: {"class":"TPV","tag":"MID2","device":"/dev/ttyUSB0","mode":1,"time":"1995-01-16T10:38:52.680Z","ept":0.005}
+DEBUG:root:01/09/2014 11:38:55 app.py | ValueError | GrabGPS() | NO GPS FOUND: {"class":"TPV","tag":"MID2","device":"/dev/ttyUSB0","mode":1,"time":"1995-01-16T10:38:54.680Z","ept":0.005}
+DEBUG:root:01/09/2014 11:38:56 app.py | ValueError | GrabGPS() | NO GPS FOUND: {"class":"TPV","tag":"MID2","device":"/dev/ttyUSB0","mode":1,"time":"1995-01-16T10:38:55.680Z","ept":0.005}
+DEBUG:root:01/09/2014 11:38:58 app.py | ValueError | GrabGPS() | NO GPS FOUND: {"class":"TPV","tag":"MID2","device":"/dev/ttyUSB0","mode":1,"time":"1995-01-16T10:38:57.680Z","ept":0.005}
+DEBUG:root:01/09/2014 11:38:59 app.py | ValueError | GrabGPS() | NO GPS FOUND: {"class":"TPV","tag":"MID2","device":"/dev/ttyUSB0","mode":1,"time":"1995-01-16T10:38:58.680Z","ept":0.005}
+DEBUG:root:01/09/2014 11:39:01 app.py | ValueError | GrabGPS() | NO GPS FOUND: {"class":"TPV","tag":"MID2","device":"/dev/ttyUSB0","mode":1,"time":"1995-01-16T10:39:00.680Z","ept":0.005}
+DEBUG:root:01/09/2014 11:39:02 app.py | ValueError | GrabGPS() | NO GPS FOUND: {"class":"TPV","tag":"MID2","device":"/dev/ttyUSB0","mode":1,"time":"1995-01-16T10:39:01.680Z","ept":0.005}
+DEBUG:root:01/09/2014 11:39:03 Checking network connection: Bus 001 Device 014: ID 067b:2303 Prolific Technology, Inc. PL2303 Serial Port
+Bus 001 Device 013: ID 12d1:14db Huawei Technologies Co., Ltd. E353/E3131
+Bus 001 Device 009: ID 046d:c52b Logitech, Inc. Unifying Receiver
+Bus 001 Device 008: ID 0424:ec00 Standard Microsystems Corp. SMSC9512/9514 Fast Ethernet Adapter
+Bus 001 Device 007: ID 0424:9514 Standard Microsystems Corp. SMC9514 Hub
+Bus 001 Device 001: ID 1d6b:0002 Linux Foundation 2.0 root hub
+
+WARNING:root:01/09/2014 11:39:03 USB HAS BEEN RESET: Network OK
+DEBUG:root:01/09/2014 11:39:04 app.py | ValueError | GrabGPS() | NO GPS FOUND: {"class":"TPV","tag":"MID2","device":"/dev/ttyUSB0","mode":1,"time":"1995-01-16T10:39:03.680Z","ept":0.005}
+DEBUG:root:01/09/2014 11:39:05 app.py | ValueError | GrabGPS() | NO GPS FOUND: {"class":"TPV","tag":"MID2","device":"/dev/ttyUSB0","mode":1,"time":"1995-01-16T10:39:04.680Z","ept":0.005}
+DEBUG:root:01/09/2014 11:39:07 app.py | ValueError | GrabGPS() | NO GPS FOUND: {"class":"TPV","tag":"MID2","device":"/dev/ttyUSB0","mode":1,"time":"1995-01-16T10:39:06.680Z","ept":0.005}
+DEBUG:root:01/09/2014 11:39:08 app.py | ValueError | GrabGPS() | NO GPS FOUND: {"class":"TPV","tag":"MID2","device":"/dev/ttyUSB0","mode":1,"time":"1995-01-16T10:39:07.680Z","ept":0.005}
+DEBUG:root:01/09/2014 11:39:10 app.py | ValueError | GrabGPS() | NO GPS FOUND: {"class":"TPV","tag":"MID2","device":"/dev/ttyUSB0","mode":1,"time":"1995-01-16T10:39:09.680Z","ept":0.005}
+DEBUG:root:01/09/2014 11:39:11 app.py | ValueError | GrabGPS() | NO GPS FOUND: {"class":"TPV","tag":"MID2","device":"/dev/ttyUSB0","mode":1,"time":"1995-01-16T10:39:10.680Z","ept":0.005}
+DEBUG:root:01/09/2014 11:39:13 app.py | ValueError | GrabGPS() | NO GPS FOUND: {"class":"TPV","tag":"MID2","device":"/dev/ttyUSB0","mode":1,"time":"1995-01-16T10:39:12.680Z","ept":0.005}
+DEBUG:root:01/09/2014 11:39:14 app.py | ValueError | GrabGPS() | NO GPS FOUND: {"class":"TPV","tag":"MID2","device":"/dev/ttyUSB0","mode":1,"time":"1995-01-16T10:39:13.680Z","ept":0.005}
+DEBUG:root:01/09/2014 11:39:16 app.py | ValueError | GrabGPS() | NO GPS FOUND: {"class":"TPV","tag":"MID2","device":"/dev/ttyUSB0","mode":1,"time":"1995-01-16T10:39:15.680Z","ept":0.005}
+DEBUG:root:01/09/2014 11:39:17 app.py | ValueError | GrabGPS() | NO GPS FOUND: {"class":"TPV","tag":"MID2","device":"/dev/ttyUSB0","mode":1,"time":"1995-01-16T10:39:16.680Z","ept":0.005}
+DEBUG:root:01/09/2014 11:39:19 app.py | ValueError | GrabGPS() | NO GPS FOUND: {"class":"TPV","tag":"MID2","device":"/dev/ttyUSB0","mode":1,"time":"1995-01-16T10:39:18.680Z","ept":0.005}
+DEBUG:root:01/09/2014 11:39:20 app.py | ValueError | GrabGPS() | NO GPS FOUND: {"class":"TPV","tag":"MID2","device":"/dev/ttyUSB0","mode":1,"time":"1995-01-16T10:39:19.680Z","ept":0.005}
+DEBUG:root:01/09/2014 11:39:22 app.py | ValueError | GrabGPS() | NO GPS FOUND: {"class":"TPV","tag":"MID2","device":"/dev/ttyUSB0","mode":1,"time":"1995-01-16T10:39:21.680Z","ept":0.005}
+DEBUG:root:01/09/2014 11:39:23 app.py | ValueError | GrabGPS() | NO GPS FOUND: {"class":"TPV","tag":"MID2","device":"/dev/ttyUSB0","mode":1,"time":"1995-01-16T10:39:22.680Z","ept":0.005}
+DEBUG:root:01/09/2014 11:39:25 app.py | ValueError | GrabGPS() | NO GPS FOUND: {"class":"TPV","tag":"MID2","device":"/dev/ttyUSB0","mode":1,"time":"1995-01-16T10:39:24.680Z","ept":0.005}
+DEBUG:root:01/09/2014 11:39:26 Checking network connection: Bus 001 Device 014: ID 067b:2303 Prolific Technology, Inc. PL2303 Serial Port
+Bus 001 Device 013: ID 12d1:14db Huawei Technologies Co., Ltd. E353/E3131
+Bus 001 Device 009: ID 046d:c52b Logitech, Inc. Unifying Receiver
+Bus 001 Device 008: ID 0424:ec00 Standard Microsystems Corp. SMSC9512/9514 Fast Ethernet Adapter
+Bus 001 Device 007: ID 0424:9514 Standard Microsystems Corp. SMC9514 Hub
+Bus 001 Device 001: ID 1d6b:0002 Linux Foundation 2.0 root hub
+
+WARNING:root:01/09/2014 11:39:26 USB HAS BEEN RESET: Network OK
+DEBUG:root:01/09/2014 11:39:26 app.py | ValueError | GrabGPS() | NO GPS FOUND: {"class":"TPV","tag":"MID2","device":"/dev/ttyUSB0","mode":1,"time":"1995-01-16T10:39:25.680Z","ept":0.005}
+DEBUG:root:01/09/2014 11:39:28 app.py | ValueError | GrabGPS() | NO GPS FOUND: {"class":"TPV","tag":"MID2","device":"/dev/ttyUSB0","mode":1,"time":"1995-01-16T10:39:27.680Z","ept":0.005}
+DEBUG:root:01/09/2014 11:39:29 app.py | ValueError | GrabGPS() | NO GPS FOUND: {"class":"TPV","tag":"MID2","device":"/dev/ttyUSB0","mode":1,"time":"1995-01-16T10:39:28.680Z","ept":0.005}
+DEBUG:root:01/09/2014 11:39:31 app.py | ValueError | GrabGPS() | NO GPS FOUND: {"class":"TPV","tag":"MID2","device":"/dev/ttyUSB0","mode":1,"time":"1995-01-16T10:39:30.680Z","ept":0.005}
+DEBUG:root:01/09/2014 11:39:32 app.py | ValueError | GrabGPS() | NO GPS FOUND: {"class":"TPV","tag":"MID2","device":"/dev/ttyUSB0","mode":1,"time":"1995-01-16T10:39:31.680Z","ept":0.005}
+DEBUG:root:01/09/2014 11:39:34 app.py | ValueError | GrabGPS() | NO GPS FOUND: {"class":"TPV","tag":"MID2","device":"/dev/ttyUSB0","mode":1,"time":"1995-01-16T10:39:33.680Z","ept":0.005}
+DEBUG:root:01/09/2014 11:39:35 app.py | ValueError | GrabGPS() | NO GPS FOUND: {"class":"TPV","tag":"MID2","device":"/dev/ttyUSB0","mode":1,"time":"1995-01-16T10:39:34.680Z","ept":0.005}
+DEBUG:root:01/09/2014 11:39:37 app.py | ValueError | GrabGPS() | NO GPS FOUND: {"class":"TPV","tag":"MID2","device":"/dev/ttyUSB0","mode":1,"time":"1995-01-16T10:39:36.680Z","ept":0.005}
+DEBUG:root:01/09/2014 11:39:38 app.py | ValueError | GrabGPS() | NO GPS FOUND: {"class":"TPV","tag":"MID2","device":"/dev/ttyUSB0","mode":1,"time":"1995-01-16T10:39:37.680Z","ept":0.005}
+DEBUG:root:01/09/2014 11:39:40 app.py | ValueError | GrabGPS() | NO GPS FOUND: {"class":"TPV","tag":"MID2","device":"/dev/ttyUSB0","mode":1,"time":"1995-01-16T10:39:39.680Z","ept":0.005}
+DEBUG:root:01/09/2014 11:39:41 app.py | ValueError | GrabGPS() | NO GPS FOUND: {"class":"TPV","tag":"MID2","device":"/dev/ttyUSB0","mode":1,"time":"1995-01-16T10:39:40.680Z","ept":0.005}
+DEBUG:root:01/09/2014 11:39:43 app.py | ValueError | GrabGPS() | NO GPS FOUND: {"class":"TPV","tag":"MID2","device":"/dev/ttyUSB0","mode":1,"time":"1995-01-16T10:39:42.680Z","ept":0.005}
+DEBUG:root:01/09/2014 11:39:44 app.py | ValueError | GrabGPS() | NO GPS FOUND: {"class":"TPV","tag":"MID2","device":"/dev/ttyUSB0","mode":1,"time":"1995-01-16T10:39:43.680Z","ept":0.005}
+DEBUG:root:01/09/2014 11:39:45 app.py | ValueError | GrabGPS() | NO GPS FOUND: {"class":"TPV","tag":"MID2","device":"/dev/ttyUSB0","mode":1,"time":"1995-01-16T10:39:44.680Z","ept":0.005}
+DEBUG:root:01/09/2014 11:39:47 app.py | ValueError | GrabGPS() | NO GPS FOUND: {"class":"SKY","tag":"MID4","device":"/dev/ttyUSB0","time":"1995-01-16T10:39:46.680Z","hdop":0.00,"satellites":[{"PRN":21,"el":38,"az":324,"ss":32,"used":false}]}
+DEBUG:root:01/09/2014 11:39:48 Checking network connection: Bus 001 Device 014: ID 067b:2303 Prolific Technology, Inc. PL2303 Serial Port
+Bus 001 Device 013: ID 12d1:14db Huawei Technologies Co., Ltd. E353/E3131
+Bus 001 Device 009: ID 046d:c52b Logitech, Inc. Unifying Receiver
+Bus 001 Device 008: ID 0424:ec00 Standard Microsystems Corp. SMSC9512/9514 Fast Ethernet Adapter
+Bus 001 Device 007: ID 0424:9514 Standard Microsystems Corp. SMC9514 Hub
+Bus 001 Device 001: ID 1d6b:0002 Linux Foundation 2.0 root hub
+
+WARNING:root:01/09/2014 11:39:48 USB HAS BEEN RESET: Network OK
+DEBUG:root:01/09/2014 11:39:49 app.py | ValueError | GrabGPS() | NO GPS FOUND: {"class":"TPV","tag":"MID2","device":"/dev/ttyUSB0","mode":1,"time":"1995-01-16T10:39:48.680Z","ept":0.005}
+DEBUG:root:01/09/2014 11:39:50 app.py | ValueError | GrabGPS() | NO GPS FOUND: {"class":"TPV","tag":"MID2","device":"/dev/ttyUSB0","mode":1,"time":"1995-01-16T10:39:49.680Z","ept":0.005}
+DEBUG:root:01/09/2014 11:39:52 app.py | ValueError | GrabGPS() | NO GPS FOUND: {"class":"TPV","tag":"MID2","device":"/dev/ttyUSB0","mode":1,"time":"1995-01-16T10:39:51.680Z","ept":0.005}
+DEBUG:root:01/09/2014 11:39:53 app.py | ValueError | GrabGPS() | NO GPS FOUND: {"class":"TPV","tag":"MID2","device":"/dev/ttyUSB0","mode":1,"time":"1995-01-16T10:39:52.680Z","ept":0.005}
+DEBUG:root:01/09/2014 11:39:55 app.py | ValueError | GrabGPS() | NO GPS FOUND: {"class":"TPV","tag":"MID2","device":"/dev/ttyUSB0","mode":1,"time":"1995-01-16T10:39:54.680Z","ept":0.005}
+DEBUG:root:01/09/2014 11:39:56 app.py | ValueError | GrabGPS() | NO GPS FOUND: {"class":"TPV","tag":"MID2","device":"/dev/ttyUSB0","mode":1,"time":"1995-01-16T10:39:55.680Z","ept":0.005}
+DEBUG:root:01/09/2014 11:39:58 app.py | ValueError | GrabGPS() | NO GPS FOUND: {"class":"TPV","tag":"MID2","device":"/dev/ttyUSB0","mode":1,"time":"1995-01-16T10:39:57.680Z","ept":0.005}
+DEBUG:root:01/09/2014 11:39:59 app.py | ValueError | GrabGPS() | NO GPS FOUND: {"class":"TPV","tag":"MID2","device":"/dev/ttyUSB0","mode":1,"time":"1995-01-16T10:39:58.680Z","ept":0.005}
+DEBUG:root:01/09/2014 11:40:01 app.py | ValueError | GrabGPS() | NO GPS FOUND: {"class":"TPV","tag":"MID2","device":"/dev/ttyUSB0","mode":1,"time":"1995-01-16T10:40:00.680Z","ept":0.005}
+DEBUG:root:01/09/2014 11:40:02 app.py | ValueError | GrabGPS() | NO GPS FOUND: {"class":"TPV","tag":"MID2","device":"/dev/ttyUSB0","mode":1,"time":"1995-01-16T10:40:01.680Z","ept":0.005}
+DEBUG:root:01/09/2014 11:40:04 app.py | ValueError | GrabGPS() | NO GPS FOUND: {"class":"TPV","tag":"MID2","device":"/dev/ttyUSB0","mode":1,"time":"1995-01-16T10:40:03.680Z","ept":0.005}
+DEBUG:root:01/09/2014 11:40:05 app.py | ValueError | GrabGPS() | NO GPS FOUND: {"class":"TPV","tag":"MID2","device":"/dev/ttyUSB0","mode":1,"time":"1995-01-16T10:40:04.680Z","ept":0.005}
+DEBUG:root:01/09/2014 11:40:07 app.py | ValueError | GrabGPS() | NO GPS FOUND: {"class":"TPV","tag":"MID2","device":"/dev/ttyUSB0","mode":1,"time":"1995-01-16T10:40:06.680Z","ept":0.005}
+DEBUG:root:01/09/2014 11:40:08 app.py | ValueError | GrabGPS() | NO GPS FOUND: {"class":"TPV","tag":"MID2","device":"/dev/ttyUSB0","mode":1,"time":"1995-01-16T10:40:07.680Z","ept":0.005}
+DEBUG:root:01/09/2014 11:40:10 app.py | ValueError | GrabGPS() | NO GPS FOUND: {"class":"TPV","tag":"MID2","device":"/dev/ttyUSB0","mode":1,"time":"1995-01-16T10:40:09.680Z","ept":0.005}
+DEBUG:root:01/09/2014 11:40:10 Checking network connection: Bus 001 Device 014: ID 067b:2303 Prolific Technology, Inc. PL2303 Serial Port
+Bus 001 Device 013: ID 12d1:14db Huawei Technologies Co., Ltd. E353/E3131
+Bus 001 Device 009: ID 046d:c52b Logitech, Inc. Unifying Receiver
+Bus 001 Device 008: ID 0424:ec00 Standard Microsystems Corp. SMSC9512/9514 Fast Ethernet Adapter
+Bus 001 Device 007: ID 0424:9514 Standard Microsystems Corp. SMC9514 Hub
+Bus 001 Device 001: ID 1d6b:0002 Linux Foundation 2.0 root hub
+
+WARNING:root:01/09/2014 11:40:10 USB HAS BEEN RESET: Network OK
+DEBUG:root:01/09/2014 11:40:11 app.py | ValueError | GrabGPS() | NO GPS FOUND: {"class":"TPV","tag":"MID2","device":"/dev/ttyUSB0","mode":1,"time":"1995-01-16T10:40:10.680Z","ept":0.005}
+DEBUG:root:01/09/2014 11:40:13 app.py | ValueError | GrabGPS() | NO GPS FOUND: {"class":"TPV","tag":"MID2","device":"/dev/ttyUSB0","mode":1,"time":"1995-01-16T10:40:12.680Z","ept":0.005}
+DEBUG:root:01/09/2014 11:40:14 app.py | ValueError | GrabGPS() | NO GPS FOUND: {"class":"TPV","tag":"MID2","device":"/dev/ttyUSB0","mode":1,"time":"1995-01-16T10:40:13.680Z","ept":0.005}
+DEBUG:root:01/09/2014 11:40:16 app.py | ValueError | GrabGPS() | NO GPS FOUND: {"class":"TPV","tag":"MID2","device":"/dev/ttyUSB0","mode":1,"time":"1995-01-16T10:40:15.680Z","ept":0.005}
+DEBUG:root:01/09/2014 11:40:17 app.py | ValueError | GrabGPS() | NO GPS FOUND: {"class":"TPV","tag":"MID2","device":"/dev/ttyUSB0","mode":1,"time":"1995-01-16T10:40:16.680Z","ept":0.005}
+DEBUG:root:01/09/2014 11:40:19 app.py | ValueError | GrabGPS() | NO GPS FOUND: {"class":"TPV","tag":"MID2","device":"/dev/ttyUSB0","mode":1,"time":"1995-01-16T10:40:18.680Z","ept":0.005}
+DEBUG:root:01/09/2014 11:40:20 app.py | ValueError | GrabGPS() | NO GPS FOUND: {"class":"TPV","tag":"MID2","device":"/dev/ttyUSB0","mode":1,"time":"1995-01-16T10:40:19.680Z","ept":0.005}
+DEBUG:root:01/09/2014 11:40:22 app.py | ValueError | GrabGPS() | NO GPS FOUND: {"class":"TPV","tag":"MID2","device":"/dev/ttyUSB0","mode":1,"time":"1995-01-16T10:40:21.680Z","ept":0.005}
+DEBUG:root:01/09/2014 11:40:23 app.py | ValueError | GrabGPS() | NO GPS FOUND: {"class":"TPV","tag":"MID2","device":"/dev/ttyUSB0","mode":1,"time":"1995-01-16T10:40:22.680Z","ept":0.005}
+DEBUG:root:01/09/2014 11:40:25 app.py | ValueError | GrabGPS() | NO GPS FOUND: {"class":"TPV","tag":"MID2","device":"/dev/ttyUSB0","mode":1,"time":"1995-01-16T10:40:24.680Z","ept":0.005}
+DEBUG:root:01/09/2014 11:40:26 app.py | ValueError | GrabGPS() | NO GPS FOUND: {"class":"TPV","tag":"MID2","device":"/dev/ttyUSB0","mode":1,"time":"1995-01-16T10:40:25.680Z","ept":0.005}
+DEBUG:root:01/09/2014 11:40:28 app.py | ValueError | GrabGPS() | NO GPS FOUND: {"class":"TPV","tag":"MID2","device":"/dev/ttyUSB0","mode":1,"time":"1995-01-16T10:40:27.680Z","ept":0.005}
+DEBUG:root:01/09/2014 11:40:29 app.py | ValueError | GrabGPS() | NO GPS FOUND: {"class":"TPV","tag":"MID2","device":"/dev/ttyUSB0","mode":1,"time":"1995-01-16T10:40:28.680Z","ept":0.005}
+DEBUG:root:01/09/2014 11:40:31 app.py | ValueError | GrabGPS() | NO GPS FOUND: {"class":"TPV","tag":"MID2","device":"/dev/ttyUSB0","mode":1,"time":"1995-01-16T10:40:30.680Z","ept":0.005}
+DEBUG:root:01/09/2014 11:40:32 app.py | ValueError | GrabGPS() | NO GPS FOUND: {"class":"TPV","tag":"MID2","device":"/dev/ttyUSB0","mode":1,"time":"1995-01-16T10:40:31.680Z","ept":0.005}
+DEBUG:root:01/09/2014 11:40:33 Checking network connection: Bus 001 Device 014: ID 067b:2303 Prolific Technology, Inc. PL2303 Serial Port
+Bus 001 Device 013: ID 12d1:14db Huawei Technologies Co., Ltd. E353/E3131
+Bus 001 Device 009: ID 046d:c52b Logitech, Inc. Unifying Receiver
+Bus 001 Device 008: ID 0424:ec00 Standard Microsystems Corp. SMSC9512/9514 Fast Ethernet Adapter
+Bus 001 Device 007: ID 0424:9514 Standard Microsystems Corp. SMC9514 Hub
+Bus 001 Device 001: ID 1d6b:0002 Linux Foundation 2.0 root hub
+
+WARNING:root:01/09/2014 11:40:33 USB HAS BEEN RESET: Network OK
+DEBUG:root:01/09/2014 11:40:34 app.py | ValueError | GrabGPS() | NO GPS FOUND: {"class":"TPV","tag":"MID2","device":"/dev/ttyUSB0","mode":1,"time":"1995-01-16T10:40:33.680Z","ept":0.005}
+DEBUG:root:01/09/2014 11:40:35 app.py | ValueError | GrabGPS() | NO GPS FOUND: {"class":"TPV","tag":"MID2","device":"/dev/ttyUSB0","mode":1,"time":"1995-01-16T10:40:34.680Z","ept":0.005}
+DEBUG:root:01/09/2014 11:40:37 app.py | ValueError | GrabGPS() | NO GPS FOUND: {"class":"TPV","tag":"MID2","device":"/dev/ttyUSB0","mode":1,"time":"1995-01-16T10:40:36.680Z","ept":0.005}
+DEBUG:root:01/09/2014 11:40:38 app.py | ValueError | GrabGPS() | NO GPS FOUND: {"class":"TPV","tag":"MID2","device":"/dev/ttyUSB0","mode":1,"time":"1995-01-16T10:40:37.680Z","ept":0.005}
+DEBUG:root:01/09/2014 11:40:40 app.py | ValueError | GrabGPS() | NO GPS FOUND: {"class":"TPV","tag":"MID2","device":"/dev/ttyUSB0","mode":1,"time":"1995-01-16T10:40:39.680Z","ept":0.005}
+DEBUG:root:01/09/2014 11:40:41 app.py | ValueError | GrabGPS() | NO GPS FOUND: {"class":"TPV","tag":"MID2","device":"/dev/ttyUSB0","mode":1,"time":"1995-01-16T10:40:40.680Z","ept":0.005}
+DEBUG:root:01/09/2014 11:40:43 app.py | ValueError | GrabGPS() | NO GPS FOUND: {"class":"TPV","tag":"MID2","device":"/dev/ttyUSB0","mode":1,"time":"1995-01-16T10:40:42.680Z","ept":0.005}
+DEBUG:root:01/09/2014 11:40:44 app.py | ValueError | GrabGPS() | NO GPS FOUND: {"class":"TPV","tag":"MID2","device":"/dev/ttyUSB0","mode":1,"time":"1995-01-16T10:40:43.680Z","ept":0.005}
+DEBUG:root:01/09/2014 11:40:46 app.py | ValueError | GrabGPS() | NO GPS FOUND: {"class":"TPV","tag":"MID2","device":"/dev/ttyUSB0","mode":1,"time":"1995-01-16T10:40:45.680Z","ept":0.005}
+DEBUG:root:01/09/2014 11:40:47 app.py | ValueError | GrabGPS() | NO GPS FOUND: {"class":"TPV","tag":"MID2","device":"/dev/ttyUSB0","mode":1,"time":"1995-01-16T10:40:46.680Z","ept":0.005}
+DEBUG:root:01/09/2014 11:40:49 app.py | ValueError | GrabGPS() | NO GPS FOUND: {"class":"SKY","tag":"MID4","device":"/dev/ttyUSB0","time":"1995-01-16T10:40:48.680Z","hdop":0.00,"satellites":[{"PRN":21,"el":38,"az":324,"ss":32,"used":false}]}
+DEBUG:root:01/09/2014 11:40:51 app.py | ValueError | GrabGPS() | NO GPS FOUND: {"class":"TPV","tag":"MID2","device":"/dev/ttyUSB0","mode":1,"time":"1995-01-16T10:40:50.680Z","ept":0.005}
+DEBUG:root:01/09/2014 11:40:52 app.py | ValueError | GrabGPS() | NO GPS FOUND: {"class":"TPV","tag":"MID2","device":"/dev/ttyUSB0","mode":1,"time":"1995-01-16T10:40:51.680Z","ept":0.005}
+DEBUG:root:01/09/2014 11:40:54 app.py | ValueError | GrabGPS() | NO GPS FOUND: {"class":"TPV","tag":"MID2","device":"/dev/ttyUSB0","mode":1,"time":"1995-01-16T10:40:53.680Z","ept":0.005}
+DEBUG:root:01/09/2014 11:40:55 Checking network connection: Bus 001 Device 014: ID 067b:2303 Prolific Technology, Inc. PL2303 Serial Port
+Bus 001 Device 013: ID 12d1:14db Huawei Technologies Co., Ltd. E353/E3131
+Bus 001 Device 009: ID 046d:c52b Logitech, Inc. Unifying Receiver
+Bus 001 Device 008: ID 0424:ec00 Standard Microsystems Corp. SMSC9512/9514 Fast Ethernet Adapter
+Bus 001 Device 007: ID 0424:9514 Standard Microsystems Corp. SMC9514 Hub
+Bus 001 Device 001: ID 1d6b:0002 Linux Foundation 2.0 root hub
+
+DEBUG:root:01/09/2014 11:40:55 app.py | ValueError | GrabGPS() | NO GPS FOUND: {"class":"TPV","tag":"MID2","device":"/dev/ttyUSB0","mode":1,"time":"1995-01-16T10:40:54.680Z","ept":0.005}
+WARNING:root:01/09/2014 11:40:55 USB HAS BEEN RESET: Network OK
+DEBUG:root:01/09/2014 11:40:57 app.py | ValueError | GrabGPS() | NO GPS FOUND: {"class":"TPV","tag":"MID2","device":"/dev/ttyUSB0","mode":1,"time":"1995-01-16T10:40:56.680Z","ept":0.005}
+DEBUG:root:01/09/2014 11:40:58 app.py | ValueError | GrabGPS() | NO GPS FOUND: {"class":"TPV","tag":"MID2","device":"/dev/ttyUSB0","mode":1,"time":"1995-01-16T10:40:57.680Z","ept":0.005}
+DEBUG:root:01/09/2014 11:41:00 app.py | ValueError | GrabGPS() | NO GPS FOUND: {"class":"TPV","tag":"MID2","device":"/dev/ttyUSB0","mode":1,"time":"1995-01-16T10:40:59.680Z","ept":0.005}
+DEBUG:root:01/09/2014 11:41:01 app.py | ValueError | GrabGPS() | NO GPS FOUND: {"class":"TPV","tag":"MID2","device":"/dev/ttyUSB0","mode":1,"time":"1995-01-16T10:41:00.680Z","ept":0.005}
+DEBUG:root:01/09/2014 11:41:03 app.py | ValueError | GrabGPS() | NO GPS FOUND: {"class":"TPV","tag":"MID2","device":"/dev/ttyUSB0","mode":1,"time":"1995-01-16T10:41:02.680Z","ept":0.005}
+DEBUG:root:01/09/2014 11:41:04 app.py | ValueError | GrabGPS() | NO GPS FOUND: {"class":"TPV","tag":"MID2","device":"/dev/ttyUSB0","mode":1,"time":"1995-01-16T10:41:03.680Z","ept":0.005}
+DEBUG:root:01/09/2014 11:41:06 app.py | ValueError | GrabGPS() | NO GPS FOUND: {"class":"TPV","tag":"MID2","device":"/dev/ttyUSB0","mode":1,"time":"1995-01-16T10:41:05.680Z","ept":0.005}
+DEBUG:root:01/09/2014 11:41:07 app.py | ValueError | GrabGPS() | NO GPS FOUND: {"class":"TPV","tag":"MID2","device":"/dev/ttyUSB0","mode":1,"time":"1995-01-16T10:41:06.680Z","ept":0.005}
+DEBUG:root:01/09/2014 11:41:09 app.py | ValueError | GrabGPS() | NO GPS FOUND: {"class":"TPV","tag":"MID2","device":"/dev/ttyUSB0","mode":1,"time":"1995-01-16T10:41:08.680Z","ept":0.005}
+DEBUG:root:01/09/2014 11:41:10 app.py | ValueError | GrabGPS() | NO GPS FOUND: {"class":"TPV","tag":"MID2","device":"/dev/ttyUSB0","mode":1,"time":"1995-01-16T10:41:09.680Z","ept":0.005}
+DEBUG:root:01/09/2014 11:41:12 app.py | ValueError | GrabGPS() | NO GPS FOUND: {"class":"TPV","tag":"MID2","device":"/dev/ttyUSB0","mode":1,"time":"1995-01-16T10:41:11.680Z","ept":0.005}
+DEBUG:root:01/09/2014 11:41:13 app.py | ValueError | GrabGPS() | NO GPS FOUND: {"class":"TPV","tag":"MID2","device":"/dev/ttyUSB0","mode":1,"time":"1995-01-16T10:41:12.680Z","ept":0.005}
+DEBUG:root:01/09/2014 11:41:15 app.py | ValueError | GrabGPS() | NO GPS FOUND: {"class":"TPV","tag":"MID2","device":"/dev/ttyUSB0","mode":1,"time":"1995-01-16T10:41:14.680Z","ept":0.005}
+DEBUG:root:01/09/2014 11:41:16 app.py | ValueError | GrabGPS() | NO GPS FOUND: {"class":"TPV","tag":"MID2","device":"/dev/ttyUSB0","mode":1,"time":"1995-01-16T10:41:15.680Z","ept":0.005}
+DEBUG:root:01/09/2014 11:41:17 Checking network connection: Bus 001 Device 014: ID 067b:2303 Prolific Technology, Inc. PL2303 Serial Port
+Bus 001 Device 013: ID 12d1:14db Huawei Technologies Co., Ltd. E353/E3131
+Bus 001 Device 009: ID 046d:c52b Logitech, Inc. Unifying Receiver
+Bus 001 Device 008: ID 0424:ec00 Standard Microsystems Corp. SMSC9512/9514 Fast Ethernet Adapter
+Bus 001 Device 007: ID 0424:9514 Standard Microsystems Corp. SMC9514 Hub
+Bus 001 Device 001: ID 1d6b:0002 Linux Foundation 2.0 root hub
+
+WARNING:root:01/09/2014 11:41:17 USB HAS BEEN RESET: Network OK
+DEBUG:root:01/09/2014 11:41:18 app.py | ValueError | GrabGPS() | NO GPS FOUND: {"class":"TPV","tag":"MID2","device":"/dev/ttyUSB0","mode":1,"time":"1995-01-16T10:41:17.680Z","ept":0.005}
+DEBUG:root:01/09/2014 11:41:19 app.py | ValueError | GrabGPS() | NO GPS FOUND: {"class":"TPV","tag":"MID2","device":"/dev/ttyUSB0","mode":1,"time":"1995-01-16T10:41:18.680Z","ept":0.005}
+DEBUG:root:01/09/2014 11:41:21 app.py | ValueError | GrabGPS() | NO GPS FOUND: {"class":"TPV","tag":"MID2","device":"/dev/ttyUSB0","mode":1,"time":"1995-01-16T10:41:20.680Z","ept":0.005}
+DEBUG:root:01/09/2014 11:41:22 app.py | ValueError | GrabGPS() | NO GPS FOUND: {"class":"TPV","tag":"MID2","device":"/dev/ttyUSB0","mode":1,"time":"1995-01-16T10:41:21.680Z","ept":0.005}
+DEBUG:root:01/09/2014 11:41:24 app.py | ValueError | GrabGPS() | NO GPS FOUND: {"class":"TPV","tag":"MID2","device":"/dev/ttyUSB0","mode":1,"time":"1995-01-16T10:41:23.680Z","ept":0.005}
+DEBUG:root:01/09/2014 11:41:25 app.py | ValueError | GrabGPS() | NO GPS FOUND: {"class":"TPV","tag":"MID2","device":"/dev/ttyUSB0","mode":1,"time":"1995-01-16T10:41:24.680Z","ept":0.005}
+DEBUG:root:01/09/2014 11:41:27 app.py | ValueError | GrabGPS() | NO GPS FOUND: {"class":"TPV","tag":"MID2","device":"/dev/ttyUSB0","mode":1,"time":"1995-01-16T10:41:26.680Z","ept":0.005}
+DEBUG:root:01/09/2014 11:41:28 app.py | ValueError | GrabGPS() | NO GPS FOUND: {"class":"TPV","tag":"MID2","device":"/dev/ttyUSB0","mode":1,"time":"1995-01-16T10:41:27.680Z","ept":0.005}
+DEBUG:root:01/09/2014 11:41:30 app.py | ValueError | GrabGPS() | NO GPS FOUND: {"class":"TPV","tag":"MID2","device":"/dev/ttyUSB0","mode":1,"time":"1995-01-16T10:41:29.680Z","ept":0.005}
+DEBUG:root:01/09/2014 11:41:31 app.py | ValueError | GrabGPS() | NO GPS FOUND: {"class":"TPV","tag":"MID2","device":"/dev/ttyUSB0","mode":1,"time":"1995-01-16T10:41:30.680Z","ept":0.005}
+DEBUG:root:01/09/2014 11:41:33 app.py | ValueError | GrabGPS() | NO GPS FOUND: {"class":"TPV","tag":"MID2","device":"/dev/ttyUSB0","mode":1,"time":"1995-01-16T10:41:32.680Z","ept":0.005}
+DEBUG:root:01/09/2014 11:41:34 app.py | ValueError | GrabGPS() | NO GPS FOUND: {"class":"TPV","tag":"MID2","device":"/dev/ttyUSB0","mode":1,"time":"1995-01-16T10:41:33.680Z","ept":0.005}
+DEBUG:root:01/09/2014 11:41:36 app.py | ValueError | GrabGPS() | NO GPS FOUND: {"class":"TPV","tag":"MID2","device":"/dev/ttyUSB0","mode":1,"time":"1995-01-16T10:41:35.680Z","ept":0.005}
+DEBUG:root:01/09/2014 11:41:37 app.py | ValueError | GrabGPS() | NO GPS FOUND: {"class":"TPV","tag":"MID2","device":"/dev/ttyUSB0","mode":1,"time":"1995-01-16T10:41:36.680Z","ept":0.005}
+DEBUG:root:01/09/2014 11:41:39 app.py | ValueError | GrabGPS() | NO GPS FOUND: {"class":"TPV","tag":"MID2","device":"/dev/ttyUSB0","mode":1,"time":"1995-01-16T10:41:38.680Z","ept":0.005}
+DEBUG:root:01/09/2014 11:41:40 Checking network connection: Bus 001 Device 014: ID 067b:2303 Prolific Technology, Inc. PL2303 Serial Port
+Bus 001 Device 013: ID 12d1:14db Huawei Technologies Co., Ltd. E353/E3131
+Bus 001 Device 009: ID 046d:c52b Logitech, Inc. Unifying Receiver
+Bus 001 Device 008: ID 0424:ec00 Standard Microsystems Corp. SMSC9512/9514 Fast Ethernet Adapter
+Bus 001 Device 007: ID 0424:9514 Standard Microsystems Corp. SMC9514 Hub
+Bus 001 Device 001: ID 1d6b:0002 Linux Foundation 2.0 root hub
+
+WARNING:root:01/09/2014 11:41:40 USB HAS BEEN RESET: Network OK
+DEBUG:root:01/09/2014 11:41:40 app.py | ValueError | GrabGPS() | NO GPS FOUND: {"class":"TPV","tag":"MID2","device":"/dev/ttyUSB0","mode":1,"time":"1995-01-16T10:41:39.680Z","ept":0.005}
+DEBUG:root:01/09/2014 11:41:42 app.py | ValueError | GrabGPS() | NO GPS FOUND: {"class":"TPV","tag":"MID2","device":"/dev/ttyUSB0","mode":1,"time":"1995-01-16T10:41:41.680Z","ept":0.005}
+DEBUG:root:01/09/2014 11:41:43 app.py | ValueError | GrabGPS() | NO GPS FOUND: {"class":"TPV","tag":"MID2","device":"/dev/ttyUSB0","mode":1,"time":"1995-01-16T10:41:42.680Z","ept":0.005}
+DEBUG:root:01/09/2014 11:41:45 app.py | ValueError | GrabGPS() | NO GPS FOUND: {"class":"TPV","tag":"MID2","device":"/dev/ttyUSB0","mode":1,"time":"1995-01-16T10:41:44.680Z","ept":0.005}
+DEBUG:root:01/09/2014 11:41:46 app.py | ValueError | GrabGPS() | NO GPS FOUND: {"class":"TPV","tag":"MID2","device":"/dev/ttyUSB0","mode":1,"time":"1995-01-16T10:41:45.680Z","ept":0.005}
+DEBUG:root:01/09/2014 11:41:48 app.py | ValueError | GrabGPS() | NO GPS FOUND: {"class":"TPV","tag":"MID2","device":"/dev/ttyUSB0","mode":1,"time":"1995-01-16T10:41:47.680Z","ept":0.005}
+DEBUG:root:01/09/2014 11:41:49 app.py | ValueError | GrabGPS() | NO GPS FOUND: {"class":"TPV","tag":"MID2","device":"/dev/ttyUSB0","mode":1,"time":"1995-01-16T10:41:48.680Z","ept":0.005}
+DEBUG:root:01/09/2014 11:41:51 app.py | ValueError | GrabGPS() | NO GPS FOUND: {"class":"SKY","tag":"MID4","device":"/dev/ttyUSB0","time":"1995-01-16T10:41:50.680Z","hdop":0.00,"satellites":[{"PRN":21,"el":38,"az":324,"ss":32,"used":false}]}
+DEBUG:root:01/09/2014 11:41:53 app.py | ValueError | GrabGPS() | NO GPS FOUND: {"class":"TPV","tag":"MID2","device":"/dev/ttyUSB0","mode":1,"time":"1995-01-16T10:41:52.680Z","ept":0.005}
+DEBUG:root:01/09/2014 11:41:54 app.py | ValueError | GrabGPS() | NO GPS FOUND: {"class":"TPV","tag":"MID2","device":"/dev/ttyUSB0","mode":1,"time":"1995-01-16T10:41:53.680Z","ept":0.005}
+DEBUG:root:01/09/2014 11:41:56 app.py | ValueError | GrabGPS() | NO GPS FOUND: {"class":"TPV","tag":"MID2","device":"/dev/ttyUSB0","mode":1,"time":"1995-01-16T10:41:55.680Z","ept":0.005}
+DEBUG:root:01/09/2014 11:41:57 app.py | ValueError | GrabGPS() | NO GPS FOUND: {"class":"TPV","tag":"MID2","device":"/dev/ttyUSB0","mode":1,"time":"1995-01-16T10:41:56.680Z","ept":0.005}
+DEBUG:root:01/09/2014 11:41:59 app.py | ValueError | GrabGPS() | NO GPS FOUND: {"class":"TPV","tag":"MID2","device":"/dev/ttyUSB0","mode":1,"time":"1995-01-16T10:41:58.680Z","ept":0.005}
+DEBUG:root:01/09/2014 11:42:00 app.py | ValueError | GrabGPS() | NO GPS FOUND: {"class":"TPV","tag":"MID2","device":"/dev/ttyUSB0","mode":1,"time":"1995-01-16T10:41:59.680Z","ept":0.005}
+DEBUG:root:01/09/2014 11:42:02 app.py | ValueError | GrabGPS() | NO GPS FOUND: {"class":"TPV","tag":"MID2","device":"/dev/ttyUSB0","mode":1,"time":"1995-01-16T10:42:01.680Z","ept":0.005}
+DEBUG:root:01/09/2014 11:42:02 Checking network connection: Bus 001 Device 014: ID 067b:2303 Prolific Technology, Inc. PL2303 Serial Port
+Bus 001 Device 013: ID 12d1:14db Huawei Technologies Co., Ltd. E353/E3131
+Bus 001 Device 009: ID 046d:c52b Logitech, Inc. Unifying Receiver
+Bus 001 Device 008: ID 0424:ec00 Standard Microsystems Corp. SMSC9512/9514 Fast Ethernet Adapter
+Bus 001 Device 007: ID 0424:9514 Standard Microsystems Corp. SMC9514 Hub
+Bus 001 Device 001: ID 1d6b:0002 Linux Foundation 2.0 root hub
+
+WARNING:root:01/09/2014 11:42:02 USB HAS BEEN RESET: Network OK
+DEBUG:root:01/09/2014 11:42:03 app.py | ValueError | GrabGPS() | NO GPS FOUND: {"class":"TPV","tag":"MID2","device":"/dev/ttyUSB0","mode":1,"time":"1995-01-16T10:42:02.680Z","ept":0.005}
+DEBUG:root:01/09/2014 11:42:05 app.py | ValueError | GrabGPS() | NO GPS FOUND: {"class":"TPV","tag":"MID2","device":"/dev/ttyUSB0","mode":1,"time":"1995-01-16T10:42:04.680Z","ept":0.005}
+DEBUG:root:01/09/2014 11:42:06 app.py | ValueError | GrabGPS() | NO GPS FOUND: {"class":"TPV","tag":"MID2","device":"/dev/ttyUSB0","mode":1,"time":"1995-01-16T10:42:05.680Z","ept":0.005}
+DEBUG:root:01/09/2014 11:42:08 app.py | ValueError | GrabGPS() | NO GPS FOUND: {"class":"TPV","tag":"MID2","device":"/dev/ttyUSB0","mode":1,"time":"1995-01-16T10:42:07.680Z","ept":0.005}
+DEBUG:root:01/09/2014 11:42:09 app.py | ValueError | GrabGPS() | NO GPS FOUND: {"class":"TPV","tag":"MID2","device":"/dev/ttyUSB0","mode":1,"time":"1995-01-16T10:42:08.680Z","ept":0.005}
+DEBUG:root:01/09/2014 11:42:11 app.py | ValueError | GrabGPS() | NO GPS FOUND: {"class":"TPV","tag":"MID2","device":"/dev/ttyUSB0","mode":1,"time":"1995-01-16T10:42:10.680Z","ept":0.005}
+DEBUG:root:01/09/2014 11:42:12 app.py | ValueError | GrabGPS() | NO GPS FOUND: {"class":"TPV","tag":"MID2","device":"/dev/ttyUSB0","mode":1,"time":"1995-01-16T10:42:11.680Z","ept":0.005}
+DEBUG:root:01/09/2014 11:42:14 app.py | ValueError | GrabGPS() | NO GPS FOUND: {"class":"TPV","tag":"MID2","device":"/dev/ttyUSB0","mode":1,"time":"1995-01-16T10:42:13.680Z","ept":0.005}
+DEBUG:root:01/09/2014 11:42:15 app.py | ValueError | GrabGPS() | NO GPS FOUND: {"class":"TPV","tag":"MID2","device":"/dev/ttyUSB0","mode":1,"time":"1995-01-16T10:42:14.680Z","ept":0.005}
+DEBUG:root:01/09/2014 11:42:17 app.py | ValueError | GrabGPS() | NO GPS FOUND: {"class":"TPV","tag":"MID2","device":"/dev/ttyUSB0","mode":1,"time":"1995-01-16T10:42:16.680Z","ept":0.005}
+DEBUG:root:01/09/2014 11:42:18 app.py | ValueError | GrabGPS() | NO GPS FOUND: {"class":"TPV","tag":"MID2","device":"/dev/ttyUSB0","mode":1,"time":"1995-01-16T10:42:17.680Z","ept":0.005}
+DEBUG:root:01/09/2014 11:42:20 app.py | ValueError | GrabGPS() | NO GPS FOUND: {"class":"TPV","tag":"MID2","device":"/dev/ttyUSB0","mode":1,"time":"1995-01-16T10:42:19.680Z","ept":0.005}
+DEBUG:root:01/09/2014 11:42:21 app.py | ValueError | GrabGPS() | NO GPS FOUND: {"class":"TPV","tag":"MID2","device":"/dev/ttyUSB0","mode":1,"time":"1995-01-16T10:42:20.580Z","ept":0.005}
+DEBUG:root:01/09/2014 11:42:23 app.py | ValueError | GrabGPS() | NO GPS FOUND: {"class":"TPV","tag":"MID2","device":"/dev/ttyUSB0","mode":1,"time":"1995-01-16T10:42:22.680Z","ept":0.005}
+DEBUG:root:01/09/2014 11:42:24 app.py | ValueError | GrabGPS() | NO GPS FOUND: {"class":"TPV","tag":"MID2","device":"/dev/ttyUSB0","mode":1,"time":"1995-01-16T10:42:23.680Z","ept":0.005}
+DEBUG:root:01/09/2014 11:42:24 Checking network connection: Bus 001 Device 014: ID 067b:2303 Prolific Technology, Inc. PL2303 Serial Port
+Bus 001 Device 013: ID 12d1:14db Huawei Technologies Co., Ltd. E353/E3131
+Bus 001 Device 009: ID 046d:c52b Logitech, Inc. Unifying Receiver
+Bus 001 Device 008: ID 0424:ec00 Standard Microsystems Corp. SMSC9512/9514 Fast Ethernet Adapter
+Bus 001 Device 007: ID 0424:9514 Standard Microsystems Corp. SMC9514 Hub
+Bus 001 Device 001: ID 1d6b:0002 Linux Foundation 2.0 root hub
+
+WARNING:root:01/09/2014 11:42:24 USB HAS BEEN RESET: Network OK
+DEBUG:root:01/09/2014 11:42:26 app.py | ValueError | GrabGPS() | NO GPS FOUND: {"class":"TPV","tag":"MID2","device":"/dev/ttyUSB0","mode":1,"time":"1995-01-16T10:42:25.680Z","ept":0.005}
+DEBUG:root:01/09/2014 11:42:27 app.py | ValueError | GrabGPS() | NO GPS FOUND: {"class":"TPV","tag":"MID2","device":"/dev/ttyUSB0","mode":1,"time":"1995-01-16T10:42:26.680Z","ept":0.005}
+DEBUG:root:01/09/2014 11:42:29 app.py | ValueError | GrabGPS() | NO GPS FOUND: {"class":"TPV","tag":"MID2","device":"/dev/ttyUSB0","mode":1,"time":"1995-01-16T10:42:28.680Z","ept":0.005}
+DEBUG:root:01/09/2014 11:42:30 app.py | ValueError | GrabGPS() | NO GPS FOUND: {"class":"TPV","tag":"MID2","device":"/dev/ttyUSB0","mode":1,"time":"1995-01-16T10:42:29.680Z","ept":0.005}
+DEBUG:root:01/09/2014 11:42:32 app.py | ValueError | GrabGPS() | NO GPS FOUND: {"class":"TPV","tag":"MID2","device":"/dev/ttyUSB0","mode":1,"time":"1995-01-16T10:42:31.680Z","ept":0.005}
+DEBUG:root:01/09/2014 11:42:33 app.py | ValueError | GrabGPS() | NO GPS FOUND: {"class":"TPV","tag":"MID2","device":"/dev/ttyUSB0","mode":1,"time":"1995-01-16T10:42:32.680Z","ept":0.005}
+DEBUG:root:01/09/2014 11:42:35 app.py | ValueError | GrabGPS() | NO GPS FOUND: {"class":"TPV","tag":"MID2","device":"/dev/ttyUSB0","mode":1,"time":"1995-01-16T10:42:34.680Z","ept":0.005}
+DEBUG:root:01/09/2014 11:42:36 app.py | ValueError | GrabGPS() | NO GPS FOUND: {"class":"TPV","tag":"MID2","device":"/dev/ttyUSB0","mode":1,"time":"1995-01-16T10:42:35.680Z","ept":0.005}
+DEBUG:root:01/09/2014 11:42:38 app.py | ValueError | GrabGPS() | NO GPS FOUND: {"class":"TPV","tag":"MID2","device":"/dev/ttyUSB0","mode":1,"time":"1995-01-16T10:42:37.680Z","ept":0.005}
+DEBUG:root:01/09/2014 11:42:39 app.py | ValueError | GrabGPS() | NO GPS FOUND: {"class":"TPV","tag":"MID2","device":"/dev/ttyUSB0","mode":1,"time":"1995-01-16T10:42:38.680Z","ept":0.005}
+DEBUG:root:01/09/2014 11:42:41 app.py | ValueError | GrabGPS() | NO GPS FOUND: {"class":"TPV","tag":"MID2","device":"/dev/ttyUSB0","mode":1,"time":"1995-01-16T10:42:40.680Z","ept":0.005}
+DEBUG:root:01/09/2014 11:42:42 app.py | ValueError | GrabGPS() | NO GPS FOUND: {"class":"TPV","tag":"MID2","device":"/dev/ttyUSB0","mode":1,"time":"1995-01-16T10:42:41.680Z","ept":0.005}
+DEBUG:root:01/09/2014 11:42:44 app.py | ValueError | GrabGPS() | NO GPS FOUND: {"class":"TPV","tag":"MID2","device":"/dev/ttyUSB0","mode":1,"time":"1995-01-16T10:42:43.680Z","ept":0.005}
+DEBUG:root:01/09/2014 11:42:45 app.py | ValueError | GrabGPS() | NO GPS FOUND: {"class":"TPV","tag":"MID2","device":"/dev/ttyUSB0","mode":1,"time":"1995-01-16T10:42:44.680Z","ept":0.005}
+DEBUG:root:01/09/2014 11:42:47 app.py | ValueError | GrabGPS() | NO GPS FOUND: {"class":"TPV","tag":"MID2","device":"/dev/ttyUSB0","mode":1,"time":"1995-01-16T10:42:46.680Z","ept":0.005}
+DEBUG:root:01/09/2014 11:42:47 Checking network connection: Bus 001 Device 014: ID 067b:2303 Prolific Technology, Inc. PL2303 Serial Port
+Bus 001 Device 013: ID 12d1:14db Huawei Technologies Co., Ltd. E353/E3131
+Bus 001 Device 009: ID 046d:c52b Logitech, Inc. Unifying Receiver
+Bus 001 Device 008: ID 0424:ec00 Standard Microsystems Corp. SMSC9512/9514 Fast Ethernet Adapter
+Bus 001 Device 007: ID 0424:9514 Standard Microsystems Corp. SMC9514 Hub
+Bus 001 Device 001: ID 1d6b:0002 Linux Foundation 2.0 root hub
+
+WARNING:root:01/09/2014 11:42:47 USB HAS BEEN RESET: Network OK
+DEBUG:root:01/09/2014 11:42:48 app.py | ValueError | GrabGPS() | NO GPS FOUND: {"class":"TPV","tag":"MID2","device":"/dev/ttyUSB0","mode":1,"time":"1995-01-16T10:42:47.680Z","ept":0.005}
+DEBUG:root:01/09/2014 11:42:50 app.py | ValueError | GrabGPS() | NO GPS FOUND: {"class":"TPV","tag":"MID2","device":"/dev/ttyUSB0","mode":1,"time":"1995-01-16T10:42:49.680Z","ept":0.005}
+DEBUG:root:01/09/2014 11:42:51 app.py | ValueError | GrabGPS() | NO GPS FOUND: {"class":"TPV","tag":"MID2","device":"/dev/ttyUSB0","mode":1,"time":"1995-01-16T10:42:50.680Z","ept":0.005}
+DEBUG:root:01/09/2014 11:42:53 app.py | ValueError | GrabGPS() | NO GPS FOUND: {"class":"SKY","tag":"MID4","device":"/dev/ttyUSB0","time":"1995-01-16T10:42:52.690Z","hdop":0.00,"satellites":[{"PRN":21,"el":38,"az":324,"ss":0,"used":false}]}
+DEBUG:root:01/09/2014 11:42:55 app.py | ValueError | GrabGPS() | NO GPS FOUND: {"class":"TPV","tag":"MID2","device":"/dev/ttyUSB0","mode":1,"time":"1995-01-16T10:42:54.690Z","ept":0.005}
+DEBUG:root:01/09/2014 11:42:56 app.py | ValueError | GrabGPS() | NO GPS FOUND: {"class":"TPV","tag":"MID2","device":"/dev/ttyUSB0","mode":1,"time":"1995-01-16T10:42:55.690Z","ept":0.005}
+DEBUG:root:01/09/2014 11:42:58 app.py | ValueError | GrabGPS() | NO GPS FOUND: {"class":"TPV","tag":"MID2","device":"/dev/ttyUSB0","mode":1,"time":"1995-01-16T10:42:57.690Z","ept":0.005}
+DEBUG:root:01/09/2014 11:42:59 app.py | ValueError | GrabGPS() | NO GPS FOUND: {"class":"TPV","tag":"MID2","device":"/dev/ttyUSB0","mode":1,"time":"1995-01-16T10:42:58.690Z","ept":0.005}
+DEBUG:root:01/09/2014 11:43:01 app.py | ValueError | GrabGPS() | NO GPS FOUND: {"class":"TPV","tag":"MID2","device":"/dev/ttyUSB0","mode":1,"time":"1995-01-16T10:43:00.690Z","ept":0.005}
+DEBUG:root:01/09/2014 11:43:02 app.py | ValueError | GrabGPS() | NO GPS FOUND: {"class":"TPV","tag":"MID2","device":"/dev/ttyUSB0","mode":1,"time":"1995-01-16T10:43:01.690Z","ept":0.005}
+DEBUG:root:01/09/2014 11:43:04 app.py | ValueError | GrabGPS() | NO GPS FOUND: {"class":"TPV","tag":"MID2","device":"/dev/ttyUSB0","mode":1,"time":"1995-01-16T10:43:03.690Z","ept":0.005}
+DEBUG:root:01/09/2014 11:43:05 app.py | ValueError | GrabGPS() | NO GPS FOUND: {"class":"TPV","tag":"MID2","device":"/dev/ttyUSB0","mode":1,"time":"1995-01-16T10:43:04.690Z","ept":0.005}
+DEBUG:root:01/09/2014 11:43:07 app.py | ValueError | GrabGPS() | NO GPS FOUND: {"class":"TPV","tag":"MID2","device":"/dev/ttyUSB0","mode":1,"time":"1995-01-16T10:43:06.690Z","ept":0.005}
+DEBUG:root:01/09/2014 11:43:08 app.py | ValueError | GrabGPS() | NO GPS FOUND: {"class":"TPV","tag":"MID2","device":"/dev/ttyUSB0","mode":1,"time":"1995-01-16T10:43:07.690Z","ept":0.005}
+DEBUG:root:01/09/2014 11:43:09 Checking network connection: Bus 001 Device 014: ID 067b:2303 Prolific Technology, Inc. PL2303 Serial Port
+Bus 001 Device 013: ID 12d1:14db Huawei Technologies Co., Ltd. E353/E3131
+Bus 001 Device 009: ID 046d:c52b Logitech, Inc. Unifying Receiver
+Bus 001 Device 008: ID 0424:ec00 Standard Microsystems Corp. SMSC9512/9514 Fast Ethernet Adapter
+Bus 001 Device 007: ID 0424:9514 Standard Microsystems Corp. SMC9514 Hub
+Bus 001 Device 001: ID 1d6b:0002 Linux Foundation 2.0 root hub
+
+WARNING:root:01/09/2014 11:43:09 USB HAS BEEN RESET: Network OK
+DEBUG:root:01/09/2014 11:43:10 app.py | ValueError | GrabGPS() | NO GPS FOUND: {"class":"TPV","tag":"MID2","device":"/dev/ttyUSB0","mode":1,"time":"1995-01-16T10:43:09.690Z","ept":0.005}
+DEBUG:root:01/09/2014 11:43:11 app.py | ValueError | GrabGPS() | NO GPS FOUND: {"class":"TPV","tag":"MID2","device":"/dev/ttyUSB0","mode":1,"time":"1995-01-16T10:43:10.690Z","ept":0.005}
+DEBUG:root:01/09/2014 11:43:13 app.py | ValueError | GrabGPS() | NO GPS FOUND: {"class":"TPV","tag":"MID2","device":"/dev/ttyUSB0","mode":1,"time":"1995-01-16T10:43:12.690Z","ept":0.005}
+DEBUG:root:01/09/2014 11:43:14 app.py | ValueError | GrabGPS() | NO GPS FOUND: {"class":"TPV","tag":"MID2","device":"/dev/ttyUSB0","mode":1,"time":"1995-01-16T10:43:13.690Z","ept":0.005}
+DEBUG:root:01/09/2014 11:43:16 app.py | ValueError | GrabGPS() | NO GPS FOUND: {"class":"TPV","tag":"MID2","device":"/dev/ttyUSB0","mode":1,"time":"1995-01-16T10:43:15.690Z","ept":0.005}
+DEBUG:root:01/09/2014 11:43:17 app.py | ValueError | GrabGPS() | NO GPS FOUND: {"class":"TPV","tag":"MID2","device":"/dev/ttyUSB0","mode":1,"time":"1995-01-16T10:43:16.690Z","ept":0.005}
+DEBUG:root:01/09/2014 11:43:19 app.py | ValueError | GrabGPS() | NO GPS FOUND: {"class":"TPV","tag":"MID2","device":"/dev/ttyUSB0","mode":1,"time":"1995-01-16T10:43:18.680Z","ept":0.005}
+DEBUG:root:01/09/2014 11:43:20 app.py | ValueError | GrabGPS() | NO GPS FOUND: {"class":"TPV","tag":"MID2","device":"/dev/ttyUSB0","mode":1,"time":"1995-01-16T10:43:19.680Z","ept":0.005}
+DEBUG:root:01/09/2014 11:43:22 app.py | ValueError | GrabGPS() | NO GPS FOUND: {"class":"TPV","tag":"MID2","device":"/dev/ttyUSB0","mode":1,"time":"1995-01-16T10:43:21.680Z","ept":0.005}
+DEBUG:root:01/09/2014 11:43:23 app.py | ValueError | GrabGPS() | NO GPS FOUND: {"class":"TPV","tag":"MID2","device":"/dev/ttyUSB0","mode":1,"time":"1995-01-16T10:43:22.690Z","ept":0.005}
+DEBUG:root:01/09/2014 11:43:25 app.py | ValueError | GrabGPS() | NO GPS FOUND: {"class":"TPV","tag":"MID2","device":"/dev/ttyUSB0","mode":1,"time":"1995-01-16T10:43:24.690Z","ept":0.005}
+DEBUG:root:01/09/2014 11:43:26 app.py | ValueError | GrabGPS() | NO GPS FOUND: {"class":"TPV","tag":"MID2","device":"/dev/ttyUSB0","mode":1,"time":"1995-01-16T10:43:25.690Z","ept":0.005}
+DEBUG:root:01/09/2014 11:43:28 app.py | ValueError | GrabGPS() | NO GPS FOUND: {"class":"TPV","tag":"MID2","device":"/dev/ttyUSB0","mode":1,"time":"1995-01-16T10:43:27.690Z","ept":0.005}
+DEBUG:root:01/09/2014 11:43:29 app.py | ValueError | GrabGPS() | NO GPS FOUND: {"class":"TPV","tag":"MID2","device":"/dev/ttyUSB0","mode":1,"time":"1995-01-16T10:43:28.690Z","ept":0.005}
+DEBUG:root:01/09/2014 11:43:31 app.py | ValueError | GrabGPS() | NO GPS FOUND: {"class":"TPV","tag":"MID2","device":"/dev/ttyUSB0","mode":1,"time":"1995-01-16T10:43:30.690Z","ept":0.005}
+DEBUG:root:01/09/2014 11:43:31 Checking network connection: Bus 001 Device 014: ID 067b:2303 Prolific Technology, Inc. PL2303 Serial Port
+Bus 001 Device 013: ID 12d1:14db Huawei Technologies Co., Ltd. E353/E3131
+Bus 001 Device 009: ID 046d:c52b Logitech, Inc. Unifying Receiver
+Bus 001 Device 008: ID 0424:ec00 Standard Microsystems Corp. SMSC9512/9514 Fast Ethernet Adapter
+Bus 001 Device 007: ID 0424:9514 Standard Microsystems Corp. SMC9514 Hub
+Bus 001 Device 001: ID 1d6b:0002 Linux Foundation 2.0 root hub
+
+WARNING:root:01/09/2014 11:43:31 USB HAS BEEN RESET: Network OK
+DEBUG:root:01/09/2014 11:43:32 app.py | ValueError | GrabGPS() | NO GPS FOUND: {"class":"TPV","tag":"MID2","device":"/dev/ttyUSB0","mode":1,"time":"1995-01-16T10:43:31.690Z","ept":0.005}
+DEBUG:root:01/09/2014 11:43:34 app.py | ValueError | GrabGPS() | NO GPS FOUND: {"class":"TPV","tag":"MID2","device":"/dev/ttyUSB0","mode":1,"time":"1995-01-16T10:43:33.680Z","ept":0.005}
+DEBUG:root:01/09/2014 11:43:35 app.py | ValueError | GrabGPS() | NO GPS FOUND: {"class":"TPV","tag":"MID2","device":"/dev/ttyUSB0","mode":1,"time":"1995-01-16T10:43:34.680Z","ept":0.005}
+DEBUG:root:01/09/2014 11:43:37 app.py | ValueError | GrabGPS() | NO GPS FOUND: {"class":"TPV","tag":"MID2","device":"/dev/ttyUSB0","mode":1,"time":"1995-01-16T10:43:36.680Z","ept":0.005}
+DEBUG:root:01/09/2014 11:43:38 app.py | ValueError | GrabGPS() | NO GPS FOUND: {"class":"TPV","tag":"MID2","device":"/dev/ttyUSB0","mode":1,"time":"1995-01-16T10:43:37.690Z","ept":0.005}
+DEBUG:root:01/09/2014 11:43:40 app.py | ValueError | GrabGPS() | NO GPS FOUND: {"class":"TPV","tag":"MID2","device":"/dev/ttyUSB0","mode":1,"time":"1995-01-16T10:43:39.690Z","ept":0.005}
+DEBUG:root:01/09/2014 11:43:41 app.py | ValueError | GrabGPS() | NO GPS FOUND: {"class":"TPV","tag":"MID2","device":"/dev/ttyUSB0","mode":1,"time":"1995-01-16T10:43:40.690Z","ept":0.005}
+DEBUG:root:01/09/2014 11:43:43 app.py | ValueError | GrabGPS() | NO GPS FOUND: {"class":"TPV","tag":"MID2","device":"/dev/ttyUSB0","mode":1,"time":"1995-01-16T10:43:42.690Z","ept":0.005}
+DEBUG:root:01/09/2014 11:43:44 app.py | ValueError | GrabGPS() | NO GPS FOUND: {"class":"TPV","tag":"MID2","device":"/dev/ttyUSB0","mode":1,"time":"1995-01-16T10:43:43.690Z","ept":0.005}
+DEBUG:root:01/09/2014 11:43:46 app.py | ValueError | GrabGPS() | NO GPS FOUND: {"class":"TPV","tag":"MID2","device":"/dev/ttyUSB0","mode":1,"time":"1995-01-16T10:43:45.690Z","ept":0.005}
+DEBUG:root:01/09/2014 11:43:47 app.py | ValueError | GrabGPS() | NO GPS FOUND: {"class":"TPV","tag":"MID2","device":"/dev/ttyUSB0","mode":1,"time":"1995-01-16T10:43:46.690Z","ept":0.005}
+DEBUG:root:01/09/2014 11:43:49 app.py | ValueError | GrabGPS() | NO GPS FOUND: {"class":"TPV","tag":"MID2","device":"/dev/ttyUSB0","mode":1,"time":"1995-01-16T10:43:48.690Z","ept":0.005}
+DEBUG:root:01/09/2014 11:43:50 app.py | ValueError | GrabGPS() | NO GPS FOUND: {"class":"TPV","tag":"MID2","device":"/dev/ttyUSB0","mode":1,"time":"1995-01-16T10:43:49.690Z","ept":0.005}
+DEBUG:root:01/09/2014 11:43:52 app.py | ValueError | GrabGPS() | NO GPS FOUND: {"class":"TPV","tag":"MID2","device":"/dev/ttyUSB0","mode":1,"time":"1995-01-16T10:43:51.690Z","ept":0.005}
+DEBUG:root:01/09/2014 11:43:54 app.py | ValueError | GrabGPS() | NO GPS FOUND: {"class":"TPV","tag":"MID2","device":"/dev/ttyUSB0","mode":1,"time":"1995-01-16T10:43:53.690Z","ept":0.005}
+DEBUG:root:01/09/2014 11:43:54 Checking network connection: Bus 001 Device 014: ID 067b:2303 Prolific Technology, Inc. PL2303 Serial Port
+Bus 001 Device 013: ID 12d1:14db Huawei Technologies Co., Ltd. E353/E3131
+Bus 001 Device 009: ID 046d:c52b Logitech, Inc. Unifying Receiver
+Bus 001 Device 008: ID 0424:ec00 Standard Microsystems Corp. SMSC9512/9514 Fast Ethernet Adapter
+Bus 001 Device 007: ID 0424:9514 Standard Microsystems Corp. SMC9514 Hub
+Bus 001 Device 001: ID 1d6b:0002 Linux Foundation 2.0 root hub
+
+WARNING:root:01/09/2014 11:43:54 USB HAS BEEN RESET: Network OK
+DEBUG:root:01/09/2014 11:43:55 app.py | ValueError | GrabGPS() | NO GPS FOUND: {"class":"TPV","tag":"MID2","device":"/dev/ttyUSB0","mode":1,"time":"1995-01-16T10:43:54.690Z","ept":0.005}
+DEBUG:root:01/09/2014 11:43:57 app.py | ValueError | GrabGPS() | NO GPS FOUND: {"class":"TPV","tag":"MID2","device":"/dev/ttyUSB0","mode":1,"time":"1995-01-16T10:43:56.680Z","ept":0.005}
+DEBUG:root:01/09/2014 11:43:58 app.py | ValueError | GrabGPS() | NO GPS FOUND: {"class":"TPV","tag":"MID2","device":"/dev/ttyUSB0","mode":1,"time":"1995-01-16T10:43:57.680Z","ept":0.005}
+DEBUG:root:01/09/2014 11:44:00 app.py | ValueError | GrabGPS() | NO GPS FOUND: {"class":"TPV","tag":"MID2","device":"/dev/ttyUSB0","mode":1,"time":"1995-01-16T10:43:59.680Z","ept":0.005}
+DEBUG:root:01/09/2014 11:44:01 app.py | ValueError | GrabGPS() | NO GPS FOUND: {"class":"TPV","tag":"MID2","device":"/dev/ttyUSB0","mode":1,"time":"1995-01-16T10:44:00.680Z","ept":0.005}
+DEBUG:root:01/09/2014 11:44:03 app.py | ValueError | GrabGPS() | NO GPS FOUND: {"class":"TPV","tag":"MID2","device":"/dev/ttyUSB0","mode":1,"time":"1995-01-16T10:44:02.680Z","ept":0.005}
+DEBUG:root:01/09/2014 11:44:04 app.py | ValueError | GrabGPS() | NO GPS FOUND: {"class":"TPV","tag":"MID2","device":"/dev/ttyUSB0","mode":1,"time":"1995-01-16T10:44:03.680Z","ept":0.005}
+DEBUG:root:01/09/2014 11:44:06 app.py | ValueError | GrabGPS() | NO GPS FOUND: {"class":"TPV","tag":"MID2","device":"/dev/ttyUSB0","mode":1,"time":"1995-01-16T10:44:05.680Z","ept":0.005}
+DEBUG:root:01/09/2014 11:44:07 app.py | ValueError | GrabGPS() | NO GPS FOUND: {"class":"TPV","tag":"MID2","device":"/dev/ttyUSB0","mode":1,"time":"1995-01-16T10:44:06.680Z","ept":0.005}
+DEBUG:root:01/09/2014 11:44:09 app.py | ValueError | GrabGPS() | NO GPS FOUND: {"class":"TPV","tag":"MID2","device":"/dev/ttyUSB0","mode":1,"time":"1995-01-16T10:44:08.690Z","ept":0.005}
+DEBUG:root:01/09/2014 11:44:10 app.py | ValueError | GrabGPS() | NO GPS FOUND: {"class":"TPV","tag":"MID2","device":"/dev/ttyUSB0","mode":1,"time":"1995-01-16T10:44:09.690Z","ept":0.005}
+DEBUG:root:01/09/2014 11:44:12 app.py | ValueError | GrabGPS() | NO GPS FOUND: {"class":"TPV","tag":"MID2","device":"/dev/ttyUSB0","mode":1,"time":"1995-01-16T10:44:11.690Z","ept":0.005}
+DEBUG:root:01/09/2014 11:44:13 app.py | ValueError | GrabGPS() | NO GPS FOUND: {"class":"TPV","tag":"MID2","device":"/dev/ttyUSB0","mode":1,"time":"1995-01-16T10:44:12.690Z","ept":0.005}
+DEBUG:root:01/09/2014 11:44:15 app.py | ValueError | GrabGPS() | NO GPS FOUND: {"class":"TPV","tag":"MID2","device":"/dev/ttyUSB0","mode":1,"time":"1995-01-16T10:44:14.690Z","ept":0.005}
+DEBUG:root:01/09/2014 11:44:16 app.py | ValueError | GrabGPS() | NO GPS FOUND: {"class":"TPV","tag":"MID2","device":"/dev/ttyUSB0","mode":1,"time":"1995-01-16T10:44:15.690Z","ept":0.005}
+DEBUG:root:01/09/2014 11:44:16 Checking network connection: Bus 001 Device 014: ID 067b:2303 Prolific Technology, Inc. PL2303 Serial Port
+Bus 001 Device 013: ID 12d1:14db Huawei Technologies Co., Ltd. E353/E3131
+Bus 001 Device 009: ID 046d:c52b Logitech, Inc. Unifying Receiver
+Bus 001 Device 008: ID 0424:ec00 Standard Microsystems Corp. SMSC9512/9514 Fast Ethernet Adapter
+Bus 001 Device 007: ID 0424:9514 Standard Microsystems Corp. SMC9514 Hub
+Bus 001 Device 001: ID 1d6b:0002 Linux Foundation 2.0 root hub
+
+WARNING:root:01/09/2014 11:44:16 USB HAS BEEN RESET: Network OK
+DEBUG:root:01/09/2014 11:44:18 app.py | ValueError | GrabGPS() | NO GPS FOUND: {"class":"TPV","tag":"MID2","device":"/dev/ttyUSB0","mode":1,"time":"1995-01-16T10:44:17.680Z","ept":0.005}
+DEBUG:root:01/09/2014 11:44:19 app.py | ValueError | GrabGPS() | NO GPS FOUND: {"class":"TPV","tag":"MID2","device":"/dev/ttyUSB0","mode":1,"time":"1995-01-16T10:44:18.680Z","ept":0.005}
+DEBUG:root:01/09/2014 11:44:21 app.py | ValueError | GrabGPS() | NO GPS FOUND: {"class":"TPV","tag":"MID2","device":"/dev/ttyUSB0","mode":1,"time":"1995-01-16T10:44:20.680Z","ept":0.005}
+DEBUG:root:01/09/2014 11:44:22 app.py | ValueError | GrabGPS() | NO GPS FOUND: {"class":"TPV","tag":"MID2","device":"/dev/ttyUSB0","mode":1,"time":"1995-01-16T10:44:21.680Z","ept":0.005}
+DEBUG:root:01/09/2014 11:44:24 app.py | ValueError | GrabGPS() | NO GPS FOUND: {"class":"TPV","tag":"MID2","device":"/dev/ttyUSB0","mode":1,"time":"1995-01-16T10:44:23.680Z","ept":0.005}
+DEBUG:root:01/09/2014 11:44:25 app.py | ValueError | GrabGPS() | NO GPS FOUND: {"class":"TPV","tag":"MID2","device":"/dev/ttyUSB0","mode":1,"time":"1995-01-16T10:44:24.680Z","ept":0.005}
+DEBUG:root:01/09/2014 11:44:27 app.py | ValueError | GrabGPS() | NO GPS FOUND: {"class":"TPV","tag":"MID2","device":"/dev/ttyUSB0","mode":1,"time":"1995-01-16T10:44:26.680Z","ept":0.005}
+DEBUG:root:01/09/2014 11:44:28 app.py | ValueError | GrabGPS() | NO GPS FOUND: {"class":"TPV","tag":"MID2","device":"/dev/ttyUSB0","mode":1,"time":"1995-01-16T10:44:27.680Z","ept":0.005}
+DEBUG:root:01/09/2014 11:44:30 app.py | ValueError | GrabGPS() | NO GPS FOUND: {"class":"TPV","tag":"MID2","device":"/dev/ttyUSB0","mode":1,"time":"1995-01-16T10:44:29.680Z","ept":0.005}
+DEBUG:root:01/09/2014 11:44:31 app.py | ValueError | GrabGPS() | NO GPS FOUND: {"class":"TPV","tag":"MID2","device":"/dev/ttyUSB0","mode":1,"time":"1995-01-16T10:44:30.680Z","ept":0.005}
+DEBUG:root:01/09/2014 11:44:33 app.py | ValueError | GrabGPS() | NO GPS FOUND: {"class":"TPV","tag":"MID2","device":"/dev/ttyUSB0","mode":1,"time":"1995-01-16T10:44:32.680Z","ept":0.005}
+DEBUG:root:01/09/2014 11:44:34 app.py | ValueError | GrabGPS() | NO GPS FOUND: {"class":"TPV","tag":"MID2","device":"/dev/ttyUSB0","mode":1,"time":"1995-01-16T10:44:33.680Z","ept":0.005}
+DEBUG:root:01/09/2014 11:44:36 app.py | ValueError | GrabGPS() | NO GPS FOUND: {"class":"TPV","tag":"MID2","device":"/dev/ttyUSB0","mode":1,"time":"1995-01-16T10:44:35.680Z","ept":0.005}
+DEBUG:root:01/09/2014 11:44:37 app.py | ValueError | GrabGPS() | NO GPS FOUND: {"class":"TPV","tag":"MID2","device":"/dev/ttyUSB0","mode":1,"time":"1995-01-16T10:44:36.680Z","ept":0.005}
+DEBUG:root:01/09/2014 11:44:39 app.py | ValueError | GrabGPS() | NO GPS FOUND: {"class":"TPV","tag":"MID2","device":"/dev/ttyUSB0","mode":1,"time":"1995-01-16T10:44:38.680Z","ept":0.005}
+DEBUG:root:01/09/2014 11:44:39 Checking network connection: Bus 001 Device 014: ID 067b:2303 Prolific Technology, Inc. PL2303 Serial Port
+Bus 001 Device 013: ID 12d1:14db Huawei Technologies Co., Ltd. E353/E3131
+Bus 001 Device 009: ID 046d:c52b Logitech, Inc. Unifying Receiver
+Bus 001 Device 008: ID 0424:ec00 Standard Microsystems Corp. SMSC9512/9514 Fast Ethernet Adapter
+Bus 001 Device 007: ID 0424:9514 Standard Microsystems Corp. SMC9514 Hub
+Bus 001 Device 001: ID 1d6b:0002 Linux Foundation 2.0 root hub
+
+WARNING:root:01/09/2014 11:44:39 USB HAS BEEN RESET: Network OK
+DEBUG:root:01/09/2014 11:44:40 app.py | ValueError | GrabGPS() | NO GPS FOUND: {"class":"TPV","tag":"MID2","device":"/dev/ttyUSB0","mode":1,"time":"1995-01-16T10:44:39.680Z","ept":0.005}
+DEBUG:root:01/09/2014 11:44:42 app.py | ValueError | GrabGPS() | NO GPS FOUND: {"class":"TPV","tag":"MID2","device":"/dev/ttyUSB0","mode":1,"time":"1995-01-16T10:44:41.680Z","ept":0.005}
+DEBUG:root:01/09/2014 11:44:43 app.py | ValueError | GrabGPS() | NO GPS FOUND: {"class":"TPV","tag":"MID2","device":"/dev/ttyUSB0","mode":1,"time":"1995-01-16T10:44:42.680Z","ept":0.005}
+DEBUG:root:01/09/2014 11:44:45 app.py | ValueError | GrabGPS() | NO GPS FOUND: {"class":"TPV","tag":"MID2","device":"/dev/ttyUSB0","mode":1,"time":"1995-01-16T10:44:44.680Z","ept":0.005}
+DEBUG:root:01/09/2014 11:44:46 app.py | ValueError | GrabGPS() | NO GPS FOUND: {"class":"TPV","tag":"MID2","device":"/dev/ttyUSB0","mode":1,"time":"1995-01-16T10:44:45.680Z","ept":0.005}
+DEBUG:root:01/09/2014 11:44:48 app.py | ValueError | GrabGPS() | NO GPS FOUND: {"class":"TPV","tag":"MID2","device":"/dev/ttyUSB0","mode":1,"time":"1995-01-16T10:44:47.680Z","ept":0.005}
+DEBUG:root:01/09/2014 11:44:49 app.py | ValueError | GrabGPS() | NO GPS FOUND: {"class":"TPV","tag":"MID2","device":"/dev/ttyUSB0","mode":1,"time":"1995-01-16T10:44:48.680Z","ept":0.005}
+DEBUG:root:01/09/2014 11:44:51 app.py | ValueError | GrabGPS() | NO GPS FOUND: {"class":"TPV","tag":"MID2","device":"/dev/ttyUSB0","mode":1,"time":"1995-01-16T10:44:50.680Z","ept":0.005}
+DEBUG:root:01/09/2014 11:44:52 app.py | ValueError | GrabGPS() | NO GPS FOUND: {"class":"TPV","tag":"MID2","device":"/dev/ttyUSB0","mode":1,"time":"1995-01-16T10:44:51.680Z","ept":0.005}
+DEBUG:root:01/09/2014 11:44:54 app.py | ValueError | GrabGPS() | NO GPS FOUND: {"class":"TPV","tag":"MID2","device":"/dev/ttyUSB0","mode":1,"time":"1995-01-16T10:44:53.680Z","ept":0.005}
+DEBUG:root:01/09/2014 11:44:55 app.py | ValueError | GrabGPS() | NO GPS FOUND: {"class":"TPV","tag":"MID2","device":"/dev/ttyUSB0","mode":1,"time":"1995-01-16T10:44:54.680Z","ept":0.005}
+DEBUG:root:01/09/2014 11:44:57 app.py | ValueError | GrabGPS() | NO GPS FOUND: {"class":"SKY","tag":"MID4","device":"/dev/ttyUSB0","time":"1995-01-16T10:44:56.680Z","hdop":0.00,"satellites":[{"PRN":21,"el":38,"az":324,"ss":29,"used":false}]}
+DEBUG:root:01/09/2014 11:44:59 app.py | ValueError | GrabGPS() | NO GPS FOUND: {"class":"TPV","tag":"MID2","device":"/dev/ttyUSB0","mode":1,"time":"1995-01-16T10:44:58.680Z","ept":0.005}
+DEBUG:root:01/09/2014 11:45:00 app.py | ValueError | GrabGPS() | NO GPS FOUND: {"class":"TPV","tag":"MID2","device":"/dev/ttyUSB0","mode":1,"time":"1995-01-16T10:44:59.680Z","ept":0.005}
+DEBUG:root:01/09/2014 11:45:01 Checking network connection: Bus 001 Device 014: ID 067b:2303 Prolific Technology, Inc. PL2303 Serial Port
+Bus 001 Device 013: ID 12d1:14db Huawei Technologies Co., Ltd. E353/E3131
+Bus 001 Device 009: ID 046d:c52b Logitech, Inc. Unifying Receiver
+Bus 001 Device 008: ID 0424:ec00 Standard Microsystems Corp. SMSC9512/9514 Fast Ethernet Adapter
+Bus 001 Device 007: ID 0424:9514 Standard Microsystems Corp. SMC9514 Hub
+Bus 001 Device 001: ID 1d6b:0002 Linux Foundation 2.0 root hub
+
+WARNING:root:01/09/2014 11:45:01 USB HAS BEEN RESET: Network OK
+DEBUG:root:01/09/2014 11:45:02 app.py | ValueError | GrabGPS() | NO GPS FOUND: {"class":"TPV","tag":"MID2","device":"/dev/ttyUSB0","mode":1,"time":"1995-01-16T10:45:01.680Z","ept":0.005}
+DEBUG:root:01/09/2014 11:45:03 app.py | ValueError | GrabGPS() | NO GPS FOUND: {"class":"TPV","tag":"MID2","device":"/dev/ttyUSB0","mode":1,"time":"1995-01-16T10:45:02.680Z","ept":0.005}
+DEBUG:root:01/09/2014 11:45:05 app.py | ValueError | GrabGPS() | NO GPS FOUND: {"class":"TPV","tag":"MID2","device":"/dev/ttyUSB0","mode":1,"time":"1995-01-16T10:45:04.680Z","ept":0.005}
+DEBUG:root:01/09/2014 11:45:06 app.py | ValueError | GrabGPS() | NO GPS FOUND: {"class":"TPV","tag":"MID2","device":"/dev/ttyUSB0","mode":1,"time":"1995-01-16T10:45:05.680Z","ept":0.005}
+DEBUG:root:01/09/2014 11:45:08 app.py | ValueError | GrabGPS() | NO GPS FOUND: {"class":"TPV","tag":"MID2","device":"/dev/ttyUSB0","mode":1,"time":"1995-01-16T10:45:07.680Z","ept":0.005}
+DEBUG:root:01/09/2014 11:45:09 app.py | ValueError | GrabGPS() | NO GPS FOUND: {"class":"TPV","tag":"MID2","device":"/dev/ttyUSB0","mode":1,"time":"1995-01-16T10:45:08.680Z","ept":0.005}
+DEBUG:root:01/09/2014 11:45:11 app.py | ValueError | GrabGPS() | NO GPS FOUND: {"class":"TPV","tag":"MID2","device":"/dev/ttyUSB0","mode":1,"time":"1995-01-16T10:45:10.680Z","ept":0.005}
+DEBUG:root:01/09/2014 11:45:12 app.py | ValueError | GrabGPS() | NO GPS FOUND: {"class":"TPV","tag":"MID2","device":"/dev/ttyUSB0","mode":1,"time":"1995-01-16T10:45:11.680Z","ept":0.005}
+DEBUG:root:01/09/2014 11:45:14 app.py | ValueError | GrabGPS() | NO GPS FOUND: {"class":"TPV","tag":"MID2","device":"/dev/ttyUSB0","mode":1,"time":"1995-01-16T10:45:13.680Z","ept":0.005}
+DEBUG:root:01/09/2014 11:45:15 app.py | ValueError | GrabGPS() | NO GPS FOUND: {"class":"TPV","tag":"MID2","device":"/dev/ttyUSB0","mode":1,"time":"1995-01-16T10:45:14.680Z","ept":0.005}
+DEBUG:root:01/09/2014 11:45:17 app.py | ValueError | GrabGPS() | NO GPS FOUND: {"class":"TPV","tag":"MID2","device":"/dev/ttyUSB0","mode":1,"time":"1995-01-16T10:45:16.680Z","ept":0.005}
+DEBUG:root:01/09/2014 11:45:18 app.py | ValueError | GrabGPS() | NO GPS FOUND: {"class":"TPV","tag":"MID2","device":"/dev/ttyUSB0","mode":1,"time":"1995-01-16T10:45:17.680Z","ept":0.005}
+DEBUG:root:01/09/2014 11:45:20 app.py | ValueError | GrabGPS() | NO GPS FOUND: {"class":"TPV","tag":"MID2","device":"/dev/ttyUSB0","mode":1,"time":"1995-01-16T10:45:19.680Z","ept":0.005}
+DEBUG:root:01/09/2014 11:45:21 app.py | ValueError | GrabGPS() | NO GPS FOUND: {"class":"TPV","tag":"MID2","device":"/dev/ttyUSB0","mode":1,"time":"1995-01-16T10:45:20.680Z","ept":0.005}
+DEBUG:root:01/09/2014 11:45:23 app.py | ValueError | GrabGPS() | NO GPS FOUND: {"class":"TPV","tag":"MID2","device":"/dev/ttyUSB0","mode":1,"time":"1995-01-16T10:45:22.680Z","ept":0.005}
+INFO:root:01/09/2014 11:46:50 Started script
+DEBUG:root:01/09/2014 11:46:52 app.py | ValueError | GrabGPS() | NO GPS FOUND: {"class":"TPV","tag":"MID2","device":"/dev/ttyUSB0","mode":1,"time":"1995-01-16T10:46:51.680Z","ept":0.005}
+DEBUG:root:01/09/2014 11:46:53 Checking network connection: Bus 001 Device 014: ID 067b:2303 Prolific Technology, Inc. PL2303 Serial Port
+Bus 001 Device 013: ID 12d1:14db Huawei Technologies Co., Ltd. E353/E3131
+Bus 001 Device 009: ID 046d:c52b Logitech, Inc. Unifying Receiver
+Bus 001 Device 008: ID 0424:ec00 Standard Microsystems Corp. SMSC9512/9514 Fast Ethernet Adapter
+Bus 001 Device 007: ID 0424:9514 Standard Microsystems Corp. SMC9514 Hub
+Bus 001 Device 001: ID 1d6b:0002 Linux Foundation 2.0 root hub
+
+DEBUG:root:01/09/2014 11:46:53 Network OK
+DEBUG:root:01/09/2014 11:47:00 app.py | ValueError | GrabGPS() | NO GPS FOUND: {"class":"SKY","tag":"MID4","device":"/dev/ttyUSB0","time":"1995-01-16T10:46:59.680Z","hdop":0.00,"satellites":[{"PRN":21,"el":38,"az":324,"ss":31,"used":false}]}
+DEBUG:root:01/09/2014 11:47:08 app.py | ValueError | GrabGPS() | NO GPS FOUND: {"class":"TPV","tag":"MID2","device":"/dev/ttyUSB0","mode":1,"time":"1995-01-16T10:47:07.680Z","ept":0.005}
+DEBUG:root:01/09/2014 11:47:15 Checking network connection: Bus 001 Device 014: ID 067b:2303 Prolific Technology, Inc. PL2303 Serial Port
+Bus 001 Device 013: ID 12d1:14db Huawei Technologies Co., Ltd. E353/E3131
+Bus 001 Device 009: ID 046d:c52b Logitech, Inc. Unifying Receiver
+Bus 001 Device 008: ID 0424:ec00 Standard Microsystems Corp. SMSC9512/9514 Fast Ethernet Adapter
+Bus 001 Device 007: ID 0424:9514 Standard Microsystems Corp. SMC9514 Hub
+Bus 001 Device 001: ID 1d6b:0002 Linux Foundation 2.0 root hub
+
+DEBUG:root:01/09/2014 11:47:15 Network OK
+DEBUG:root:01/09/2014 11:47:15 app.py | ValueError | GrabGPS() | NO GPS FOUND: {"class":"TPV","tag":"MID2","device":"/dev/ttyUSB0","mode":1,"time":"1995-01-16T10:47:14.680Z","ept":0.005}
+DEBUG:root:01/09/2014 11:47:23 app.py | ValueError | GrabGPS() | NO GPS FOUND: {"class":"TPV","tag":"MID2","device":"/dev/ttyUSB0","mode":1,"time":"1995-01-16T10:47:22.680Z","ept":0.005}
+DEBUG:root:01/09/2014 11:47:30 app.py | ValueError | GrabGPS() | NO GPS FOUND: {"class":"TPV","tag":"MID2","device":"/dev/ttyUSB0","mode":1,"time":"1995-01-16T10:47:29.680Z","ept":0.005}
+DEBUG:root:01/09/2014 11:47:37 Checking network connection: Bus 001 Device 014: ID 067b:2303 Prolific Technology, Inc. PL2303 Serial Port
+Bus 001 Device 013: ID 12d1:14db Huawei Technologies Co., Ltd. E353/E3131
+Bus 001 Device 009: ID 046d:c52b Logitech, Inc. Unifying Receiver
+Bus 001 Device 008: ID 0424:ec00 Standard Microsystems Corp. SMSC9512/9514 Fast Ethernet Adapter
+Bus 001 Device 007: ID 0424:9514 Standard Microsystems Corp. SMC9514 Hub
+Bus 001 Device 001: ID 1d6b:0002 Linux Foundation 2.0 root hub
+
+DEBUG:root:01/09/2014 11:47:37 Network OK
+DEBUG:root:01/09/2014 11:47:38 app.py | ValueError | GrabGPS() | NO GPS FOUND: {"class":"TPV","tag":"MID2","device":"/dev/ttyUSB0","mode":1,"time":"1995-01-16T10:47:37.680Z","ept":0.005}
+DEBUG:root:01/09/2014 11:47:45 app.py | ValueError | GrabGPS() | NO GPS FOUND: {"class":"TPV","tag":"MID2","device":"/dev/ttyUSB0","mode":1,"time":"1995-01-16T10:47:44.680Z","ept":0.005}
+DEBUG:root:01/09/2014 11:47:53 app.py | ValueError | GrabGPS() | NO GPS FOUND: {"class":"TPV","tag":"MID2","device":"/dev/ttyUSB0","mode":1,"time":"1995-01-16T10:47:52.680Z","ept":0.005}
+DEBUG:root:01/09/2014 11:47:59 Checking network connection: Bus 001 Device 014: ID 067b:2303 Prolific Technology, Inc. PL2303 Serial Port
+Bus 001 Device 013: ID 12d1:14db Huawei Technologies Co., Ltd. E353/E3131
+Bus 001 Device 009: ID 046d:c52b Logitech, Inc. Unifying Receiver
+Bus 001 Device 008: ID 0424:ec00 Standard Microsystems Corp. SMSC9512/9514 Fast Ethernet Adapter
+Bus 001 Device 007: ID 0424:9514 Standard Microsystems Corp. SMC9514 Hub
+Bus 001 Device 001: ID 1d6b:0002 Linux Foundation 2.0 root hub
+
+DEBUG:root:01/09/2014 11:47:59 Network OK
+DEBUG:root:01/09/2014 11:48:00 app.py | ValueError | GrabGPS() | NO GPS FOUND: {"class":"TPV","tag":"MID2","device":"/dev/ttyUSB0","mode":1,"time":"1995-01-16T10:47:59.680Z","ept":0.005}
+DEBUG:root:01/09/2014 11:48:08 app.py | ValueError | GrabGPS() | NO GPS FOUND: {"class":"TPV","tag":"MID2","device":"/dev/ttyUSB0","mode":1,"time":"1995-01-16T10:48:07.680Z","ept":0.005}
+DEBUG:root:01/09/2014 11:48:15 app.py | ValueError | GrabGPS() | NO GPS FOUND: {"class":"TPV","tag":"MID2","device":"/dev/ttyUSB0","mode":1,"time":"1995-01-16T10:48:14.680Z","ept":0.005}
+DEBUG:root:01/09/2014 11:48:21 Checking network connection: Bus 001 Device 014: ID 067b:2303 Prolific Technology, Inc. PL2303 Serial Port
+Bus 001 Device 013: ID 12d1:14db Huawei Technologies Co., Ltd. E353/E3131
+Bus 001 Device 009: ID 046d:c52b Logitech, Inc. Unifying Receiver
+Bus 001 Device 008: ID 0424:ec00 Standard Microsystems Corp. SMSC9512/9514 Fast Ethernet Adapter
+Bus 001 Device 007: ID 0424:9514 Standard Microsystems Corp. SMC9514 Hub
+Bus 001 Device 001: ID 1d6b:0002 Linux Foundation 2.0 root hub
+
+DEBUG:root:01/09/2014 11:48:21 Network OK
+DEBUG:root:01/09/2014 11:48:23 app.py | ValueError | GrabGPS() | NO GPS FOUND: {"class":"TPV","tag":"MID2","device":"/dev/ttyUSB0","mode":1,"time":"1995-01-16T10:48:22.680Z","ept":0.005}
+DEBUG:root:01/09/2014 11:48:30 app.py | ValueError | GrabGPS() | NO GPS FOUND: {"class":"TPV","tag":"MID2","device":"/dev/ttyUSB0","mode":1,"time":"1995-01-16T10:48:29.680Z","ept":0.005}
+DEBUG:root:01/09/2014 11:48:38 app.py | ValueError | GrabGPS() | NO GPS FOUND: {"class":"TPV","tag":"MID2","device":"/dev/ttyUSB0","mode":1,"time":"1995-01-16T10:48:37.680Z","ept":0.005}
+DEBUG:root:01/09/2014 11:48:43 Checking network connection: Bus 001 Device 014: ID 067b:2303 Prolific Technology, Inc. PL2303 Serial Port
+Bus 001 Device 013: ID 12d1:14db Huawei Technologies Co., Ltd. E353/E3131
+Bus 001 Device 009: ID 046d:c52b Logitech, Inc. Unifying Receiver
+Bus 001 Device 008: ID 0424:ec00 Standard Microsystems Corp. SMSC9512/9514 Fast Ethernet Adapter
+Bus 001 Device 007: ID 0424:9514 Standard Microsystems Corp. SMC9514 Hub
+Bus 001 Device 001: ID 1d6b:0002 Linux Foundation 2.0 root hub
+
+DEBUG:root:01/09/2014 11:48:43 Network OK
+DEBUG:root:01/09/2014 11:48:45 app.py | ValueError | GrabGPS() | NO GPS FOUND: {"class":"TPV","tag":"MID2","device":"/dev/ttyUSB0","mode":1,"time":"1995-01-16T10:48:44.680Z","ept":0.005}
+DEBUG:root:01/09/2014 11:48:53 app.py | ValueError | GrabGPS() | NO GPS FOUND: {"class":"TPV","tag":"MID2","device":"/dev/ttyUSB0","mode":1,"time":"1995-01-16T10:48:52.680Z","ept":0.005}
+DEBUG:root:01/09/2014 11:49:00 app.py | ValueError | GrabGPS() | NO GPS FOUND: {"class":"TPV","tag":"MID2","device":"/dev/ttyUSB0","mode":1,"time":"1995-01-16T10:48:59.680Z","ept":0.005}
+DEBUG:root:01/09/2014 11:49:04 Checking network connection: Bus 001 Device 014: ID 067b:2303 Prolific Technology, Inc. PL2303 Serial Port
+Bus 001 Device 013: ID 12d1:14db Huawei Technologies Co., Ltd. E353/E3131
+Bus 001 Device 009: ID 046d:c52b Logitech, Inc. Unifying Receiver
+Bus 001 Device 008: ID 0424:ec00 Standard Microsystems Corp. SMSC9512/9514 Fast Ethernet Adapter
+Bus 001 Device 007: ID 0424:9514 Standard Microsystems Corp. SMC9514 Hub
+Bus 001 Device 001: ID 1d6b:0002 Linux Foundation 2.0 root hub
+
+DEBUG:root:01/09/2014 11:49:04 Network OK
+DEBUG:root:01/09/2014 11:49:09 app.py | ValueError | GrabGPS() | NO GPS FOUND: {"class":"TPV","tag":"MID2","device":"/dev/ttyUSB0","mode":1,"time":"1995-01-16T10:49:08.680Z","ept":0.005}
+DEBUG:root:01/09/2014 11:49:17 app.py | ValueError | GrabGPS() | NO GPS FOUND: {"class":"SKY","tag":"MID4","device":"/dev/ttyUSB0","time":"1995-01-16T10:49:16.680Z","hdop":0.00,"satellites":[{"PRN":21,"el":65,"az":267,"ss":31,"used":false}]}
+DEBUG:root:01/09/2014 11:49:25 app.py | ValueError | GrabGPS() | NO GPS FOUND: {"class":"TPV","tag":"MID2","device":"/dev/ttyUSB0","mode":1,"time":"1995-01-16T10:49:24.680Z","ept":0.005}
+DEBUG:root:01/09/2014 11:49:27 Checking network connection: Bus 001 Device 014: ID 067b:2303 Prolific Technology, Inc. PL2303 Serial Port
+Bus 001 Device 013: ID 12d1:14db Huawei Technologies Co., Ltd. E353/E3131
+Bus 001 Device 009: ID 046d:c52b Logitech, Inc. Unifying Receiver
+Bus 001 Device 008: ID 0424:ec00 Standard Microsystems Corp. SMSC9512/9514 Fast Ethernet Adapter
+Bus 001 Device 007: ID 0424:9514 Standard Microsystems Corp. SMC9514 Hub
+Bus 001 Device 001: ID 1d6b:0002 Linux Foundation 2.0 root hub
+
+DEBUG:root:01/09/2014 11:49:27 Network OK
+DEBUG:root:01/09/2014 11:49:32 app.py | ValueError | GrabGPS() | NO GPS FOUND: {"class":"TPV","tag":"MID2","device":"/dev/ttyUSB0","mode":1,"time":"1995-01-16T10:49:31.680Z","ept":0.005}
+DEBUG:root:01/09/2014 11:49:40 app.py | ValueError | GrabGPS() | NO GPS FOUND: {"class":"TPV","tag":"MID2","device":"/dev/ttyUSB0","mode":1,"time":"1995-01-16T10:49:39.680Z","ept":0.005}
+DEBUG:root:01/09/2014 11:49:50 app.py | ValueError | GrabGPS() | NO GPS FOUND: {"class":"DEVICE","path":"/dev/ttyUSB0","activated":1409568590.346458}
+DEBUG:root:01/09/2014 11:49:57 app.py | ValueError | GrabGPS() | NO GPS FOUND: {"class":"TPV","tag":"MID2","device":"/dev/ttyUSB0","mode":1,"time":"1995-01-16T10:49:56.550Z","ept":0.005}
+DEBUG:root:01/09/2014 11:50:04 app.py | ValueError | GrabGPS() | NO GPS FOUND: {"class":"TPV","tag":"MID2","device":"/dev/ttyUSB0","mode":1,"time":"1995-01-16T10:50:04.520Z","ept":0.005}
+DEBUG:root:01/09/2014 11:50:06 Checking network connection: Bus 001 Device 018: ID 067b:2303 Prolific Technology, Inc. PL2303 Serial Port
+Bus 001 Device 020: ID 12d1:14db Huawei Technologies Co., Ltd. E353/E3131
+Bus 001 Device 017: ID 046d:c52b Logitech, Inc. Unifying Receiver
+Bus 001 Device 016: ID 0424:ec00 Standard Microsystems Corp. SMSC9512/9514 Fast Ethernet Adapter
+Bus 001 Device 015: ID 0424:9514 Standard Microsystems Corp. SMC9514 Hub
+Bus 001 Device 001: ID 1d6b:0002 Linux Foundation 2.0 root hub
+
+WARNING:root:01/09/2014 11:50:06 USB HAS BEEN reset: Network not connected
+DEBUG:root:01/09/2014 11:50:12 app.py | ValueError | GrabGPS() | NO GPS FOUND: {"class":"TPV","tag":"MID2","device":"/dev/ttyUSB0","mode":1,"time":"1995-01-16T10:50:11.550Z","ept":0.005}
+DEBUG:root:01/09/2014 11:50:19 app.py | ValueError | GrabGPS() | NO GPS FOUND: {"class":"TPV","tag":"MID2","device":"/dev/ttyUSB0","mode":1,"time":"1995-01-16T10:50:19.540Z","ept":0.005}
+DEBUG:root:01/09/2014 11:50:27 app.py | ValueError | GrabGPS() | NO GPS FOUND: {"class":"TPV","tag":"MID2","device":"/dev/ttyUSB0","mode":1,"time":"1995-01-16T10:50:26.550Z","ept":0.005}
+DEBUG:root:01/09/2014 11:50:28 Checking network connection: Bus 001 Device 018: ID 067b:2303 Prolific Technology, Inc. PL2303 Serial Port
+Bus 001 Device 020: ID 12d1:14db Huawei Technologies Co., Ltd. E353/E3131
+Bus 001 Device 017: ID 046d:c52b Logitech, Inc. Unifying Receiver
+Bus 001 Device 016: ID 0424:ec00 Standard Microsystems Corp. SMSC9512/9514 Fast Ethernet Adapter
+Bus 001 Device 015: ID 0424:9514 Standard Microsystems Corp. SMC9514 Hub
+Bus 001 Device 001: ID 1d6b:0002 Linux Foundation 2.0 root hub
+
+DEBUG:root:01/09/2014 11:50:28 Network OK
+DEBUG:root:01/09/2014 11:50:34 app.py | ValueError | GrabGPS() | NO GPS FOUND: {"class":"TPV","tag":"MID2","device":"/dev/ttyUSB0","mode":1,"time":"1995-01-16T10:50:34.540Z","ept":0.005}
+DEBUG:root:01/09/2014 11:50:42 app.py | ValueError | GrabGPS() | NO GPS FOUND: {"class":"TPV","tag":"MID2","device":"/dev/ttyUSB0","mode":1,"time":"1995-01-16T10:50:41.550Z","ept":0.005}
+DEBUG:root:01/09/2014 11:50:49 app.py | ValueError | GrabGPS() | NO GPS FOUND: {"class":"TPV","tag":"MID2","device":"/dev/ttyUSB0","mode":1,"time":"1995-01-16T10:50:49.540Z","ept":0.005}
+DEBUG:root:01/09/2014 11:50:50 Checking network connection: Bus 001 Device 018: ID 067b:2303 Prolific Technology, Inc. PL2303 Serial Port
+Bus 001 Device 020: ID 12d1:14db Huawei Technologies Co., Ltd. E353/E3131
+Bus 001 Device 017: ID 046d:c52b Logitech, Inc. Unifying Receiver
+Bus 001 Device 016: ID 0424:ec00 Standard Microsystems Corp. SMSC9512/9514 Fast Ethernet Adapter
+Bus 001 Device 015: ID 0424:9514 Standard Microsystems Corp. SMC9514 Hub
+Bus 001 Device 001: ID 1d6b:0002 Linux Foundation 2.0 root hub
+
+DEBUG:root:01/09/2014 11:50:50 Network OK
+DEBUG:root:01/09/2014 11:50:57 app.py | ValueError | GrabGPS() | NO GPS FOUND: {"class":"TPV","tag":"MID2","device":"/dev/ttyUSB0","mode":1,"time":"1995-01-16T10:50:56.550Z","ept":0.005}
+DEBUG:root:01/09/2014 11:51:04 app.py | ValueError | GrabGPS() | NO GPS FOUND: {"class":"TPV","tag":"MID2","device":"/dev/ttyUSB0","mode":1,"time":"1995-01-16T10:51:04.540Z","ept":0.005}
+DEBUG:root:01/09/2014 11:51:12 app.py | ValueError | GrabGPS() | NO GPS FOUND: {"class":"TPV","tag":"MID2","device":"/dev/ttyUSB0","mode":1,"time":"1995-01-16T10:51:11.550Z","ept":0.005}
+DEBUG:root:01/09/2014 11:51:13 Checking network connection: Bus 001 Device 018: ID 067b:2303 Prolific Technology, Inc. PL2303 Serial Port
+Bus 001 Device 020: ID 12d1:14db Huawei Technologies Co., Ltd. E353/E3131
+Bus 001 Device 017: ID 046d:c52b Logitech, Inc. Unifying Receiver
+Bus 001 Device 016: ID 0424:ec00 Standard Microsystems Corp. SMSC9512/9514 Fast Ethernet Adapter
+Bus 001 Device 015: ID 0424:9514 Standard Microsystems Corp. SMC9514 Hub
+Bus 001 Device 001: ID 1d6b:0002 Linux Foundation 2.0 root hub
+
+DEBUG:root:01/09/2014 11:51:13 Network OK
+DEBUG:root:01/09/2014 11:51:19 app.py | ValueError | GrabGPS() | NO GPS FOUND: {"class":"TPV","tag":"MID2","device":"/dev/ttyUSB0","mode":1,"time":"1995-01-16T10:51:19.540Z","ept":0.005}
+DEBUG:root:01/09/2014 11:51:27 app.py | ValueError | GrabGPS() | NO GPS FOUND: {"class":"TPV","tag":"MID2","device":"/dev/ttyUSB0","mode":1,"time":"1995-01-16T10:51:26.550Z","ept":0.005}
+DEBUG:root:01/09/2014 11:51:34 app.py | ValueError | GrabGPS() | NO GPS FOUND: {"class":"TPV","tag":"MID2","device":"/dev/ttyUSB0","mode":1,"time":"1995-01-16T10:51:34.540Z","ept":0.005}
+DEBUG:root:01/09/2014 11:51:35 Checking network connection: Bus 001 Device 018: ID 067b:2303 Prolific Technology, Inc. PL2303 Serial Port
+Bus 001 Device 020: ID 12d1:14db Huawei Technologies Co., Ltd. E353/E3131
+Bus 001 Device 017: ID 046d:c52b Logitech, Inc. Unifying Receiver
+Bus 001 Device 016: ID 0424:ec00 Standard Microsystems Corp. SMSC9512/9514 Fast Ethernet Adapter
+Bus 001 Device 015: ID 0424:9514 Standard Microsystems Corp. SMC9514 Hub
+Bus 001 Device 001: ID 1d6b:0002 Linux Foundation 2.0 root hub
+
+DEBUG:root:01/09/2014 11:51:35 Network OK
+DEBUG:root:01/09/2014 11:51:42 app.py | ValueError | GrabGPS() | NO GPS FOUND: {"class":"TPV","tag":"MID2","device":"/dev/ttyUSB0","mode":1,"time":"1995-01-16T10:51:41.550Z","ept":0.005}
+DEBUG:root:01/09/2014 11:51:49 app.py | ValueError | GrabGPS() | NO GPS FOUND: {"class":"TPV","tag":"MID2","device":"/dev/ttyUSB0","mode":1,"time":"1995-01-16T10:51:49.540Z","ept":0.005}
+DEBUG:root:01/09/2014 11:51:57 app.py | ValueError | GrabGPS() | NO GPS FOUND: {"class":"TPV","tag":"MID2","device":"/dev/ttyUSB0","mode":1,"time":"1995-01-16T10:51:56.550Z","ept":0.005}
+DEBUG:root:01/09/2014 11:51:57 Checking network connection: Bus 001 Device 018: ID 067b:2303 Prolific Technology, Inc. PL2303 Serial Port
+Bus 001 Device 020: ID 12d1:14db Huawei Technologies Co., Ltd. E353/E3131
+Bus 001 Device 017: ID 046d:c52b Logitech, Inc. Unifying Receiver
+Bus 001 Device 016: ID 0424:ec00 Standard Microsystems Corp. SMSC9512/9514 Fast Ethernet Adapter
+Bus 001 Device 015: ID 0424:9514 Standard Microsystems Corp. SMC9514 Hub
+Bus 001 Device 001: ID 1d6b:0002 Linux Foundation 2.0 root hub
+
+DEBUG:root:01/09/2014 11:51:57 Network OK
+DEBUG:root:01/09/2014 11:52:04 app.py | ValueError | GrabGPS() | NO GPS FOUND: {"class":"TPV","tag":"MID2","device":"/dev/ttyUSB0","mode":1,"time":"1995-01-16T10:52:04.540Z","ept":0.005}
+DEBUG:root:01/09/2014 11:52:13 app.py | ValueError | GrabGPS() | NO GPS FOUND: {"class":"SKY","tag":"MID4","device":"/dev/ttyUSB0","time":"1995-01-16T10:52:12.540Z","hdop":0.00}
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           INFO:root:01/09/2014 15:27:03 Started script
+DEBUG:root:01/09/2014 15:27:04 app.py | ValueError | GrabGPS() | {"lat":51.474953997,"lon":-0.036082509,"time":1995-01-16T14:27:04.350Z,"alt":52.266,"speed":0.253}
+DEBUG:root:01/09/2014 15:27:05 Checking network connection: Bus 001 Device 005: ID 067b:2303 Prolific Technology, Inc. PL2303 Serial Port
+Bus 001 Device 006: ID 046d:c52b Logitech, Inc. Unifying Receiver
+Bus 001 Device 008: ID 12d1:14db Huawei Technologies Co., Ltd. E353/E3131
+Bus 001 Device 003: ID 0424:ec00 Standard Microsystems Corp. SMSC9512/9514 Fast Ethernet Adapter
+Bus 001 Device 002: ID 0424:9514 Standard Microsystems Corp. SMC9514 Hub
+Bus 001 Device 001: ID 1d6b:0002 Linux Foundation 2.0 root hub
+
+DEBUG:root:01/09/2014 15:27:05 Network OK
+DEBUG:root:01/09/2014 15:27:11 app.py | ValueError | GrabGPS() | {"lat":51.474912104,"lon":-0.035996171,"time":1995-01-16T14:27:10.350Z,"alt":43.195,"speed":0.446}
+INFO:root:01/09/2014 15:44:00 Started script
+DEBUG:root:01/09/2014 15:44:03 Checking network connection: Bus 001 Device 005: ID 067b:2303 Prolific Technology, Inc. PL2303 Serial Port
+Bus 001 Device 004: ID 046d:c52b Logitech, Inc. Unifying Receiver
+Bus 001 Device 007: ID 12d1:14db Huawei Technologies Co., Ltd. E353/E3131
+Bus 001 Device 003: ID 0424:ec00 Standard Microsystems Corp. SMSC9512/9514 Fast Ethernet Adapter
+Bus 001 Device 002: ID 0424:9514 Standard Microsystems Corp. SMC9514 Hub
+Bus 001 Device 001: ID 1d6b:0002 Linux Foundation 2.0 root hub
+
+DEBUG:root:01/09/2014 15:44:03 Network OK
+DEBUG:root:01/09/2014 15:44:04 app.py | ValueError | GrabGPS() | {"lat":51.475286578,"lon":-0.037018741,"time":1995-01-16T14:44:03.000Z,"alt":-23.21,"speed":0.0}
+DEBUG:root:01/09/2014 15:44:11 app.py | ValueError | GrabGPS() | {"lat":51.475286578,"lon":-0.037018741,"time":1995-01-16T14:44:11.000Z,"alt":-23.21,"speed":0.0}
+DEBUG:root:01/09/2014 15:44:19 app.py | ValueError | GrabGPS() | {"lat":51.475337058,"lon":-0.037148316,"time":1995-01-16T14:44:18.000Z,"alt":-22.569,"speed":0.58}
+DEBUG:root:01/09/2014 15:44:25 Checking network connection: Bus 001 Device 005: ID 067b:2303 Prolific Technology, Inc. PL2303 Serial Port
+Bus 001 Device 004: ID 046d:c52b Logitech, Inc. Unifying Receiver
+Bus 001 Device 007: ID 12d1:14db Huawei Technologies Co., Ltd. E353/E3131
+Bus 001 Device 003: ID 0424:ec00 Standard Microsystems Corp. SMSC9512/9514 Fast Ethernet Adapter
+Bus 001 Device 002: ID 0424:9514 Standard Microsystems Corp. SMC9514 Hub
+Bus 001 Device 001: ID 1d6b:0002 Linux Foundation 2.0 root hub
+
+DEBUG:root:01/09/2014 15:44:25 Network OK
+DEBUG:root:01/09/2014 15:44:26 app.py | ValueError | GrabGPS() | {"lat":51.475342642,"lon":-0.037191495,"time":1995-01-16T14:44:26.000Z,"alt":-21.785,"speed":0.0}
+DEBUG:root:01/09/2014 15:44:34 app.py | ValueError | GrabGPS() | {"lat":51.475342642,"lon":-0.037191495,"time":1995-01-16T14:44:33.000Z,"alt":-21.785,"speed":0.0}
+DEBUG:root:01/09/2014 15:44:41 app.py | ValueError | GrabGPS() | {"lat":51.475342642,"lon":-0.037191495,"time":1995-01-16T14:44:41.000Z,"alt":-21.785,"speed":0.0}
+DEBUG:root:01/09/2014 15:44:50 Checking network connection: Bus 001 Device 005: ID 067b:2303 Prolific Technology, Inc. PL2303 Serial Port
+Bus 001 Device 004: ID 046d:c52b Logitech, Inc. Unifying Receiver
+Bus 001 Device 007: ID 12d1:14db Huawei Technologies Co., Ltd. E353/E3131
+Bus 001 Device 003: ID 0424:ec00 Standard Microsystems Corp. SMSC9512/9514 Fast Ethernet Adapter
+Bus 001 Device 002: ID 0424:9514 Standard Microsystems Corp. SMC9514 Hub
+Bus 001 Device 001: ID 1d6b:0002 Linux Foundation 2.0 root hub
+
+DEBUG:root:01/09/2014 15:44:50 Network OK
+INFO:root:01/09/2014 15:44:56 Started script
+DEBUG:root:01/09/2014 15:44:58 app.py | ValueError | GrabGPS() | NO GPS FOUND: {"class":"SKY","tag":"MID4","device":"/dev/ttyUSB0","time":"1995-01-16T14:44:57.000Z","xdop":0.90,"ydop":1.20,"vdop":4.17,"tdop":1.73,"hdop":4.20,"gdop":4.75,"pdop":4.43,"satellites":[{"PRN":16,"el":32,"az":180,"ss":34,"used":true},{"PRN":21,"el":17,"az":67,"ss":19,"used":true},{"PRN":18,"el":37,"az":60,"ss":26,"used":true},{"PRN":22,"el":54,"az":114,"ss":23,"used":true},{"PRN":27,"el":78,"az":115,"ss":27,"used":true}]}
+DEBUG:root:01/09/2014 15:44:58 Checking network connection: Bus 001 Device 005: ID 067b:2303 Prolific Technology, Inc. PL2303 Serial Port
+Bus 001 Device 004: ID 046d:c52b Logitech, Inc. Unifying Receiver
+Bus 001 Device 007: ID 12d1:14db Huawei Technologies Co., Ltd. E353/E3131
+Bus 001 Device 003: ID 0424:ec00 Standard Microsystems Corp. SMSC9512/9514 Fast Ethernet Adapter
+Bus 001 Device 002: ID 0424:9514 Standard Microsystems Corp. SMC9514 Hub
+Bus 001 Device 001: ID 1d6b:0002 Linux Foundation 2.0 root hub
+
+DEBUG:root:01/09/2014 15:44:58 Network OK
+DEBUG:root:01/09/2014 15:45:05 app.py | ValueError | GrabGPS() | {"lat":51.475306077,"lon":-0.037105081,"time":1995-01-16T14:45:05.000Z,"alt":-17.268,"speed":0.819}
+DEBUG:root:01/09/2014 15:45:12 app.py | ValueError | GrabGPS() | {"lat":51.475183752,"lon":-0.036845831,"time":1995-01-16T14:45:11.000Z,"alt":-3.876,"speed":0.0}
+DEBUG:root:01/09/2014 15:45:13 Checking network connection: Bus 001 Device 005: ID 067b:2303 Prolific Technology, Inc. PL2303 Serial Port
+Bus 001 Device 004: ID 046d:c52b Logitech, Inc. Unifying Receiver
+Bus 001 Device 007: ID 12d1:14db Huawei Technologies Co., Ltd. E353/E3131
+Bus 001 Device 003: ID 0424:ec00 Standard Microsystems Corp. SMSC9512/9514 Fast Ethernet Adapter
+Bus 001 Device 002: ID 0424:9514 Standard Microsystems Corp. SMC9514 Hub
+Bus 001 Device 001: ID 1d6b:0002 Linux Foundation 2.0 root hub
+
+DEBUG:root:01/09/2014 15:45:13 Network OK
+DEBUG:root:01/09/2014 15:45:21 Checking network connection: Bus 001 Device 005: ID 067b:2303 Prolific Technology, Inc. PL2303 Serial Port
+Bus 001 Device 004: ID 046d:c52b Logitech, Inc. Unifying Receiver
+Bus 001 Device 007: ID 12d1:14db Huawei Technologies Co., Ltd. E353/E3131
+Bus 001 Device 003: ID 0424:ec00 Standard Microsystems Corp. SMSC9512/9514 Fast Ethernet Adapter
+Bus 001 Device 002: ID 0424:9514 Standard Microsystems Corp. SMC9514 Hub
+Bus 001 Device 001: ID 1d6b:0002 Linux Foundation 2.0 root hub
+
+DEBUG:root:01/09/2014 15:45:21 Network OK
+INFO:root:01/09/2014 16:43:47 Started script
+DEBUG:root:01/09/2014 16:43:48 app.py | ValueError | GrabGPS() | {"lat":51.474504707,"lon":-0.035448803,"time":1995-01-16T15:43:48.000Z,"alt":66.5,"speed":0.0}
+DEBUG:root:01/09/2014 16:43:50 Checking network connection: Bus 001 Device 005: ID 067b:2303 Prolific Technology, Inc. PL2303 Serial Port
+Bus 001 Device 004: ID 046d:c52b Logitech, Inc. Unifying Receiver
+Bus 001 Device 007: ID 12d1:14db Huawei Technologies Co., Ltd. E353/E3131
+Bus 001 Device 003: ID 0424:ec00 Standard Microsystems Corp. SMSC9512/9514 Fast Ethernet Adapter
+Bus 001 Device 002: ID 0424:9514 Standard Microsystems Corp. SMC9514 Hub
+Bus 001 Device 001: ID 1d6b:0002 Linux Foundation 2.0 root hub
+
+DEBUG:root:01/09/2014 16:43:50 Network OK
+DEBUG:root:01/09/2014 16:43:55 app.py | ValueError | GrabGPS() | {"lat":51.474504707,"lon":-0.035448803,"time":1995-01-16T15:43:54.000Z,"alt":66.5,"speed":0.0}
+DEBUG:root:01/09/2014 16:44:02 app.py | ValueError | GrabGPS() | {"lat":51.474504707,"lon":-0.035448803,"time":1995-01-16T15:44:02.000Z,"alt":66.5,"speed":0.0}
+INFO:root:01/09/2014 16:44:18 Started script
+DEBUG:root:01/09/2014 16:44:19 app.py | ValueError | GrabGPS() | {"lat":51.474504707,"lon":-0.035448803,"time":1995-01-16T15:44:18.000Z,"alt":66.5,"speed":0.0}
+DEBUG:root:01/09/2014 16:44:20 Checking network connection: Bus 001 Device 005: ID 067b:2303 Prolific Technology, Inc. PL2303 Serial Port
+Bus 001 Device 004: ID 046d:c52b Logitech, Inc. Unifying Receiver
+Bus 001 Device 007: ID 12d1:14db Huawei Technologies Co., Ltd. E353/E3131
+Bus 001 Device 003: ID 0424:ec00 Standard Microsystems Corp. SMSC9512/9514 Fast Ethernet Adapter
+Bus 001 Device 002: ID 0424:9514 Standard Microsystems Corp. SMC9514 Hub
+Bus 001 Device 001: ID 1d6b:0002 Linux Foundation 2.0 root hub
+
+DEBUG:root:01/09/2014 16:44:20 Network OK
+DEBUG:root:01/09/2014 16:44:26 app.py | ValueError | GrabGPS() | {"lat":51.474504707,"lon":-0.035448803,"time":1995-01-16T15:44:26.000Z,"alt":66.5,"speed":0.0}
+INFO:root:01/09/2014 16:46:14 Started script
+DEBUG:root:01/09/2014 16:46:16 Checking network connection: Bus 001 Device 005: ID 067b:2303 Prolific Technology, Inc. PL2303 Serial Port
+Bus 001 Device 004: ID 046d:c52b Logitech, Inc. Unifying Receiver
+Bus 001 Device 007: ID 12d1:14db Huawei Technologies Co., Ltd. E353/E3131
+Bus 001 Device 003: ID 0424:ec00 Standard Microsystems Corp. SMSC9512/9514 Fast Ethernet Adapter
+Bus 001 Device 002: ID 0424:9514 Standard Microsystems Corp. SMC9514 Hub
+Bus 001 Device 001: ID 1d6b:0002 Linux Foundation 2.0 root hub
+
+DEBUG:root:01/09/2014 16:46:16 Network OK
+DEBUG:root:01/09/2014 16:46:16 app.py | ValueError | GrabGPS() | {"lat":51.474504707,"lon":-0.035448803,"time":1995-01-16T15:46:15.000Z,"alt":66.5,"speed":0.0}
+DEBUG:root:01/09/2014 16:46:23 app.py | ValueError | GrabGPS() | {"lat":51.474504707,"lon":-0.035448803,"time":1995-01-16T15:46:23.000Z,"alt":66.5,"speed":0.0}
+INFO:root:01/09/2014 16:47:08 Started script
+DEBUG:root:01/09/2014 16:47:10 app.py | ValueError | GrabGPS() | NO GPS FOUND: {"class":"SKY","tag":"MID4","device":"/dev/ttyUSB0","time":"1995-01-16T15:47:09.000Z","xdop":0.90,"ydop":1.20,"vdop":4.17,"tdop":1.73,"hdop":1.40,"gdop":4.75,"pdop":4.43,"satellites":[{"PRN":14,"el":17,"az":105,"ss":19,"used":true},{"PRN":32,"el":26,"az":193,"ss":28,"used":true},{"PRN":22,"el":49,"az":70,"ss":20,"used":true},{"PRN":16,"el":5,"az":178,"ss":34,"used":false},{"PRN":27,"el":49,"az":133,"ss":33,"used":true},{"PRN":1,"el":29,"az":259,"ss":15,"used":true},{"PRN":19,"el":82,"az":153,"ss":18,"used":false},{"PRN":11,"el":48,"az":271,"ss":30,"used":true}]}
+DEBUG:root:01/09/2014 16:47:10 Checking network connection: Bus 001 Device 005: ID 067b:2303 Prolific Technology, Inc. PL2303 Serial Port
+Bus 001 Device 004: ID 046d:c52b Logitech, Inc. Unifying Receiver
+Bus 001 Device 007: ID 12d1:14db Huawei Technologies Co., Ltd. E353/E3131
+Bus 001 Device 003: ID 0424:ec00 Standard Microsystems Corp. SMSC9512/9514 Fast Ethernet Adapter
+Bus 001 Device 002: ID 0424:9514 Standard Microsystems Corp. SMC9514 Hub
+Bus 001 Device 001: ID 1d6b:0002 Linux Foundation 2.0 root hub
+
+DEBUG:root:01/09/2014 16:47:10 Network OK
+INFO:root:01/09/2014 16:47:41 Started script
+INFO:cherrypy.error:[01/Sep/2014:16:47:41] ENGINE Bus STARTING
+INFO:cherrypy.error:[01/Sep/2014:16:47:41] ENGINE Started monitor thread 'Autoreloader'.
+INFO:cherrypy.error:[01/Sep/2014:16:47:41] ENGINE Started monitor thread '_TimeoutMonitor'.
+DEBUG:root:01/09/2014 16:47:42 app.py | ValueError | GrabGPS() | {"lat":51.474504707,"lon":-0.035448803,"time":1995-01-16T15:47:41.000Z,"alt":66.5,"speed":0.0}
+INFO:cherrypy.error:[01/Sep/2014:16:47:43] ENGINE Serving on http://0.0.0.0
+INFO:cherrypy.error:[01/Sep/2014:16:47:43] ENGINE Bus STARTED
+DEBUG:root:01/09/2014 16:47:44 Checking network connection: Bus 001 Device 005: ID 067b:2303 Prolific Technology, Inc. PL2303 Serial Port
+Bus 001 Device 004: ID 046d:c52b Logitech, Inc. Unifying Receiver
+Bus 001 Device 007: ID 12d1:14db Huawei Technologies Co., Ltd. E353/E3131
+Bus 001 Device 003: ID 0424:ec00 Standard Microsystems Corp. SMSC9512/9514 Fast Ethernet Adapter
+Bus 001 Device 002: ID 0424:9514 Standard Microsystems Corp. SMC9514 Hub
+Bus 001 Device 001: ID 1d6b:0002 Linux Foundation 2.0 root hub
+
+DEBUG:root:01/09/2014 16:47:44 Network OK
+INFO:cherrypy.access.3064992752:192.168.1.100 - - [01/Sep/2014:16:47:46] "GET / HTTP/1.1" 200 540 "" "Mozilla/5.0 (Linux; Android 4.4.2; Nexus 10 Build/KOT49H) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/36.0.1985.135 Safari/537.36"
+DEBUG:root:01/09/2014 16:47:49 app.py | ValueError | GrabGPS() | {"lat":51.474504707,"lon":-0.035448803,"time":1995-01-16T15:47:49.000Z,"alt":66.5,"speed":0.0}
+INFO:cherrypy.access.3064992752:192.168.1.100 - - [01/Sep/2014:16:47:49] "GET / HTTP/1.1" 200 540 "" "Mozilla/5.0 (Linux; Android 4.4.2; Nexus 10 Build/KOT49H) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/36.0.1985.135 Safari/537.36"
+INFO:cherrypy.access.3064992752:192.168.1.100 - - [01/Sep/2014:16:47:55] "GET / HTTP/1.1" 200 540 "http://192.168.1.99/" "Mozilla/5.0 (Linux; Android 4.4.2; Nexus 10 Build/KOT49H) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/36.0.1985.135 Safari/537.36"
+DEBUG:root:01/09/2014 16:47:57 app.py | ValueError | GrabGPS() | {"lat":51.474504707,"lon":-0.035448803,"time":1995-01-16T15:47:56.000Z,"alt":66.5,"speed":0.0}
+INFO:cherrypy.error:[01/Sep/2014:16:47:58] ENGINE Bus STOPPING
+INFO:cherrypy.error:[01/Sep/2014:16:47:59] ENGINE HTTP Server cherrypy._cpwsgi_server.CPWSGIServer(('0.0.0.0', 80)) shut down
+INFO:cherrypy.error:[01/Sep/2014:16:47:59] ENGINE Stopped thread 'Autoreloader'.
+INFO:cherrypy.error:[01/Sep/2014:16:47:59] ENGINE Stopped thread '_TimeoutMonitor'.
+INFO:cherrypy.error:[01/Sep/2014:16:47:59] ENGINE Bus STOPPED
+INFO:cherrypy.error:[01/Sep/2014:16:47:59] ENGINE Bus EXITING
+INFO:cherrypy.error:[01/Sep/2014:16:47:59] ENGINE Bus EXITED

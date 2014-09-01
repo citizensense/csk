@@ -7,38 +7,99 @@
 #	3. Send to server						   								#
 #############################################################################
 # Include the 'libraries folder' in the system path
-import sys, os, time, threading, subprocess, urllib
+import sys, os, time, logging, threading, subprocess, urllib
 sys.path.insert(0, '/home/csk/sensorcoms/libraries') #TODO:Make path generic
 import wiringpi2
 from Huawei3G import *
 from ND1000S import *
+from SaveData import *
+from CherryPyWebServer import CherryPyWebServer
 
 class GrabSensors:
 	
 	# Initialise the object
 	def __init__(self):
-		# Setup some base varibles
+		# Setup logging
+		logging.basicConfig(filename='csk.log', level=logging.DEBUG)
+		self.log('INFO', 'Started script')
+		# Setup some base variables
+		self.datapath = os.path.join(os.path.dirname(__file__), '../data/data.csv')
+		self.csvheader = 'timecode,value1,value2'
 		self.ND1000S = ND1000S() 
 		self.H3G = Huawei3G()
-		self.status = {'devices':{'Huawei':{'status':'0','msg':'Unchecked'}}}
-		self.data = {}
+		self.save = SaveData()
 		self.startlocalserver()
+		# Data model
+		self.datamodel = {
+			'Huawei':"Not connected",
+			'ND1000S-LAT':[],
+			'ND1000S-LON':[],
+			'ND1000S-SPEED':[],
+			'ND1000S-ALT':[],
+			'I2C-16ADC-A0-AS':[],
+			'I2C-16ADC-A1-AS':[],
+			'I2C-16ADC-A2-AS':[],
+			'I2C-16ADC-A3-AS':[],
+			'I2C-16ADC-A4-AS':[],
+			'I2C-16ADC-A5-AS':[],
+			'I2C-16ADC-A6-AS':[],
+			'I2C-16ADC-A7-AS':[],
+			'RPI-WindSpeed':[],
+			'SPI-8ADC--MCP3008-WindDirection':[],
+			'SPI-8ADC-SparkfunSoundDetector-SoundEnv':[],
+			'RPI-SparkfunSoundDetector-SoundGate':[],
+			'I2C-AN2315-Temp':[],
+			'AN2315-Humid':[],
+			'ADC-A7-AS':[]
+		}			
 		# Initialise a list of threads so data can be aquired asynchronosly
 		threads = []
 		threads.append(threading.Thread(target=self.healthcheck) ) # Check device status
 		threads.append(threading.Thread(target=self.grabgps) ) # Grab GPS data
-		#threads.append(threading.Thread(target=self.barom) ) # Start baromerter thread
 		threads.append(threading.Thread(target=self.redled) ) # Blink the LED
 		for item in threads:
 			item.start()
 		# Setup GPOI Pin access
 		#wiringpi2.wiringPiSetup() # For sequencial pin numbering i.e [] in pin layout below
 		wiringpi2.wiringPiSetupGpio() # For GPIO pin numbering
+		# Start the webserver (runs in its own thread)
+		globalconfig = {'server.socket_host':"0.0.0.0", 'server.socket_port':80 } 
+		localconfig = {'/': {'tools.staticdir.root': '../public'}}
+		self.webserver = CherryPyWebServer(globalconfig, localconfig) 
+		self.webserver.setcontent('Started the server', 'From within app.py')
 	
+	# If any threads have new data, then send it here
+	def newdata(self, data):
+		# Display the latest data
+		self.webserver.setcontent('View latest content', 'From within app.py')
+		# Save data to the log file
+		self.save.log(self.datapath, self.csvheader, csv)
+
+	# Used for application debugging
+	def log(self, level, msg):
+		datetime = time.strftime('%d/%m/%Y %H:%M:%S')
+		msg = datetime+' '+msg
+		if level == 'DEBUG':
+			# Print to log 	
+			logging.debug(msg)
+		elif level == 'INFO':
+			# Print to log 
+			logging.info(msg)
+		elif level == 'WARN':
+			# Print to log and console	
+			logging.warning(msg)
+	
+	# Grab GPS data 
 	def grabgps(self):
 		while True:
 			data = self.ND1000S.grabdata()
-			print(data)
+			try:
+				gps=json.loads(data)
+				self.log('DEBUG',"GOT GPS: "+data)
+				self.newdata(data)
+			except ValueError:
+				self.log('DEBUG', 'app.py | ValueError | GrabGPS() | '+data)
+			time.sleep(6)
 
 	# Thread to check the health of the systemn
 	def healthcheck(self):
@@ -46,25 +107,22 @@ class GrabSensors:
 			#self.checklocalserver()
 			self.checknetwork()
 	
-	def checklocalserver(self):
-		print('Check Server')
-
+	def writedata():
+			
 	def checknetwork(self):
 		# CHECK NETWORK / 3G DONGLE IS CONNECTED
 		network = self.H3G.checkconnection()
 		lsusb = self.H3G.lsusb()
-		#print(network+'\n'+lsusb)
-		if network != "":
-			self.status['devices']['Huawei']['status'] = 1
-			self.status['devices']['Huawei']['msg'] = 'Connected'
+		self.log('DEBUG','Checking network connection: '+lsusb)
+		if network == "Network OK":
+			self.log('DEBUG','Network OK')
+			self.data['status']['Huawei']['active'] = 1
+			self.data['status']['Huawei']['msg'] = 'Connected'
 		else:
-			self.status['devices']['Huawei']['status'] = 0
-			self.status['devices']['Huawei']['msg'] = 'Not Connected'
+			self.log('WARN','USB HAS BEEN reset: Network not connected')
+			self.data['status']['Huawei']['active'] = 0
+			self.data['status']['Huawei']['msg'] = 'Not Connected'
 		time.sleep(20)
-	
-	def startlocalserver(self):
-		# Start an ultra minimal local server	
-		cmd = "cd /home/csk/sensorcoms/public;python -m http.server 80 > /dev/null 2>&1"
 
 	# Thread to blink an led
 	def redled(self):
