@@ -8,17 +8,17 @@ class ND1000S:
 		output = subprocess.check_output("gpspipe -wn 5 | tail -n 1", shell=True)
 		output = output.decode("utf-8")
 		output = output.strip()
-		foundlat = output.find('"lat":')
+		foundlat = output.find('"alt":')
 		if foundlat > -1:
 			# Found some data, lets return it as valid json
 			try:
 				gps=json.loads(output)
 				op = '{'
-				op += '"lat":'+str(gps['lat'])+','
-				op += '"lon":'+str(gps['lon'])+','
-				op += '"time":'+str(gps['time'])+','
-				op += '"alt":'+str(gps['alt'])+','
-				op += '"speed":'+str(gps['speed'])
+				op += '"lat":"'+str(gps['lat'])+'",'
+				op += '"lon":"'+str(gps['lon'])+'",'
+				op += '"time":"'+str(gps['time'])+'",'
+				op += '"alt":"'+str(gps['alt'])+'",'
+				op += '"speed":"'+str(gps['speed'])+'"'
 				op += '}'
 				return op
 			except ValueError:

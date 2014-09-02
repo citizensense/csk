@@ -8,6 +8,7 @@
 #############################################################################
 # Include the 'libraries folder' in the system path
 import sys, os, time, logging, threading, subprocess, urllib
+from collections import OrderedDict
 sys.path.insert(0, '/home/csk/sensorcoms/libraries') #TODO:Make path generic
 import wiringpi2
 from Huawei3G import *
@@ -23,57 +24,93 @@ class GrabSensors:
 		logging.basicConfig(filename='csk.log', level=logging.DEBUG)
 		self.log('INFO', 'Started script')
 		# Setup some base variables
+		self.lock = threading.Lock()
 		self.datapath = os.path.join(os.path.dirname(__file__), '../data/data.csv')
 		self.csvheader = 'timecode,value1,value2'
 		self.ND1000S = ND1000S() 
 		self.H3G = Huawei3G()
 		self.save = SaveData()
-		# Data model
-		self.datamodel = {
-			'Huawei':"Not connected",
-			'ND1000S-LAT':{'title':'lat', 'values':[]},
-			'ND1000S-LON':{'title':'lat', 'values':[]},
-			'ND1000S-SPEED':{'title':'lat', 'values':[]},
-			'ND1000S-ALT':{'title':'lat', 'values':[]},
-			'I2C-16ADC-A0':{'title':'lat', 'values':[]},
-			'I2C-16ADC-A1-AS-':{'title':'lat', 'values':[]},
-			'I2C-16ADC-A2-AS-':{'title':'lat', 'values':[]},
-			'I2C-16ADC-A3-AS-':{'title':'lat', 'values':[]},
-			'I2C-16ADC-A4-AS-':{'title':'lat', 'values':[]},
-			'I2C-16ADC-A5-AS-':{'title':'lat', 'values':[]},
-			'I2C-16ADC-A6-AS-':{'title':'lat', 'values':[]},
-			'I2C-16ADC-A7-AS-':{'title':'lat', 'values':[]},
-			'RPI-WindSpeed':{'title':'lat', 'values':[]},
-			'SPI-8ADC--MCP3008-WindDirection':{'title':'lat', 'values':[]},
-			'SPI-8ADC-SparkfunSoundDetector-SoundEnv':{'title':'lat', 'values':[]},
-			'RPI-SparkfunSoundDetector-SoundGate':{'title':'lat', 'values':[]},
-			'I2C-AN2315-Temp':{'title':'lat', 'values':[]},
-			'AN2315-Humid':{'title':'lat', 'values':[]},
-			'ADC-A7-AS':{'title':'lat', 'values':[]}
-		}			
-		# Initialise a list of threads so data can be aquired asynchronosly
-		threads = []
-		threads.append(threading.Thread(target=self.healthcheck) ) # Check device status
-		threads.append(threading.Thread(target=self.grabgps) ) # Grab GPS data
-		threads.append(threading.Thread(target=self.redled) ) # Blink the LED
-		for item in threads:
-			item.start()
-		# Setup GPOI Pin access
-		#wiringpi2.wiringPiSetup() # For sequencial pin numbering i.e [] in pin layout below
-		wiringpi2.wiringPiSetupGpio() # For GPIO pin numbering
 		# Start the webserver (runs in its own thread)
 		globalconfig = {'server.socket_host':"0.0.0.0", 'server.socket_port':80 } 
 		localconfig = {'/': {'tools.staticdir.root': '../public'}}
 		self.webserver = CherryPyWebServer(globalconfig, localconfig) 
 		self.webserver.setcontent('Started the server', 'From within app.py')
+		# Data model: (shortname, [logtitle, values, max, min])
+		self.datamodel = OrderedDict([
+			('lat',			['USB-ND1000S', 	[]	]),
+			('lon',			['ND1000S-LON', 	[]	]),
+			('groundspeed', ['ND1000S-SPEED', 	[]	]),
+			('altitude',	['ND1000S-ALT',		[]	]),
+			('a0',			['A0->16ADC->I2C',	[]	]),
+			('a1',			['A1->16ADC->I2C',	[]	]),
+			('a2',			['A2->16ADC->I2C',	[]	]),
+			('a3',			['A3->16ADC->I2C',	[]	]),
+			('a4',			['A3->16ADC->I2C',	[]	]),
+			('a5',			['A4->16ADC->I2C',	[]	]),
+			('a6',			['A5->16ADC->I2C',	[]	]),
+			('a7',			['A6->16ADC->I2C',	[]	]),
+			('windspeed',	['RPI-WindSpeed',	[]	]),
+			('winddir',		['SPI-8ADC--MCP3008-WindDirection',			[]	]),
+			('soundenv',	['SPI-8ADC-SparkfunSoundDetector-SoundEnv',	[]	]),
+			('soundgate',	['RPI-SparkfunSoundDetector-SoundGate',		[]	]),
+			('outsidetemp',	['I2C-AN2315-Temp',	[]	]),
+			('outsidehumid',['AN2315-Humid',	[]	]),
+			('rpiTempC',	['RPi-TempC',		[]	]),
+			('rpi%diskused',['RPi-disk % used',	[]	]),
+			('rpidiskavail',['RPi-diskAvail',	[]	]),
+			('rpiload',		['Rpi-CPU Load Ave',[]	]),
+			('networkup',	['HuaweiAvailable', []	])
+		])
+		# Initialise a list of threads so data can be aquired asynchronosly
+		threads = []
+		threads.append(threading.Thread(target=self.healthcheck) ) 	# Check device status
+		threads.append(threading.Thread(target=self.grabgps) ) 		# Grab GPS data
+		threads.append(threading.Thread(target=self.redled) ) 		# Blink the LED
+		threads.append(threading.Thread(target=self.grabrpiinfo) ) 	# Grab RaspberryPi Info
+		threads.append(threading.Thread(target=self.savedata) ) 	# Save Data to webGUI, LogFile
+		threads.append(threading.Thread(target=self.grabadc) ) 		# Grab data from ADC 
+		for item in threads:
+			item.start()
+		# Setup GPOI Pin access
+		#wiringpi2.wiringPiSetup() # For sequencial pin numbering i.e [] in pin layout below
+		wiringpi2.wiringPiSetupGpio() # For GPIO pin numbering
 	
 	# If any threads have new data, then send it here
-	def newdata(self, data):
-		string = json.encode(self.datamodel)
-		# Display the latest data
-		self.webserver.setcontent(string, 'From within app.py')
-		# Save data to the log file
-		self.save.log(self.datapath, self.csvheader, csv)
+	def newdata(self, key, value):
+		# Create a timecode
+		timecode = int(time.time())
+		# Need to check the Rpi has the right time, otherwise we shouldn't save
+		# Create a lock so multiple threads don't get confused
+		self.lock.acquire()
+		try:
+			# Save the new data to our model
+			self.datamodel[key][1].append([timecode, value])
+		# Release the lock
+		finally:
+			self.lock.release()
+    
+    # Iterate through the data model and save data to: LogFile, GUI, Web
+	def savedata(self):
+		while True:
+			# Block if the lock is already held by another process
+			self.lock.acquire() 
+			try:
+				# Prep  web interface output
+				mystr = ""
+				for key in self.datamodel:
+					values = ""
+					for value in self.datamodel[key][1]: 
+						timecode = str(value[0]) 
+						val = str(value[1])
+						values = val+', '+values
+					mystr += '<div><b>'+key+':</b> '+values+'</div>' 
+				# Display the latest data
+				self.webserver.setcontent('<pre>'+mystr+'</pre>', '')
+				# Save data to the log file
+				#self.save.log(self.datapath, self.csvheader, csv)
+			finally:
+				self.lock.release()
+			time.sleep(5)
 
 	# Used for application debugging
 	def log(self, level, msg):
@@ -94,12 +131,50 @@ class GrabSensors:
 		while True:
 			data = self.ND1000S.grabdata()
 			try:
-				gps=json.loads(data)
+				info=json.loads(data)
 				self.log('DEBUG',"GOT GPS: "+data)
-				self.newdata(data)
+				self.newdata('lat', info["lat"] )
+				self.newdata('lon', info["lon"] )
+				self.newdata('groundspeed', info["speed"] )
+				self.newdata('altitude', info["alt"] )
 			except ValueError:
 				self.log('DEBUG', 'app.py | ValueError | GrabGPS() | '+data)
 			time.sleep(6)
+	
+	# Grab ADC data from the ABelectronicsADC
+	def grabadc(self):
+		while True: 
+			jsonstr = subprocess.check_output("python2 libraries/ABEadcPi.py", shell=True).decode("utf-8")
+			try:
+				info=json.loads(jsonstr)
+				self.log('DEBUG',"Got ADC Info"+jsonstr)
+				self.newdata('a0', info["a0"] ) 
+				self.newdata('a1', info["a1"] )
+				self.newdata('a2', info["a2"] )
+				self.newdata('a3', info["a3"] )
+				self.newdata('a4', info["a4"] )
+				self.newdata('a5', info["a5"] )
+				self.newdata('a6', info["a6"] )
+				self.newdata('a7', info["a7"] )
+			except ValueError:
+				self.log('DEBUG', 'app.py | JsonError | grabadc() | '+jsonstr)
+			time.sleep(3)
+
+	# Grab RpiInfo
+	def grabrpiinfo(self):
+		while True: 
+			jsonstr = subprocess.check_output("libraries/RPiInfo.sh", shell=True).decode("utf-8")
+			try:
+				info=json.loads(jsonstr)
+				self.log('DEBUG',"Got RaspberryPi Info"+jsonstr)
+				self.newdata('rpiTempC', info["tempc"] ) 
+				self.newdata('rpi%diskused', info["disk%used"] )
+				self.newdata('rpidiskavail', info["diskavailable"] )
+				self.newdata('rpiload', info["load"] )
+				#self.newdata(tc, 'deviceinfo', info["serial"] )
+			except ValueError:
+				self.log('DEBUG', 'app.py | ValueError | GrabGPS() | '+jsonstr)
+			time.sleep(20)
 
 	# Thread to check the health of the systemn
 	def healthcheck(self):
@@ -114,10 +189,10 @@ class GrabSensors:
 		self.log('DEBUG','Checking network connection: '+lsusb)
 		if network == "Network OK":
 			self.log('DEBUG','Network OK')
-			self.datamodel['network'] = 'Huawei Connected'
+			self.newdata('networkup', 1)
 		else:
 			self.log('WARN','USB HAS BEEN reset: Network not connected')
-			self.datamodel['network'] = 'Huawei Connected'
+			self.newdata('networkup', 0)
 		time.sleep(20)
 
 	# Thread to blink an led
