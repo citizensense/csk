@@ -10530,3 +10530,1719 @@ INFO:cherrypy.error:[02/Sep/2014:16:11:49] ENGINE Bus STOPPED
 INFO:cherrypy.error:[02/Sep/2014:16:11:49] ENGINE Bus EXITING
 INFO:cherrypy.error:[02/Sep/2014:16:11:49] ENGINE Waiting for child threads to terminate...
 INFO:cherrypy.error:[02/Sep/2014:16:11:49] ENGINE Bus EXITED
+INFO:root:02/09/2014 16:24:26 Started script
+INFO:cherrypy.error:[02/Sep/2014:16:24:26] ENGINE Bus STARTING
+INFO:cherrypy.error:[02/Sep/2014:16:24:26] ENGINE Started monitor thread 'Autoreloader'.
+INFO:cherrypy.error:[02/Sep/2014:16:24:26] ENGINE Started monitor thread '_TimeoutMonitor'.
+DEBUG:root:02/09/2014 16:24:27 Got RaspberryPi Info{"tempc":"41.7'C","disk%used":"83%","diskavailable":"276M","load":"0.16,0.11,0.24","serial":"00000000b6e2f676"}
+
+DEBUG:root:02/09/2014 16:24:28 app.py | ValueError | GrabGPS() | NO GPS FOUND: {"class":"TPV","tag":"MID2","device":"/dev/ttyUSB0","mode":1,"time":"1995-01-17T15:24:27.000Z","ept":0.005}
+DEBUG:root:02/09/2014 16:24:28 Got ADC Info{"a0":0.0,"a1":0.0,"a2":0.0,"a3":0.0,"a4":0.0,"a5":0.0,"a6":0.0,"a7":4.66617042116}
+
+INFO:cherrypy.error:[02/Sep/2014:16:24:28] ENGINE Serving on http://0.0.0.0
+INFO:cherrypy.error:[02/Sep/2014:16:24:29] ENGINE Bus STARTED
+INFO:cherrypy.access.3057017680:192.168.1.100 - - [02/Sep/2014:16:24:29] "GET / HTTP/1.1" 200 1173 "" "Mozilla/5.0 (Linux; Android 4.4.2; Nexus 10 Build/KOT49H) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/36.0.1985.135 Safari/537.36"
+DEBUG:root:02/09/2014 16:24:31 Checking network connection: Bus 001 Device 015: ID 046d:c52b Logitech, Inc. Unifying Receiver
+Bus 001 Device 018: ID 12d1:14db Huawei Technologies Co., Ltd. E353/E3131
+Bus 001 Device 014: ID 067b:2303 Prolific Technology, Inc. PL2303 Serial Port
+Bus 001 Device 013: ID 0424:ec00 Standard Microsystems Corp. SMSC9512/9514 Fast Ethernet Adapter
+Bus 001 Device 012: ID 0424:9514 Standard Microsystems Corp. SMC9514 Hub
+Bus 001 Device 001: ID 1d6b:0002 Linux Foundation 2.0 root hub
+
+DEBUG:root:02/09/2014 16:24:31 Network OK
+DEBUG:root:02/09/2014 16:24:32 Got ADC Info{"a0":0.0,"a1":0.0,"a2":0.0,"a3":0.0,"a4":0.0,"a5":0.0,"a6":0.0,"a7":4.66366307542}
+
+INFO:cherrypy.access.3057017680:192.168.1.100 - - [02/Sep/2014:16:24:35] "GET / HTTP/1.1" 200 1261 "http://192.168.1.99/" "Mozilla/5.0 (Linux; Android 4.4.2; Nexus 10 Build/KOT49H) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/36.0.1985.135 Safari/537.36"
+DEBUG:root:02/09/2014 16:24:35 app.py | ValueError | GrabGPS() | NO GPS FOUND: {"class":"TPV","tag":"MID2","device":"/dev/ttyUSB0","mode":1,"time":"1995-01-17T15:24:35.000Z","ept":0.005}
+DEBUG:root:02/09/2014 16:24:36 Got ADC Info{"a0":0.0,"a1":0.0,"a2":0.0,"a3":0.0,"a4":0.0,"a5":0.0,"a6":0.0,"a7":4.68372184133}
+
+DEBUG:root:02/09/2014 16:24:40 Got ADC Info{"a0":0.0,"a1":0.0,"a2":0.0,"a3":0.0,"a4":0.0,"a5":0.0,"a6":0.0,"a7":4.66366307542}
+
+INFO:cherrypy.access.3057017680:192.168.1.100 - - [02/Sep/2014:16:24:40] "GET / HTTP/1.1" 200 1361 "http://192.168.1.99/" "Mozilla/5.0 (Linux; Android 4.4.2; Nexus 10 Build/KOT49H) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/36.0.1985.135 Safari/537.36"
+DEBUG:root:02/09/2014 16:24:43 app.py | ValueError | GrabGPS() | NO GPS FOUND: {"class":"TPV","tag":"MID2","device":"/dev/ttyUSB0","mode":1,"time":"1995-01-17T15:24:42.000Z","ept":0.005}
+DEBUG:root:02/09/2014 16:24:44 Got ADC Info{"a0":0.0,"a1":0.0,"a2":0.0,"a3":0.0,"a4":0.0,"a5":0.0,"a6":0.0,"a7":4.68372184133}
+
+INFO:cherrypy.access.3057017680:192.168.1.100 - - [02/Sep/2014:16:24:45] "GET / HTTP/1.1" 200 1411 "http://192.168.1.99/" "Mozilla/5.0 (Linux; Android 4.4.2; Nexus 10 Build/KOT49H) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/36.0.1985.135 Safari/537.36"
+DEBUG:root:02/09/2014 16:24:47 Got ADC Info{"a0":0.0,"a1":0.0,"a2":0.0,"a3":0.0,"a4":0.0,"a5":0.0,"a6":0.0,"a7":4.68372184133}
+
+DEBUG:root:02/09/2014 16:24:48 Got RaspberryPi Info{"tempc":"41.2'C","disk%used":"83%","diskavailable":"276M","load":"0.24,0.13,0.24","serial":"00000000b6e2f676"}
+
+DEBUG:root:02/09/2014 16:24:50 app.py | ValueError | GrabGPS() | NO GPS FOUND: {"class":"TPV","tag":"MID2","device":"/dev/ttyUSB0","mode":1,"time":"1995-01-17T15:24:50.000Z","ept":0.005}
+INFO:cherrypy.access.3057017680:192.168.1.100 - - [02/Sep/2014:16:24:51] "GET / HTTP/1.1" 200 1461 "http://192.168.1.99/" "Mozilla/5.0 (Linux; Android 4.4.2; Nexus 10 Build/KOT49H) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/36.0.1985.135 Safari/537.36"
+DEBUG:root:02/09/2014 16:24:51 Got ADC Info{"a0":0.0,"a1":0.0,"a2":0.0,"a3":0.0,"a4":0.0,"a5":0.0,"a6":0.0,"a7":4.66617042116}
+
+DEBUG:root:02/09/2014 16:24:53 Checking network connection: Bus 001 Device 015: ID 046d:c52b Logitech, Inc. Unifying Receiver
+Bus 001 Device 018: ID 12d1:14db Huawei Technologies Co., Ltd. E353/E3131
+Bus 001 Device 014: ID 067b:2303 Prolific Technology, Inc. PL2303 Serial Port
+Bus 001 Device 013: ID 0424:ec00 Standard Microsystems Corp. SMSC9512/9514 Fast Ethernet Adapter
+Bus 001 Device 012: ID 0424:9514 Standard Microsystems Corp. SMC9514 Hub
+Bus 001 Device 001: ID 1d6b:0002 Linux Foundation 2.0 root hub
+
+DEBUG:root:02/09/2014 16:24:53 Network OK
+DEBUG:root:02/09/2014 16:24:55 Got ADC Info{"a0":0.0,"a1":0.0,"a2":0.0,"a3":0.0,"a4":0.0,"a5":0.0,"a6":0.0,"a7":4.6561410382}
+
+INFO:cherrypy.access.3057017680:192.168.1.100 - - [02/Sep/2014:16:24:56] "GET / HTTP/1.1" 200 1596 "http://192.168.1.99/" "Mozilla/5.0 (Linux; Android 4.4.2; Nexus 10 Build/KOT49H) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/36.0.1985.135 Safari/537.36"
+DEBUG:root:02/09/2014 16:24:58 app.py | ValueError | GrabGPS() | NO GPS FOUND: {"class":"TPV","tag":"MID2","device":"/dev/ttyUSB0","mode":1,"time":"1995-01-17T15:24:57.000Z","ept":0.005}
+DEBUG:root:02/09/2014 16:24:59 Got ADC Info{"a0":0.0,"a1":0.0,"a2":0.0,"a3":0.0,"a4":0.0,"a5":0.0,"a6":0.0,"a7":4.6686777669}
+
+INFO:cherrypy.access.3057017680:192.168.1.100 - - [02/Sep/2014:16:25:01] "GET / HTTP/1.1" 200 1697 "http://192.168.1.99/" "Mozilla/5.0 (Linux; Android 4.4.2; Nexus 10 Build/KOT49H) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/36.0.1985.135 Safari/537.36"
+DEBUG:root:02/09/2014 16:25:02 Got ADC Info{"a0":0.0,"a1":0.0,"a2":0.0,"a3":0.0,"a4":0.0,"a5":0.0,"a6":0.0,"a7":4.67870714985}
+
+DEBUG:root:02/09/2014 16:25:05 app.py | ValueError | GrabGPS() | NO GPS FOUND: {"class":"TPV","tag":"MID2","device":"/dev/ttyUSB0","mode":1,"time":"1995-01-17T15:25:05.000Z","ept":0.005}
+DEBUG:root:02/09/2014 16:25:06 Got ADC Info{"a0":0.0,"a1":0.0,"a2":0.0,"a3":0.0,"a4":0.0,"a5":0.0,"a6":0.0,"a7":4.69124387855}
+
+DEBUG:root:02/09/2014 16:25:08 Got RaspberryPi Info{"tempc":"41.2'C","disk%used":"83%","diskavailable":"276M","load":"0.39,0.17,0.25","serial":"00000000b6e2f676"}
+
+DEBUG:root:02/09/2014 16:25:09 Got ADC Info{"a0":0.0,"a1":0.0,"a2":0.0,"a3":0.0,"a4":0.0,"a5":0.0,"a6":0.0,"a7":4.68121449559}
+
+DEBUG:root:02/09/2014 16:25:13 app.py | ValueError | GrabGPS() | NO GPS FOUND: {"class":"TPV","tag":"MID2","device":"/dev/ttyUSB0","mode":1,"time":"1995-01-17T15:25:12.000Z","ept":0.005}
+DEBUG:root:02/09/2014 16:25:13 Got ADC Info{"a0":0.0,"a1":0.0,"a2":0.0,"a3":0.0,"a4":0.0,"a5":0.0,"a6":0.0,"a7":4.67619980411}
+
+DEBUG:root:02/09/2014 16:25:16 Checking network connection: Bus 001 Device 015: ID 046d:c52b Logitech, Inc. Unifying Receiver
+Bus 001 Device 018: ID 12d1:14db Huawei Technologies Co., Ltd. E353/E3131
+Bus 001 Device 014: ID 067b:2303 Prolific Technology, Inc. PL2303 Serial Port
+Bus 001 Device 013: ID 0424:ec00 Standard Microsystems Corp. SMSC9512/9514 Fast Ethernet Adapter
+Bus 001 Device 012: ID 0424:9514 Standard Microsystems Corp. SMC9514 Hub
+Bus 001 Device 001: ID 1d6b:0002 Linux Foundation 2.0 root hub
+
+DEBUG:root:02/09/2014 16:25:16 Network OK
+DEBUG:root:02/09/2014 16:25:17 Got ADC Info{"a0":0.0,"a1":0.0,"a2":0.0,"a3":0.0,"a4":0.0,"a5":0.0,"a6":0.0,"a7":4.68372184133}
+
+DEBUG:root:02/09/2014 16:25:20 app.py | ValueError | GrabGPS() | NO GPS FOUND: {"class":"TPV","tag":"MID2","device":"/dev/ttyUSB0","mode":1,"time":"1995-01-17T15:25:20.000Z","ept":0.005}
+DEBUG:root:02/09/2014 16:25:20 Got ADC Info{"a0":0.0,"a1":0.0,"a2":0.0,"a3":0.0,"a4":0.0,"a5":0.0,"a6":0.0,"a7":4.66115572968}
+
+DEBUG:root:02/09/2014 16:25:24 Got ADC Info{"a0":0.0,"a1":0.0,"a2":0.0,"a3":0.0,"a4":0.0,"a5":0.0,"a6":0.0,"a7":4.68372184133}
+
+DEBUG:root:02/09/2014 16:25:28 Got ADC Info{"a0":0.0,"a1":0.0,"a2":0.0,"a3":0.0,"a4":0.0,"a5":0.0,"a6":0.0,"a7":4.68121449559}
+
+DEBUG:root:02/09/2014 16:25:28 app.py | ValueError | GrabGPS() | NO GPS FOUND: {"class":"TPV","tag":"MID2","device":"/dev/ttyUSB0","mode":1,"time":"1995-01-17T15:25:27.000Z","ept":0.005}
+DEBUG:root:02/09/2014 16:25:29 Got RaspberryPi Info{"tempc":"41.2'C","disk%used":"83%","diskavailable":"276M","load":"0.50,0.21,0.26","serial":"00000000b6e2f676"}
+
+DEBUG:root:02/09/2014 16:25:31 Got ADC Info{"a0":0.0,"a1":0.0,"a2":0.0,"a3":0.0,"a4":0.0,"a5":0.0,"a6":0.0,"a7":4.67369245837}
+
+DEBUG:root:02/09/2014 16:25:35 Got ADC Info{"a0":0.0,"a1":0.0,"a2":0.0,"a3":0.0,"a4":0.0,"a5":0.0,"a6":0.0,"a7":4.68372184133}
+
+DEBUG:root:02/09/2014 16:25:36 app.py | ValueError | GrabGPS() | NO GPS FOUND: {"class":"TPV","tag":"MID2","device":"/dev/ttyUSB0","mode":1,"time":"1995-01-17T15:25:36.000Z","ept":0.005}
+INFO:cherrypy.access.3057017680:192.168.1.100 - - [02/Sep/2014:16:25:39] "GET / HTTP/1.1" 200 2270 "" "Mozilla/5.0 (Linux; Android 4.4.2; Nexus 10 Build/KOT49H) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/36.0.1985.135 Safari/537.36"
+DEBUG:root:02/09/2014 16:25:39 Got ADC Info{"a0":0.0,"a1":0.0,"a2":0.0,"a3":0.0,"a4":0.0,"a5":0.0,"a6":0.0,"a7":4.66617042116}
+
+DEBUG:root:02/09/2014 16:25:40 Checking network connection: Bus 001 Device 015: ID 046d:c52b Logitech, Inc. Unifying Receiver
+Bus 001 Device 018: ID 12d1:14db Huawei Technologies Co., Ltd. E353/E3131
+Bus 001 Device 014: ID 067b:2303 Prolific Technology, Inc. PL2303 Serial Port
+Bus 001 Device 013: ID 0424:ec00 Standard Microsystems Corp. SMSC9512/9514 Fast Ethernet Adapter
+Bus 001 Device 012: ID 0424:9514 Standard Microsystems Corp. SMC9514 Hub
+Bus 001 Device 001: ID 1d6b:0002 Linux Foundation 2.0 root hub
+
+DEBUG:root:02/09/2014 16:25:40 Network OK
+DEBUG:root:02/09/2014 16:25:43 Got ADC Info{"a0":0.0,"a1":0.0,"a2":0.0,"a3":0.0,"a4":0.0,"a5":0.0,"a6":0.0,"a7":4.67870714985}
+
+INFO:cherrypy.access.3057017680:192.168.1.100 - - [02/Sep/2014:16:25:44] "GET / HTTP/1.1" 200 2323 "http://192.168.1.99/" "Mozilla/5.0 (Linux; Android 4.4.2; Nexus 10 Build/KOT49H) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/36.0.1985.135 Safari/537.36"
+DEBUG:root:02/09/2014 16:25:45 app.py | ValueError | GrabGPS() | NO GPS FOUND: {"class":"SKY","tag":"MID4","device":"/dev/ttyUSB0","time":"1995-01-17T15:25:44.000Z","xdop":5.21,"ydop":3.93,"vdop":5.31,"tdop":3.17,"hdop":0.00,"gdop":8.99,"pdop":8.42,"satellites":[{"PRN":27,"el":57,"az":130,"ss":30,"used":false},{"PRN":16,"el":12,"az":178,"ss":21,"used":false},{"PRN":14,"el":12,"az":111,"ss":22,"used":false},{"PRN":22,"el":53,"az":79,"ss":25,"used":false}]}
+DEBUG:root:02/09/2014 16:25:47 Got ADC Info{"a0":0.0,"a1":0.0,"a2":0.0,"a3":0.0,"a4":0.0,"a5":0.0,"a6":0.0,"a7":4.68372184133}
+
+DEBUG:root:02/09/2014 16:25:49 Got RaspberryPi Info{"tempc":"41.2'C","disk%used":"83%","diskavailable":"276M","load":"0.36,0.20,0.26","serial":"00000000b6e2f676"}
+
+INFO:cherrypy.access.3057017680:192.168.1.100 - - [02/Sep/2014:16:25:50] "GET / HTTP/1.1" 200 2373 "http://192.168.1.99/" "Mozilla/5.0 (Linux; Android 4.4.2; Nexus 10 Build/KOT49H) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/36.0.1985.135 Safari/537.36"
+DEBUG:root:02/09/2014 16:25:50 Got ADC Info{"a0":0.0,"a1":0.0,"a2":0.0,"a3":0.0,"a4":0.0,"a5":0.0,"a6":0.0,"a7":4.68121449559}
+
+DEBUG:root:02/09/2014 16:25:52 app.py | ValueError | GrabGPS() | NO GPS FOUND: {"class":"TPV","tag":"MID2","device":"/dev/ttyUSB0","mode":1,"time":"1995-01-17T15:25:52.000Z","ept":0.005}
+DEBUG:root:02/09/2014 16:25:54 Got ADC Info{"a0":0.0,"a1":0.0,"a2":0.0,"a3":0.0,"a4":0.0,"a5":0.0,"a6":0.0,"a7":4.67118511263}
+
+INFO:cherrypy.access.3057017680:192.168.1.100 - - [02/Sep/2014:16:25:55] "GET / HTTP/1.1" 200 2508 "http://192.168.1.99/" "Mozilla/5.0 (Linux; Android 4.4.2; Nexus 10 Build/KOT49H) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/36.0.1985.135 Safari/537.36"
+DEBUG:root:02/09/2014 16:25:58 Got ADC Info{"a0":0.0,"a1":0.0,"a2":0.0,"a3":0.0,"a4":0.0,"a5":0.0,"a6":0.0,"a7":4.68873653281}
+
+DEBUG:root:02/09/2014 16:26:00 app.py | ValueError | GrabGPS() | NO GPS FOUND: {"class":"TPV","tag":"MID2","device":"/dev/ttyUSB0","mode":1,"time":"1995-01-17T15:25:59.000Z","ept":0.005}
+INFO:cherrypy.access.3057017680:192.168.1.100 - - [02/Sep/2014:16:26:00] "GET / HTTP/1.1" 200 2558 "http://192.168.1.99/" "Mozilla/5.0 (Linux; Android 4.4.2; Nexus 10 Build/KOT49H) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/36.0.1985.135 Safari/537.36"
+DEBUG:root:02/09/2014 16:26:02 Got ADC Info{"a0":0.0,"a1":0.0,"a2":0.0,"a3":0.0,"a4":0.0,"a5":0.0,"a6":0.0,"a7":4.66366307542}
+
+DEBUG:root:02/09/2014 16:26:03 Checking network connection: Bus 001 Device 015: ID 046d:c52b Logitech, Inc. Unifying Receiver
+Bus 001 Device 018: ID 12d1:14db Huawei Technologies Co., Ltd. E353/E3131
+Bus 001 Device 014: ID 067b:2303 Prolific Technology, Inc. PL2303 Serial Port
+Bus 001 Device 013: ID 0424:ec00 Standard Microsystems Corp. SMSC9512/9514 Fast Ethernet Adapter
+Bus 001 Device 012: ID 0424:9514 Standard Microsystems Corp. SMC9514 Hub
+Bus 001 Device 001: ID 1d6b:0002 Linux Foundation 2.0 root hub
+
+DEBUG:root:02/09/2014 16:26:03 Network OK
+DEBUG:root:02/09/2014 16:26:06 Got ADC Info{"a0":0.0,"a1":0.0,"a2":0.0,"a3":0.0,"a4":0.0,"a5":0.0,"a6":0.0,"a7":4.63357492654}
+
+INFO:cherrypy.access.3057017680:192.168.1.100 - - [02/Sep/2014:16:26:06] "GET / HTTP/1.1" 200 2608 "http://192.168.1.99/" "Mozilla/5.0 (Linux; Android 4.4.2; Nexus 10 Build/KOT49H) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/36.0.1985.135 Safari/537.36"
+DEBUG:root:02/09/2014 16:26:07 app.py | ValueError | GrabGPS() | NO GPS FOUND: {"class":"TPV","tag":"MID2","device":"/dev/ttyUSB0","mode":1,"time":"1995-01-17T15:26:07.000Z","ept":0.005}
+DEBUG:root:02/09/2014 16:26:09 Got ADC Info{"a0":0.0,"a1":0.0,"a2":0.0,"a3":0.0,"a4":0.0,"a5":0.0,"a6":0.0,"a7":4.68121449559}
+
+DEBUG:root:02/09/2014 16:26:10 Got RaspberryPi Info{"tempc":"41.2'C","disk%used":"83%","diskavailable":"276M","load":"0.67,0.28,0.28","serial":"00000000b6e2f676"}
+
+INFO:cherrypy.access.3057017680:192.168.1.100 - - [02/Sep/2014:16:26:11] "GET / HTTP/1.1" 200 2711 "http://192.168.1.99/" "Mozilla/5.0 (Linux; Android 4.4.2; Nexus 10 Build/KOT49H) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/36.0.1985.135 Safari/537.36"
+DEBUG:root:02/09/2014 16:26:13 Got ADC Info{"a0":0.0,"a1":0.0,"a2":0.0,"a3":0.0,"a4":0.0,"a5":0.0,"a6":0.0,"a7":4.68121449559}
+
+DEBUG:root:02/09/2014 16:26:15 app.py | ValueError | GrabGPS() | NO GPS FOUND: {"class":"TPV","tag":"MID2","device":"/dev/ttyUSB0","mode":1,"time":"1995-01-17T15:26:14.000Z","ept":0.005}
+INFO:cherrypy.access.3057017680:192.168.1.100 - - [02/Sep/2014:16:26:16] "GET / HTTP/1.1" 200 2796 "http://192.168.1.99/" "Mozilla/5.0 (Linux; Android 4.4.2; Nexus 10 Build/KOT49H) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/36.0.1985.135 Safari/537.36"
+DEBUG:root:02/09/2014 16:26:17 Got ADC Info{"a0":0.0,"a1":0.0,"a2":0.0,"a3":0.0,"a4":0.0,"a5":0.0,"a6":0.0,"a7":4.66115572968}
+
+DEBUG:root:02/09/2014 16:26:20 Got ADC Info{"a0":0.0,"a1":0.0,"a2":0.0,"a3":0.0,"a4":0.0,"a5":0.0,"a6":0.0,"a7":4.67118511263}
+
+INFO:cherrypy.access.3057017680:192.168.1.100 - - [02/Sep/2014:16:26:22] "GET / HTTP/1.1" 200 2946 "http://192.168.1.99/" "Mozilla/5.0 (Linux; Android 4.4.2; Nexus 10 Build/KOT49H) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/36.0.1985.135 Safari/537.36"
+DEBUG:root:02/09/2014 16:26:22 app.py | ValueError | GrabGPS() | NO GPS FOUND: {"class":"TPV","tag":"MID2","device":"/dev/ttyUSB0","mode":1,"time":"1995-01-17T15:26:22.000Z","ept":0.005}
+DEBUG:root:02/09/2014 16:26:25 Got ADC Info{"a0":0.0,"a1":0.0,"a2":0.0,"a3":0.0,"a4":0.0,"a5":0.0,"a6":0.0,"a7":4.66366307542}
+
+DEBUG:root:02/09/2014 16:26:26 Checking network connection: Bus 001 Device 015: ID 046d:c52b Logitech, Inc. Unifying Receiver
+Bus 001 Device 018: ID 12d1:14db Huawei Technologies Co., Ltd. E353/E3131
+Bus 001 Device 014: ID 067b:2303 Prolific Technology, Inc. PL2303 Serial Port
+Bus 001 Device 013: ID 0424:ec00 Standard Microsystems Corp. SMSC9512/9514 Fast Ethernet Adapter
+Bus 001 Device 012: ID 0424:9514 Standard Microsystems Corp. SMC9514 Hub
+Bus 001 Device 001: ID 1d6b:0002 Linux Foundation 2.0 root hub
+
+DEBUG:root:02/09/2014 16:26:26 Network OK
+INFO:cherrypy.access.3057017680:192.168.1.100 - - [02/Sep/2014:16:26:27] "GET / HTTP/1.1" 200 2999 "http://192.168.1.99/" "Mozilla/5.0 (Linux; Android 4.4.2; Nexus 10 Build/KOT49H) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/36.0.1985.135 Safari/537.36"
+DEBUG:root:02/09/2014 16:26:29 Got ADC Info{"a0":0.0,"a1":0.0,"a2":0.0,"a3":0.0,"a4":0.0,"a5":0.0,"a6":0.0,"a7":4.68121449559}
+
+DEBUG:root:02/09/2014 16:26:30 app.py | ValueError | GrabGPS() | NO GPS FOUND: {"class":"TPV","tag":"MID2","device":"/dev/ttyUSB0","mode":1,"time":"1995-01-17T15:26:29.000Z","ept":0.005}
+DEBUG:root:02/09/2014 16:26:31 Got RaspberryPi Info{"tempc":"40.6'C","disk%used":"83%","diskavailable":"276M","load":"0.86,0.34,0.31","serial":"00000000b6e2f676"}
+
+INFO:cherrypy.access.3057017680:192.168.1.100 - - [02/Sep/2014:16:26:32] "GET / HTTP/1.1" 200 3084 "http://192.168.1.99/" "Mozilla/5.0 (Linux; Android 4.4.2; Nexus 10 Build/KOT49H) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/36.0.1985.135 Safari/537.36"
+DEBUG:root:02/09/2014 16:26:33 Got ADC Info{"a0":0.0,"a1":0.0,"a2":0.0,"a3":0.0,"a4":0.0,"a5":0.0,"a6":0.0,"a7":4.6686777669}
+
+DEBUG:root:02/09/2014 16:26:36 Got ADC Info{"a0":0.0,"a1":0.0,"a2":0.0,"a3":0.0,"a4":0.0,"a5":0.0,"a6":0.0,"a7":4.68121449559}
+
+DEBUG:root:02/09/2014 16:26:37 GOT GPS: {"lat":"51.47469632","lon":"-0.035262019","time":"1995-01-17T15:26:37.000Z","alt":"35.467","speed":"0.477"}
+INFO:cherrypy.access.3057017680:192.168.1.100 - - [02/Sep/2014:16:26:38] "GET / HTTP/1.1" 200 3183 "http://192.168.1.99/" "Mozilla/5.0 (Linux; Android 4.4.2; Nexus 10 Build/KOT49H) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/36.0.1985.135 Safari/537.36"
+DEBUG:root:02/09/2014 16:26:40 Got ADC Info{"a0":0.0,"a1":0.0,"a2":0.0,"a3":0.0,"a4":0.0,"a5":0.0,"a6":0.0,"a7":4.75392752204}
+
+INFO:cherrypy.access.3057017680:192.168.1.100 - - [02/Sep/2014:16:26:43] "GET / HTTP/1.1" 200 3275 "http://192.168.1.99/" "Mozilla/5.0 (Linux; Android 4.4.2; Nexus 10 Build/KOT49H) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/36.0.1985.135 Safari/537.36"
+DEBUG:root:02/09/2014 16:26:43 Got ADC Info{"a0":0.0,"a1":0.0,"a2":0.0,"a3":0.0,"a4":0.0,"a5":0.0,"a6":0.0,"a7":4.74640548482}
+
+DEBUG:root:02/09/2014 16:26:45 GOT GPS: {"lat":"51.474708963","lon":"-0.03521885","time":"1995-01-17T15:26:44.000Z","alt":"35.625","speed":"0.77"}
+DEBUG:root:02/09/2014 16:26:48 Got ADC Info{"a0":0.0,"a1":0.0,"a2":0.0,"a3":0.0,"a4":0.0,"a5":0.0,"a6":0.0,"a7":4.74640548482}
+
+INFO:cherrypy.access.3057017680:192.168.1.100 - - [02/Sep/2014:16:26:49] "GET / HTTP/1.1" 200 3366 "http://192.168.1.99/" "Mozilla/5.0 (Linux; Android 4.4.2; Nexus 10 Build/KOT49H) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/36.0.1985.135 Safari/537.36"
+DEBUG:root:02/09/2014 16:26:50 Checking network connection: Bus 001 Device 015: ID 046d:c52b Logitech, Inc. Unifying Receiver
+Bus 001 Device 018: ID 12d1:14db Huawei Technologies Co., Ltd. E353/E3131
+Bus 001 Device 014: ID 067b:2303 Prolific Technology, Inc. PL2303 Serial Port
+Bus 001 Device 013: ID 0424:ec00 Standard Microsystems Corp. SMSC9512/9514 Fast Ethernet Adapter
+Bus 001 Device 012: ID 0424:9514 Standard Microsystems Corp. SMC9514 Hub
+Bus 001 Device 001: ID 1d6b:0002 Linux Foundation 2.0 root hub
+
+DEBUG:root:02/09/2014 16:26:50 Network OK
+DEBUG:root:02/09/2014 16:26:52 Got RaspberryPi Info{"tempc":"41.7'C","disk%used":"83%","diskavailable":"276M","load":"0.82,0.38,0.32","serial":"00000000b6e2f676"}
+
+DEBUG:root:02/09/2014 16:26:53 Got ADC Info{"a0":0.0,"a1":0.0,"a2":0.0,"a3":0.0,"a4":0.0,"a5":0.0,"a6":0.0,"a7":4.68622918707}
+
+DEBUG:root:02/09/2014 16:26:54 app.py | ValueError | GrabGPS() | NO GPS FOUND: {"class":"SKY","tag":"MID4","device":"/dev/ttyUSB0","time":"1995-01-17T15:26:53.000Z","xdop":5.21,"ydop":3.93,"vdop":5.31,"tdop":3.17,"hdop":0.00,"gdop":8.99,"pdop":8.42,"satellites":[{"PRN":27,"el":57,"az":130,"ss":14,"used":false},{"PRN":16,"el":12,"az":178,"ss":22,"used":false},{"PRN":14,"el":12,"az":111,"ss":23,"used":false},{"PRN":22,"el":53,"az":79,"ss":23,"used":false}]}
+INFO:cherrypy.access.3057017680:192.168.1.100 - - [02/Sep/2014:16:26:54] "GET / HTTP/1.1" 200 3454 "http://192.168.1.99/" "Mozilla/5.0 (Linux; Android 4.4.2; Nexus 10 Build/KOT49H) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/36.0.1985.135 Safari/537.36"
+DEBUG:root:02/09/2014 16:26:56 Got ADC Info{"a0":0.0,"a1":0.0,"a2":0.0,"a3":0.0,"a4":0.0,"a5":0.0,"a6":0.0,"a7":4.67369245837}
+
+INFO:cherrypy.access.3057017680:192.168.1.100 - - [02/Sep/2014:16:27:00] "GET / HTTP/1.1" 200 3554 "http://192.168.1.99/" "Mozilla/5.0 (Linux; Android 4.4.2; Nexus 10 Build/KOT49H) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/36.0.1985.135 Safari/537.36"
+DEBUG:root:02/09/2014 16:27:00 Got ADC Info{"a0":0.0,"a1":0.0,"a2":0.0,"a3":0.0,"a4":0.0,"a5":0.0,"a6":0.0,"a7":4.69124387855}
+
+DEBUG:root:02/09/2014 16:27:01 app.py | ValueError | GrabGPS() | NO GPS FOUND: {"class":"TPV","tag":"MID2","device":"/dev/ttyUSB0","mode":1,"time":"1995-01-17T15:27:01.000Z","ept":0.005}
+DEBUG:root:02/09/2014 16:27:04 Got ADC Info{"a0":0.0,"a1":0.0,"a2":0.0,"a3":0.0,"a4":0.0,"a5":0.0,"a6":0.0,"a7":4.67369245837}
+
+INFO:cherrypy.access.3057017680:192.168.1.100 - - [02/Sep/2014:16:27:05] "GET / HTTP/1.1" 200 3604 "http://192.168.1.99/" "Mozilla/5.0 (Linux; Android 4.4.2; Nexus 10 Build/KOT49H) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/36.0.1985.135 Safari/537.36"
+DEBUG:root:02/09/2014 16:27:08 Got ADC Info{"a0":0.0,"a1":0.0,"a2":0.0,"a3":0.0,"a4":0.0,"a5":0.0,"a6":0.0,"a7":4.68372184133}
+
+DEBUG:root:02/09/2014 16:27:09 app.py | ValueError | GrabGPS() | NO GPS FOUND: {"class":"TPV","tag":"MID2","device":"/dev/ttyUSB0","mode":1,"time":"1995-01-17T15:27:08.000Z","ept":0.005}
+INFO:cherrypy.access.3057017680:192.168.1.100 - - [02/Sep/2014:16:27:11] "GET / HTTP/1.1" 200 3654 "http://192.168.1.99/" "Mozilla/5.0 (Linux; Android 4.4.2; Nexus 10 Build/KOT49H) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/36.0.1985.135 Safari/537.36"
+DEBUG:root:02/09/2014 16:27:12 Got ADC Info{"a0":0.0,"a1":0.0,"a2":0.0,"a3":0.0,"a4":0.0,"a5":0.0,"a6":0.0,"a7":4.67118511263}
+
+DEBUG:root:02/09/2014 16:27:13 Got RaspberryPi Info{"tempc":"42.2'C","disk%used":"83%","diskavailable":"276M","load":"1.03,0.45,0.34","serial":"00000000b6e2f676"}
+
+DEBUG:root:02/09/2014 16:27:14 Checking network connection: Bus 001 Device 015: ID 046d:c52b Logitech, Inc. Unifying Receiver
+Bus 001 Device 018: ID 12d1:14db Huawei Technologies Co., Ltd. E353/E3131
+Bus 001 Device 014: ID 067b:2303 Prolific Technology, Inc. PL2303 Serial Port
+Bus 001 Device 013: ID 0424:ec00 Standard Microsystems Corp. SMSC9512/9514 Fast Ethernet Adapter
+Bus 001 Device 012: ID 0424:9514 Standard Microsystems Corp. SMC9514 Hub
+Bus 001 Device 001: ID 1d6b:0002 Linux Foundation 2.0 root hub
+
+DEBUG:root:02/09/2014 16:27:14 Network OK
+INFO:cherrypy.access.3057017680:192.168.1.100 - - [02/Sep/2014:16:27:16] "GET / HTTP/1.1" 200 3754 "http://192.168.1.99/" "Mozilla/5.0 (Linux; Android 4.4.2; Nexus 10 Build/KOT49H) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/36.0.1985.135 Safari/537.36"
+DEBUG:root:02/09/2014 16:27:16 Got ADC Info{"a0":0.0,"a1":0.0,"a2":0.0,"a3":0.0,"a4":0.0,"a5":0.0,"a6":0.0,"a7":4.66617042116}
+
+DEBUG:root:02/09/2014 16:27:16 app.py | ValueError | GrabGPS() | NO GPS FOUND: {"class":"TPV","tag":"MID2","device":"/dev/ttyUSB0","mode":1,"time":"1995-01-17T15:27:16.000Z","ept":0.005}
+DEBUG:root:02/09/2014 16:27:20 Got ADC Info{"a0":0.0,"a1":0.0,"a2":0.0,"a3":0.0,"a4":0.0,"a5":0.0,"a6":0.0,"a7":4.69124387855}
+
+INFO:cherrypy.access.3057017680:192.168.1.100 - - [02/Sep/2014:16:27:21] "GET / HTTP/1.1" 200 3842 "http://192.168.1.99/" "Mozilla/5.0 (Linux; Android 4.4.2; Nexus 10 Build/KOT49H) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/36.0.1985.135 Safari/537.36"
+DEBUG:root:02/09/2014 16:27:24 app.py | ValueError | GrabGPS() | NO GPS FOUND: {"class":"TPV","tag":"MID2","device":"/dev/ttyUSB0","mode":1,"time":"1995-01-17T15:27:23.000Z","ept":0.005}
+DEBUG:root:02/09/2014 16:27:24 Got ADC Info{"a0":0.0,"a1":0.0,"a2":0.0,"a3":0.0,"a4":0.0,"a5":0.0,"a6":0.0,"a7":4.67369245837}
+
+INFO:cherrypy.access.3057017680:192.168.1.100 - - [02/Sep/2014:16:27:27] "GET / HTTP/1.1" 200 3892 "http://192.168.1.99/" "Mozilla/5.0 (Linux; Android 4.4.2; Nexus 10 Build/KOT49H) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/36.0.1985.135 Safari/537.36"
+DEBUG:root:02/09/2014 16:27:27 Got ADC Info{"a0":0.0,"a1":0.0,"a2":0.0,"a3":0.0,"a4":0.0,"a5":0.0,"a6":0.0,"a7":4.68622918707}
+
+DEBUG:root:02/09/2014 16:27:31 app.py | ValueError | GrabGPS() | NO GPS FOUND: {"class":"TPV","tag":"MID2","device":"/dev/ttyUSB0","mode":1,"time":"1995-01-17T15:27:31.000Z","ept":0.005}
+DEBUG:root:02/09/2014 16:27:31 Got ADC Info{"a0":0.0,"a1":0.0,"a2":0.0,"a3":0.0,"a4":0.0,"a5":0.0,"a6":0.0,"a7":4.68372184133}
+
+INFO:cherrypy.access.3057017680:192.168.1.100 - - [02/Sep/2014:16:27:32] "GET / HTTP/1.1" 200 3992 "http://192.168.1.99/" "Mozilla/5.0 (Linux; Android 4.4.2; Nexus 10 Build/KOT49H) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/36.0.1985.135 Safari/537.36"
+DEBUG:root:02/09/2014 16:27:34 Got RaspberryPi Info{"tempc":"41.2'C","disk%used":"83%","diskavailable":"276M","load":"0.93,0.47,0.35","serial":"00000000b6e2f676"}
+
+DEBUG:root:02/09/2014 16:27:35 Got ADC Info{"a0":0.0,"a1":0.0,"a2":0.0,"a3":0.0,"a4":0.0,"a5":0.0,"a6":0.0,"a7":4.67369245837}
+
+DEBUG:root:02/09/2014 16:27:37 Checking network connection: Bus 001 Device 015: ID 046d:c52b Logitech, Inc. Unifying Receiver
+Bus 001 Device 018: ID 12d1:14db Huawei Technologies Co., Ltd. E353/E3131
+Bus 001 Device 014: ID 067b:2303 Prolific Technology, Inc. PL2303 Serial Port
+Bus 001 Device 013: ID 0424:ec00 Standard Microsystems Corp. SMSC9512/9514 Fast Ethernet Adapter
+Bus 001 Device 012: ID 0424:9514 Standard Microsystems Corp. SMC9514 Hub
+Bus 001 Device 001: ID 1d6b:0002 Linux Foundation 2.0 root hub
+
+DEBUG:root:02/09/2014 16:27:37 Network OK
+INFO:cherrypy.access.3057017680:192.168.1.100 - - [02/Sep/2014:16:27:37] "GET / HTTP/1.1" 200 4042 "http://192.168.1.99/" "Mozilla/5.0 (Linux; Android 4.4.2; Nexus 10 Build/KOT49H) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/36.0.1985.135 Safari/537.36"
+DEBUG:root:02/09/2014 16:27:39 app.py | ValueError | GrabGPS() | NO GPS FOUND: {"class":"TPV","tag":"MID2","device":"/dev/ttyUSB0","mode":1,"time":"1995-01-17T15:27:38.000Z","ept":0.005}
+DEBUG:root:02/09/2014 16:27:39 Got ADC Info{"a0":0.0,"a1":0.0,"a2":0.0,"a3":0.0,"a4":0.0,"a5":0.0,"a6":0.0,"a7":4.67369245837}
+
+INFO:cherrypy.access.3057017680:192.168.1.100 - - [02/Sep/2014:16:27:43] "GET / HTTP/1.1" 200 4130 "http://192.168.1.99/" "Mozilla/5.0 (Linux; Android 4.4.2; Nexus 10 Build/KOT49H) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/36.0.1985.135 Safari/537.36"
+DEBUG:root:02/09/2014 16:27:43 Got ADC Info{"a0":0.0,"a1":0.0,"a2":0.0,"a3":0.0,"a4":0.0,"a5":0.0,"a6":0.0,"a7":4.65363369246}
+
+DEBUG:root:02/09/2014 16:27:46 app.py | ValueError | GrabGPS() | NO GPS FOUND: {"class":"TPV","tag":"MID2","device":"/dev/ttyUSB0","mode":1,"time":"1995-01-17T15:27:46.000Z","ept":0.005}
+DEBUG:root:02/09/2014 16:27:47 Got ADC Info{"a0":0.0,"a1":0.0,"a2":0.0,"a3":0.0,"a4":0.0,"a5":0.0,"a6":0.0,"a7":4.68121449559}
+
+INFO:cherrypy.access.3057017680:192.168.1.100 - - [02/Sep/2014:16:27:48] "GET / HTTP/1.1" 200 4180 "http://192.168.1.99/" "Mozilla/5.0 (Linux; Android 4.4.2; Nexus 10 Build/KOT49H) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/36.0.1985.135 Safari/537.36"
+DEBUG:root:02/09/2014 16:27:50 Got ADC Info{"a0":0.0,"a1":0.0,"a2":0.0,"a3":0.0,"a4":0.0,"a5":0.0,"a6":0.0,"a7":4.68372184133}
+
+DEBUG:root:02/09/2014 16:27:53 app.py | ValueError | GrabGPS() | NO GPS FOUND: {"class":"TPV","tag":"MID2","device":"/dev/ttyUSB0","mode":1,"time":"1995-01-17T15:27:52.000Z","ept":0.005}
+INFO:cherrypy.access.3057017680:192.168.1.100 - - [02/Sep/2014:16:27:53] "GET / HTTP/1.1" 200 4330 "http://192.168.1.99/" "Mozilla/5.0 (Linux; Android 4.4.2; Nexus 10 Build/KOT49H) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/36.0.1985.135 Safari/537.36"
+DEBUG:root:02/09/2014 16:27:55 Got RaspberryPi Info{"tempc":"41.7'C","disk%used":"83%","diskavailable":"276M","load":"0.87,0.49,0.36","serial":"00000000b6e2f676"}
+
+DEBUG:root:02/09/2014 16:27:55 Got ADC Info{"a0":0.0,"a1":0.0,"a2":0.0,"a3":0.0,"a4":0.0,"a5":0.0,"a6":0.0,"a7":4.68622918707}
+
+INFO:cherrypy.access.3057017680:192.168.1.100 - - [02/Sep/2014:16:27:59] "GET / HTTP/1.1" 200 4415 "http://192.168.1.99/" "Mozilla/5.0 (Linux; Android 4.4.2; Nexus 10 Build/KOT49H) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/36.0.1985.135 Safari/537.36"
+DEBUG:root:02/09/2014 16:28:00 Got ADC Info{"a0":0.0,"a1":0.0,"a2":0.0,"a3":0.0,"a4":0.0,"a5":0.0,"a6":0.0,"a7":4.67619980411}
+
+DEBUG:root:02/09/2014 16:28:01 Checking network connection: Bus 001 Device 015: ID 046d:c52b Logitech, Inc. Unifying Receiver
+Bus 001 Device 018: ID 12d1:14db Huawei Technologies Co., Ltd. E353/E3131
+Bus 001 Device 014: ID 067b:2303 Prolific Technology, Inc. PL2303 Serial Port
+Bus 001 Device 013: ID 0424:ec00 Standard Microsystems Corp. SMSC9512/9514 Fast Ethernet Adapter
+Bus 001 Device 012: ID 0424:9514 Standard Microsystems Corp. SMC9514 Hub
+Bus 001 Device 001: ID 1d6b:0002 Linux Foundation 2.0 root hub
+
+DEBUG:root:02/09/2014 16:28:01 Network OK
+DEBUG:root:02/09/2014 16:28:02 app.py | ValueError | GrabGPS() | NO GPS FOUND: {"class":"SKY","tag":"MID4","device":"/dev/ttyUSB0","time":"1995-01-17T15:28:01.000Z","xdop":5.21,"ydop":3.93,"vdop":5.31,"tdop":3.17,"hdop":0.00,"gdop":8.99,"pdop":8.42,"satellites":[{"PRN":27,"el":55,"az":130,"ss":25,"used":false},{"PRN":16,"el":10,"az":178,"ss":24,"used":false},{"PRN":14,"el":13,"az":109,"ss":23,"used":false},{"PRN":22,"el":53,"az":78,"ss":25,"used":false}]}
+DEBUG:root:02/09/2014 16:28:04 Got ADC Info{"a0":0.0,"a1":0.0,"a2":0.0,"a3":0.0,"a4":0.0,"a5":0.0,"a6":0.0,"a7":4.67870714985}
+
+INFO:cherrypy.access.3057017680:192.168.1.100 - - [02/Sep/2014:16:28:05] "GET / HTTP/1.1" 200 4518 "http://192.168.1.99/" "Mozilla/5.0 (Linux; Android 4.4.2; Nexus 10 Build/KOT49H) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/36.0.1985.135 Safari/537.36"
+DEBUG:root:02/09/2014 16:28:07 Got ADC Info{"a0":0.0,"a1":0.0,"a2":0.0,"a3":0.0,"a4":0.0,"a5":0.0,"a6":0.0,"a7":4.67619980411}
+
+DEBUG:root:02/09/2014 16:28:09 app.py | ValueError | GrabGPS() | NO GPS FOUND: {"class":"TPV","tag":"MID2","device":"/dev/ttyUSB0","mode":1,"time":"1995-01-17T15:28:09.000Z","ept":0.005}
+INFO:cherrypy.access.3057017680:192.168.1.100 - - [02/Sep/2014:16:28:10] "GET / HTTP/1.1" 200 4568 "http://192.168.1.99/" "Mozilla/5.0 (Linux; Android 4.4.2; Nexus 10 Build/KOT49H) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/36.0.1985.135 Safari/537.36"
+DEBUG:root:02/09/2014 16:28:11 Got ADC Info{"a0":0.0,"a1":0.0,"a2":0.0,"a3":0.0,"a4":0.0,"a5":0.0,"a6":0.0,"a7":4.68121449559}
+
+DEBUG:root:02/09/2014 16:28:15 Got ADC Info{"a0":0.0,"a1":0.0,"a2":0.0,"a3":0.0,"a4":0.0,"a5":0.0,"a6":0.0,"a7":4.68121449559}
+
+DEBUG:root:02/09/2014 16:28:15 Got RaspberryPi Info{"tempc":"41.2'C","disk%used":"83%","diskavailable":"276M","load":"0.85,0.51,0.37","serial":"00000000b6e2f676"}
+
+INFO:cherrypy.access.3057017680:192.168.1.100 - - [02/Sep/2014:16:28:15] "GET / HTTP/1.1" 200 4618 "http://192.168.1.99/" "Mozilla/5.0 (Linux; Android 4.4.2; Nexus 10 Build/KOT49H) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/36.0.1985.135 Safari/537.36"
+DEBUG:root:02/09/2014 16:28:17 app.py | ValueError | GrabGPS() | NO GPS FOUND: {"class":"TPV","tag":"MID2","device":"/dev/ttyUSB0","mode":1,"time":"1995-01-17T15:28:16.000Z","ept":0.005}
+DEBUG:root:02/09/2014 16:28:18 Got ADC Info{"a0":0.0,"a1":0.0,"a2":0.0,"a3":0.0,"a4":0.0,"a5":0.0,"a6":0.0,"a7":4.68121449559}
+
+INFO:root:02/09/2014 16:28:32 Started script
+INFO:cherrypy.error:[02/Sep/2014:16:28:32] ENGINE Bus STARTING
+INFO:cherrypy.error:[02/Sep/2014:16:28:32] ENGINE Started monitor thread 'Autoreloader'.
+INFO:cherrypy.error:[02/Sep/2014:16:28:32] ENGINE Started monitor thread '_TimeoutMonitor'.
+DEBUG:root:02/09/2014 16:28:34 Got RaspberryPi Info{"tempc":"42.2'C","disk%used":"83%","diskavailable":"276M","load":"1.10,0.59,0.40","serial":"00000000b6e2f676"}
+
+DEBUG:root:02/09/2014 16:28:35 app.py | ValueError | GrabGPS() | NO GPS FOUND: {"class":"SKY","tag":"MID4","device":"/dev/ttyUSB0","time":"1995-01-17T15:28:34.000Z","xdop":5.21,"ydop":3.93,"vdop":5.31,"tdop":3.17,"hdop":0.00,"gdop":8.99,"pdop":8.42,"satellites":[{"PRN":27,"el":55,"az":130,"ss":20,"used":false},{"PRN":16,"el":10,"az":178,"ss":22,"used":false},{"PRN":14,"el":13,"az":109,"ss":24,"used":false},{"PRN":32,"el":19,"az":192,"ss":17,"used":false},{"PRN":22,"el":53,"az":78,"ss":22,"used":false}]}
+DEBUG:root:02/09/2014 16:28:35 Got ADC Info{"a0":0.0,"a1":0.0,"a2":0.0,"a3":0.0,"a4":0.0,"a5":0.0,"a6":0.0,"a7":4.67369245837}
+
+INFO:cherrypy.error:[02/Sep/2014:16:28:35] ENGINE Serving on http://0.0.0.0
+INFO:cherrypy.error:[02/Sep/2014:16:28:35] ENGINE Bus STARTED
+DEBUG:root:02/09/2014 16:28:37 Checking network connection: Bus 001 Device 015: ID 046d:c52b Logitech, Inc. Unifying Receiver
+Bus 001 Device 018: ID 12d1:14db Huawei Technologies Co., Ltd. E353/E3131
+Bus 001 Device 014: ID 067b:2303 Prolific Technology, Inc. PL2303 Serial Port
+Bus 001 Device 013: ID 0424:ec00 Standard Microsystems Corp. SMSC9512/9514 Fast Ethernet Adapter
+Bus 001 Device 012: ID 0424:9514 Standard Microsystems Corp. SMC9514 Hub
+Bus 001 Device 001: ID 1d6b:0002 Linux Foundation 2.0 root hub
+
+DEBUG:root:02/09/2014 16:28:37 Network OK
+DEBUG:root:02/09/2014 16:28:39 Got ADC Info{"a0":0.0,"a1":0.0,"a2":0.0,"a3":0.0,"a4":0.0,"a5":0.0,"a6":0.0,"a7":4.6686777669}
+
+DEBUG:root:02/09/2014 16:28:42 app.py | ValueError | GrabGPS() | NO GPS FOUND: {"class":"TPV","tag":"MID2","device":"/dev/ttyUSB0","mode":1,"time":"1995-01-17T15:28:42.000Z","ept":0.005}
+DEBUG:root:02/09/2014 16:28:42 Got ADC Info{"a0":0.0,"a1":0.0,"a2":0.0,"a3":0.0,"a4":0.0,"a5":0.0,"a6":0.0,"a7":4.67369245837}
+
+DEBUG:root:02/09/2014 16:28:46 Got ADC Info{"a0":0.0,"a1":0.0,"a2":0.0,"a3":0.0,"a4":0.0,"a5":0.0,"a6":0.0,"a7":4.67870714985}
+
+DEBUG:root:02/09/2014 16:28:50 app.py | ValueError | GrabGPS() | NO GPS FOUND: {"class":"TPV","tag":"MID2","device":"/dev/ttyUSB0","mode":1,"time":"1995-01-17T15:28:49.000Z","ept":0.005}
+DEBUG:root:02/09/2014 16:28:50 Got ADC Info{"a0":0.0,"a1":0.0,"a2":0.0,"a3":0.0,"a4":0.0,"a5":0.0,"a6":0.0,"a7":4.66115572968}
+
+DEBUG:root:02/09/2014 16:28:54 Got ADC Info{"a0":0.0,"a1":0.0,"a2":0.0,"a3":0.0,"a4":0.0,"a5":0.0,"a6":0.0,"a7":4.68121449559}
+
+DEBUG:root:02/09/2014 16:28:54 Got RaspberryPi Info{"tempc":"41.2'C","disk%used":"83%","diskavailable":"276M","load":"1.12,0.63,0.42","serial":"00000000b6e2f676"}
+
+DEBUG:root:02/09/2014 16:28:57 app.py | ValueError | GrabGPS() | NO GPS FOUND: {"class":"TPV","tag":"MID2","device":"/dev/ttyUSB0","mode":1,"time":"1995-01-17T15:28:57.000Z","ept":0.005}
+DEBUG:root:02/09/2014 16:28:58 Got ADC Info{"a0":0.0,"a1":0.0,"a2":0.0,"a3":0.0,"a4":0.0,"a5":0.0,"a6":0.0,"a7":4.67118511263}
+
+DEBUG:root:02/09/2014 16:29:00 Checking network connection: Bus 001 Device 015: ID 046d:c52b Logitech, Inc. Unifying Receiver
+Bus 001 Device 018: ID 12d1:14db Huawei Technologies Co., Ltd. E353/E3131
+Bus 001 Device 014: ID 067b:2303 Prolific Technology, Inc. PL2303 Serial Port
+Bus 001 Device 013: ID 0424:ec00 Standard Microsystems Corp. SMSC9512/9514 Fast Ethernet Adapter
+Bus 001 Device 012: ID 0424:9514 Standard Microsystems Corp. SMC9514 Hub
+Bus 001 Device 001: ID 1d6b:0002 Linux Foundation 2.0 root hub
+
+DEBUG:root:02/09/2014 16:29:00 Network OK
+DEBUG:root:02/09/2014 16:29:01 Got ADC Info{"a0":0.0,"a1":0.0,"a2":0.0,"a3":0.0,"a4":0.0,"a5":0.0,"a6":0.0,"a7":4.66617042116}
+
+DEBUG:root:02/09/2014 16:29:05 app.py | ValueError | GrabGPS() | NO GPS FOUND: {"class":"TPV","tag":"MID2","device":"/dev/ttyUSB0","mode":1,"time":"1995-01-17T15:29:04.000Z","ept":0.005}
+DEBUG:root:02/09/2014 16:29:05 Got ADC Info{"a0":0.0,"a1":0.0,"a2":0.0,"a3":0.0,"a4":0.0,"a5":0.0,"a6":0.0,"a7":4.65864838394}
+
+DEBUG:root:02/09/2014 16:29:08 Got ADC Info{"a0":0.0,"a1":0.0,"a2":0.0,"a3":0.0,"a4":0.0,"a5":0.0,"a6":0.0,"a7":4.68121449559}
+
+DEBUG:root:02/09/2014 16:29:12 Got ADC Info{"a0":0.0,"a1":0.0,"a2":0.0,"a3":0.0,"a4":0.0,"a5":0.0,"a6":0.0,"a7":4.67369245837}
+
+DEBUG:root:02/09/2014 16:29:12 app.py | ValueError | GrabGPS() | NO GPS FOUND: {"class":"TPV","tag":"MID2","device":"/dev/ttyUSB0","mode":1,"time":"1995-01-17T15:29:12.000Z","ept":0.005}
+DEBUG:root:02/09/2014 16:29:15 Got RaspberryPi Info{"tempc":"41.2'C","disk%used":"83%","diskavailable":"276M","load":"0.87,0.60,0.41","serial":"00000000b6e2f676"}
+
+DEBUG:root:02/09/2014 16:29:16 Got ADC Info{"a0":0.0,"a1":0.0,"a2":0.0,"a3":0.0,"a4":0.0,"a5":0.0,"a6":0.0,"a7":4.68372184133}
+
+DEBUG:root:02/09/2014 16:29:19 Got ADC Info{"a0":0.0,"a1":0.0,"a2":0.0,"a3":0.0,"a4":0.0,"a5":0.0,"a6":0.0,"a7":4.68121449559}
+
+DEBUG:root:02/09/2014 16:29:20 app.py | ValueError | GrabGPS() | NO GPS FOUND: {"class":"TPV","tag":"MID2","device":"/dev/ttyUSB0","mode":1,"time":"1995-01-17T15:29:19.000Z","ept":0.005}
+DEBUG:root:02/09/2014 16:29:23 Checking network connection: Bus 001 Device 015: ID 046d:c52b Logitech, Inc. Unifying Receiver
+Bus 001 Device 018: ID 12d1:14db Huawei Technologies Co., Ltd. E353/E3131
+Bus 001 Device 014: ID 067b:2303 Prolific Technology, Inc. PL2303 Serial Port
+Bus 001 Device 013: ID 0424:ec00 Standard Microsystems Corp. SMSC9512/9514 Fast Ethernet Adapter
+Bus 001 Device 012: ID 0424:9514 Standard Microsystems Corp. SMC9514 Hub
+Bus 001 Device 001: ID 1d6b:0002 Linux Foundation 2.0 root hub
+
+DEBUG:root:02/09/2014 16:29:23 Network OK
+DEBUG:root:02/09/2014 16:29:23 Got ADC Info{"a0":0.0,"a1":0.0,"a2":0.0,"a3":0.0,"a4":0.0,"a5":0.0,"a6":0.0,"a7":4.67118511263}
+
+DEBUG:root:02/09/2014 16:29:27 Got ADC Info{"a0":0.0,"a1":0.0,"a2":0.0,"a3":0.0,"a4":0.0,"a5":0.0,"a6":0.0,"a7":4.6561410382}
+
+DEBUG:root:02/09/2014 16:29:27 GOT GPS: {"lat":"51.475002092","lon":"-0.035967494","time":"1995-01-17T15:29:27.000Z","alt":"36.502","speed":"0.464"}
+DEBUG:root:02/09/2014 16:29:31 Got ADC Info{"a0":0.0,"a1":0.0,"a2":0.0,"a3":0.0,"a4":0.0,"a5":0.0,"a6":0.0,"a7":4.68372184133}
+
+DEBUG:root:02/09/2014 16:29:34 Got ADC Info{"a0":0.0,"a1":0.0,"a2":0.0,"a3":0.0,"a4":0.0,"a5":0.0,"a6":0.0,"a7":4.65363369246}
+
+DEBUG:root:02/09/2014 16:29:35 GOT GPS: {"lat":"51.474848706","lon":"-0.03592409","time":"1995-01-17T15:29:34.000Z","alt":"55.202","speed":"0.156"}
+DEBUG:root:02/09/2014 16:29:36 Got RaspberryPi Info{"tempc":"41.7'C","disk%used":"83%","diskavailable":"276M","load":"0.98,0.64,0.43","serial":"00000000b6e2f676"}
+
+DEBUG:root:02/09/2014 16:29:38 Got ADC Info{"a0":0.0,"a1":0.0,"a2":0.0,"a3":0.0,"a4":0.0,"a5":0.0,"a6":0.0,"a7":4.66617042116}
+
+DEBUG:root:02/09/2014 16:29:42 Got ADC Info{"a0":0.0,"a1":0.0,"a2":0.0,"a3":0.0,"a4":0.0,"a5":0.0,"a6":0.0,"a7":4.67870714985}
+
+DEBUG:root:02/09/2014 16:29:42 GOT GPS: {"lat":"51.474866921","lon":"-0.035967277","time":"1995-01-17T15:29:42.000Z","alt":"56.145","speed":"0.268"}
+DEBUG:root:02/09/2014 16:29:46 Got ADC Info{"a0":0.0,"a1":0.0,"a2":0.0,"a3":0.0,"a4":0.0,"a5":0.0,"a6":0.0,"a7":4.67619980411}
+
+DEBUG:root:02/09/2014 16:29:46 Checking network connection: Bus 001 Device 015: ID 046d:c52b Logitech, Inc. Unifying Receiver
+Bus 001 Device 018: ID 12d1:14db Huawei Technologies Co., Ltd. E353/E3131
+Bus 001 Device 014: ID 067b:2303 Prolific Technology, Inc. PL2303 Serial Port
+Bus 001 Device 013: ID 0424:ec00 Standard Microsystems Corp. SMSC9512/9514 Fast Ethernet Adapter
+Bus 001 Device 012: ID 0424:9514 Standard Microsystems Corp. SMC9514 Hub
+Bus 001 Device 001: ID 1d6b:0002 Linux Foundation 2.0 root hub
+
+DEBUG:root:02/09/2014 16:29:46 Network OK
+DEBUG:root:02/09/2014 16:29:49 Got ADC Info{"a0":0.0,"a1":0.0,"a2":0.0,"a3":0.0,"a4":0.0,"a5":0.0,"a6":0.0,"a7":4.68372184133}
+
+DEBUG:root:02/09/2014 16:29:50 GOT GPS: {"lat":"51.474840246","lon":"-0.03590968","time":"1995-01-17T15:29:49.000Z","alt":"57.229","speed":"0.37"}
+DEBUG:root:02/09/2014 16:29:53 Got ADC Info{"a0":0.0,"a1":0.0,"a2":0.0,"a3":0.0,"a4":0.0,"a5":0.0,"a6":0.0,"a7":4.68622918707}
+
+INFO:cherrypy.error:[02/Sep/2014:16:29:54] ENGINE Bus STOPPING
+INFO:cherrypy.error:[02/Sep/2014:16:29:54] ENGINE HTTP Server cherrypy._cpwsgi_server.CPWSGIServer(('0.0.0.0', 80)) shut down
+INFO:cherrypy.error:[02/Sep/2014:16:29:54] ENGINE Stopped thread '_TimeoutMonitor'.
+INFO:cherrypy.error:[02/Sep/2014:16:29:54] ENGINE Stopped thread 'Autoreloader'.
+INFO:cherrypy.error:[02/Sep/2014:16:29:54] ENGINE Bus STOPPED
+INFO:root:02/09/2014 16:30:01 Started script
+INFO:cherrypy.error:[02/Sep/2014:16:30:01] ENGINE Bus STARTING
+INFO:cherrypy.error:[02/Sep/2014:16:30:01] ENGINE Started monitor thread 'Autoreloader'.
+INFO:cherrypy.error:[02/Sep/2014:16:30:01] ENGINE Started monitor thread '_TimeoutMonitor'.
+DEBUG:root:02/09/2014 16:30:02 Got RaspberryPi Info{"tempc":"41.2'C","disk%used":"83%","diskavailable":"276M","load":"1.20,0.73,0.46","serial":"00000000b6e2f676"}
+
+DEBUG:root:02/09/2014 16:30:03 Got ADC Info{"a0":0.0,"a1":0.0,"a2":0.0,"a3":0.0,"a4":0.0,"a5":0.0,"a6":0.0,"a7":4.66366307542}
+
+INFO:cherrypy.error:[02/Sep/2014:16:30:03] ENGINE Serving on http://0.0.0.0
+INFO:cherrypy.error:[02/Sep/2014:16:30:03] ENGINE Bus STARTED
+DEBUG:root:02/09/2014 16:30:04 GOT GPS: {"lat":"51.474754468","lon":"-0.035794421","time":"1995-01-17T15:30:04.000Z","alt":"66.106","speed":"0.502"}
+INFO:cherrypy.access.3056661328:192.168.1.100 - - [02/Sep/2014:16:30:04] "GET / HTTP/1.1" 200 1201 "" "Mozilla/5.0 (Linux; Android 4.4.2; Nexus 10 Build/KOT49H) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/36.0.1985.135 Safari/537.36"
+DEBUG:root:02/09/2014 16:30:05 Checking network connection: Bus 001 Device 015: ID 046d:c52b Logitech, Inc. Unifying Receiver
+Bus 001 Device 018: ID 12d1:14db Huawei Technologies Co., Ltd. E353/E3131
+Bus 001 Device 014: ID 067b:2303 Prolific Technology, Inc. PL2303 Serial Port
+Bus 001 Device 013: ID 0424:ec00 Standard Microsystems Corp. SMSC9512/9514 Fast Ethernet Adapter
+Bus 001 Device 012: ID 0424:9514 Standard Microsystems Corp. SMC9514 Hub
+Bus 001 Device 001: ID 1d6b:0002 Linux Foundation 2.0 root hub
+
+DEBUG:root:02/09/2014 16:30:05 Network OK
+DEBUG:root:02/09/2014 16:30:07 Got ADC Info{"a0":0.0,"a1":0.0,"a2":0.0,"a3":0.0,"a4":0.0,"a5":0.0,"a6":0.0,"a7":4.68121449559}
+
+INFO:cherrypy.access.3056661328:192.168.1.100 - - [02/Sep/2014:16:30:10] "GET / HTTP/1.1" 200 1332 "http://192.168.1.99/" "Mozilla/5.0 (Linux; Android 4.4.2; Nexus 10 Build/KOT49H) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/36.0.1985.135 Safari/537.36"
+DEBUG:root:02/09/2014 16:30:11 Got ADC Info{"a0":0.0,"a1":0.0,"a2":0.0,"a3":0.0,"a4":0.0,"a5":0.0,"a6":0.0,"a7":4.67118511263}
+
+DEBUG:root:02/09/2014 16:30:12 app.py | ValueError | GrabGPS() | NO GPS FOUND: {"class":"SKY","tag":"MID4","device":"/dev/ttyUSB0","time":"1995-01-17T15:30:12.000Z","xdop":5.21,"ydop":3.93,"vdop":5.31,"tdop":3.17,"hdop":4.40,"gdop":8.99,"pdop":8.42,"satellites":[{"PRN":27,"el":54,"az":132,"ss":20,"used":true},{"PRN":16,"el":9,"az":178,"ss":21,"used":true},{"PRN":14,"el":13,"az":109,"ss":23,"used":true},{"PRN":22,"el":52,"az":76,"ss":21,"used":true}]}
+DEBUG:root:02/09/2014 16:30:15 Got ADC Info{"a0":0.0,"a1":0.0,"a2":0.0,"a3":0.0,"a4":0.0,"a5":0.0,"a6":0.0,"a7":4.68622918707}
+
+INFO:cherrypy.access.3056661328:192.168.1.100 - - [02/Sep/2014:16:30:15] "GET / HTTP/1.1" 200 1432 "http://192.168.1.99/" "Mozilla/5.0 (Linux; Android 4.4.2; Nexus 10 Build/KOT49H) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/36.0.1985.135 Safari/537.36"
+DEBUG:root:02/09/2014 16:30:19 Got ADC Info{"a0":0.0,"a1":0.0,"a2":0.0,"a3":0.0,"a4":0.0,"a5":0.0,"a6":0.0,"a7":4.67619980411}
+
+DEBUG:root:02/09/2014 16:30:20 GOT GPS: {"lat":"51.474803663","lon":"-0.03588084","time":"1995-01-17T15:30:20.000Z","alt":"61.748","speed":"0.406"}
+INFO:cherrypy.access.3056661328:192.168.1.100 - - [02/Sep/2014:16:30:20] "GET / HTTP/1.1" 200 1482 "http://192.168.1.99/" "Mozilla/5.0 (Linux; Android 4.4.2; Nexus 10 Build/KOT49H) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/36.0.1985.135 Safari/537.36"
+DEBUG:root:02/09/2014 16:30:22 Got ADC Info{"a0":0.0,"a1":0.0,"a2":0.0,"a3":0.0,"a4":0.0,"a5":0.0,"a6":0.0,"a7":4.67619980411}
+
+DEBUG:root:02/09/2014 16:30:23 Got RaspberryPi Info{"tempc":"42.2'C","disk%used":"83%","diskavailable":"276M","load":"0.99,0.71,0.46","serial":"00000000b6e2f676"}
+
+INFO:cherrypy.access.3056661328:192.168.1.100 - - [02/Sep/2014:16:30:26] "GET / HTTP/1.1" 200 1574 "http://192.168.1.99/" "Mozilla/5.0 (Linux; Android 4.4.2; Nexus 10 Build/KOT49H) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/36.0.1985.135 Safari/537.36"
+DEBUG:root:02/09/2014 16:30:27 Got ADC Info{"a0":0.0,"a1":0.0,"a2":0.0,"a3":0.0,"a4":0.0,"a5":0.0,"a6":0.0,"a7":4.63858961802}
+
+DEBUG:root:02/09/2014 16:30:28 GOT GPS: {"lat":"51.474913389","lon":"-0.036039322","time":"1995-01-17T15:30:27.000Z","alt":"48.194","speed":"1.543"}
+DEBUG:root:02/09/2014 16:30:29 Checking network connection: Bus 001 Device 015: ID 046d:c52b Logitech, Inc. Unifying Receiver
+Bus 001 Device 018: ID 12d1:14db Huawei Technologies Co., Ltd. E353/E3131
+Bus 001 Device 014: ID 067b:2303 Prolific Technology, Inc. PL2303 Serial Port
+Bus 001 Device 013: ID 0424:ec00 Standard Microsystems Corp. SMSC9512/9514 Fast Ethernet Adapter
+Bus 001 Device 012: ID 0424:9514 Standard Microsystems Corp. SMC9514 Hub
+Bus 001 Device 001: ID 1d6b:0002 Linux Foundation 2.0 root hub
+
+DEBUG:root:02/09/2014 16:30:29 Network OK
+DEBUG:root:02/09/2014 16:30:31 Got ADC Info{"a0":0.0,"a1":0.0,"a2":0.0,"a3":0.0,"a4":0.0,"a5":0.0,"a6":0.0,"a7":4.68121449559}
+
+INFO:cherrypy.access.3056661328:192.168.1.100 - - [02/Sep/2014:16:30:31] "GET / HTTP/1.1" 200 1659 "http://192.168.1.99/" "Mozilla/5.0 (Linux; Android 4.4.2; Nexus 10 Build/KOT49H) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/36.0.1985.135 Safari/537.36"
+DEBUG:root:02/09/2014 16:30:34 Got ADC Info{"a0":0.0,"a1":0.0,"a2":0.0,"a3":0.0,"a4":0.0,"a5":0.0,"a6":0.0,"a7":4.67369245837}
+
+DEBUG:root:02/09/2014 16:30:35 GOT GPS: {"lat":"51.474778403","lon":"-0.035880822","time":"1995-01-17T15:30:35.000Z","alt":"61.429","speed":"0.673"}
+INFO:cherrypy.access.3056661328:192.168.1.100 - - [02/Sep/2014:16:30:36] "GET / HTTP/1.1" 200 1898 "http://192.168.1.99/" "Mozilla/5.0 (Linux; Android 4.4.2; Nexus 10 Build/KOT49H) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/36.0.1985.135 Safari/537.36"
+DEBUG:root:02/09/2014 16:30:38 Got ADC Info{"a0":0.0,"a1":0.0,"a2":0.0,"a3":0.0,"a4":0.0,"a5":0.0,"a6":0.0,"a7":4.67118511263}
+
+INFO:cherrypy.access.3056661328:192.168.1.100 - - [02/Sep/2014:16:30:42] "GET / HTTP/1.1" 200 1948 "http://192.168.1.99/" "Mozilla/5.0 (Linux; Android 4.4.2; Nexus 10 Build/KOT49H) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/36.0.1985.135 Safari/537.36"
+DEBUG:root:02/09/2014 16:30:42 Got ADC Info{"a0":0.0,"a1":0.0,"a2":0.0,"a3":0.0,"a4":0.0,"a5":0.0,"a6":0.0,"a7":4.68121449559}
+
+DEBUG:root:02/09/2014 16:30:43 GOT GPS: {"lat":"51.474753152","lon":"-0.035852019","time":"1995-01-17T15:30:42.000Z","alt":"61.11","speed":"0.306"}
+DEBUG:root:02/09/2014 16:30:43 Got RaspberryPi Info{"tempc":"41.7'C","disk%used":"83%","diskavailable":"276M","load":"0.84,0.70,0.46","serial":"00000000b6e2f676"}
+
+DEBUG:root:02/09/2014 16:30:46 Got ADC Info{"a0":0.0,"a1":0.0,"a2":0.0,"a3":0.0,"a4":0.0,"a5":0.0,"a6":0.0,"a7":4.68121449559}
+
+INFO:cherrypy.access.3056661328:192.168.1.100 - - [02/Sep/2014:16:30:47] "GET / HTTP/1.1" 200 2125 "http://192.168.1.99/" "Mozilla/5.0 (Linux; Android 4.4.2; Nexus 10 Build/KOT49H) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/36.0.1985.135 Safari/537.36"
+DEBUG:root:02/09/2014 16:30:50 GOT GPS: {"lat":"51.474695483","lon":"-0.035794368","time":"1995-01-17T15:30:50.000Z","alt":"67.496","speed":"0.257"}
+DEBUG:root:02/09/2014 16:30:50 Got ADC Info{"a0":0.0,"a1":0.0,"a2":0.0,"a3":0.0,"a4":0.0,"a5":0.0,"a6":0.0,"a7":4.67118511263}
+
+DEBUG:root:02/09/2014 16:30:52 Checking network connection: Bus 001 Device 015: ID 046d:c52b Logitech, Inc. Unifying Receiver
+Bus 001 Device 018: ID 12d1:14db Huawei Technologies Co., Ltd. E353/E3131
+Bus 001 Device 014: ID 067b:2303 Prolific Technology, Inc. PL2303 Serial Port
+Bus 001 Device 013: ID 0424:ec00 Standard Microsystems Corp. SMSC9512/9514 Fast Ethernet Adapter
+Bus 001 Device 012: ID 0424:9514 Standard Microsystems Corp. SMC9514 Hub
+Bus 001 Device 001: ID 1d6b:0002 Linux Foundation 2.0 root hub
+
+DEBUG:root:02/09/2014 16:30:52 Network OK
+INFO:cherrypy.access.3056661328:192.168.1.100 - - [02/Sep/2014:16:30:52] "GET / HTTP/1.1" 200 2218 "http://192.168.1.99/" "Mozilla/5.0 (Linux; Android 4.4.2; Nexus 10 Build/KOT49H) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/36.0.1985.135 Safari/537.36"
+DEBUG:root:02/09/2014 16:30:54 Got ADC Info{"a0":0.0,"a1":0.0,"a2":0.0,"a3":0.0,"a4":0.0,"a5":0.0,"a6":0.0,"a7":4.68121449559}
+
+DEBUG:root:02/09/2014 16:30:58 GOT GPS: {"lat":"51.474641988","lon":"-0.035707922","time":"1995-01-17T15:30:57.000Z","alt":"76.069","speed":"0.848"}
+DEBUG:root:02/09/2014 16:30:58 Got ADC Info{"a0":0.0,"a1":0.0,"a2":0.0,"a3":0.0,"a4":0.0,"a5":0.0,"a6":0.0,"a7":4.67369245837}
+
+INFO:cherrypy.access.3056661328:192.168.1.100 - - [02/Sep/2014:16:30:58] "GET / HTTP/1.1" 200 2271 "http://192.168.1.99/" "Mozilla/5.0 (Linux; Android 4.4.2; Nexus 10 Build/KOT49H) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/36.0.1985.135 Safari/537.36"
+DEBUG:root:02/09/2014 16:31:01 Got ADC Info{"a0":0.0,"a1":0.0,"a2":0.0,"a3":0.0,"a4":0.0,"a5":0.0,"a6":0.0,"a7":4.68372184133}
+
+INFO:cherrypy.access.3056661328:192.168.1.100 - - [02/Sep/2014:16:31:03] "GET / HTTP/1.1" 200 2414 "http://192.168.1.99/" "Mozilla/5.0 (Linux; Android 4.4.2; Nexus 10 Build/KOT49H) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/36.0.1985.135 Safari/537.36"
+DEBUG:root:02/09/2014 16:31:04 Got RaspberryPi Info{"tempc":"41.2'C","disk%used":"83%","diskavailable":"276M","load":"1.08,0.76,0.49","serial":"00000000b6e2f676"}
+
+DEBUG:root:02/09/2014 16:31:05 Got ADC Info{"a0":0.0,"a1":0.0,"a2":0.0,"a3":0.0,"a4":0.0,"a5":0.0,"a6":0.0,"a7":4.68121449559}
+
+DEBUG:root:02/09/2014 16:31:05 GOT GPS: {"lat":"51.474723484","lon":"-0.035765582","time":"1995-01-17T15:31:05.000Z","alt":"71.407","speed":"0.58"}
+INFO:cherrypy.access.3056661328:192.168.1.100 - - [02/Sep/2014:16:31:08] "GET / HTTP/1.1" 200 2541 "http://192.168.1.99/" "Mozilla/5.0 (Linux; Android 4.4.2; Nexus 10 Build/KOT49H) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/36.0.1985.135 Safari/537.36"
+DEBUG:root:02/09/2014 16:31:08 Got ADC Info{"a0":0.0,"a1":0.0,"a2":0.0,"a3":0.0,"a4":0.0,"a5":0.0,"a6":0.0,"a7":4.65363369246}
+
+DEBUG:root:02/09/2014 16:31:12 Got ADC Info{"a0":0.0,"a1":0.0,"a2":0.0,"a3":0.0,"a4":0.0,"a5":0.0,"a6":0.0,"a7":4.67870714985}
+
+DEBUG:root:02/09/2014 16:31:13 GOT GPS: {"lat":"51.474820462","lon":"-0.035866448","time":"1995-01-17T15:31:12.000Z","alt":"64.095","speed":"0.814"}
+INFO:cherrypy.access.3056661328:192.168.1.100 - - [02/Sep/2014:16:31:14] "GET / HTTP/1.1" 200 2591 "http://192.168.1.99/" "Mozilla/5.0 (Linux; Android 4.4.2; Nexus 10 Build/KOT49H) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/36.0.1985.135 Safari/537.36"
+DEBUG:root:02/09/2014 16:31:15 Checking network connection: Bus 001 Device 015: ID 046d:c52b Logitech, Inc. Unifying Receiver
+Bus 001 Device 018: ID 12d1:14db Huawei Technologies Co., Ltd. E353/E3131
+Bus 001 Device 014: ID 067b:2303 Prolific Technology, Inc. PL2303 Serial Port
+Bus 001 Device 013: ID 0424:ec00 Standard Microsystems Corp. SMSC9512/9514 Fast Ethernet Adapter
+Bus 001 Device 012: ID 0424:9514 Standard Microsystems Corp. SMC9514 Hub
+Bus 001 Device 001: ID 1d6b:0002 Linux Foundation 2.0 root hub
+
+DEBUG:root:02/09/2014 16:31:15 Network OK
+DEBUG:root:02/09/2014 16:31:16 Got ADC Info{"a0":0.0,"a1":0.0,"a2":0.0,"a3":0.0,"a4":0.0,"a5":0.0,"a6":0.0,"a7":4.67369245837}
+
+INFO:cherrypy.access.3056661328:192.168.1.100 - - [02/Sep/2014:16:31:19] "GET / HTTP/1.1" 200 2737 "http://192.168.1.99/" "Mozilla/5.0 (Linux; Android 4.4.2; Nexus 10 Build/KOT49H) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/36.0.1985.135 Safari/537.36"
+DEBUG:root:02/09/2014 16:31:20 Got ADC Info{"a0":0.0,"a1":0.0,"a2":0.0,"a3":0.0,"a4":0.0,"a5":0.0,"a6":0.0,"a7":4.68873653281}
+
+DEBUG:root:02/09/2014 16:31:20 GOT GPS: {"lat":"51.474753026","lon":"-0.035823198","time":"1995-01-17T15:31:20.000Z","alt":"67.512","speed":"0.611"}
+DEBUG:root:02/09/2014 16:31:23 Got ADC Info{"a0":0.0,"a1":0.0,"a2":0.0,"a3":0.0,"a4":0.0,"a5":0.0,"a6":0.0,"a7":4.67870714985}
+
+INFO:cherrypy.access.3056661328:192.168.1.100 - - [02/Sep/2014:16:31:25] "GET / HTTP/1.1" 200 2830 "http://192.168.1.99/" "Mozilla/5.0 (Linux; Android 4.4.2; Nexus 10 Build/KOT49H) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/36.0.1985.135 Safari/537.36"
+DEBUG:root:02/09/2014 16:31:25 Got RaspberryPi Info{"tempc":"41.2'C","disk%used":"83%","diskavailable":"276M","load":"1.07,0.78,0.50","serial":"00000000b6e2f676"}
+
+DEBUG:root:02/09/2014 16:31:27 Got ADC Info{"a0":0.0,"a1":0.0,"a2":0.0,"a3":0.0,"a4":0.0,"a5":0.0,"a6":0.0,"a7":4.68121449559}
+
+DEBUG:root:02/09/2014 16:31:28 GOT GPS: {"lat":"51.474755901","lon":"-0.03579443","time":"1995-01-17T15:31:27.000Z","alt":"64.701","speed":"0.371"}
+INFO:cherrypy.access.3056661328:192.168.1.100 - - [02/Sep/2014:16:31:30] "GET / HTTP/1.1" 200 2915 "http://192.168.1.99/" "Mozilla/5.0 (Linux; Android 4.4.2; Nexus 10 Build/KOT49H) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/36.0.1985.135 Safari/537.36"
+DEBUG:root:02/09/2014 16:31:31 Got ADC Info{"a0":0.0,"a1":0.0,"a2":0.0,"a3":0.0,"a4":0.0,"a5":0.0,"a6":0.0,"a7":4.68121449559}
+
+DEBUG:root:02/09/2014 16:31:35 Got ADC Info{"a0":0.0,"a1":0.0,"a2":0.0,"a3":0.0,"a4":0.0,"a5":0.0,"a6":0.0,"a7":4.68372184133}
+
+DEBUG:root:02/09/2014 16:31:35 GOT GPS: {"lat":"51.474845997","lon":"-0.035852145","time":"1995-01-17T15:31:35.000Z","alt":"51.607","speed":"0.806"}
+INFO:cherrypy.access.3056661328:192.168.1.100 - - [02/Sep/2014:16:31:36] "GET / HTTP/1.1" 200 3057 "http://192.168.1.99/" "Mozilla/5.0 (Linux; Android 4.4.2; Nexus 10 Build/KOT49H) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/36.0.1985.135 Safari/537.36"
+DEBUG:root:02/09/2014 16:31:38 Checking network connection: Bus 001 Device 015: ID 046d:c52b Logitech, Inc. Unifying Receiver
+Bus 001 Device 018: ID 12d1:14db Huawei Technologies Co., Ltd. E353/E3131
+Bus 001 Device 014: ID 067b:2303 Prolific Technology, Inc. PL2303 Serial Port
+Bus 001 Device 013: ID 0424:ec00 Standard Microsystems Corp. SMSC9512/9514 Fast Ethernet Adapter
+Bus 001 Device 012: ID 0424:9514 Standard Microsystems Corp. SMC9514 Hub
+Bus 001 Device 001: ID 1d6b:0002 Linux Foundation 2.0 root hub
+
+DEBUG:root:02/09/2014 16:31:38 Network OK
+DEBUG:root:02/09/2014 16:31:38 Got ADC Info{"a0":0.0,"a1":0.0,"a2":0.0,"a3":0.0,"a4":0.0,"a5":0.0,"a6":0.0,"a7":4.67870714985}
+
+INFO:cherrypy.access.3056661328:192.168.1.100 - - [02/Sep/2014:16:31:41] "GET / HTTP/1.1" 200 3150 "http://192.168.1.99/" "Mozilla/5.0 (Linux; Android 4.4.2; Nexus 10 Build/KOT49H) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/36.0.1985.135 Safari/537.36"
+DEBUG:root:02/09/2014 16:31:42 Got ADC Info{"a0":0.0,"a1":0.0,"a2":0.0,"a3":0.0,"a4":0.0,"a5":0.0,"a6":0.0,"a7":4.67870714985}
+
+DEBUG:root:02/09/2014 16:31:43 GOT GPS: {"lat":"51.474806691","lon":"-0.035794538","time":"1995-01-17T15:31:42.000Z","alt":"52.532","speed":"0.253"}
+INFO:cherrypy.access.3056661328:192.168.1.100 - - [02/Sep/2014:16:31:46] "GET / HTTP/1.1" 200 3203 "http://192.168.1.99/" "Mozilla/5.0 (Linux; Android 4.4.2; Nexus 10 Build/KOT49H) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/36.0.1985.135 Safari/537.36"
+DEBUG:root:02/09/2014 16:31:47 Got RaspberryPi Info{"tempc":"40.6'C","disk%used":"83%","diskavailable":"276M","load":"1.36,0.86,0.54","serial":"00000000b6e2f676"}
+
+DEBUG:root:02/09/2014 16:31:47 Got ADC Info{"a0":0.0,"a1":0.0,"a2":0.0,"a3":0.0,"a4":0.0,"a5":0.0,"a6":0.0,"a7":4.67619980411}
+
+DEBUG:root:02/09/2014 16:31:50 GOT GPS: {"lat":"51.474831929","lon":"-0.03586652","time":"1995-01-17T15:31:50.000Z","alt":"52.853","speed":"1.191"}
+DEBUG:root:02/09/2014 16:31:50 Got ADC Info{"a0":0.0,"a1":0.0,"a2":0.0,"a3":0.0,"a4":0.0,"a5":0.0,"a6":0.0,"a7":4.67870714985}
+
+INFO:cherrypy.access.3056661328:192.168.1.100 - - [02/Sep/2014:16:31:52] "GET / HTTP/1.1" 200 3381 "http://192.168.1.99/" "Mozilla/5.0 (Linux; Android 4.4.2; Nexus 10 Build/KOT49H) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/36.0.1985.135 Safari/537.36"
+DEBUG:root:02/09/2014 16:31:54 Got ADC Info{"a0":0.0,"a1":0.0,"a2":0.0,"a3":0.0,"a4":0.0,"a5":0.0,"a6":0.0,"a7":4.68372184133}
+
+INFO:cherrypy.access.3056661328:192.168.1.100 - - [02/Sep/2014:16:31:57] "GET / HTTP/1.1" 200 3473 "http://192.168.1.99/" "Mozilla/5.0 (Linux; Android 4.4.2; Nexus 10 Build/KOT49H) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/36.0.1985.135 Safari/537.36"
+DEBUG:root:02/09/2014 16:31:58 GOT GPS: {"lat":"51.474819304","lon":"-0.035852118","time":"1995-01-17T15:31:57.000Z","alt":"52.693","speed":"0.952"}
+DEBUG:root:02/09/2014 16:31:58 Got ADC Info{"a0":0.0,"a1":0.0,"a2":0.0,"a3":0.0,"a4":0.0,"a5":0.0,"a6":0.0,"a7":4.66366307542}
+
+DEBUG:root:02/09/2014 16:32:00 Checking network connection: Bus 001 Device 015: ID 046d:c52b Logitech, Inc. Unifying Receiver
+Bus 001 Device 018: ID 12d1:14db Huawei Technologies Co., Ltd. E353/E3131
+Bus 001 Device 014: ID 067b:2303 Prolific Technology, Inc. PL2303 Serial Port
+Bus 001 Device 013: ID 0424:ec00 Standard Microsystems Corp. SMSC9512/9514 Fast Ethernet Adapter
+Bus 001 Device 012: ID 0424:9514 Standard Microsystems Corp. SMC9514 Hub
+Bus 001 Device 001: ID 1d6b:0002 Linux Foundation 2.0 root hub
+
+DEBUG:root:02/09/2014 16:32:00 Network OK
+DEBUG:root:02/09/2014 16:32:02 Got ADC Info{"a0":0.0,"a1":0.0,"a2":0.0,"a3":0.0,"a4":0.0,"a5":0.0,"a6":0.0,"a7":4.67369245837}
+
+INFO:cherrypy.access.3056661328:192.168.1.100 - - [02/Sep/2014:16:32:02] "GET / HTTP/1.1" 200 3669 "http://192.168.1.99/" "Mozilla/5.0 (Linux; Android 4.4.2; Nexus 10 Build/KOT49H) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/36.0.1985.135 Safari/537.36"
+DEBUG:root:02/09/2014 16:32:05 GOT GPS: {"lat":"51.474812416","lon":"-0.03582336","time":"1995-01-17T15:32:05.000Z","alt":"46.912","speed":"0.371"}
+DEBUG:root:02/09/2014 16:32:05 Got ADC Info{"a0":0.0,"a1":0.0,"a2":0.0,"a3":0.0,"a4":0.0,"a5":0.0,"a6":0.0,"a7":4.68372184133}
+
+DEBUG:root:02/09/2014 16:32:07 Got RaspberryPi Info{"tempc":"41.2'C","disk%used":"83%","diskavailable":"276M","load":"0.97,0.81,0.53","serial":"00000000b6e2f676"}
+
+INFO:cherrypy.access.3056661328:192.168.1.100 - - [02/Sep/2014:16:32:08] "GET / HTTP/1.1" 200 3796 "http://192.168.1.99/" "Mozilla/5.0 (Linux; Android 4.4.2; Nexus 10 Build/KOT49H) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/36.0.1985.135 Safari/537.36"
+DEBUG:root:02/09/2014 16:32:09 Got ADC Info{"a0":0.0,"a1":0.0,"a2":0.0,"a3":0.0,"a4":0.0,"a5":0.0,"a6":0.0,"a7":4.68121449559}
+
+DEBUG:root:02/09/2014 16:32:12 Got ADC Info{"a0":0.0,"a1":0.0,"a2":0.0,"a3":0.0,"a4":0.0,"a5":0.0,"a6":0.0,"a7":4.67369245837}
+
+DEBUG:root:02/09/2014 16:32:13 GOT GPS: {"lat":"51.474708414","lon":"-0.0356937","time":"1995-01-17T15:32:12.000Z","alt":"54.847","speed":"0.449"}
+INFO:cherrypy.access.3056661328:192.168.1.100 - - [02/Sep/2014:16:32:13] "GET / HTTP/1.1" 200 3846 "http://192.168.1.99/" "Mozilla/5.0 (Linux; Android 4.4.2; Nexus 10 Build/KOT49H) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/36.0.1985.135 Safari/537.36"
+DEBUG:root:02/09/2014 16:32:16 Got ADC Info{"a0":0.0,"a1":0.0,"a2":0.0,"a3":0.0,"a4":0.0,"a5":0.0,"a6":0.0,"a7":4.68873653281}
+
+INFO:cherrypy.access.3056661328:192.168.1.100 - - [02/Sep/2014:16:32:18] "GET / HTTP/1.1" 200 3987 "http://192.168.1.99/" "Mozilla/5.0 (Linux; Android 4.4.2; Nexus 10 Build/KOT49H) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/36.0.1985.135 Safari/537.36"
+DEBUG:root:02/09/2014 16:32:19 Got ADC Info{"a0":0.0,"a1":0.0,"a2":0.0,"a3":0.0,"a4":0.0,"a5":0.0,"a6":0.0,"a7":4.67118511263}
+
+DEBUG:root:02/09/2014 16:32:21 GOT GPS: {"lat":"51.474674415","lon":"-0.035707985","time":"1995-01-17T15:32:21.000Z","alt":"69.362","speed":"0.291"}
+INFO:cherrypy.access.3056661328:192.168.1.100 - - [02/Sep/2014:16:32:24] "GET / HTTP/1.1" 200 4080 "http://192.168.1.99/" "Mozilla/5.0 (Linux; Android 4.4.2; Nexus 10 Build/KOT49H) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/36.0.1985.135 Safari/537.36"
+DEBUG:root:02/09/2014 16:32:24 Checking network connection: Bus 001 Device 015: ID 046d:c52b Logitech, Inc. Unifying Receiver
+Bus 001 Device 018: ID 12d1:14db Huawei Technologies Co., Ltd. E353/E3131
+Bus 001 Device 014: ID 067b:2303 Prolific Technology, Inc. PL2303 Serial Port
+Bus 001 Device 013: ID 0424:ec00 Standard Microsystems Corp. SMSC9512/9514 Fast Ethernet Adapter
+Bus 001 Device 012: ID 0424:9514 Standard Microsystems Corp. SMC9514 Hub
+Bus 001 Device 001: ID 1d6b:0002 Linux Foundation 2.0 root hub
+
+DEBUG:root:02/09/2014 16:32:24 Network OK
+DEBUG:root:02/09/2014 16:32:24 Got ADC Info{"a0":0.0,"a1":0.0,"a2":0.0,"a3":0.0,"a4":0.0,"a5":0.0,"a6":0.0,"a7":4.6686777669}
+
+DEBUG:root:02/09/2014 16:32:28 Got RaspberryPi Info{"tempc":"41.2'C","disk%used":"83%","diskavailable":"276M","load":"0.84,0.79,0.53","serial":"00000000b6e2f676"}
+
+DEBUG:root:02/09/2014 16:32:28 Got ADC Info{"a0":0.0,"a1":0.0,"a2":0.0,"a3":0.0,"a4":0.0,"a5":0.0,"a6":0.0,"a7":4.68873653281}
+
+INFO:cherrypy.access.3056661328:192.168.1.100 - - [02/Sep/2014:16:32:29] "GET / HTTP/1.1" 200 4132 "http://192.168.1.99/" "Mozilla/5.0 (Linux; Android 4.4.2; Nexus 10 Build/KOT49H) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/36.0.1985.135 Safari/537.36"
+DEBUG:root:02/09/2014 16:32:29 app.py | ValueError | GrabGPS() | NO GPS FOUND: {"class":"SKY","tag":"MID4","device":"/dev/ttyUSB0","time":"1995-01-17T15:32:29.000Z","xdop":5.21,"ydop":3.93,"vdop":5.31,"tdop":3.17,"hdop":4.00,"gdop":8.99,"pdop":8.42,"satellites":[{"PRN":27,"el":53,"az":132,"ss":25,"used":true},{"PRN":16,"el":8,"az":178,"ss":20,"used":true},{"PRN":14,"el":14,"az":108,"ss":23,"used":true},{"PRN":22,"el":51,"az":75,"ss":22,"used":true}]}
+DEBUG:root:02/09/2014 16:32:32 Got ADC Info{"a0":0.0,"a1":0.0,"a2":0.0,"a3":0.0,"a4":0.0,"a5":0.0,"a6":0.0,"a7":4.67118511263}
+
+INFO:cherrypy.access.3056661328:192.168.1.100 - - [02/Sep/2014:16:32:34] "GET / HTTP/1.1" 200 4267 "http://192.168.1.99/" "Mozilla/5.0 (Linux; Android 4.4.2; Nexus 10 Build/KOT49H) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/36.0.1985.135 Safari/537.36"
+DEBUG:root:02/09/2014 16:32:36 Got ADC Info{"a0":0.0,"a1":0.0,"a2":0.0,"a3":0.0,"a4":0.0,"a5":0.0,"a6":0.0,"a7":4.68873653281}
+
+DEBUG:root:02/09/2014 16:32:37 GOT GPS: {"lat":"51.47495828","lon":"-0.036140107","time":"1995-01-17T15:32:37.000Z","alt":"48.052","speed":"4.697"}
+INFO:cherrypy.access.3056661328:192.168.1.100 - - [02/Sep/2014:16:32:40] "GET / HTTP/1.1" 200 4359 "http://192.168.1.99/" "Mozilla/5.0 (Linux; Android 4.4.2; Nexus 10 Build/KOT49H) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/36.0.1985.135 Safari/537.36"
+DEBUG:root:02/09/2014 16:32:40 Got ADC Info{"a0":0.0,"a1":0.0,"a2":0.0,"a3":0.0,"a4":0.0,"a5":0.0,"a6":0.0,"a7":4.68121449559}
+
+DEBUG:root:02/09/2014 16:32:44 Got ADC Info{"a0":0.0,"a1":0.0,"a2":0.0,"a3":0.0,"a4":0.0,"a5":0.0,"a6":0.0,"a7":4.68121449559}
+
+DEBUG:root:02/09/2014 16:32:45 GOT GPS: {"lat":"51.475052338","lon":"-0.036413669","time":"1995-01-17T15:32:44.000Z","alt":"43.555","speed":"2.201"}
+INFO:cherrypy.access.3056661328:192.168.1.100 - - [02/Sep/2014:16:32:45] "GET / HTTP/1.1" 200 4409 "http://192.168.1.99/" "Mozilla/5.0 (Linux; Android 4.4.2; Nexus 10 Build/KOT49H) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/36.0.1985.135 Safari/537.36"
+DEBUG:root:02/09/2014 16:32:47 Checking network connection: Bus 001 Device 015: ID 046d:c52b Logitech, Inc. Unifying Receiver
+Bus 001 Device 018: ID 12d1:14db Huawei Technologies Co., Ltd. E353/E3131
+Bus 001 Device 014: ID 067b:2303 Prolific Technology, Inc. PL2303 Serial Port
+Bus 001 Device 013: ID 0424:ec00 Standard Microsystems Corp. SMSC9512/9514 Fast Ethernet Adapter
+Bus 001 Device 012: ID 0424:9514 Standard Microsystems Corp. SMC9514 Hub
+Bus 001 Device 001: ID 1d6b:0002 Linux Foundation 2.0 root hub
+
+DEBUG:root:02/09/2014 16:32:47 Network OK
+DEBUG:root:02/09/2014 16:32:48 Got ADC Info{"a0":0.0,"a1":0.0,"a2":0.0,"a3":0.0,"a4":0.0,"a5":0.0,"a6":0.0,"a7":4.6310675808}
+
+DEBUG:root:02/09/2014 16:32:49 Got RaspberryPi Info{"tempc":"41.7'C","disk%used":"83%","diskavailable":"276M","load":"0.90,0.80,0.54","serial":"00000000b6e2f676"}
+
+INFO:cherrypy.access.3056661328:192.168.1.100 - - [02/Sep/2014:16:32:50] "GET / HTTP/1.1" 200 4554 "http://192.168.1.99/" "Mozilla/5.0 (Linux; Android 4.4.2; Nexus 10 Build/KOT49H) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/36.0.1985.135 Safari/537.36"
+DEBUG:root:02/09/2014 16:32:51 Got ADC Info{"a0":0.0,"a1":0.0,"a2":0.0,"a3":0.0,"a4":0.0,"a5":0.0,"a6":0.0,"a7":4.67619980411}
+
+DEBUG:root:02/09/2014 16:32:52 GOT GPS: {"lat":"51.475032708","lon":"-0.036312902","time":"1995-01-17T15:32:52.000Z","alt":"44.016","speed":"1.287"}
+DEBUG:root:02/09/2014 16:32:55 Got ADC Info{"a0":0.0,"a1":0.0,"a2":0.0,"a3":0.0,"a4":0.0,"a5":0.0,"a6":0.0,"a7":4.66115572968}
+
+INFO:cherrypy.access.3056661328:192.168.1.100 - - [02/Sep/2014:16:32:56] "GET / HTTP/1.1" 200 4682 "http://192.168.1.99/" "Mozilla/5.0 (Linux; Android 4.4.2; Nexus 10 Build/KOT49H) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/36.0.1985.135 Safari/537.36"
+DEBUG:root:02/09/2014 16:32:59 Got ADC Info{"a0":0.0,"a1":0.0,"a2":0.0,"a3":0.0,"a4":0.0,"a5":0.0,"a6":0.0,"a7":4.68372184133}
+
+DEBUG:root:02/09/2014 16:33:00 GOT GPS: {"lat":"51.474962558","lon":"-0.036212098","time":"1995-01-17T15:32:59.000Z","alt":"43.838","speed":"0.373"}
+INFO:cherrypy.access.3056661328:192.168.1.100 - - [02/Sep/2014:16:33:01] "GET / HTTP/1.1" 200 4732 "http://192.168.1.99/" "Mozilla/5.0 (Linux; Android 4.4.2; Nexus 10 Build/KOT49H) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/36.0.1985.135 Safari/537.36"
+DEBUG:root:02/09/2014 16:33:02 Got ADC Info{"a0":0.0,"a1":0.0,"a2":0.0,"a3":0.0,"a4":0.0,"a5":0.0,"a6":0.0,"a7":4.68121449559}
+
+INFO:cherrypy.access.3056661328:192.168.1.100 - - [02/Sep/2014:16:33:06] "GET / HTTP/1.1" 200 4875 "http://192.168.1.99/" "Mozilla/5.0 (Linux; Android 4.4.2; Nexus 10 Build/KOT49H) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/36.0.1985.135 Safari/537.36"
+DEBUG:root:02/09/2014 16:33:06 Got ADC Info{"a0":0.0,"a1":0.0,"a2":0.0,"a3":0.0,"a4":0.0,"a5":0.0,"a6":0.0,"a7":4.67369245837}
+
+DEBUG:root:02/09/2014 16:33:07 GOT GPS: {"lat":"51.474903622","lon":"-0.036053724","time":"1995-01-17T15:33:07.000Z","alt":"45.224","speed":"0.447"}
+DEBUG:root:02/09/2014 16:33:10 Got RaspberryPi Info{"tempc":"41.2'C","disk%used":"83%","diskavailable":"276M","load":"0.93,0.82,0.54","serial":"00000000b6e2f676"}
+
+DEBUG:root:02/09/2014 16:33:10 Checking network connection: Bus 001 Device 015: ID 046d:c52b Logitech, Inc. Unifying Receiver
+Bus 001 Device 018: ID 12d1:14db Huawei Technologies Co., Ltd. E353/E3131
+Bus 001 Device 014: ID 067b:2303 Prolific Technology, Inc. PL2303 Serial Port
+Bus 001 Device 013: ID 0424:ec00 Standard Microsystems Corp. SMSC9512/9514 Fast Ethernet Adapter
+Bus 001 Device 012: ID 0424:9514 Standard Microsystems Corp. SMC9514 Hub
+Bus 001 Device 001: ID 1d6b:0002 Linux Foundation 2.0 root hub
+
+DEBUG:root:02/09/2014 16:33:10 Network OK
+DEBUG:root:02/09/2014 16:33:11 Got ADC Info{"a0":0.0,"a1":0.0,"a2":0.0,"a3":0.0,"a4":0.0,"a5":0.0,"a6":0.0,"a7":4.68372184133}
+
+INFO:cherrypy.access.3056661328:192.168.1.100 - - [02/Sep/2014:16:33:12] "GET / HTTP/1.1" 200 4968 "http://192.168.1.99/" "Mozilla/5.0 (Linux; Android 4.4.2; Nexus 10 Build/KOT49H) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/36.0.1985.135 Safari/537.36"
+DEBUG:root:02/09/2014 16:33:14 Got ADC Info{"a0":0.0,"a1":0.0,"a2":0.0,"a3":0.0,"a4":0.0,"a5":0.0,"a6":0.0,"a7":4.67369245837}
+
+DEBUG:root:02/09/2014 16:33:15 GOT GPS: {"lat":"51.474756014","lon":"-0.03586643","time":"1995-01-17T15:33:14.000Z","alt":"58.3","speed":"0.416"}
+INFO:cherrypy.access.3056661328:192.168.1.100 - - [02/Sep/2014:16:33:17] "GET / HTTP/1.1" 200 5056 "http://192.168.1.99/" "Mozilla/5.0 (Linux; Android 4.4.2; Nexus 10 Build/KOT49H) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/36.0.1985.135 Safari/537.36"
+DEBUG:root:02/09/2014 16:33:18 Got ADC Info{"a0":0.0,"a1":0.0,"a2":0.0,"a3":0.0,"a4":0.0,"a5":0.0,"a6":0.0,"a7":4.68121449559}
+
+DEBUG:root:02/09/2014 16:33:22 Got ADC Info{"a0":0.0,"a1":0.0,"a2":0.0,"a3":0.0,"a4":0.0,"a5":0.0,"a6":0.0,"a7":4.66366307542}
+
+DEBUG:root:02/09/2014 16:33:22 GOT GPS: {"lat":"51.47460968","lon":"-0.035765466","time":"1995-01-17T15:33:22.000Z","alt":"76.375","speed":"0.413"}
+INFO:cherrypy.access.3056661328:192.168.1.100 - - [02/Sep/2014:16:33:22] "GET / HTTP/1.1" 200 5196 "http://192.168.1.99/" "Mozilla/5.0 (Linux; Android 4.4.2; Nexus 10 Build/KOT49H) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/36.0.1985.135 Safari/537.36"
+DEBUG:root:02/09/2014 16:33:26 Got ADC Info{"a0":0.0,"a1":0.0,"a2":0.0,"a3":0.0,"a4":0.0,"a5":0.0,"a6":0.0,"a7":4.67369245837}
+
+INFO:cherrypy.access.3056661328:192.168.1.100 - - [02/Sep/2014:16:33:28] "GET / HTTP/1.1" 200 5288 "http://192.168.1.99/" "Mozilla/5.0 (Linux; Android 4.4.2; Nexus 10 Build/KOT49H) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/36.0.1985.135 Safari/537.36"
+DEBUG:root:02/09/2014 16:33:29 Got ADC Info{"a0":0.0,"a1":0.0,"a2":0.0,"a3":0.0,"a4":0.0,"a5":0.0,"a6":0.0,"a7":4.6686777669}
+
+DEBUG:root:02/09/2014 16:33:30 GOT GPS: {"lat":"51.474570239","lon":"-0.035707824","time":"1995-01-17T15:33:29.000Z","alt":"83.703","speed":"0.73"}
+DEBUG:root:02/09/2014 16:33:31 Got RaspberryPi Info{"tempc":"41.2'C","disk%used":"83%","diskavailable":"276M","load":"0.73,0.78,0.54","serial":"00000000b6e2f676"}
+
+INFO:cherrypy.access.3056661328:192.168.1.100 - - [02/Sep/2014:16:33:33] "GET / HTTP/1.1" 200 5338 "http://192.168.1.99/" "Mozilla/5.0 (Linux; Android 4.4.2; Nexus 10 Build/KOT49H) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/36.0.1985.135 Safari/537.36"
+DEBUG:root:02/09/2014 16:33:34 Got ADC Info{"a0":0.0,"a1":0.0,"a2":0.0,"a3":0.0,"a4":0.0,"a5":0.0,"a6":0.0,"a7":4.66366307542}
+
+DEBUG:root:02/09/2014 16:33:34 Checking network connection: Bus 001 Device 015: ID 046d:c52b Logitech, Inc. Unifying Receiver
+Bus 001 Device 018: ID 12d1:14db Huawei Technologies Co., Ltd. E353/E3131
+Bus 001 Device 014: ID 067b:2303 Prolific Technology, Inc. PL2303 Serial Port
+Bus 001 Device 013: ID 0424:ec00 Standard Microsystems Corp. SMSC9512/9514 Fast Ethernet Adapter
+Bus 001 Device 012: ID 0424:9514 Standard Microsystems Corp. SMC9514 Hub
+Bus 001 Device 001: ID 1d6b:0002 Linux Foundation 2.0 root hub
+
+DEBUG:root:02/09/2014 16:33:34 Network OK
+DEBUG:root:02/09/2014 16:33:37 app.py | ValueError | GrabGPS() | NO GPS FOUND: {"class":"TPV","tag":"MID2","device":"/dev/ttyUSB0","mode":2,"time":"1995-01-17T15:33:37.000Z","ept":0.005,"lat":51.474651865,"lon":-0.035779912,"epx":78.190,"epy":58.980,"track":359.9673,"speed":0.273,"eps":156.38}
+DEBUG:root:02/09/2014 16:33:37 Got ADC Info{"a0":0.0,"a1":0.0,"a2":0.0,"a3":0.0,"a4":0.0,"a5":0.0,"a6":0.0,"a7":4.68622918707}
+
+INFO:cherrypy.access.3056661328:192.168.1.100 - - [02/Sep/2014:16:33:38] "GET / HTTP/1.1" 200 5514 "http://192.168.1.99/" "Mozilla/5.0 (Linux; Android 4.4.2; Nexus 10 Build/KOT49H) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/36.0.1985.135 Safari/537.36"
+DEBUG:root:02/09/2014 16:33:41 Got ADC Info{"a0":0.0,"a1":0.0,"a2":0.0,"a3":0.0,"a4":0.0,"a5":0.0,"a6":0.0,"a7":4.68622918707}
+
+INFO:cherrypy.access.3056661328:192.168.1.100 - - [02/Sep/2014:16:33:44] "GET / HTTP/1.1" 200 5617 "http://192.168.1.99/" "Mozilla/5.0 (Linux; Android 4.4.2; Nexus 10 Build/KOT49H) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/36.0.1985.135 Safari/537.36"
+DEBUG:root:02/09/2014 16:33:45 GOT GPS: {"lat":"51.474805057","lon":"-0.036010383","time":"1995-01-17T15:33:44.000Z","alt":"60.346","speed":"1.283"}
+DEBUG:root:02/09/2014 16:33:45 Got ADC Info{"a0":0.0,"a1":0.0,"a2":0.0,"a3":0.0,"a4":0.0,"a5":0.0,"a6":0.0,"a7":4.66617042116}
+
+DEBUG:root:02/09/2014 16:33:49 Got ADC Info{"a0":0.0,"a1":0.0,"a2":0.0,"a3":0.0,"a4":0.0,"a5":0.0,"a6":0.0,"a7":4.68622918707}
+
+INFO:cherrypy.access.3056661328:192.168.1.100 - - [02/Sep/2014:16:33:50] "GET / HTTP/1.1" 200 5760 "http://192.168.1.99/" "Mozilla/5.0 (Linux; Android 4.4.2; Nexus 10 Build/KOT49H) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/36.0.1985.135 Safari/537.36"
+DEBUG:root:02/09/2014 16:33:51 Got RaspberryPi Info{"tempc":"41.2'C","disk%used":"83%","diskavailable":"276M","load":"1.13,0.86,0.57","serial":"00000000b6e2f676"}
+
+DEBUG:root:02/09/2014 16:33:52 GOT GPS: {"lat":"51.474874084","lon":"-0.035981715","time":"1995-01-17T15:33:52.000Z","alt":"49.119","speed":"1.111"}
+DEBUG:root:02/09/2014 16:33:52 Got ADC Info{"a0":0.0,"a1":0.0,"a2":0.0,"a3":0.0,"a4":0.0,"a5":0.0,"a6":0.0,"a7":4.67369245837}
+
+INFO:cherrypy.access.3056661328:192.168.1.100 - - [02/Sep/2014:16:33:55] "GET / HTTP/1.1" 200 5888 "http://192.168.1.99/" "Mozilla/5.0 (Linux; Android 4.4.2; Nexus 10 Build/KOT49H) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/36.0.1985.135 Safari/537.36"
+DEBUG:root:02/09/2014 16:33:57 Got ADC Info{"a0":0.0,"a1":0.0,"a2":0.0,"a3":0.0,"a4":0.0,"a5":0.0,"a6":0.0,"a7":4.67369245837}
+
+DEBUG:root:02/09/2014 16:33:57 Checking network connection: Bus 001 Device 015: ID 046d:c52b Logitech, Inc. Unifying Receiver
+Bus 001 Device 018: ID 12d1:14db Huawei Technologies Co., Ltd. E353/E3131
+Bus 001 Device 014: ID 067b:2303 Prolific Technology, Inc. PL2303 Serial Port
+Bus 001 Device 013: ID 0424:ec00 Standard Microsystems Corp. SMSC9512/9514 Fast Ethernet Adapter
+Bus 001 Device 012: ID 0424:9514 Standard Microsystems Corp. SMC9514 Hub
+Bus 001 Device 001: ID 1d6b:0002 Linux Foundation 2.0 root hub
+
+DEBUG:root:02/09/2014 16:33:57 Network OK
+DEBUG:root:02/09/2014 16:34:00 GOT GPS: {"lat":"51.474819286","lon":"-0.035909689","time":"1995-01-17T15:33:59.000Z","alt":"52.695","speed":"0.51"}
+DEBUG:root:02/09/2014 16:34:00 Got ADC Info{"a0":0.0,"a1":0.0,"a2":0.0,"a3":0.0,"a4":0.0,"a5":0.0,"a6":0.0,"a7":4.67118511263}
+
+INFO:cherrypy.access.3056661328:192.168.1.100 - - [02/Sep/2014:16:34:01] "GET / HTTP/1.1" 200 5941 "http://192.168.1.99/" "Mozilla/5.0 (Linux; Android 4.4.2; Nexus 10 Build/KOT49H) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/36.0.1985.135 Safari/537.36"
+DEBUG:root:02/09/2014 16:34:04 Got ADC Info{"a0":0.0,"a1":0.0,"a2":0.0,"a3":0.0,"a4":0.0,"a5":0.0,"a6":0.0,"a7":4.66366307542}
+
+INFO:cherrypy.access.3056661328:192.168.1.100 - - [02/Sep/2014:16:34:06] "GET / HTTP/1.1" 200 6083 "http://192.168.1.99/" "Mozilla/5.0 (Linux; Android 4.4.2; Nexus 10 Build/KOT49H) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/36.0.1985.135 Safari/537.36"
+DEBUG:root:02/09/2014 16:34:07 GOT GPS: {"lat":"51.474909224","lon":"-0.036039331","time":"1995-01-17T15:34:07.000Z","alt":"46.006","speed":"0.196"}
+DEBUG:root:02/09/2014 16:34:08 Got ADC Info{"a0":0.0,"a1":0.0,"a2":0.0,"a3":0.0,"a4":0.0,"a5":0.0,"a6":0.0,"a7":4.67870714985}
+
+INFO:cherrypy.access.3056661328:192.168.1.100 - - [02/Sep/2014:16:34:11] "GET / HTTP/1.1" 200 6176 "http://192.168.1.99/" "Mozilla/5.0 (Linux; Android 4.4.2; Nexus 10 Build/KOT49H) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/36.0.1985.135 Safari/537.36"
+DEBUG:root:02/09/2014 16:34:12 Got ADC Info{"a0":0.0,"a1":0.0,"a2":0.0,"a3":0.0,"a4":0.0,"a5":0.0,"a6":0.0,"a7":4.65363369246}
+
+DEBUG:root:02/09/2014 16:34:12 Got RaspberryPi Info{"tempc":"41.7'C","disk%used":"83%","diskavailable":"276M","load":"1.29,0.92,0.60","serial":"00000000b6e2f676"}
+
+DEBUG:root:02/09/2014 16:34:15 GOT GPS: {"lat":"51.474812272","lon":"-0.035852109","time":"1995-01-17T15:34:14.000Z","alt":"53.316","speed":"1.807"}
+DEBUG:root:02/09/2014 16:34:16 Got ADC Info{"a0":0.0,"a1":0.0,"a2":0.0,"a3":0.0,"a4":0.0,"a5":0.0,"a6":0.0,"a7":4.67369245837}
+
+INFO:cherrypy.access.3056661328:192.168.1.100 - - [02/Sep/2014:16:34:17] "GET / HTTP/1.1" 200 6304 "http://192.168.1.99/" "Mozilla/5.0 (Linux; Android 4.4.2; Nexus 10 Build/KOT49H) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/36.0.1985.135 Safari/537.36"
+DEBUG:root:02/09/2014 16:34:20 Got ADC Info{"a0":0.0,"a1":0.0,"a2":0.0,"a3":0.0,"a4":0.0,"a5":0.0,"a6":0.0,"a7":4.65112634672}
+
+DEBUG:root:02/09/2014 16:34:21 Checking network connection: Bus 001 Device 015: ID 046d:c52b Logitech, Inc. Unifying Receiver
+Bus 001 Device 018: ID 12d1:14db Huawei Technologies Co., Ltd. E353/E3131
+Bus 001 Device 014: ID 067b:2303 Prolific Technology, Inc. PL2303 Serial Port
+Bus 001 Device 013: ID 0424:ec00 Standard Microsystems Corp. SMSC9512/9514 Fast Ethernet Adapter
+Bus 001 Device 012: ID 0424:9514 Standard Microsystems Corp. SMC9514 Hub
+Bus 001 Device 001: ID 1d6b:0002 Linux Foundation 2.0 root hub
+
+DEBUG:root:02/09/2014 16:34:21 Network OK
+INFO:cherrypy.access.3056661328:192.168.1.100 - - [02/Sep/2014:16:34:22] "GET / HTTP/1.1" 200 6354 "http://192.168.1.99/" "Mozilla/5.0 (Linux; Android 4.4.2; Nexus 10 Build/KOT49H) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/36.0.1985.135 Safari/537.36"
+DEBUG:root:02/09/2014 16:34:22 GOT GPS: {"lat":"51.474719454","lon":"-0.035765627","time":"1995-01-17T15:34:22.000Z","alt":"62.816","speed":"0.138"}
+DEBUG:root:02/09/2014 16:34:24 Got ADC Info{"a0":0.0,"a1":0.0,"a2":0.0,"a3":0.0,"a4":0.0,"a5":0.0,"a6":0.0,"a7":4.67619980411}
+
+INFO:cherrypy.access.3056661328:192.168.1.100 - - [02/Sep/2014:16:34:27] "GET / HTTP/1.1" 200 6500 "http://192.168.1.99/" "Mozilla/5.0 (Linux; Android 4.4.2; Nexus 10 Build/KOT49H) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/36.0.1985.135 Safari/537.36"
+DEBUG:root:02/09/2014 16:34:28 Got ADC Info{"a0":0.0,"a1":0.0,"a2":0.0,"a3":0.0,"a4":0.0,"a5":0.0,"a6":0.0,"a7":4.67118511263}
+
+DEBUG:root:02/09/2014 16:34:30 GOT GPS: {"lat":"51.47466321","lon":"-0.03573677","time":"1995-01-17T15:34:29.000Z","alt":"67.799","speed":"0.131"}
+DEBUG:root:02/09/2014 16:34:31 Got ADC Info{"a0":0.0,"a1":0.0,"a2":0.0,"a3":0.0,"a4":0.0,"a5":0.0,"a6":0.0,"a7":4.68372184133}
+
+INFO:cherrypy.access.3056661328:192.168.1.100 - - [02/Sep/2014:16:34:33] "GET / HTTP/1.1" 200 6591 "http://192.168.1.99/" "Mozilla/5.0 (Linux; Android 4.4.2; Nexus 10 Build/KOT49H) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/36.0.1985.135 Safari/537.36"
+DEBUG:root:02/09/2014 16:34:33 Got RaspberryPi Info{"tempc":"40.6'C","disk%used":"83%","diskavailable":"276M","load":"1.00,0.88,0.59","serial":"00000000b6e2f676"}
+
+DEBUG:root:02/09/2014 16:34:35 Got ADC Info{"a0":0.0,"a1":0.0,"a2":0.0,"a3":0.0,"a4":0.0,"a5":0.0,"a6":0.0,"a7":4.68121449559}
+
+DEBUG:root:02/09/2014 16:34:38 GOT GPS: {"lat":"51.474772966","lon":"-0.035794502","time":"1995-01-17T15:34:38.000Z","alt":"54.242","speed":"0.54"}
+INFO:cherrypy.access.3056661328:192.168.1.100 - - [02/Sep/2014:16:34:38] "GET / HTTP/1.1" 200 6726 "http://192.168.1.99/" "Mozilla/5.0 (Linux; Android 4.4.2; Nexus 10 Build/KOT49H) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/36.0.1985.135 Safari/537.36"
+DEBUG:root:02/09/2014 16:34:39 Got ADC Info{"a0":0.0,"a1":0.0,"a2":0.0,"a3":0.0,"a4":0.0,"a5":0.0,"a6":0.0,"a7":4.69124387855}
+
+DEBUG:root:02/09/2014 16:34:43 Got ADC Info{"a0":0.0,"a1":0.0,"a2":0.0,"a3":0.0,"a4":0.0,"a5":0.0,"a6":0.0,"a7":4.67118511263}
+
+INFO:cherrypy.access.3056661328:192.168.1.100 - - [02/Sep/2014:16:34:44] "GET / HTTP/1.1" 200 6818 "http://192.168.1.99/" "Mozilla/5.0 (Linux; Android 4.4.2; Nexus 10 Build/KOT49H) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/36.0.1985.135 Safari/537.36"
+DEBUG:root:02/09/2014 16:34:45 Checking network connection: Bus 001 Device 015: ID 046d:c52b Logitech, Inc. Unifying Receiver
+Bus 001 Device 018: ID 12d1:14db Huawei Technologies Co., Ltd. E353/E3131
+Bus 001 Device 014: ID 067b:2303 Prolific Technology, Inc. PL2303 Serial Port
+Bus 001 Device 013: ID 0424:ec00 Standard Microsystems Corp. SMSC9512/9514 Fast Ethernet Adapter
+Bus 001 Device 012: ID 0424:9514 Standard Microsystems Corp. SMC9514 Hub
+Bus 001 Device 001: ID 1d6b:0002 Linux Foundation 2.0 root hub
+
+DEBUG:root:02/09/2014 16:34:45 Network OK
+DEBUG:root:02/09/2014 16:34:46 Got ADC Info{"a0":0.0,"a1":0.0,"a2":0.0,"a3":0.0,"a4":0.0,"a5":0.0,"a6":0.0,"a7":4.67118511263}
+
+DEBUG:root:02/09/2014 16:34:46 app.py | ValueError | GrabGPS() | NO GPS FOUND: {"class":"SKY","tag":"MID4","device":"/dev/ttyUSB0","time":"1995-01-17T15:34:46.000Z","xdop":5.21,"ydop":3.93,"vdop":5.31,"tdop":3.17,"hdop":3.80,"gdop":8.99,"pdop":8.42,"satellites":[{"PRN":27,"el":53,"az":132,"ss":25,"used":true},{"PRN":16,"el":8,"az":178,"ss":18,"used":true},{"PRN":14,"el":14,"az":108,"ss":24,"used":true},{"PRN":22,"el":51,"az":75,"ss":23,"used":true}]}
+INFO:cherrypy.access.3056661328:192.168.1.100 - - [02/Sep/2014:16:34:49] "GET / HTTP/1.1" 200 6871 "http://192.168.1.99/" "Mozilla/5.0 (Linux; Android 4.4.2; Nexus 10 Build/KOT49H) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/36.0.1985.135 Safari/537.36"
+DEBUG:root:02/09/2014 16:34:50 Got ADC Info{"a0":0.0,"a1":0.0,"a2":0.0,"a3":0.0,"a4":0.0,"a5":0.0,"a6":0.0,"a7":4.6686777669}
+
+DEBUG:root:02/09/2014 16:34:54 Got RaspberryPi Info{"tempc":"41.2'C","disk%used":"83%","diskavailable":"276M","load":"1.01,0.88,0.60","serial":"00000000b6e2f676"}
+
+DEBUG:root:02/09/2014 16:34:54 Got ADC Info{"a0":0.0,"a1":0.0,"a2":0.0,"a3":0.0,"a4":0.0,"a5":0.0,"a6":0.0,"a7":4.67118511263}
+
+DEBUG:root:02/09/2014 16:34:54 GOT GPS: {"lat":"51.474806822","lon":"-0.035808967","time":"1995-01-17T15:34:54.000Z","alt":"46.13","speed":"0.253"}
+INFO:cherrypy.access.3056661328:192.168.1.100 - - [02/Sep/2014:16:34:54] "GET / HTTP/1.1" 200 6970 "http://192.168.1.99/" "Mozilla/5.0 (Linux; Android 4.4.2; Nexus 10 Build/KOT49H) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/36.0.1985.135 Safari/537.36"
+DEBUG:root:02/09/2014 16:34:58 Got ADC Info{"a0":0.0,"a1":0.0,"a2":0.0,"a3":0.0,"a4":0.0,"a5":0.0,"a6":0.0,"a7":4.6686777669}
+
+INFO:cherrypy.access.3056661328:192.168.1.100 - - [02/Sep/2014:16:35:00] "GET / HTTP/1.1" 200 7097 "http://192.168.1.99/" "Mozilla/5.0 (Linux; Android 4.4.2; Nexus 10 Build/KOT49H) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/36.0.1985.135 Safari/537.36"
+DEBUG:root:02/09/2014 16:35:02 GOT GPS: {"lat":"51.474766096","lon":"-0.035708173","time":"1995-01-17T15:35:01.000Z","alt":"48.459","speed":"0.186"}
+DEBUG:root:02/09/2014 16:35:02 Got ADC Info{"a0":0.0,"a1":0.0,"a2":0.0,"a3":0.0,"a4":0.0,"a5":0.0,"a6":0.0,"a7":4.67118511263}
+
+INFO:cherrypy.access.3056661328:192.168.1.100 - - [02/Sep/2014:16:35:05] "GET / HTTP/1.1" 200 7146 "http://192.168.1.99/" "Mozilla/5.0 (Linux; Android 4.4.2; Nexus 10 Build/KOT49H) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/36.0.1985.135 Safari/537.36"
+DEBUG:root:02/09/2014 16:35:06 Got ADC Info{"a0":0.0,"a1":0.0,"a2":0.0,"a3":0.0,"a4":0.0,"a5":0.0,"a6":0.0,"a7":4.66617042116}
+
+DEBUG:root:02/09/2014 16:35:08 Checking network connection: Bus 001 Device 015: ID 046d:c52b Logitech, Inc. Unifying Receiver
+Bus 001 Device 018: ID 12d1:14db Huawei Technologies Co., Ltd. E353/E3131
+Bus 001 Device 014: ID 067b:2303 Prolific Technology, Inc. PL2303 Serial Port
+Bus 001 Device 013: ID 0424:ec00 Standard Microsystems Corp. SMSC9512/9514 Fast Ethernet Adapter
+Bus 001 Device 012: ID 0424:9514 Standard Microsystems Corp. SMC9514 Hub
+Bus 001 Device 001: ID 1d6b:0002 Linux Foundation 2.0 root hub
+
+DEBUG:root:02/09/2014 16:35:08 Network OK
+DEBUG:root:02/09/2014 16:35:09 GOT GPS: {"lat":"51.474785732","lon":"-0.035794547","time":"1995-01-17T15:35:09.000Z","alt":"47.998","speed":"0.38"}
+DEBUG:root:02/09/2014 16:35:10 Got ADC Info{"a0":0.0,"a1":0.0,"a2":0.0,"a3":0.0,"a4":0.0,"a5":0.0,"a6":0.0,"a7":4.68121449559}
+
+INFO:cherrypy.access.3056661328:192.168.1.100 - - [02/Sep/2014:16:35:11] "GET / HTTP/1.1" 200 7239 "http://192.168.1.99/" "Mozilla/5.0 (Linux; Android 4.4.2; Nexus 10 Build/KOT49H) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/36.0.1985.135 Safari/537.36"
+DEBUG:root:02/09/2014 16:35:14 Got ADC Info{"a0":0.0,"a1":0.0,"a2":0.0,"a3":0.0,"a4":0.0,"a5":0.0,"a6":0.0,"a7":4.66617042116}
+
+DEBUG:root:02/09/2014 16:35:14 Got RaspberryPi Info{"tempc":"41.7'C","disk%used":"83%","diskavailable":"276M","load":"0.93,0.88,0.60","serial":"00000000b6e2f676"}
+
+INFO:cherrypy.access.3056661328:192.168.1.100 - - [02/Sep/2014:16:35:16] "GET / HTTP/1.1" 200 7384 "http://192.168.1.99/" "Mozilla/5.0 (Linux; Android 4.4.2; Nexus 10 Build/KOT49H) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/36.0.1985.135 Safari/537.36"
+DEBUG:root:02/09/2014 16:35:17 GOT GPS: {"lat":"51.47479549","lon":"-0.035808931","time":"1995-01-17T15:35:16.000Z","alt":"50.968","speed":"0.927"}
+DEBUG:root:02/09/2014 16:35:18 Got ADC Info{"a0":0.0,"a1":0.0,"a2":0.0,"a3":0.0,"a4":0.0,"a5":0.0,"a6":0.0,"a7":4.68622918707}
+
+INFO:cherrypy.access.3056661328:192.168.1.100 - - [02/Sep/2014:16:35:21] "GET / HTTP/1.1" 200 7469 "http://192.168.1.99/" "Mozilla/5.0 (Linux; Android 4.4.2; Nexus 10 Build/KOT49H) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/36.0.1985.135 Safari/537.36"
+DEBUG:root:02/09/2014 16:35:22 Got ADC Info{"a0":0.0,"a1":0.0,"a2":0.0,"a3":0.0,"a4":0.0,"a5":0.0,"a6":0.0,"a7":4.67118511263}
+
+DEBUG:root:02/09/2014 16:35:24 GOT GPS: {"lat":"51.474785596","lon":"-0.035794511","time":"1995-01-17T15:35:24.000Z","alt":"54.401","speed":"0.176"}
+DEBUG:root:02/09/2014 16:35:25 Got ADC Info{"a0":0.0,"a1":0.0,"a2":0.0,"a3":0.0,"a4":0.0,"a5":0.0,"a6":0.0,"a7":4.65864838394}
+
+INFO:cherrypy.access.3056661328:192.168.1.100 - - [02/Sep/2014:16:35:27] "GET / HTTP/1.1" 200 7704 "http://192.168.1.99/" "Mozilla/5.0 (Linux; Android 4.4.2; Nexus 10 Build/KOT49H) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/36.0.1985.135 Safari/537.36"
+DEBUG:root:02/09/2014 16:35:30 Got ADC Info{"a0":0.0,"a1":0.0,"a2":0.0,"a3":0.0,"a4":0.0,"a5":0.0,"a6":0.0,"a7":4.6686777669}
+
+DEBUG:root:02/09/2014 16:35:32 GOT GPS: {"lat":"51.474736392","lon":"-0.035736878","time":"1995-01-17T15:35:31.000Z","alt":"58.76","speed":"0.38"}
+DEBUG:root:02/09/2014 16:35:32 Checking network connection: Bus 001 Device 015: ID 046d:c52b Logitech, Inc. Unifying Receiver
+Bus 001 Device 018: ID 12d1:14db Huawei Technologies Co., Ltd. E353/E3131
+Bus 001 Device 014: ID 067b:2303 Prolific Technology, Inc. PL2303 Serial Port
+Bus 001 Device 013: ID 0424:ec00 Standard Microsystems Corp. SMSC9512/9514 Fast Ethernet Adapter
+Bus 001 Device 012: ID 0424:9514 Standard Microsystems Corp. SMC9514 Hub
+Bus 001 Device 001: ID 1d6b:0002 Linux Foundation 2.0 root hub
+
+DEBUG:root:02/09/2014 16:35:32 Network OK
+INFO:cherrypy.access.3056661328:192.168.1.100 - - [02/Sep/2014:16:35:32] "GET / HTTP/1.1" 200 7794 "http://192.168.1.99/" "Mozilla/5.0 (Linux; Android 4.4.2; Nexus 10 Build/KOT49H) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/36.0.1985.135 Safari/537.36"
+DEBUG:root:02/09/2014 16:35:34 Got ADC Info{"a0":0.0,"a1":0.0,"a2":0.0,"a3":0.0,"a4":0.0,"a5":0.0,"a6":0.0,"a7":4.68372184133}
+
+DEBUG:root:02/09/2014 16:35:35 Got RaspberryPi Info{"tempc":"41.2'C","disk%used":"83%","diskavailable":"276M","load":"0.96,0.88,0.61","serial":"00000000b6e2f676"}
+
+DEBUG:root:02/09/2014 16:35:37 Got ADC Info{"a0":0.0,"a1":0.0,"a2":0.0,"a3":0.0,"a4":0.0,"a5":0.0,"a6":0.0,"a7":4.6436043095}
+
+INFO:cherrypy.access.3056661328:192.168.1.100 - - [02/Sep/2014:16:35:38] "GET / HTTP/1.1" 200 7882 "http://192.168.1.99/" "Mozilla/5.0 (Linux; Android 4.4.2; Nexus 10 Build/KOT49H) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/36.0.1985.135 Safari/537.36"
+DEBUG:root:02/09/2014 16:35:39 GOT GPS: {"lat":"51.474712448","lon":"-0.035679263","time":"1995-01-17T15:35:39.000Z","alt":"63.437","speed":"0.846"}
+DEBUG:root:02/09/2014 16:35:41 Got ADC Info{"a0":0.0,"a1":0.0,"a2":0.0,"a3":0.0,"a4":0.0,"a5":0.0,"a6":0.0,"a7":4.67870714985}
+
+INFO:cherrypy.access.3056661328:192.168.1.100 - - [02/Sep/2014:16:35:43] "GET / HTTP/1.1" 200 8024 "http://192.168.1.99/" "Mozilla/5.0 (Linux; Android 4.4.2; Nexus 10 Build/KOT49H) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/36.0.1985.135 Safari/537.36"
+DEBUG:root:02/09/2014 16:35:44 Got ADC Info{"a0":0.0,"a1":0.0,"a2":0.0,"a3":0.0,"a4":0.0,"a5":0.0,"a6":0.0,"a7":4.67619980411}
+
+DEBUG:root:02/09/2014 16:35:47 GOT GPS: {"lat":"51.474699823","lon":"-0.035664861","time":"1995-01-17T15:35:46.000Z","alt":"63.277","speed":"1.032"}
+DEBUG:root:02/09/2014 16:35:48 Got ADC Info{"a0":0.0,"a1":0.0,"a2":0.0,"a3":0.0,"a4":0.0,"a5":0.0,"a6":0.0,"a7":4.6686777669}
+
+INFO:cherrypy.access.3056661328:192.168.1.100 - - [02/Sep/2014:16:35:48] "GET / HTTP/1.1" 200 8117 "http://192.168.1.99/" "Mozilla/5.0 (Linux; Android 4.4.2; Nexus 10 Build/KOT49H) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/36.0.1985.135 Safari/537.36"
+DEBUG:root:02/09/2014 16:35:52 Got ADC Info{"a0":0.0,"a1":0.0,"a2":0.0,"a3":0.0,"a4":0.0,"a5":0.0,"a6":0.0,"a7":4.65363369246}
+
+INFO:cherrypy.access.3056661328:192.168.1.100 - - [02/Sep/2014:16:35:54] "GET / HTTP/1.1" 200 8216 "http://192.168.1.99/" "Mozilla/5.0 (Linux; Android 4.4.2; Nexus 10 Build/KOT49H) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/36.0.1985.135 Safari/537.36"
+DEBUG:root:02/09/2014 16:35:54 GOT GPS: {"lat":"51.474708288","lon":"-0.035664879","time":"1995-01-17T15:35:54.000Z","alt":"61.249","speed":"0.917"}
+DEBUG:root:02/09/2014 16:35:55 Checking network connection: Bus 001 Device 015: ID 046d:c52b Logitech, Inc. Unifying Receiver
+Bus 001 Device 018: ID 12d1:14db Huawei Technologies Co., Ltd. E353/E3131
+Bus 001 Device 014: ID 067b:2303 Prolific Technology, Inc. PL2303 Serial Port
+Bus 001 Device 013: ID 0424:ec00 Standard Microsystems Corp. SMSC9512/9514 Fast Ethernet Adapter
+Bus 001 Device 012: ID 0424:9514 Standard Microsystems Corp. SMC9514 Hub
+Bus 001 Device 001: ID 1d6b:0002 Linux Foundation 2.0 root hub
+
+DEBUG:root:02/09/2014 16:35:55 Network OK
+DEBUG:root:02/09/2014 16:35:56 Got RaspberryPi Info{"tempc":"41.7'C","disk%used":"83%","diskavailable":"276M","load":"0.85,0.86,0.61","serial":"00000000b6e2f676"}
+
+DEBUG:root:02/09/2014 16:35:57 Got ADC Info{"a0":0.0,"a1":0.0,"a2":0.0,"a3":0.0,"a4":0.0,"a5":0.0,"a6":0.0,"a7":4.67870714985}
+
+INFO:cherrypy.access.3056661328:192.168.1.100 - - [02/Sep/2014:16:35:59] "GET / HTTP/1.1" 200 8347 "http://192.168.1.99/" "Mozilla/5.0 (Linux; Android 4.4.2; Nexus 10 Build/KOT49H) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/36.0.1985.135 Safari/537.36"
+DEBUG:root:02/09/2014 16:36:00 Got ADC Info{"a0":0.0,"a1":0.0,"a2":0.0,"a3":0.0,"a4":0.0,"a5":0.0,"a6":0.0,"a7":4.67118511263}
+
+DEBUG:root:02/09/2014 16:36:02 GOT GPS: {"lat":"51.474834678","lon":"-0.035808931","time":"1995-01-17T15:36:01.000Z","alt":"56.445","speed":"0.733"}
+DEBUG:root:02/09/2014 16:36:04 Got ADC Info{"a0":0.0,"a1":0.0,"a2":0.0,"a3":0.0,"a4":0.0,"a5":0.0,"a6":0.0,"a7":4.66115572968}
+
+INFO:cherrypy.access.3056661328:192.168.1.100 - - [02/Sep/2014:16:36:04] "GET / HTTP/1.1" 200 8440 "http://192.168.1.99/" "Mozilla/5.0 (Linux; Android 4.4.2; Nexus 10 Build/KOT49H) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/36.0.1985.135 Safari/537.36"
+DEBUG:root:02/09/2014 16:36:08 Got ADC Info{"a0":0.0,"a1":0.0,"a2":0.0,"a3":0.0,"a4":0.0,"a5":0.0,"a6":0.0,"a7":4.67369245837}
+
+DEBUG:root:02/09/2014 16:36:09 GOT GPS: {"lat":"51.474820615","lon":"-0.035808913","time":"1995-01-17T15:36:09.000Z","alt":"57.69","speed":"0.733"}
+INFO:cherrypy.access.3056661328:192.168.1.100 - - [02/Sep/2014:16:36:09] "GET / HTTP/1.1" 200 8540 "http://192.168.1.99/" "Mozilla/5.0 (Linux; Android 4.4.2; Nexus 10 Build/KOT49H) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/36.0.1985.135 Safari/537.36"
+DEBUG:root:02/09/2014 16:36:12 Got ADC Info{"a0":0.0,"a1":0.0,"a2":0.0,"a3":0.0,"a4":0.0,"a5":0.0,"a6":0.0,"a7":4.68873653281}
+
+INFO:cherrypy.access.3056661328:192.168.1.100 - - [02/Sep/2014:16:36:15] "GET / HTTP/1.1" 200 8632 "http://192.168.1.99/" "Mozilla/5.0 (Linux; Android 4.4.2; Nexus 10 Build/KOT49H) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/36.0.1985.135 Safari/537.36"
+DEBUG:root:02/09/2014 16:36:15 Got ADC Info{"a0":0.0,"a1":0.0,"a2":0.0,"a3":0.0,"a4":0.0,"a5":0.0,"a6":0.0,"a7":4.66617042116}
+
+DEBUG:root:02/09/2014 16:36:17 GOT GPS: {"lat":"51.474868377","lon":"-0.035895323","time":"1995-01-17T15:36:16.000Z","alt":"54.738","speed":"0.765"}
+DEBUG:root:02/09/2014 16:36:18 Got RaspberryPi Info{"tempc":"41.2'C","disk%used":"83%","diskavailable":"276M","load":"1.16,0.93,0.64","serial":"00000000b6e2f676"}
+
+DEBUG:root:02/09/2014 16:36:19 Checking network connection: Bus 001 Device 015: ID 046d:c52b Logitech, Inc. Unifying Receiver
+Bus 001 Device 018: ID 12d1:14db Huawei Technologies Co., Ltd. E353/E3131
+Bus 001 Device 014: ID 067b:2303 Prolific Technology, Inc. PL2303 Serial Port
+Bus 001 Device 013: ID 0424:ec00 Standard Microsystems Corp. SMSC9512/9514 Fast Ethernet Adapter
+Bus 001 Device 012: ID 0424:9514 Standard Microsystems Corp. SMC9514 Hub
+Bus 001 Device 001: ID 1d6b:0002 Linux Foundation 2.0 root hub
+
+DEBUG:root:02/09/2014 16:36:19 Network OK
+DEBUG:root:02/09/2014 16:36:19 Got ADC Info{"a0":0.0,"a1":0.0,"a2":0.0,"a3":0.0,"a4":0.0,"a5":0.0,"a6":0.0,"a7":4.67870714985}
+
+INFO:cherrypy.access.3056661328:192.168.1.100 - - [02/Sep/2014:16:36:20] "GET / HTTP/1.1" 200 8760 "http://192.168.1.99/" "Mozilla/5.0 (Linux; Android 4.4.2; Nexus 10 Build/KOT49H) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/36.0.1985.135 Safari/537.36"
+DEBUG:root:02/09/2014 16:36:23 Got ADC Info{"a0":0.0,"a1":0.0,"a2":0.0,"a3":0.0,"a4":0.0,"a5":0.0,"a6":0.0,"a7":4.68873653281}
+
+DEBUG:root:02/09/2014 16:36:24 GOT GPS: {"lat":"51.474883847","lon":"-0.035981706","time":"1995-01-17T15:36:24.000Z","alt":"52.089","speed":"0.503"}
+INFO:cherrypy.access.3056661328:192.168.1.100 - - [02/Sep/2014:16:36:25] "GET / HTTP/1.1" 200 8863 "http://192.168.1.99/" "Mozilla/5.0 (Linux; Android 4.4.2; Nexus 10 Build/KOT49H) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/36.0.1985.135 Safari/537.36"
+DEBUG:root:02/09/2014 16:36:27 Got ADC Info{"a0":0.0,"a1":0.0,"a2":0.0,"a3":0.0,"a4":0.0,"a5":0.0,"a6":0.0,"a7":4.68121449559}
+
+DEBUG:root:02/09/2014 16:36:31 Got ADC Info{"a0":0.0,"a1":0.0,"a2":0.0,"a3":0.0,"a4":0.0,"a5":0.0,"a6":0.0,"a7":4.65864838394}
+
+INFO:cherrypy.access.3056661328:192.168.1.100 - - [02/Sep/2014:16:36:31] "GET / HTTP/1.1" 200 8956 "http://192.168.1.99/" "Mozilla/5.0 (Linux; Android 4.4.2; Nexus 10 Build/KOT49H) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/36.0.1985.135 Safari/537.36"
+DEBUG:root:02/09/2014 16:36:32 GOT GPS: {"lat":"51.474913389","lon":"-0.036039322","time":"1995-01-17T15:36:31.000Z","alt":"48.194","speed":"0.77"}
+DEBUG:root:02/09/2014 16:36:34 Got ADC Info{"a0":0.0,"a1":0.0,"a2":0.0,"a3":0.0,"a4":0.0,"a5":0.0,"a6":0.0,"a7":4.67870714985}
+
+INFO:cherrypy.access.3056661328:192.168.1.100 - - [02/Sep/2014:16:36:36] "GET / HTTP/1.1" 200 9048 "http://192.168.1.99/" "Mozilla/5.0 (Linux; Android 4.4.2; Nexus 10 Build/KOT49H) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/36.0.1985.135 Safari/537.36"
+DEBUG:root:02/09/2014 16:36:39 Got RaspberryPi Info{"tempc":"40.6'C","disk%used":"83%","diskavailable":"276M","load":"1.04,0.92,0.64","serial":"00000000b6e2f676"}
+
+DEBUG:root:02/09/2014 16:36:39 Got ADC Info{"a0":0.0,"a1":0.0,"a2":0.0,"a3":0.0,"a4":0.0,"a5":0.0,"a6":0.0,"a7":4.67619980411}
+
+DEBUG:root:02/09/2014 16:36:39 GOT GPS: {"lat":"51.474928868","lon":"-0.03609692","time":"1995-01-17T15:36:39.000Z","alt":"45.544","speed":"0.448"}
+INFO:cherrypy.access.3056661328:192.168.1.100 - - [02/Sep/2014:16:36:41] "GET / HTTP/1.1" 200 9225 "http://192.168.1.99/" "Mozilla/5.0 (Linux; Android 4.4.2; Nexus 10 Build/KOT49H) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/36.0.1985.135 Safari/537.36"
+DEBUG:root:02/09/2014 16:36:42 Checking network connection: Bus 001 Device 015: ID 046d:c52b Logitech, Inc. Unifying Receiver
+Bus 001 Device 018: ID 12d1:14db Huawei Technologies Co., Ltd. E353/E3131
+Bus 001 Device 014: ID 067b:2303 Prolific Technology, Inc. PL2303 Serial Port
+Bus 001 Device 013: ID 0424:ec00 Standard Microsystems Corp. SMSC9512/9514 Fast Ethernet Adapter
+Bus 001 Device 012: ID 0424:9514 Standard Microsystems Corp. SMC9514 Hub
+Bus 001 Device 001: ID 1d6b:0002 Linux Foundation 2.0 root hub
+
+DEBUG:root:02/09/2014 16:36:42 Network OK
+DEBUG:root:02/09/2014 16:36:43 Got ADC Info{"a0":0.0,"a1":0.0,"a2":0.0,"a3":0.0,"a4":0.0,"a5":0.0,"a6":0.0,"a7":4.68873653281}
+
+DEBUG:root:02/09/2014 16:36:46 Got ADC Info{"a0":0.0,"a1":0.0,"a2":0.0,"a3":0.0,"a4":0.0,"a5":0.0,"a6":0.0,"a7":4.66115572968}
+
+DEBUG:root:02/09/2014 16:36:47 GOT GPS: {"lat":"51.474875504","lon":"-0.036024902","time":"1995-01-17T15:36:46.000Z","alt":"47.715","speed":"0.585"}
+INFO:cherrypy.access.3056661328:192.168.1.100 - - [02/Sep/2014:16:36:47] "GET / HTTP/1.1" 200 9278 "http://192.168.1.99/" "Mozilla/5.0 (Linux; Android 4.4.2; Nexus 10 Build/KOT49H) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/36.0.1985.135 Safari/537.36"
+DEBUG:root:02/09/2014 16:36:50 Got ADC Info{"a0":0.0,"a1":0.0,"a2":0.0,"a3":0.0,"a4":0.0,"a5":0.0,"a6":0.0,"a7":4.65864838394}
+
+INFO:cherrypy.access.3056661328:192.168.1.100 - - [02/Sep/2014:16:36:52] "GET / HTTP/1.1" 200 9421 "http://192.168.1.99/" "Mozilla/5.0 (Linux; Android 4.4.2; Nexus 10 Build/KOT49H) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/36.0.1985.135 Safari/537.36"
+DEBUG:root:02/09/2014 16:36:53 Got ADC Info{"a0":0.0,"a1":0.0,"a2":0.0,"a3":0.0,"a4":0.0,"a5":0.0,"a6":0.0,"a7":4.68372184133}
+
+DEBUG:root:02/09/2014 16:36:55 GOT GPS: {"lat":"51.474858609","lon":"-0.035909725","time":"1995-01-17T15:36:55.000Z","alt":"51.768","speed":"0.762"}
+DEBUG:root:02/09/2014 16:36:57 Got ADC Info{"a0":0.0,"a1":0.0,"a2":0.0,"a3":0.0,"a4":0.0,"a5":0.0,"a6":0.0,"a7":4.67118511263}
+
+INFO:cherrypy.access.3056661328:192.168.1.100 - - [02/Sep/2014:16:36:57] "GET / HTTP/1.1" 200 9514 "http://192.168.1.99/" "Mozilla/5.0 (Linux; Android 4.4.2; Nexus 10 Build/KOT49H) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/36.0.1985.135 Safari/537.36"
+DEBUG:root:02/09/2014 16:36:59 Got RaspberryPi Info{"tempc":"41.2'C","disk%used":"83%","diskavailable":"276M","load":"1.09,0.94,0.65","serial":"00000000b6e2f676"}
+
+DEBUG:root:02/09/2014 16:37:00 Got ADC Info{"a0":0.0,"a1":0.0,"a2":0.0,"a3":0.0,"a4":0.0,"a5":0.0,"a6":0.0,"a7":4.67870714985}
+
+INFO:cherrypy.access.3056661328:192.168.1.100 - - [02/Sep/2014:16:37:03] "GET / HTTP/1.1" 200 9649 "http://192.168.1.99/" "Mozilla/5.0 (Linux; Android 4.4.2; Nexus 10 Build/KOT49H) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/36.0.1985.135 Safari/537.36"
+DEBUG:root:02/09/2014 16:37:04 app.py | ValueError | GrabGPS() | NO GPS FOUND: {"class":"SKY","tag":"MID4","device":"/dev/ttyUSB0","time":"1995-01-17T15:37:03.000Z","xdop":5.21,"ydop":3.93,"vdop":5.31,"tdop":3.17,"hdop":3.60,"gdop":8.99,"pdop":8.42,"satellites":[{"PRN":27,"el":51,"az":133,"ss":29,"used":true},{"PRN":16,"el":7,"az":178,"ss":13,"used":true},{"PRN":14,"el":15,"az":106,"ss":24,"used":true},{"PRN":22,"el":51,"az":72,"ss":23,"used":true}]}
+DEBUG:root:02/09/2014 16:37:05 Got ADC Info{"a0":0.0,"a1":0.0,"a2":0.0,"a3":0.0,"a4":0.0,"a5":0.0,"a6":0.0,"a7":4.6686777669}
+
+DEBUG:root:02/09/2014 16:37:05 Checking network connection: Bus 001 Device 015: ID 046d:c52b Logitech, Inc. Unifying Receiver
+Bus 001 Device 018: ID 12d1:14db Huawei Technologies Co., Ltd. E353/E3131
+Bus 001 Device 014: ID 067b:2303 Prolific Technology, Inc. PL2303 Serial Port
+Bus 001 Device 013: ID 0424:ec00 Standard Microsystems Corp. SMSC9512/9514 Fast Ethernet Adapter
+Bus 001 Device 012: ID 0424:9514 Standard Microsystems Corp. SMC9514 Hub
+Bus 001 Device 001: ID 1d6b:0002 Linux Foundation 2.0 root hub
+
+DEBUG:root:02/09/2014 16:37:05 Network OK
+INFO:cherrypy.access.3056661328:192.168.1.100 - - [02/Sep/2014:16:37:08] "GET / HTTP/1.1" 200 9701 "http://192.168.1.99/" "Mozilla/5.0 (Linux; Android 4.4.2; Nexus 10 Build/KOT49H) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/36.0.1985.135 Safari/537.36"
+DEBUG:root:02/09/2014 16:37:09 Got ADC Info{"a0":0.0,"a1":0.0,"a2":0.0,"a3":0.0,"a4":0.0,"a5":0.0,"a6":0.0,"a7":4.68873653281}
+
+DEBUG:root:02/09/2014 16:37:11 app.py | ValueError | GrabGPS() | NO GPS FOUND: {"class":"TPV","tag":"MID2","device":"/dev/ttyUSB0","mode":2,"time":"1995-01-17T15:37:11.000Z","ept":0.005,"lat":51.474831807,"lon":-0.035823306,"epx":78.190,"epy":58.980,"track":172.3717,"speed":0.946,"eps":156.38}
+DEBUG:root:02/09/2014 16:37:13 Got ADC Info{"a0":0.0,"a1":0.0,"a2":0.0,"a3":0.0,"a4":0.0,"a5":0.0,"a6":0.0,"a7":4.67118511263}
+
+INFO:cherrypy.access.3056661328:192.168.1.100 - - [02/Sep/2014:16:37:13] "GET / HTTP/1.1" 200 9751 "http://192.168.1.99/" "Mozilla/5.0 (Linux; Android 4.4.2; Nexus 10 Build/KOT49H) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/36.0.1985.135 Safari/537.36"
+DEBUG:root:02/09/2014 16:37:17 Got ADC Info{"a0":0.0,"a1":0.0,"a2":0.0,"a3":0.0,"a4":0.0,"a5":0.0,"a6":0.0,"a7":4.68622918707}
+
+INFO:cherrypy.error:[02/Sep/2014:16:37:18] ENGINE Bus STOPPING
+INFO:cherrypy.access.3056661328:192.168.1.100 - - [02/Sep/2014:16:37:19] "GET / HTTP/1.1" 200 9801 "http://192.168.1.99/" "Mozilla/5.0 (Linux; Android 4.4.2; Nexus 10 Build/KOT49H) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/36.0.1985.135 Safari/537.36"
+DEBUG:root:02/09/2014 16:37:20 Got RaspberryPi Info{"tempc":"40.6'C","disk%used":"83%","diskavailable":"276M","load":"0.78,0.88,0.64","serial":"00000000b6e2f676"}
+
+DEBUG:root:02/09/2014 16:37:21 Got ADC Info{"a0":0.0,"a1":0.0,"a2":0.0,"a3":0.0,"a4":0.0,"a5":0.0,"a6":0.0,"a7":4.67870714985}
+
+INFO:cherrypy.error:[02/Sep/2014:16:37:23] ENGINE HTTP Server cherrypy._cpwsgi_server.CPWSGIServer(('0.0.0.0', 80)) shut down
+INFO:cherrypy.error:[02/Sep/2014:16:37:23] ENGINE Stopped thread '_TimeoutMonitor'.
+INFO:cherrypy.error:[02/Sep/2014:16:37:23] ENGINE Stopped thread 'Autoreloader'.
+INFO:cherrypy.error:[02/Sep/2014:16:37:23] ENGINE Bus STOPPED
+INFO:cherrypy.error:[02/Sep/2014:16:37:23] ENGINE Bus EXITING
+INFO:cherrypy.error:[02/Sep/2014:16:37:23] ENGINE Bus EXITED
+INFO:root:02/09/2014 16:41:55 Started script
+INFO:cherrypy.error:[02/Sep/2014:16:41:55] ENGINE Bus STARTING
+INFO:cherrypy.error:[02/Sep/2014:16:41:55] ENGINE Started monitor thread '_TimeoutMonitor'.
+INFO:cherrypy.error:[02/Sep/2014:16:41:55] ENGINE Started monitor thread 'Autoreloader'.
+DEBUG:root:02/09/2014 16:41:57 Got RaspberryPi Info{"tempc":"41.2'C","disk%used":"83%","diskavailable":"276M","load":"0.09,0.38,0.49","serial":"00000000b6e2f676"}
+
+DEBUG:root:02/09/2014 16:41:57 GOT GPS: {"lat":"51.474858208","lon":"-0.035449017","time":"1995-01-17T15:41:57.000Z","alt":"77.369","speed":"0.0"}
+DEBUG:root:02/09/2014 16:41:58 Got ADC Info{"a0":0.0,"a1":0.0,"a2":0.0,"a3":0.0,"a4":0.0,"a5":0.0,"a6":0.0,"a7":4.6686777669}
+
+INFO:cherrypy.error:[02/Sep/2014:16:41:58] ENGINE Serving on http://0.0.0.0
+INFO:cherrypy.error:[02/Sep/2014:16:41:58] ENGINE Bus STARTED
+INFO:cherrypy.access.3057005520:192.168.1.100 - - [02/Sep/2014:16:41:59] "GET / HTTP/1.1" 200 1210 "" "Mozilla/5.0 (Linux; Android 4.4.2; Nexus 10 Build/KOT49H) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/36.0.1985.135 Safari/537.36"
+DEBUG:root:02/09/2014 16:42:00 Checking network connection: Bus 001 Device 015: ID 046d:c52b Logitech, Inc. Unifying Receiver
+Bus 001 Device 018: ID 12d1:14db Huawei Technologies Co., Ltd. E353/E3131
+Bus 001 Device 014: ID 067b:2303 Prolific Technology, Inc. PL2303 Serial Port
+Bus 001 Device 013: ID 0424:ec00 Standard Microsystems Corp. SMSC9512/9514 Fast Ethernet Adapter
+Bus 001 Device 012: ID 0424:9514 Standard Microsystems Corp. SMC9514 Hub
+Bus 001 Device 001: ID 1d6b:0002 Linux Foundation 2.0 root hub
+
+DEBUG:root:02/09/2014 16:42:00 Network OK
+DEBUG:root:02/09/2014 16:42:02 Got ADC Info{"a0":0.0,"a1":0.0,"a2":0.0,"a3":0.0,"a4":0.0,"a5":0.0,"a6":0.0,"a7":4.68873653281}
+
+INFO:cherrypy.access.3057005520:192.168.1.100 - - [02/Sep/2014:16:42:04] "GET / HTTP/1.1" 200 1338 "http://192.168.1.99/" "Mozilla/5.0 (Linux; Android 4.4.2; Nexus 10 Build/KOT49H) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/36.0.1985.135 Safari/537.36"
+DEBUG:root:02/09/2014 16:42:05 Got ADC Info{"a0":0.0,"a1":0.0,"a2":0.0,"a3":0.0,"a4":0.0,"a5":0.0,"a6":0.0,"a7":4.67870714985}
+
+DEBUG:root:02/09/2014 16:42:05 app.py | ValueError | GrabGPS() | NO GPS FOUND: {"class":"SKY","tag":"MID4","device":"/dev/ttyUSB0","time":"1995-01-17T15:42:05.000Z","xdop":5.21,"ydop":3.93,"vdop":5.31,"tdop":3.17,"hdop":2.20,"gdop":8.99,"pdop":8.42,"satellites":[{"PRN":27,"el":49,"az":133,"ss":29,"used":true},{"PRN":19,"el":82,"az":153,"ss":19,"used":false},{"PRN":14,"el":17,"az":105,"ss":19,"used":true},{"PRN":22,"el":49,"az":70,"ss":19,"used":true},{"PRN":11,"el":48,"az":271,"ss":26,"used":true}]}
+DEBUG:root:02/09/2014 16:42:09 Got ADC Info{"a0":0.0,"a1":0.0,"a2":0.0,"a3":0.0,"a4":0.0,"a5":0.0,"a6":0.0,"a7":4.67369245837}
+
+INFO:cherrypy.access.3057005520:192.168.1.100 - - [02/Sep/2014:16:42:09] "GET / HTTP/1.1" 200 1388 "http://192.168.1.99/" "Mozilla/5.0 (Linux; Android 4.4.2; Nexus 10 Build/KOT49H) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/36.0.1985.135 Safari/537.36"
+DEBUG:root:02/09/2014 16:42:13 Got ADC Info{"a0":0.0,"a1":0.0,"a2":0.0,"a3":0.0,"a4":0.0,"a5":0.0,"a6":0.0,"a7":4.67870714985}
+
+DEBUG:root:02/09/2014 16:42:13 GOT GPS: {"lat":"51.474858208","lon":"-0.035449017","time":"1995-01-17T15:42:13.000Z","alt":"77.369","speed":"0.0"}
+INFO:cherrypy.access.3057005520:192.168.1.100 - - [02/Sep/2014:16:42:15] "GET / HTTP/1.1" 200 1488 "http://192.168.1.99/" "Mozilla/5.0 (Linux; Android 4.4.2; Nexus 10 Build/KOT49H) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/36.0.1985.135 Safari/537.36"
+DEBUG:root:02/09/2014 16:42:17 Got ADC Info{"a0":0.0,"a1":0.0,"a2":0.0,"a3":0.0,"a4":0.0,"a5":0.0,"a6":0.0,"a7":4.68372184133}
+
+DEBUG:root:02/09/2014 16:42:17 Got RaspberryPi Info{"tempc":"40.6'C","disk%used":"83%","diskavailable":"276M","load":"0.38,0.44,0.50","serial":"00000000b6e2f676"}
+
+INFO:cherrypy.access.3057005520:192.168.1.100 - - [02/Sep/2014:16:42:20] "GET / HTTP/1.1" 200 1579 "http://192.168.1.99/" "Mozilla/5.0 (Linux; Android 4.4.2; Nexus 10 Build/KOT49H) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/36.0.1985.135 Safari/537.36"
+DEBUG:root:02/09/2014 16:42:21 GOT GPS: {"lat":"51.474858208","lon":"-0.035449017","time":"1995-01-17T15:42:20.000Z","alt":"77.369","speed":"0.0"}
+DEBUG:root:02/09/2014 16:42:21 Got ADC Info{"a0":0.0,"a1":0.0,"a2":0.0,"a3":0.0,"a4":0.0,"a5":0.0,"a6":0.0,"a7":4.65363369246}
+
+DEBUG:root:02/09/2014 16:42:23 Checking network connection: Bus 001 Device 015: ID 046d:c52b Logitech, Inc. Unifying Receiver
+Bus 001 Device 018: ID 12d1:14db Huawei Technologies Co., Ltd. E353/E3131
+Bus 001 Device 014: ID 067b:2303 Prolific Technology, Inc. PL2303 Serial Port
+Bus 001 Device 013: ID 0424:ec00 Standard Microsystems Corp. SMSC9512/9514 Fast Ethernet Adapter
+Bus 001 Device 012: ID 0424:9514 Standard Microsystems Corp. SMC9514 Hub
+Bus 001 Device 001: ID 1d6b:0002 Linux Foundation 2.0 root hub
+
+DEBUG:root:02/09/2014 16:42:23 Network OK
+DEBUG:root:02/09/2014 16:42:25 Got ADC Info{"a0":0.0,"a1":0.0,"a2":0.0,"a3":0.0,"a4":0.0,"a5":0.0,"a6":0.0,"a7":4.68121449559}
+
+INFO:cherrypy.access.3057005520:192.168.1.100 - - [02/Sep/2014:16:42:26] "GET / HTTP/1.1" 200 1808 "http://192.168.1.99/" "Mozilla/5.0 (Linux; Android 4.4.2; Nexus 10 Build/KOT49H) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/36.0.1985.135 Safari/537.36"
+INFO:root:02/09/2014 16:42:37 Started script
+INFO:cherrypy.error:[02/Sep/2014:16:42:37] ENGINE Bus STARTING
+INFO:cherrypy.error:[02/Sep/2014:16:42:37] ENGINE Started monitor thread '_TimeoutMonitor'.
+INFO:cherrypy.error:[02/Sep/2014:16:42:37] ENGINE Started monitor thread 'Autoreloader'.
+DEBUG:root:02/09/2014 16:42:38 Got RaspberryPi Info{"tempc":"41.2'C","disk%used":"83%","diskavailable":"276M","load":"0.91,0.55,0.54","serial":"00000000b6e2f676"}
+
+DEBUG:root:02/09/2014 16:42:39 app.py | ValueError | GrabGPS() | NO GPS FOUND: {"class":"TPV","tag":"MID2","device":"/dev/ttyUSB0","mode":2,"time":"1995-01-17T15:42:38.000Z","ept":0.005,"lat":51.474858208,"lon":-0.035449017,"epx":78.190,"epy":58.980,"track":0.0000,"speed":0.000,"eps":156.38}
+DEBUG:root:02/09/2014 16:42:39 Got ADC Info{"a0":0.0,"a1":0.0,"a2":0.0,"a3":0.0,"a4":0.0,"a5":0.0,"a6":0.0,"a7":4.66617042116}
+
+INFO:cherrypy.error:[02/Sep/2014:16:42:39] ENGINE Serving on http://0.0.0.0
+INFO:cherrypy.error:[02/Sep/2014:16:42:39] ENGINE Bus STARTED
+INFO:cherrypy.access.3056653264:192.168.1.100 - - [02/Sep/2014:16:42:40] "GET / HTTP/1.1" 200 1359 "" "Mozilla/5.0 (Linux; Android 4.4.2; Nexus 10 Build/KOT49H) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/36.0.1985.135 Safari/537.36"
+DEBUG:root:02/09/2014 16:42:41 Checking network connection: Bus 001 Device 015: ID 046d:c52b Logitech, Inc. Unifying Receiver
+Bus 001 Device 018: ID 12d1:14db Huawei Technologies Co., Ltd. E353/E3131
+Bus 001 Device 014: ID 067b:2303 Prolific Technology, Inc. PL2303 Serial Port
+Bus 001 Device 013: ID 0424:ec00 Standard Microsystems Corp. SMSC9512/9514 Fast Ethernet Adapter
+Bus 001 Device 012: ID 0424:9514 Standard Microsystems Corp. SMC9514 Hub
+Bus 001 Device 001: ID 1d6b:0002 Linux Foundation 2.0 root hub
+
+DEBUG:root:02/09/2014 16:42:41 Network OK
+DEBUG:root:02/09/2014 16:42:43 Got ADC Info{"a0":0.0,"a1":0.0,"a2":0.0,"a3":0.0,"a4":0.0,"a5":0.0,"a6":0.0,"a7":4.66617042116}
+
+INFO:cherrypy.access.3056653264:192.168.1.100 - - [02/Sep/2014:16:42:46] "GET / HTTP/1.1" 200 1447 "http://192.168.1.99/" "Mozilla/5.0 (Linux; Android 4.4.2; Nexus 10 Build/KOT49H) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/36.0.1985.135 Safari/537.36"
+DEBUG:root:02/09/2014 16:42:46 app.py | ValueError | GrabGPS() | NO GPS FOUND: {"class":"TPV","tag":"MID2","device":"/dev/ttyUSB0","mode":2,"time":"1995-01-17T15:42:46.000Z","ept":0.005,"lat":51.474858208,"lon":-0.035449017,"epx":78.190,"epy":58.980,"track":0.0000,"speed":0.000,"eps":156.38}
+DEBUG:root:02/09/2014 16:42:47 Got ADC Info{"a0":0.0,"a1":0.0,"a2":0.0,"a3":0.0,"a4":0.0,"a5":0.0,"a6":0.0,"a7":4.68372184133}
+
+DEBUG:root:02/09/2014 16:42:51 Got ADC Info{"a0":0.0,"a1":0.0,"a2":0.0,"a3":0.0,"a4":0.0,"a5":0.0,"a6":0.0,"a7":4.67118511263}
+
+INFO:cherrypy.access.3056653264:192.168.1.100 - - [02/Sep/2014:16:42:51] "GET / HTTP/1.1" 200 1547 "http://192.168.1.99/" "Mozilla/5.0 (Linux; Android 4.4.2; Nexus 10 Build/KOT49H) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/36.0.1985.135 Safari/537.36"
+DEBUG:root:02/09/2014 16:42:54 GOT GPS: {"lat":"51.474858208","lon":"-0.035449017","time":"1995-01-17T15:42:53.000Z","alt":"77.369","speed":"0.0"}
+DEBUG:root:02/09/2014 16:42:54 Got ADC Info{"a0":0.0,"a1":0.0,"a2":0.0,"a3":0.0,"a4":0.0,"a5":0.0,"a6":0.0,"a7":4.67870714985}
+
+INFO:cherrypy.access.3056653264:192.168.1.100 - - [02/Sep/2014:16:42:56] "GET / HTTP/1.1" 200 1597 "http://192.168.1.99/" "Mozilla/5.0 (Linux; Android 4.4.2; Nexus 10 Build/KOT49H) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/36.0.1985.135 Safari/537.36"
+INFO:cherrypy.error:[02/Sep/2014:16:42:58] ENGINE Bus STOPPING
+DEBUG:root:02/09/2014 16:42:59 Got RaspberryPi Info{"tempc":"41.2'C","disk%used":"83%","diskavailable":"276M","load":"0.87,0.56,0.54","serial":"00000000b6e2f676"}
+
+INFO:cherrypy.error:[02/Sep/2014:16:43:00] ENGINE HTTP Server cherrypy._cpwsgi_server.CPWSGIServer(('0.0.0.0', 80)) shut down
+INFO:cherrypy.error:[02/Sep/2014:16:43:00] ENGINE Stopped thread '_TimeoutMonitor'.
+INFO:cherrypy.error:[02/Sep/2014:16:43:00] ENGINE Stopped thread 'Autoreloader'.
+INFO:cherrypy.error:[02/Sep/2014:16:43:00] ENGINE Bus STOPPED
+INFO:cherrypy.error:[02/Sep/2014:16:43:00] ENGINE Bus EXITING
+INFO:cherrypy.error:[02/Sep/2014:16:43:00] ENGINE Bus EXITED
+INFO:root:02/09/2014 16:43:12 Started script
+INFO:cherrypy.error:[02/Sep/2014:16:43:12] ENGINE Bus STARTING
+INFO:cherrypy.error:[02/Sep/2014:16:43:12] ENGINE Started monitor thread '_TimeoutMonitor'.
+INFO:cherrypy.error:[02/Sep/2014:16:43:13] ENGINE Started monitor thread 'Autoreloader'.
+DEBUG:root:02/09/2014 16:43:14 Got RaspberryPi Info{"tempc":"41.7'C","disk%used":"83%","diskavailable":"276M","load":"1.23,0.65,0.57","serial":"00000000b6e2f676"}
+
+DEBUG:root:02/09/2014 16:43:14 GOT GPS: {"lat":"51.474858208","lon":"-0.035449017","time":"1995-01-17T15:43:14.000Z","alt":"77.369","speed":"0.0"}
+DEBUG:root:02/09/2014 16:43:15 Got ADC Info{"a0":0.0,"a1":0.0,"a2":0.0,"a3":0.0,"a4":0.0,"a5":0.0,"a6":0.0,"a7":4.67369245837}
+
+INFO:cherrypy.error:[02/Sep/2014:16:43:15] ENGINE Serving on http://0.0.0.0
+INFO:cherrypy.error:[02/Sep/2014:16:43:15] ENGINE Bus STARTED
+INFO:cherrypy.access.3056653264:192.168.1.100 - - [02/Sep/2014:16:43:16] "GET / HTTP/1.1" 200 1383 "" "Mozilla/5.0 (Linux; Android 4.4.2; Nexus 10 Build/KOT49H) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/36.0.1985.135 Safari/537.36"
+DEBUG:root:02/09/2014 16:43:17 Checking network connection: Bus 001 Device 015: ID 046d:c52b Logitech, Inc. Unifying Receiver
+Bus 001 Device 018: ID 12d1:14db Huawei Technologies Co., Ltd. E353/E3131
+Bus 001 Device 014: ID 067b:2303 Prolific Technology, Inc. PL2303 Serial Port
+Bus 001 Device 013: ID 0424:ec00 Standard Microsystems Corp. SMSC9512/9514 Fast Ethernet Adapter
+Bus 001 Device 012: ID 0424:9514 Standard Microsystems Corp. SMC9514 Hub
+Bus 001 Device 001: ID 1d6b:0002 Linux Foundation 2.0 root hub
+
+DEBUG:root:02/09/2014 16:43:17 Network OK
+DEBUG:root:02/09/2014 16:43:19 Got ADC Info{"a0":0.0,"a1":0.0,"a2":0.0,"a3":0.0,"a4":0.0,"a5":0.0,"a6":0.0,"a7":4.66617042116}
+
+INFO:cherrypy.access.3056653264:192.168.1.100 - - [02/Sep/2014:16:43:21] "GET / HTTP/1.1" 200 1512 "http://192.168.1.99/" "Mozilla/5.0 (Linux; Android 4.4.2; Nexus 10 Build/KOT49H) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/36.0.1985.135 Safari/537.36"
+DEBUG:root:02/09/2014 16:43:22 GOT GPS: {"lat":"51.474858208","lon":"-0.035449017","time":"1995-01-17T15:43:21.000Z","alt":"77.369","speed":"0.0"}
+DEBUG:root:02/09/2014 16:43:22 Got ADC Info{"a0":0.0,"a1":0.0,"a2":0.0,"a3":0.0,"a4":0.0,"a5":0.0,"a6":0.0,"a7":4.68372184133}
+
+DEBUG:root:02/09/2014 16:43:26 Got ADC Info{"a0":0.0,"a1":0.0,"a2":0.0,"a3":0.0,"a4":0.0,"a5":0.0,"a6":0.0,"a7":4.67118511263}
+
+INFO:cherrypy.access.3056653264:192.168.1.100 - - [02/Sep/2014:16:43:26] "GET / HTTP/1.1" 200 1603 "http://192.168.1.99/" "Mozilla/5.0 (Linux; Android 4.4.2; Nexus 10 Build/KOT49H) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/36.0.1985.135 Safari/537.36"
+DEBUG:root:02/09/2014 16:43:29 GOT GPS: {"lat":"51.474858208","lon":"-0.035449017","time":"1995-01-17T15:43:29.000Z","alt":"77.369","speed":"0.0"}
+DEBUG:root:02/09/2014 16:43:30 Got ADC Info{"a0":0.0,"a1":0.0,"a2":0.0,"a3":0.0,"a4":0.0,"a5":0.0,"a6":0.0,"a7":4.66366307542}
+
+INFO:cherrypy.access.3056653264:192.168.1.100 - - [02/Sep/2014:16:43:32] "GET / HTTP/1.1" 200 1703 "http://192.168.1.99/" "Mozilla/5.0 (Linux; Android 4.4.2; Nexus 10 Build/KOT49H) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/36.0.1985.135 Safari/537.36"
+DEBUG:root:02/09/2014 16:43:34 Got ADC Info{"a0":0.0,"a1":0.0,"a2":0.0,"a3":0.0,"a4":0.0,"a5":0.0,"a6":0.0,"a7":4.66366307542}
+
+DEBUG:root:02/09/2014 16:43:35 Got RaspberryPi Info{"tempc":"41.2'C","disk%used":"83%","diskavailable":"276M","load":"1.16,0.67,0.58","serial":"00000000b6e2f676"}
+
+DEBUG:root:02/09/2014 16:43:37 GOT GPS: {"lat":"51.474858208","lon":"-0.035449017","time":"1995-01-17T15:43:36.000Z","alt":"77.369","speed":"0.0"}
+INFO:cherrypy.access.3056653264:192.168.1.100 - - [02/Sep/2014:16:43:37] "GET / HTTP/1.1" 200 1794 "http://192.168.1.99/" "Mozilla/5.0 (Linux; Android 4.4.2; Nexus 10 Build/KOT49H) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/36.0.1985.135 Safari/537.36"
+DEBUG:root:02/09/2014 16:43:39 Got ADC Info{"a0":0.0,"a1":0.0,"a2":0.0,"a3":0.0,"a4":0.0,"a5":0.0,"a6":0.0,"a7":4.63357492654}
+
+DEBUG:root:02/09/2014 16:43:40 Checking network connection: Bus 001 Device 015: ID 046d:c52b Logitech, Inc. Unifying Receiver
+Bus 001 Device 018: ID 12d1:14db Huawei Technologies Co., Ltd. E353/E3131
+Bus 001 Device 014: ID 067b:2303 Prolific Technology, Inc. PL2303 Serial Port
+Bus 001 Device 013: ID 0424:ec00 Standard Microsystems Corp. SMSC9512/9514 Fast Ethernet Adapter
+Bus 001 Device 012: ID 0424:9514 Standard Microsystems Corp. SMC9514 Hub
+Bus 001 Device 001: ID 1d6b:0002 Linux Foundation 2.0 root hub
+
+DEBUG:root:02/09/2014 16:43:40 Network OK
+INFO:cherrypy.access.3056653264:192.168.1.100 - - [02/Sep/2014:16:43:42] "GET / HTTP/1.1" 200 1920 "http://192.168.1.99/" "Mozilla/5.0 (Linux; Android 4.4.2; Nexus 10 Build/KOT49H) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/36.0.1985.135 Safari/537.36"
+INFO:cherrypy.error:[02/Sep/2014:16:43:43] ENGINE Bus STOPPING
+INFO:cherrypy.access.3056653264:192.168.1.100 - - [02/Sep/2014:16:43:47] "GET / HTTP/1.1" 200 1973 "http://192.168.1.99/" "Mozilla/5.0 (Linux; Android 4.4.2; Nexus 10 Build/KOT49H) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/36.0.1985.135 Safari/537.36"
+INFO:cherrypy.error:[02/Sep/2014:16:43:48] ENGINE HTTP Server cherrypy._cpwsgi_server.CPWSGIServer(('0.0.0.0', 80)) shut down
+INFO:cherrypy.error:[02/Sep/2014:16:43:48] ENGINE Stopped thread '_TimeoutMonitor'.
+INFO:cherrypy.error:[02/Sep/2014:16:43:48] ENGINE Stopped thread 'Autoreloader'.
+INFO:cherrypy.error:[02/Sep/2014:16:43:48] ENGINE Bus STOPPED
+INFO:cherrypy.error:[02/Sep/2014:16:43:48] ENGINE Bus EXITING
+INFO:cherrypy.error:[02/Sep/2014:16:43:48] ENGINE Bus EXITED
+INFO:root:02/09/2014 16:43:59 Started script
+INFO:cherrypy.error:[02/Sep/2014:16:43:59] ENGINE Bus STARTING
+INFO:cherrypy.error:[02/Sep/2014:16:44:00] ENGINE Started monitor thread '_TimeoutMonitor'.
+INFO:cherrypy.error:[02/Sep/2014:16:44:00] ENGINE Started monitor thread 'Autoreloader'.
+DEBUG:root:02/09/2014 16:44:01 app.py | ValueError | GrabGPS() | NO GPS FOUND: {"class":"TPV","tag":"MID2","device":"/dev/ttyUSB0","mode":1,"time":"1995-01-17T15:44:00.000Z","ept":0.005}
+DEBUG:root:02/09/2014 16:44:01 Got RaspberryPi Info{"tempc":"42.2'C","disk%used":"83%","diskavailable":"276M","load":"1.38,0.76,0.61","serial":"00000000b6e2f676"}
+
+DEBUG:root:02/09/2014 16:44:02 Got ADC Info{"a0":0.0,"a1":0.0,"a2":0.0,"a3":0.0,"a4":0.0,"a5":0.0,"a6":0.0,"a7":4.66115572968}
+
+INFO:cherrypy.error:[02/Sep/2014:16:44:02] ENGINE Serving on http://0.0.0.0
+INFO:cherrypy.error:[02/Sep/2014:16:44:02] ENGINE Bus STARTED
+INFO:cherrypy.access.3056845776:192.168.1.100 - - [02/Sep/2014:16:44:02] "GET / HTTP/1.1" 200 1383 "" "Mozilla/5.0 (Linux; Android 4.4.2; Nexus 10 Build/KOT49H) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/36.0.1985.135 Safari/537.36"
+DEBUG:root:02/09/2014 16:44:03 Checking network connection: Bus 001 Device 015: ID 046d:c52b Logitech, Inc. Unifying Receiver
+Bus 001 Device 018: ID 12d1:14db Huawei Technologies Co., Ltd. E353/E3131
+Bus 001 Device 014: ID 067b:2303 Prolific Technology, Inc. PL2303 Serial Port
+Bus 001 Device 013: ID 0424:ec00 Standard Microsystems Corp. SMSC9512/9514 Fast Ethernet Adapter
+Bus 001 Device 012: ID 0424:9514 Standard Microsystems Corp. SMC9514 Hub
+Bus 001 Device 001: ID 1d6b:0002 Linux Foundation 2.0 root hub
+
+DEBUG:root:02/09/2014 16:44:03 Network OK
+DEBUG:root:02/09/2014 16:44:05 Got ADC Info{"a0":0.0,"a1":0.0,"a2":0.0,"a3":0.0,"a4":0.0,"a5":0.0,"a6":0.0,"a7":4.68372184133}
+
+INFO:cherrypy.access.3056845776:192.168.1.100 - - [02/Sep/2014:16:44:07] "GET / HTTP/1.1" 200 1471 "http://192.168.1.99/" "Mozilla/5.0 (Linux; Android 4.4.2; Nexus 10 Build/KOT49H) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/36.0.1985.135 Safari/537.36"
+DEBUG:root:02/09/2014 16:44:09 Got ADC Info{"a0":0.0,"a1":0.0,"a2":0.0,"a3":0.0,"a4":0.0,"a5":0.0,"a6":0.0,"a7":4.68121449559}
+
+DEBUG:root:02/09/2014 16:44:09 app.py | ValueError | GrabGPS() | NO GPS FOUND: {"class":"TPV","tag":"MID2","device":"/dev/ttyUSB0","mode":2,"time":"1995-01-17T15:44:09.000Z","ept":0.005,"lat":51.474643509,"lon":-0.035420080,"epx":78.190,"epy":58.980,"track":359.9717,"speed":0.625,"eps":14.22}
+INFO:cherrypy.access.3056845776:192.168.1.100 - - [02/Sep/2014:16:44:12] "GET / HTTP/1.1" 200 1571 "http://192.168.1.99/" "Mozilla/5.0 (Linux; Android 4.4.2; Nexus 10 Build/KOT49H) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/36.0.1985.135 Safari/537.36"
+DEBUG:root:02/09/2014 16:44:13 Got ADC Info{"a0":0.0,"a1":0.0,"a2":0.0,"a3":0.0,"a4":0.0,"a5":0.0,"a6":0.0,"a7":4.68622918707}
+
+DEBUG:root:02/09/2014 16:44:16 Got ADC Info{"a0":0.0,"a1":0.0,"a2":0.0,"a3":0.0,"a4":0.0,"a5":0.0,"a6":0.0,"a7":4.67870714985}
+
+DEBUG:root:02/09/2014 16:44:18 app.py | ValueError | GrabGPS() | NO GPS FOUND: {"class":"SKY","tag":"MID4","device":"/dev/ttyUSB0","time":"1995-01-17T15:44:17.000Z","xdop":5.21,"ydop":3.93,"vdop":5.31,"tdop":3.17,"hdop":2.20,"gdop":8.99,"pdop":8.42,"satellites":[{"PRN":27,"el":48,"az":135,"ss":29,"used":true},{"PRN":19,"el":80,"az":150,"ss":14,"used":false},{"PRN":22,"el":49,"az":69,"ss":25,"used":true},{"PRN":11,"el":49,"az":273,"ss":25,"used":true},{"PRN":16,"el":4,"az":178,"ss":18,"used":false}]}
+INFO:cherrypy.access.3056845776:192.168.1.100 - - [02/Sep/2014:16:44:18] "GET / HTTP/1.1" 200 1621 "http://192.168.1.99/" "Mozilla/5.0 (Linux; Android 4.4.2; Nexus 10 Build/KOT49H) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/36.0.1985.135 Safari/537.36"
+DEBUG:root:02/09/2014 16:44:20 Got ADC Info{"a0":0.0,"a1":0.0,"a2":0.0,"a3":0.0,"a4":0.0,"a5":0.0,"a6":0.0,"a7":4.68372184133}
+
+DEBUG:root:02/09/2014 16:44:22 Got RaspberryPi Info{"tempc":"41.2'C","disk%used":"83%","diskavailable":"276M","load":"1.42,0.81,0.63","serial":"00000000b6e2f676"}
+
+INFO:cherrypy.access.3056845776:192.168.1.100 - - [02/Sep/2014:16:44:23] "GET / HTTP/1.1" 200 1671 "http://192.168.1.99/" "Mozilla/5.0 (Linux; Android 4.4.2; Nexus 10 Build/KOT49H) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/36.0.1985.135 Safari/537.36"
+DEBUG:root:02/09/2014 16:44:24 Got ADC Info{"a0":0.0,"a1":0.0,"a2":0.0,"a3":0.0,"a4":0.0,"a5":0.0,"a6":0.0,"a7":4.67118511263}
+
+DEBUG:root:02/09/2014 16:44:25 GOT GPS: {"lat":"51.474910432","lon":"-0.035449132","time":"1995-01-17T15:44:25.000Z","alt":"63.795","speed":"0.145"}
+DEBUG:root:02/09/2014 16:44:26 Checking network connection: Bus 001 Device 015: ID 046d:c52b Logitech, Inc. Unifying Receiver
+Bus 001 Device 018: ID 12d1:14db Huawei Technologies Co., Ltd. E353/E3131
+Bus 001 Device 014: ID 067b:2303 Prolific Technology, Inc. PL2303 Serial Port
+Bus 001 Device 013: ID 0424:ec00 Standard Microsystems Corp. SMSC9512/9514 Fast Ethernet Adapter
+Bus 001 Device 012: ID 0424:9514 Standard Microsystems Corp. SMC9514 Hub
+Bus 001 Device 001: ID 1d6b:0002 Linux Foundation 2.0 root hub
+
+DEBUG:root:02/09/2014 16:44:26 Network OK
+DEBUG:root:02/09/2014 16:44:28 Got ADC Info{"a0":0.0,"a1":0.0,"a2":0.0,"a3":0.0,"a4":0.0,"a5":0.0,"a6":0.0,"a7":4.67369245837}
+
+INFO:cherrypy.access.3056845776:192.168.1.100 - - [02/Sep/2014:16:44:28] "GET / HTTP/1.1" 200 1806 "http://192.168.1.99/" "Mozilla/5.0 (Linux; Android 4.4.2; Nexus 10 Build/KOT49H) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/36.0.1985.135 Safari/537.36"
+DEBUG:root:02/09/2014 16:44:32 Got ADC Info{"a0":0.0,"a1":0.0,"a2":0.0,"a3":0.0,"a4":0.0,"a5":0.0,"a6":0.0,"a7":4.67369245837}
+
+DEBUG:root:02/09/2014 16:44:33 GOT GPS: {"lat":"51.474910021","lon":"-0.035463418","time":"1995-01-17T15:44:32.000Z","alt":"83.005","speed":"0.186"}
+INFO:cherrypy.access.3056845776:192.168.1.100 - - [02/Sep/2014:16:44:34] "GET / HTTP/1.1" 200 1902 "http://192.168.1.99/" "Mozilla/5.0 (Linux; Android 4.4.2; Nexus 10 Build/KOT49H) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/36.0.1985.135 Safari/537.36"
+DEBUG:root:02/09/2014 16:44:36 Got ADC Info{"a0":0.0,"a1":0.0,"a2":0.0,"a3":0.0,"a4":0.0,"a5":0.0,"a6":0.0,"a7":4.67619980411}
+
+INFO:cherrypy.access.3056845776:192.168.1.100 - - [02/Sep/2014:16:44:39] "GET / HTTP/1.1" 200 1995 "http://192.168.1.99/" "Mozilla/5.0 (Linux; Android 4.4.2; Nexus 10 Build/KOT49H) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/36.0.1985.135 Safari/537.36"
+DEBUG:root:02/09/2014 16:44:40 Got ADC Info{"a0":0.0,"a1":0.0,"a2":0.0,"a3":0.0,"a4":0.0,"a5":0.0,"a6":0.0,"a7":4.68622918707}
+
+DEBUG:root:02/09/2014 16:44:40 GOT GPS: {"lat":"51.474906127","lon":"-0.035463498","time":"1995-01-17T15:44:40.000Z","alt":"68.011","speed":"0.098"}
+DEBUG:root:02/09/2014 16:44:42 Got RaspberryPi Info{"tempc":"41.2'C","disk%used":"83%","diskavailable":"276M","load":"1.01,0.76,0.62","serial":"00000000b6e2f676"}
+
+DEBUG:root:02/09/2014 16:44:43 Got ADC Info{"a0":0.0,"a1":0.0,"a2":0.0,"a3":0.0,"a4":0.0,"a5":0.0,"a6":0.0,"a7":4.68121449559}
+
+INFO:cherrypy.access.3056845776:192.168.1.100 - - [02/Sep/2014:16:44:44] "GET / HTTP/1.1" 200 2045 "http://192.168.1.99/" "Mozilla/5.0 (Linux; Android 4.4.2; Nexus 10 Build/KOT49H) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/36.0.1985.135 Safari/537.36"
+DEBUG:root:02/09/2014 16:44:48 GOT GPS: {"lat":"51.474942596","lon":"-0.035420338","time":"1995-01-17T15:44:47.000Z","alt":"69.894","speed":"0.839"}
+DEBUG:root:02/09/2014 16:44:48 Got ADC Info{"a0":0.0,"a1":0.0,"a2":0.0,"a3":0.0,"a4":0.0,"a5":0.0,"a6":0.0,"a7":4.67118511263}
+
+DEBUG:root:02/09/2014 16:44:50 Checking network connection: Bus 001 Device 015: ID 046d:c52b Logitech, Inc. Unifying Receiver
+Bus 001 Device 018: ID 12d1:14db Huawei Technologies Co., Ltd. E353/E3131
+Bus 001 Device 014: ID 067b:2303 Prolific Technology, Inc. PL2303 Serial Port
+Bus 001 Device 013: ID 0424:ec00 Standard Microsystems Corp. SMSC9512/9514 Fast Ethernet Adapter
+Bus 001 Device 012: ID 0424:9514 Standard Microsystems Corp. SMC9514 Hub
+Bus 001 Device 001: ID 1d6b:0002 Linux Foundation 2.0 root hub
+
+DEBUG:root:02/09/2014 16:44:50 Network OK
+INFO:cherrypy.access.3056845776:192.168.1.100 - - [02/Sep/2014:16:44:50] "GET / HTTP/1.1" 200 2223 "http://192.168.1.99/" "Mozilla/5.0 (Linux; Android 4.4.2; Nexus 10 Build/KOT49H) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/36.0.1985.135 Safari/537.36"
+DEBUG:root:02/09/2014 16:44:52 Got ADC Info{"a0":0.0,"a1":0.0,"a2":0.0,"a3":0.0,"a4":0.0,"a5":0.0,"a6":0.0,"a7":4.66617042116}
+
+INFO:cherrypy.access.3056845776:192.168.1.100 - - [02/Sep/2014:16:44:55] "GET / HTTP/1.1" 200 2369 "http://192.168.1.99/" "Mozilla/5.0 (Linux; Android 4.4.2; Nexus 10 Build/KOT49H) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/36.0.1985.135 Safari/537.36"
+DEBUG:root:02/09/2014 16:44:55 GOT GPS: {"lat":"51.47494975","lon":"-0.035463561","time":"1995-01-17T15:44:55.000Z","alt":"62.869","speed":"0.43"}
+DEBUG:root:02/09/2014 16:44:55 Got ADC Info{"a0":0.0,"a1":0.0,"a2":0.0,"a3":0.0,"a4":0.0,"a5":0.0,"a6":0.0,"a7":4.67369245837}
+
+DEBUG:root:02/09/2014 16:44:59 Got ADC Info{"a0":0.0,"a1":0.0,"a2":0.0,"a3":0.0,"a4":0.0,"a5":0.0,"a6":0.0,"a7":4.67619980411}
+
+INFO:cherrypy.access.3056845776:192.168.1.100 - - [02/Sep/2014:16:45:00] "GET / HTTP/1.1" 200 2510 "http://192.168.1.99/" "Mozilla/5.0 (Linux; Android 4.4.2; Nexus 10 Build/KOT49H) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/36.0.1985.135 Safari/537.36"
+DEBUG:root:02/09/2014 16:45:03 GOT GPS: {"lat":"51.474951175","lon":"-0.035492355","time":"1995-01-17T15:45:02.000Z","alt":"61.464","speed":"0.284"}
+DEBUG:root:02/09/2014 16:45:03 Got ADC Info{"a0":0.0,"a1":0.0,"a2":0.0,"a3":0.0,"a4":0.0,"a5":0.0,"a6":0.0,"a7":4.66617042116}
+
+DEBUG:root:02/09/2014 16:45:03 Got RaspberryPi Info{"tempc":"41.2'C","disk%used":"83%","diskavailable":"276M","load":"1.03,0.78,0.63","serial":"00000000b6e2f676"}
+
+INFO:cherrypy.access.3056845776:192.168.1.100 - - [02/Sep/2014:16:45:06] "GET / HTTP/1.1" 200 2638 "http://192.168.1.99/" "Mozilla/5.0 (Linux; Android 4.4.2; Nexus 10 Build/KOT49H) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/36.0.1985.135 Safari/537.36"
+DEBUG:root:02/09/2014 16:45:06 Got ADC Info{"a0":0.0,"a1":0.0,"a2":0.0,"a3":0.0,"a4":0.0,"a5":0.0,"a6":0.0,"a7":4.68622918707}
+
+DEBUG:root:02/09/2014 16:45:10 GOT GPS: {"lat":"51.474840089","lon":"-0.035535399","time":"1995-01-17T15:45:10.000Z","alt":"70.026","speed":"0.254"}
+DEBUG:root:02/09/2014 16:45:11 Got ADC Info{"a0":0.0,"a1":0.0,"a2":0.0,"a3":0.0,"a4":0.0,"a5":0.0,"a6":0.0,"a7":4.66617042116}
+
+INFO:cherrypy.access.3056845776:192.168.1.100 - - [02/Sep/2014:16:45:11] "GET / HTTP/1.1" 200 2688 "http://192.168.1.99/" "Mozilla/5.0 (Linux; Android 4.4.2; Nexus 10 Build/KOT49H) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/36.0.1985.135 Safari/537.36"
+DEBUG:root:02/09/2014 16:45:12 Checking network connection: Bus 001 Device 015: ID 046d:c52b Logitech, Inc. Unifying Receiver
+Bus 001 Device 018: ID 12d1:14db Huawei Technologies Co., Ltd. E353/E3131
+Bus 001 Device 014: ID 067b:2303 Prolific Technology, Inc. PL2303 Serial Port
+Bus 001 Device 013: ID 0424:ec00 Standard Microsystems Corp. SMSC9512/9514 Fast Ethernet Adapter
+Bus 001 Device 012: ID 0424:9514 Standard Microsystems Corp. SMC9514 Hub
+Bus 001 Device 001: ID 1d6b:0002 Linux Foundation 2.0 root hub
+
+DEBUG:root:02/09/2014 16:45:12 Network OK
+DEBUG:root:02/09/2014 16:45:14 Got ADC Info{"a0":0.0,"a1":0.0,"a2":0.0,"a3":0.0,"a4":0.0,"a5":0.0,"a6":0.0,"a7":4.67870714985}
+
+INFO:cherrypy.access.3056845776:192.168.1.100 - - [02/Sep/2014:16:45:16] "GET / HTTP/1.1" 200 2834 "http://192.168.1.99/" "Mozilla/5.0 (Linux; Android 4.4.2; Nexus 10 Build/KOT49H) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/36.0.1985.135 Safari/537.36"
+DEBUG:root:02/09/2014 16:45:18 GOT GPS: {"lat":"51.474818733","lon":"-0.035506516","time":"1995-01-17T15:45:17.000Z","alt":"84.7","speed":"0.267"}
+DEBUG:root:02/09/2014 16:45:18 Got ADC Info{"a0":0.0,"a1":0.0,"a2":0.0,"a3":0.0,"a4":0.0,"a5":0.0,"a6":0.0,"a7":4.67619980411}
+
+INFO:cherrypy.access.3056845776:192.168.1.100 - - [02/Sep/2014:16:45:22] "GET / HTTP/1.1" 200 2925 "http://192.168.1.99/" "Mozilla/5.0 (Linux; Android 4.4.2; Nexus 10 Build/KOT49H) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/36.0.1985.135 Safari/537.36"
+DEBUG:root:02/09/2014 16:45:22 Got ADC Info{"a0":0.0,"a1":0.0,"a2":0.0,"a3":0.0,"a4":0.0,"a5":0.0,"a6":0.0,"a7":4.67118511263}
+
+DEBUG:root:02/09/2014 16:45:24 Got RaspberryPi Info{"tempc":"41.2'C","disk%used":"83%","diskavailable":"276M","load":"1.03,0.79,0.64","serial":"00000000b6e2f676"}
+
+DEBUG:root:02/09/2014 16:45:25 app.py | ValueError | GrabGPS() | NO GPS FOUND: {"class":"TPV","tag":"MID2","device":"/dev/ttyUSB0","mode":2,"time":"1995-01-17T15:45:25.000Z","ept":0.005,"lat":51.474815997,"lon":-0.035520926,"epx":78.190,"epy":58.980,"track":58.0629,"speed":0.147,"eps":156.38}
+DEBUG:root:02/09/2014 16:45:26 Got ADC Info{"a0":0.0,"a1":0.0,"a2":0.0,"a3":0.0,"a4":0.0,"a5":0.0,"a6":0.0,"a7":4.67118511263}
+
+INFO:cherrypy.access.3056845776:192.168.1.100 - - [02/Sep/2014:16:45:27] "GET / HTTP/1.1" 200 3010 "http://192.168.1.99/" "Mozilla/5.0 (Linux; Android 4.4.2; Nexus 10 Build/KOT49H) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/36.0.1985.135 Safari/537.36"
+DEBUG:root:02/09/2014 16:45:29 Got ADC Info{"a0":0.0,"a1":0.0,"a2":0.0,"a3":0.0,"a4":0.0,"a5":0.0,"a6":0.0,"a7":4.65864838394}
+
+INFO:cherrypy.access.3056845776:192.168.1.100 - - [02/Sep/2014:16:45:32] "GET / HTTP/1.1" 200 3110 "http://192.168.1.99/" "Mozilla/5.0 (Linux; Android 4.4.2; Nexus 10 Build/KOT49H) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/36.0.1985.135 Safari/537.36"
+DEBUG:root:02/09/2014 16:45:33 app.py | ValueError | GrabGPS() | NO GPS FOUND: {"class":"TPV","tag":"MID2","device":"/dev/ttyUSB0","mode":1,"time":"1995-01-17T15:45:32.000Z","ept":0.005}
+DEBUG:root:02/09/2014 16:45:34 Got ADC Info{"a0":0.0,"a1":0.0,"a2":0.0,"a3":0.0,"a4":0.0,"a5":0.0,"a6":0.0,"a7":4.6561410382}
+
+DEBUG:root:02/09/2014 16:45:35 Checking network connection: Bus 001 Device 015: ID 046d:c52b Logitech, Inc. Unifying Receiver
+Bus 001 Device 018: ID 12d1:14db Huawei Technologies Co., Ltd. E353/E3131
+Bus 001 Device 014: ID 067b:2303 Prolific Technology, Inc. PL2303 Serial Port
+Bus 001 Device 013: ID 0424:ec00 Standard Microsystems Corp. SMSC9512/9514 Fast Ethernet Adapter
+Bus 001 Device 012: ID 0424:9514 Standard Microsystems Corp. SMC9514 Hub
+Bus 001 Device 001: ID 1d6b:0002 Linux Foundation 2.0 root hub
+
+DEBUG:root:02/09/2014 16:45:35 Network OK
+DEBUG:root:02/09/2014 16:45:37 Got ADC Info{"a0":0.0,"a1":0.0,"a2":0.0,"a3":0.0,"a4":0.0,"a5":0.0,"a6":0.0,"a7":4.68372184133}
+
+INFO:cherrypy.access.3056845776:192.168.1.100 - - [02/Sep/2014:16:45:38] "GET / HTTP/1.1" 200 3159 "http://192.168.1.99/" "Mozilla/5.0 (Linux; Android 4.4.2; Nexus 10 Build/KOT49H) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/36.0.1985.135 Safari/537.36"
+DEBUG:root:02/09/2014 16:45:40 app.py | ValueError | GrabGPS() | NO GPS FOUND: {"class":"TPV","tag":"MID2","device":"/dev/ttyUSB0","mode":1,"time":"1995-01-17T15:45:40.000Z","ept":0.005}
+DEBUG:root:02/09/2014 16:45:41 Got ADC Info{"a0":0.0,"a1":0.0,"a2":0.0,"a3":0.0,"a4":0.0,"a5":0.0,"a6":0.0,"a7":4.68121449559}
+
+INFO:cherrypy.access.3056845776:192.168.1.100 - - [02/Sep/2014:16:45:43] "GET / HTTP/1.1" 200 3212 "http://192.168.1.99/" "Mozilla/5.0 (Linux; Android 4.4.2; Nexus 10 Build/KOT49H) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/36.0.1985.135 Safari/537.36"
+DEBUG:root:02/09/2014 16:45:45 Got RaspberryPi Info{"tempc":"41.2'C","disk%used":"83%","diskavailable":"276M","load":"1.01,0.81,0.64","serial":"00000000b6e2f676"}
+
+DEBUG:root:02/09/2014 16:45:46 Got ADC Info{"a0":0.0,"a1":0.0,"a2":0.0,"a3":0.0,"a4":0.0,"a5":0.0,"a6":0.0,"a7":4.67369245837}
+
+DEBUG:root:02/09/2014 16:45:48 app.py | ValueError | GrabGPS() | NO GPS FOUND: {"class":"TPV","tag":"MID2","device":"/dev/ttyUSB0","mode":1,"time":"1995-01-17T15:45:47.000Z","ept":0.005}
+INFO:cherrypy.access.3056845776:192.168.1.100 - - [02/Sep/2014:16:45:48] "GET / HTTP/1.1" 200 3262 "http://192.168.1.99/" "Mozilla/5.0 (Linux; Android 4.4.2; Nexus 10 Build/KOT49H) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/36.0.1985.135 Safari/537.36"
+DEBUG:root:02/09/2014 16:45:49 Got ADC Info{"a0":0.0,"a1":0.0,"a2":0.0,"a3":0.0,"a4":0.0,"a5":0.0,"a6":0.0,"a7":4.67118511263}
+
+DEBUG:root:02/09/2014 16:45:53 Got ADC Info{"a0":0.0,"a1":0.0,"a2":0.0,"a3":0.0,"a4":0.0,"a5":0.0,"a6":0.0,"a7":4.67369245837}
+
+INFO:cherrypy.access.3056845776:192.168.1.100 - - [02/Sep/2014:16:45:54] "GET / HTTP/1.1" 200 3397 "http://192.168.1.99/" "Mozilla/5.0 (Linux; Android 4.4.2; Nexus 10 Build/KOT49H) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/36.0.1985.135 Safari/537.36"
+DEBUG:root:02/09/2014 16:45:55 app.py | ValueError | GrabGPS() | NO GPS FOUND: {"class":"TPV","tag":"MID2","device":"/dev/ttyUSB0","mode":1,"time":"1995-01-17T15:45:55.000Z","ept":0.005}
+DEBUG:root:02/09/2014 16:45:57 Got ADC Info{"a0":0.0,"a1":0.0,"a2":0.0,"a3":0.0,"a4":0.0,"a5":0.0,"a6":0.0,"a7":4.67369245837}
+
+DEBUG:root:02/09/2014 16:45:59 Checking network connection: Bus 001 Device 015: ID 046d:c52b Logitech, Inc. Unifying Receiver
+Bus 001 Device 018: ID 12d1:14db Huawei Technologies Co., Ltd. E353/E3131
+Bus 001 Device 014: ID 067b:2303 Prolific Technology, Inc. PL2303 Serial Port
+Bus 001 Device 013: ID 0424:ec00 Standard Microsystems Corp. SMSC9512/9514 Fast Ethernet Adapter
+Bus 001 Device 012: ID 0424:9514 Standard Microsystems Corp. SMC9514 Hub
+Bus 001 Device 001: ID 1d6b:0002 Linux Foundation 2.0 root hub
+
+DEBUG:root:02/09/2014 16:45:59 Network OK
+INFO:cherrypy.access.3056845776:192.168.1.100 - - [02/Sep/2014:16:45:59] "GET / HTTP/1.1" 200 3447 "http://192.168.1.99/" "Mozilla/5.0 (Linux; Android 4.4.2; Nexus 10 Build/KOT49H) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/36.0.1985.135 Safari/537.36"
+DEBUG:root:02/09/2014 16:46:01 Got ADC Info{"a0":0.0,"a1":0.0,"a2":0.0,"a3":0.0,"a4":0.0,"a5":0.0,"a6":0.0,"a7":4.67870714985}
+
+DEBUG:root:02/09/2014 16:46:03 app.py | ValueError | GrabGPS() | NO GPS FOUND: {"class":"TPV","tag":"MID2","device":"/dev/ttyUSB0","mode":1,"time":"1995-01-17T15:46:02.000Z","ept":0.005}
+INFO:cherrypy.access.3056845776:192.168.1.100 - - [02/Sep/2014:16:46:04] "GET / HTTP/1.1" 200 3500 "http://192.168.1.99/" "Mozilla/5.0 (Linux; Android 4.4.2; Nexus 10 Build/KOT49H) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/36.0.1985.135 Safari/537.36"
+DEBUG:root:02/09/2014 16:46:05 Got ADC Info{"a0":0.0,"a1":0.0,"a2":0.0,"a3":0.0,"a4":0.0,"a5":0.0,"a6":0.0,"a7":4.67619980411}
+
+DEBUG:root:02/09/2014 16:46:06 Got RaspberryPi Info{"tempc":"41.7'C","disk%used":"83%","diskavailable":"276M","load":"0.94,0.80,0.65","serial":"00000000b6e2f676"}
+
+DEBUG:root:02/09/2014 16:46:09 Got ADC Info{"a0":0.0,"a1":0.0,"a2":0.0,"a3":0.0,"a4":0.0,"a5":0.0,"a6":0.0,"a7":4.67369245837}
+
+INFO:cherrypy.access.3056845776:192.168.1.100 - - [02/Sep/2014:16:46:09] "GET / HTTP/1.1" 200 3600 "http://192.168.1.99/" "Mozilla/5.0 (Linux; Android 4.4.2; Nexus 10 Build/KOT49H) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/36.0.1985.135 Safari/537.36"
+DEBUG:root:02/09/2014 16:46:10 app.py | ValueError | GrabGPS() | NO GPS FOUND: {"class":"TPV","tag":"MID2","device":"/dev/ttyUSB0","mode":2,"time":"1995-01-17T15:46:10.000Z","ept":0.005,"lat":51.474852671,"lon":-0.035693727,"epx":78.190,"epy":58.980,"track":264.9774,"speed":0.251,"eps":156.38}
+DEBUG:root:02/09/2014 16:46:13 Got ADC Info{"a0":0.0,"a1":0.0,"a2":0.0,"a3":0.0,"a4":0.0,"a5":0.0,"a6":0.0,"a7":4.67369245837}
+
+INFO:cherrypy.access.3056845776:192.168.1.100 - - [02/Sep/2014:16:46:15] "GET / HTTP/1.1" 200 3685 "http://192.168.1.99/" "Mozilla/5.0 (Linux; Android 4.4.2; Nexus 10 Build/KOT49H) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/36.0.1985.135 Safari/537.36"
+DEBUG:root:02/09/2014 16:46:17 Got ADC Info{"a0":0.0,"a1":0.0,"a2":0.0,"a3":0.0,"a4":0.0,"a5":0.0,"a6":0.0,"a7":4.67870714985}
+
+DEBUG:root:02/09/2014 16:46:18 GOT GPS: {"lat":"51.47487509","lon":"-0.035607371","time":"1995-01-17T15:46:17.000Z","alt":"73.317","speed":"0.269"}
+INFO:cherrypy.access.3056845776:192.168.1.100 - - [02/Sep/2014:16:46:20] "GET / HTTP/1.1" 200 3735 "http://192.168.1.99/" "Mozilla/5.0 (Linux; Android 4.4.2; Nexus 10 Build/KOT49H) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/36.0.1985.135 Safari/537.36"
+DEBUG:root:02/09/2014 16:46:21 Got ADC Info{"a0":0.0,"a1":0.0,"a2":0.0,"a3":0.0,"a4":0.0,"a5":0.0,"a6":0.0,"a7":4.65864838394}
+
+DEBUG:root:02/09/2014 16:46:21 Checking network connection: Bus 001 Device 015: ID 046d:c52b Logitech, Inc. Unifying Receiver
+Bus 001 Device 018: ID 12d1:14db Huawei Technologies Co., Ltd. E353/E3131
+Bus 001 Device 014: ID 067b:2303 Prolific Technology, Inc. PL2303 Serial Port
+Bus 001 Device 013: ID 0424:ec00 Standard Microsystems Corp. SMSC9512/9514 Fast Ethernet Adapter
+Bus 001 Device 012: ID 0424:9514 Standard Microsystems Corp. SMC9514 Hub
+Bus 001 Device 001: ID 1d6b:0002 Linux Foundation 2.0 root hub
+
+DEBUG:root:02/09/2014 16:46:21 Network OK
+DEBUG:root:02/09/2014 16:46:24 Got ADC Info{"a0":0.0,"a1":0.0,"a2":0.0,"a3":0.0,"a4":0.0,"a5":0.0,"a6":0.0,"a7":4.65363369246}
+
+INFO:cherrypy.access.3056845776:192.168.1.100 - - [02/Sep/2014:16:46:25] "GET / HTTP/1.1" 200 3880 "http://192.168.1.99/" "Mozilla/5.0 (Linux; Android 4.4.2; Nexus 10 Build/KOT49H) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/36.0.1985.135 Safari/537.36"
+DEBUG:root:02/09/2014 16:46:26 GOT GPS: {"lat":"51.474974962","lon":"-0.035621898","time":"1995-01-17T15:46:26.000Z","alt":"63.192","speed":"0.254"}
+DEBUG:root:02/09/2014 16:46:27 Got RaspberryPi Info{"tempc":"41.2'C","disk%used":"83%","diskavailable":"276M","load":"0.88,0.80,0.65","serial":"00000000b6e2f676"}
+
+DEBUG:root:02/09/2014 16:46:28 Got ADC Info{"a0":0.0,"a1":0.0,"a2":0.0,"a3":0.0,"a4":0.0,"a5":0.0,"a6":0.0,"a7":4.68622918707}
+
+INFO:cherrypy.access.3056845776:192.168.1.100 - - [02/Sep/2014:16:46:30] "GET / HTTP/1.1" 200 3930 "http://192.168.1.99/" "Mozilla/5.0 (Linux; Android 4.4.2; Nexus 10 Build/KOT49H) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/36.0.1985.135 Safari/537.36"
+DEBUG:root:02/09/2014 16:46:31 Got ADC Info{"a0":0.0,"a1":0.0,"a2":0.0,"a3":0.0,"a4":0.0,"a5":0.0,"a6":0.0,"a7":4.68121449559}
+
+DEBUG:root:02/09/2014 16:46:34 app.py | ValueError | GrabGPS() | NO GPS FOUND: {"class":"SKY","tag":"MID4","device":"/dev/ttyUSB0","time":"1995-01-17T15:46:34.000Z","xdop":5.21,"ydop":3.93,"vdop":5.31,"tdop":3.17,"hdop":2.00,"gdop":8.99,"pdop":8.42,"satellites":[{"PRN":27,"el":46,"az":135,"ss":14,"used":true},{"PRN":19,"el":79,"az":148,"ss":16,"used":false},{"PRN":22,"el":48,"az":67,"ss":23,"used":true},{"PRN":32,"el":28,"az":193,"ss":17,"used":false},{"PRN":14,"el":19,"az":103,"ss":14,"used":true},{"PRN":11,"el":50,"az":273,"ss":22,"used":true}]}
+DEBUG:root:02/09/2014 16:46:35 Got ADC Info{"a0":0.0,"a1":0.0,"a2":0.0,"a3":0.0,"a4":0.0,"a5":0.0,"a6":0.0,"a7":4.67619980411}
+
+INFO:cherrypy.access.3056845776:192.168.1.100 - - [02/Sep/2014:16:46:36] "GET / HTTP/1.1" 200 4058 "http://192.168.1.99/" "Mozilla/5.0 (Linux; Android 4.4.2; Nexus 10 Build/KOT49H) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/36.0.1985.135 Safari/537.36"
+DEBUG:root:02/09/2014 16:46:39 Got ADC Info{"a0":0.0,"a1":0.0,"a2":0.0,"a3":0.0,"a4":0.0,"a5":0.0,"a6":0.0,"a7":4.68622918707}
+
+INFO:cherrypy.access.3056845776:192.168.1.100 - - [02/Sep/2014:16:46:41] "GET / HTTP/1.1" 200 4158 "http://192.168.1.99/" "Mozilla/5.0 (Linux; Android 4.4.2; Nexus 10 Build/KOT49H) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/36.0.1985.135 Safari/537.36"
+DEBUG:root:02/09/2014 16:46:42 GOT GPS: {"lat":"51.475377176","lon":"-0.035708774","time":"1995-01-17T15:46:42.000Z","alt":"26.286","speed":"0.712"}
+DEBUG:root:02/09/2014 16:46:43 Got ADC Info{"a0":0.0,"a1":0.0,"a2":0.0,"a3":0.0,"a4":0.0,"a5":0.0,"a6":0.0,"a7":4.64861900098}
+
+DEBUG:root:02/09/2014 16:46:44 Checking network connection: Bus 001 Device 015: ID 046d:c52b Logitech, Inc. Unifying Receiver
+Bus 001 Device 018: ID 12d1:14db Huawei Technologies Co., Ltd. E353/E3131
+Bus 001 Device 014: ID 067b:2303 Prolific Technology, Inc. PL2303 Serial Port
+Bus 001 Device 013: ID 0424:ec00 Standard Microsystems Corp. SMSC9512/9514 Fast Ethernet Adapter
+Bus 001 Device 012: ID 0424:9514 Standard Microsystems Corp. SMC9514 Hub
+Bus 001 Device 001: ID 1d6b:0002 Linux Foundation 2.0 root hub
+
+DEBUG:root:02/09/2014 16:46:44 Network OK
+DEBUG:root:02/09/2014 16:46:47 Got ADC Info{"a0":0.0,"a1":0.0,"a2":0.0,"a3":0.0,"a4":0.0,"a5":0.0,"a6":0.0,"a7":4.67118511263}
+
+INFO:cherrypy.access.3056845776:192.168.1.100 - - [02/Sep/2014:16:46:47] "GET / HTTP/1.1" 200 4208 "http://192.168.1.99/" "Mozilla/5.0 (Linux; Android 4.4.2; Nexus 10 Build/KOT49H) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/36.0.1985.135 Safari/537.36"
+DEBUG:root:02/09/2014 16:46:48 Got RaspberryPi Info{"tempc":"41.7'C","disk%used":"83%","diskavailable":"276M","load":"0.87,0.80,0.65","serial":"00000000b6e2f676"}
+
+DEBUG:root:02/09/2014 16:46:50 GOT GPS: {"lat":"51.475111544","lon":"-0.035694086","time":"1995-01-17T15:46:49.000Z","alt":"42.146","speed":"0.82"}
+DEBUG:root:02/09/2014 16:46:50 Got ADC Info{"a0":0.0,"a1":0.0,"a2":0.0,"a3":0.0,"a4":0.0,"a5":0.0,"a6":0.0,"a7":4.68372184133}
+
+INFO:cherrypy.access.3056845776:192.168.1.100 - - [02/Sep/2014:16:46:52] "GET / HTTP/1.1" 200 4481 "http://192.168.1.99/" "Mozilla/5.0 (Linux; Android 4.4.2; Nexus 10 Build/KOT49H) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/36.0.1985.135 Safari/537.36"
+DEBUG:root:02/09/2014 16:46:54 Got ADC Info{"a0":0.0,"a1":0.0,"a2":0.0,"a3":0.0,"a4":0.0,"a5":0.0,"a6":0.0,"a7":4.62605288932}
+
+DEBUG:root:02/09/2014 16:46:57 GOT GPS: {"lat":"51.475029904","lon":"-0.035665175","time":"1995-01-17T15:46:57.000Z","alt":"53.212","speed":"0.127"}
+INFO:cherrypy.access.3056845776:192.168.1.100 - - [02/Sep/2014:16:46:58] "GET / HTTP/1.1" 200 4531 "http://192.168.1.99/" "Mozilla/5.0 (Linux; Android 4.4.2; Nexus 10 Build/KOT49H) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/36.0.1985.135 Safari/537.36"
+DEBUG:root:02/09/2014 16:46:58 Got ADC Info{"a0":0.0,"a1":0.0,"a2":0.0,"a3":0.0,"a4":0.0,"a5":0.0,"a6":0.0,"a7":4.6561410382}
+
+DEBUG:root:02/09/2014 16:47:01 Got ADC Info{"a0":0.0,"a1":0.0,"a2":0.0,"a3":0.0,"a4":0.0,"a5":0.0,"a6":0.0,"a7":4.67619980411}
+
+INFO:cherrypy.access.3056845776:192.168.1.100 - - [02/Sep/2014:16:47:03] "GET / HTTP/1.1" 200 4673 "http://192.168.1.99/" "Mozilla/5.0 (Linux; Android 4.4.2; Nexus 10 Build/KOT49H) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/36.0.1985.135 Safari/537.36"
+DEBUG:root:02/09/2014 16:47:05 GOT GPS: {"lat":"51.474951136","lon":"-0.035621889","time":"1995-01-17T15:47:04.000Z","alt":"61.468","speed":"0.43"}
+DEBUG:root:02/09/2014 16:47:06 Got ADC Info{"a0":0.0,"a1":0.0,"a2":0.0,"a3":0.0,"a4":0.0,"a5":0.0,"a6":0.0,"a7":4.66617042116}
+
+DEBUG:root:02/09/2014 16:47:08 Checking network connection: Bus 001 Device 015: ID 046d:c52b Logitech, Inc. Unifying Receiver
+Bus 001 Device 018: ID 12d1:14db Huawei Technologies Co., Ltd. E353/E3131
+Bus 001 Device 014: ID 067b:2303 Prolific Technology, Inc. PL2303 Serial Port
+Bus 001 Device 013: ID 0424:ec00 Standard Microsystems Corp. SMSC9512/9514 Fast Ethernet Adapter
+Bus 001 Device 012: ID 0424:9514 Standard Microsystems Corp. SMC9514 Hub
+Bus 001 Device 001: ID 1d6b:0002 Linux Foundation 2.0 root hub
+
+DEBUG:root:02/09/2014 16:47:08 Network OK
+INFO:cherrypy.access.3056845776:192.168.1.100 - - [02/Sep/2014:16:47:08] "GET / HTTP/1.1" 200 4765 "http://192.168.1.99/" "Mozilla/5.0 (Linux; Android 4.4.2; Nexus 10 Build/KOT49H) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/36.0.1985.135 Safari/537.36"
+DEBUG:root:02/09/2014 16:47:08 Got RaspberryPi Info{"tempc":"41.7'C","disk%used":"83%","diskavailable":"276M","load":"0.88,0.80,0.66","serial":"00000000b6e2f676"}
+
+DEBUG:root:02/09/2014 16:47:09 Got ADC Info{"a0":0.0,"a1":0.0,"a2":0.0,"a3":0.0,"a4":0.0,"a5":0.0,"a6":0.0,"a7":4.68121449559}
+
+DEBUG:root:02/09/2014 16:47:12 GOT GPS: {"lat":"51.474890722","lon":"-0.035607434","time":"1995-01-17T15:47:12.000Z","alt":"64.263","speed":"0.528"}
+DEBUG:root:02/09/2014 16:47:13 Got ADC Info{"a0":0.0,"a1":0.0,"a2":0.0,"a3":0.0,"a4":0.0,"a5":0.0,"a6":0.0,"a7":4.67870714985}
+
+INFO:cherrypy.access.3056845776:192.168.1.100 - - [02/Sep/2014:16:47:14] "GET / HTTP/1.1" 200 4853 "http://192.168.1.99/" "Mozilla/5.0 (Linux; Android 4.4.2; Nexus 10 Build/KOT49H) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/36.0.1985.135 Safari/537.36"
+DEBUG:root:02/09/2014 16:47:17 Got ADC Info{"a0":0.0,"a1":0.0,"a2":0.0,"a3":0.0,"a4":0.0,"a5":0.0,"a6":0.0,"a7":4.67369245837}
+
+INFO:cherrypy.access.3056845776:192.168.1.100 - - [02/Sep/2014:16:47:19] "GET / HTTP/1.1" 200 4996 "http://192.168.1.99/" "Mozilla/5.0 (Linux; Android 4.4.2; Nexus 10 Build/KOT49H) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/36.0.1985.135 Safari/537.36"
+DEBUG:root:02/09/2014 16:47:20 GOT GPS: {"lat":"51.474827821","lon":"-0.035679424","time":"1995-01-17T15:47:19.000Z","alt":"50.661","speed":"0.04"}
+DEBUG:root:02/09/2014 16:47:20 Got ADC Info{"a0":0.0,"a1":0.0,"a2":0.0,"a3":0.0,"a4":0.0,"a5":0.0,"a6":0.0,"a7":4.67619980411}
+
+DEBUG:root:02/09/2014 16:47:24 Got ADC Info{"a0":0.0,"a1":0.0,"a2":0.0,"a3":0.0,"a4":0.0,"a5":0.0,"a6":0.0,"a7":4.67118511263}
+
+INFO:cherrypy.access.3056845776:192.168.1.100 - - [02/Sep/2014:16:47:24] "GET / HTTP/1.1" 200 5088 "http://192.168.1.99/" "Mozilla/5.0 (Linux; Android 4.4.2; Nexus 10 Build/KOT49H) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/36.0.1985.135 Safari/537.36"
+DEBUG:root:02/09/2014 16:47:27 app.py | ValueError | GrabGPS() | NO GPS FOUND: {"class":"TPV","tag":"MID2","device":"/dev/ttyUSB0","mode":2,"time":"1995-01-17T15:47:27.000Z","ept":0.005,"lat":51.474868704,"lon":-0.035708290,"epx":78.190,"epy":58.980,"track":308.0027,"speed":0.794,"eps":156.38}
+DEBUG:root:02/09/2014 16:47:28 Got ADC Info{"a0":0.0,"a1":0.0,"a2":0.0,"a3":0.0,"a4":0.0,"a5":0.0,"a6":0.0,"a7":4.66617042116}
+
+DEBUG:root:02/09/2014 16:47:29 Got RaspberryPi Info{"tempc":"41.2'C","disk%used":"83%","diskavailable":"276M","load":"1.00,0.83,0.67","serial":"00000000b6e2f676"}
+
+INFO:cherrypy.access.3056845776:192.168.1.100 - - [02/Sep/2014:16:47:30] "GET / HTTP/1.1" 200 5138 "http://192.168.1.99/" "Mozilla/5.0 (Linux; Android 4.4.2; Nexus 10 Build/KOT49H) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/36.0.1985.135 Safari/537.36"
+DEBUG:root:02/09/2014 16:47:30 Checking network connection: Bus 001 Device 015: ID 046d:c52b Logitech, Inc. Unifying Receiver
+Bus 001 Device 018: ID 12d1:14db Huawei Technologies Co., Ltd. E353/E3131
+Bus 001 Device 014: ID 067b:2303 Prolific Technology, Inc. PL2303 Serial Port
+Bus 001 Device 013: ID 0424:ec00 Standard Microsystems Corp. SMSC9512/9514 Fast Ethernet Adapter
+Bus 001 Device 012: ID 0424:9514 Standard Microsystems Corp. SMC9514 Hub
+Bus 001 Device 001: ID 1d6b:0002 Linux Foundation 2.0 root hub
+
+DEBUG:root:02/09/2014 16:47:30 Network OK
+DEBUG:root:02/09/2014 16:47:31 Got ADC Info{"a0":0.0,"a1":0.0,"a2":0.0,"a3":0.0,"a4":0.0,"a5":0.0,"a6":0.0,"a7":4.67118511263}
+
+DEBUG:root:02/09/2014 16:47:35 GOT GPS: {"lat":"51.474796837","lon":"-0.035650585","time":"1995-01-17T15:47:34.000Z","alt":"55.962","speed":"1.353"}
+DEBUG:root:02/09/2014 16:47:35 Got ADC Info{"a0":0.0,"a1":0.0,"a2":0.0,"a3":0.0,"a4":0.0,"a5":0.0,"a6":0.0,"a7":4.66366307542}
+
+INFO:cherrypy.access.3056845776:192.168.1.100 - - [02/Sep/2014:16:47:35] "GET / HTTP/1.1" 200 5276 "http://192.168.1.99/" "Mozilla/5.0 (Linux; Android 4.4.2; Nexus 10 Build/KOT49H) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/36.0.1985.135 Safari/537.36"
+DEBUG:root:02/09/2014 16:47:38 Got ADC Info{"a0":0.0,"a1":0.0,"a2":0.0,"a3":0.0,"a4":0.0,"a5":0.0,"a6":0.0,"a7":4.68873653281}
+
+INFO:cherrypy.access.3056845776:192.168.1.100 - - [02/Sep/2014:16:47:40] "GET / HTTP/1.1" 200 5369 "http://192.168.1.99/" "Mozilla/5.0 (Linux; Android 4.4.2; Nexus 10 Build/KOT49H) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/36.0.1985.135 Safari/537.36"
+DEBUG:root:02/09/2014 16:47:42 Got ADC Info{"a0":0.0,"a1":0.0,"a2":0.0,"a3":0.0,"a4":0.0,"a5":0.0,"a6":0.0,"a7":4.67369245837}
+
+DEBUG:root:02/09/2014 16:47:42 GOT GPS: {"lat":"51.474749171","lon":"-0.035693745","time":"1995-01-17T15:47:42.000Z","alt":"52.515","speed":"0.388"}
+INFO:cherrypy.access.3056845776:192.168.1.100 - - [02/Sep/2014:16:47:46] "GET / HTTP/1.1" 200 5512 "http://192.168.1.99/" "Mozilla/5.0 (Linux; Android 4.4.2; Nexus 10 Build/KOT49H) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/36.0.1985.135 Safari/537.36"
+DEBUG:root:02/09/2014 16:47:46 Got ADC Info{"a0":0.0,"a1":0.0,"a2":0.0,"a3":0.0,"a4":0.0,"a5":0.0,"a6":0.0,"a7":4.66366307542}
+
+DEBUG:root:02/09/2014 16:47:50 GOT GPS: {"lat":"51.474847601","lon":"-0.035737049","time":"1995-01-17T15:47:49.000Z","alt":"43.796","speed":"0.751"}
+DEBUG:root:02/09/2014 16:47:50 Got ADC Info{"a0":0.0,"a1":0.0,"a2":0.0,"a3":0.0,"a4":0.0,"a5":0.0,"a6":0.0,"a7":4.6561410382}
+
+DEBUG:root:02/09/2014 16:47:50 Got RaspberryPi Info{"tempc":"41.2'C","disk%used":"83%","diskavailable":"276M","load":"0.86,0.81,0.67","serial":"00000000b6e2f676"}
+
+INFO:cherrypy.access.3056845776:192.168.1.100 - - [02/Sep/2014:16:47:51] "GET / HTTP/1.1" 200 5562 "http://192.168.1.99/" "Mozilla/5.0 (Linux; Android 4.4.2; Nexus 10 Build/KOT49H) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/36.0.1985.135 Safari/537.36"
+DEBUG:root:02/09/2014 16:47:53 Checking network connection: Bus 001 Device 015: ID 046d:c52b Logitech, Inc. Unifying Receiver
+Bus 001 Device 018: ID 12d1:14db Huawei Technologies Co., Ltd. E353/E3131
+Bus 001 Device 014: ID 067b:2303 Prolific Technology, Inc. PL2303 Serial Port
+Bus 001 Device 013: ID 0424:ec00 Standard Microsystems Corp. SMSC9512/9514 Fast Ethernet Adapter
+Bus 001 Device 012: ID 0424:9514 Standard Microsystems Corp. SMC9514 Hub
+Bus 001 Device 001: ID 1d6b:0002 Linux Foundation 2.0 root hub
+
+DEBUG:root:02/09/2014 16:47:53 Network OK
+DEBUG:root:02/09/2014 16:47:54 Got ADC Info{"a0":0.0,"a1":0.0,"a2":0.0,"a3":0.0,"a4":0.0,"a5":0.0,"a6":0.0,"a7":4.68121449559}
+
+INFO:cherrypy.access.3056845776:192.168.1.100 - - [02/Sep/2014:16:47:56] "GET / HTTP/1.1" 200 5689 "http://192.168.1.99/" "Mozilla/5.0 (Linux; Android 4.4.2; Nexus 10 Build/KOT49H) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/36.0.1985.135 Safari/537.36"
+DEBUG:root:02/09/2014 16:47:57 GOT GPS: {"lat":"51.474884075","lon":"-0.035679496","time":"1995-01-17T15:47:57.000Z","alt":"45.678","speed":"0.147"}
+DEBUG:root:02/09/2014 16:47:57 Got ADC Info{"a0":0.0,"a1":0.0,"a2":0.0,"a3":0.0,"a4":0.0,"a5":0.0,"a6":0.0,"a7":4.68121449559}
+
+DEBUG:root:02/09/2014 16:48:01 Got ADC Info{"a0":0.0,"a1":0.0,"a2":0.0,"a3":0.0,"a4":0.0,"a5":0.0,"a6":0.0,"a7":4.68622918707}
+
+INFO:cherrypy.access.3056845776:192.168.1.100 - - [02/Sep/2014:16:48:01] "GET / HTTP/1.1" 200 5835 "http://192.168.1.99/" "Mozilla/5.0 (Linux; Android 4.4.2; Nexus 10 Build/KOT49H) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/36.0.1985.135 Safari/537.36"
+DEBUG:root:02/09/2014 16:48:04 Got ADC Info{"a0":0.0,"a1":0.0,"a2":0.0,"a3":0.0,"a4":0.0,"a5":0.0,"a6":0.0,"a7":4.67870714985}
+
+DEBUG:root:02/09/2014 16:48:05 GOT GPS: {"lat":"51.474936281","lon":"-0.035737183","time":"1995-01-17T15:48:04.000Z","alt":"32.106","speed":"0.333"}
+INFO:cherrypy.access.3056845776:192.168.1.100 - - [02/Sep/2014:16:48:07] "GET / HTTP/1.1" 200 5885 "http://192.168.1.99/" "Mozilla/5.0 (Linux; Android 4.4.2; Nexus 10 Build/KOT49H) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/36.0.1985.135 Safari/537.36"
+DEBUG:root:02/09/2014 16:48:08 Got ADC Info{"a0":0.0,"a1":0.0,"a2":0.0,"a3":0.0,"a4":0.0,"a5":0.0,"a6":0.0,"a7":4.67870714985}
+
+DEBUG:root:02/09/2014 16:48:11 Got RaspberryPi Info{"tempc":"41.2'C","disk%used":"83%","diskavailable":"276M","load":"1.05,0.85,0.68","serial":"00000000b6e2f676"}
+
+DEBUG:root:02/09/2014 16:48:12 Got ADC Info{"a0":0.0,"a1":0.0,"a2":0.0,"a3":0.0,"a4":0.0,"a5":0.0,"a6":0.0,"a7":4.68121449559}
+
+INFO:cherrypy.access.3056845776:192.168.1.100 - - [02/Sep/2014:16:48:12] "GET / HTTP/1.1" 200 6028 "http://192.168.1.99/" "Mozilla/5.0 (Linux; Android 4.4.2; Nexus 10 Build/KOT49H) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/36.0.1985.135 Safari/537.36"
+DEBUG:root:02/09/2014 16:48:12 app.py | ValueError | GrabGPS() | NO GPS FOUND: {"class":"TPV","tag":"MID2","device":"/dev/ttyUSB0","mode":2,"time":"1995-01-17T15:48:12.000Z","ept":0.005,"lat":51.475058166,"lon":-0.035665246,"epx":78.190,"epy":58.980,"track":328.9973,"speed":0.729,"eps":156.38}
+DEBUG:root:02/09/2014 16:48:16 Got ADC Info{"a0":0.0,"a1":0.0,"a2":0.0,"a3":0.0,"a4":0.0,"a5":0.0,"a6":0.0,"a7":4.6686777669}
+
+DEBUG:root:02/09/2014 16:48:17 Checking network connection: Bus 001 Device 015: ID 046d:c52b Logitech, Inc. Unifying Receiver
+Bus 001 Device 018: ID 12d1:14db Huawei Technologies Co., Ltd. E353/E3131
+Bus 001 Device 014: ID 067b:2303 Prolific Technology, Inc. PL2303 Serial Port
+Bus 001 Device 013: ID 0424:ec00 Standard Microsystems Corp. SMSC9512/9514 Fast Ethernet Adapter
+Bus 001 Device 012: ID 0424:9514 Standard Microsystems Corp. SMC9514 Hub
+Bus 001 Device 001: ID 1d6b:0002 Linux Foundation 2.0 root hub
+
+DEBUG:root:02/09/2014 16:48:17 Network OK
+INFO:cherrypy.access.3056845776:192.168.1.100 - - [02/Sep/2014:16:48:17] "GET / HTTP/1.1" 200 6113 "http://192.168.1.99/" "Mozilla/5.0 (Linux; Android 4.4.2; Nexus 10 Build/KOT49H) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/36.0.1985.135 Safari/537.36"
+DEBUG:root:02/09/2014 16:48:20 app.py | ValueError | GrabGPS() | NO GPS FOUND: {"class":"TPV","tag":"MID2","device":"/dev/ttyUSB0","mode":2,"time":"1995-01-17T15:48:19.000Z","ept":0.005,"lat":51.474996048,"lon":-0.035650710,"epx":78.190,"epy":58.980,"track":173.6685,"speed":1.141,"eps":156.38}
+DEBUG:root:02/09/2014 16:48:20 Got ADC Info{"a0":0.0,"a1":0.0,"a2":0.0,"a3":0.0,"a4":0.0,"a5":0.0,"a6":0.0,"a7":4.67619980411}
+
+INFO:cherrypy.access.3056845776:192.168.1.100 - - [02/Sep/2014:16:48:23] "GET / HTTP/1.1" 200 6165 "http://192.168.1.99/" "Mozilla/5.0 (Linux; Android 4.4.2; Nexus 10 Build/KOT49H) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/36.0.1985.135 Safari/537.36"
+DEBUG:root:02/09/2014 16:48:24 Got ADC Info{"a0":0.0,"a1":0.0,"a2":0.0,"a3":0.0,"a4":0.0,"a5":0.0,"a6":0.0,"a7":4.68622918707}
+
+DEBUG:root:02/09/2014 16:48:27 Got ADC Info{"a0":0.0,"a1":0.0,"a2":0.0,"a3":0.0,"a4":0.0,"a5":0.0,"a6":0.0,"a7":4.66115572968}
+
+DEBUG:root:02/09/2014 16:48:27 GOT GPS: {"lat":"51.474941242","lon":"-0.03560747","time":"1995-01-17T15:48:27.000Z","alt":"64.901","speed":"0.665"}
+INFO:cherrypy.access.3056845776:192.168.1.100 - - [02/Sep/2014:16:48:28] "GET / HTTP/1.1" 200 6265 "http://192.168.1.99/" "Mozilla/5.0 (Linux; Android 4.4.2; Nexus 10 Build/KOT49H) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/36.0.1985.135 Safari/537.36"
+DEBUG:root:02/09/2014 16:48:31 Got ADC Info{"a0":0.0,"a1":0.0,"a2":0.0,"a3":0.0,"a4":0.0,"a5":0.0,"a6":0.0,"a7":4.67369245837}
+
+DEBUG:root:02/09/2014 16:48:32 Got RaspberryPi Info{"tempc":"42.2'C","disk%used":"83%","diskavailable":"276M","load":"0.83,0.81,0.68","serial":"00000000b6e2f676"}
+
+INFO:cherrypy.access.3056845776:192.168.1.100 - - [02/Sep/2014:16:48:33] "GET / HTTP/1.1" 200 6357 "http://192.168.1.99/" "Mozilla/5.0 (Linux; Android 4.4.2; Nexus 10 Build/KOT49H) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/36.0.1985.135 Safari/537.36"
+DEBUG:root:02/09/2014 16:48:34 Got ADC Info{"a0":0.0,"a1":0.0,"a2":0.0,"a3":0.0,"a4":0.0,"a5":0.0,"a6":0.0,"a7":4.65363369246}
+
+DEBUG:root:02/09/2014 16:48:35 GOT GPS: {"lat":"51.475045261","lon":"-0.035679558","time":"1995-01-17T15:48:34.000Z","alt":"56.965","speed":"0.306"}
+DEBUG:root:02/09/2014 16:48:38 Got ADC Info{"a0":0.0,"a1":0.0,"a2":0.0,"a3":0.0,"a4":0.0,"a5":0.0,"a6":0.0,"a7":4.6561410382}
+
+INFO:cherrypy.access.3056845776:192.168.1.100 - - [02/Sep/2014:16:48:39] "GET / HTTP/1.1" 200 6442 "http://192.168.1.99/" "Mozilla/5.0 (Linux; Android 4.4.2; Nexus 10 Build/KOT49H) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/36.0.1985.135 Safari/537.36"
+DEBUG:root:02/09/2014 16:48:39 Checking network connection: Bus 001 Device 015: ID 046d:c52b Logitech, Inc. Unifying Receiver
+Bus 001 Device 018: ID 12d1:14db Huawei Technologies Co., Ltd. E353/E3131
+Bus 001 Device 014: ID 067b:2303 Prolific Technology, Inc. PL2303 Serial Port
+Bus 001 Device 013: ID 0424:ec00 Standard Microsystems Corp. SMSC9512/9514 Fast Ethernet Adapter
+Bus 001 Device 012: ID 0424:9514 Standard Microsystems Corp. SMC9514 Hub
+Bus 001 Device 001: ID 1d6b:0002 Linux Foundation 2.0 root hub
+
+DEBUG:root:02/09/2014 16:48:39 Network OK
+DEBUG:root:02/09/2014 16:48:42 Got ADC Info{"a0":0.0,"a1":0.0,"a2":0.0,"a3":0.0,"a4":0.0,"a5":0.0,"a6":0.0,"a7":4.66366307542}
+
+DEBUG:root:02/09/2014 16:48:43 GOT GPS: {"lat":"51.475056615","lon":"-0.035607631","time":"1995-01-17T15:48:43.000Z","alt":"52.124","speed":"0.232"}
+INFO:cherrypy.access.3056845776:192.168.1.100 - - [02/Sep/2014:16:48:44] "GET / HTTP/1.1" 200 6587 "http://192.168.1.99/" "Mozilla/5.0 (Linux; Android 4.4.2; Nexus 10 Build/KOT49H) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/36.0.1985.135 Safari/537.36"
+DEBUG:root:02/09/2014 16:48:46 Got ADC Info{"a0":0.0,"a1":0.0,"a2":0.0,"a3":0.0,"a4":0.0,"a5":0.0,"a6":0.0,"a7":4.64861900098}
+
+INFO:cherrypy.access.3056845776:192.168.1.100 - - [02/Sep/2014:16:48:49] "GET / HTTP/1.1" 200 6680 "http://192.168.1.99/" "Mozilla/5.0 (Linux; Android 4.4.2; Nexus 10 Build/KOT49H) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/36.0.1985.135 Safari/537.36"
+DEBUG:root:02/09/2014 16:48:50 Got ADC Info{"a0":0.0,"a1":0.0,"a2":0.0,"a3":0.0,"a4":0.0,"a5":0.0,"a6":0.0,"a7":4.6561410382}
+
+DEBUG:root:02/09/2014 16:48:51 app.py | ValueError | GrabGPS() | NO GPS FOUND: {"class":"SKY","tag":"MID4","device":"/dev/ttyUSB0","time":"1995-01-17T15:48:51.000Z","xdop":5.21,"ydop":3.93,"vdop":5.31,"tdop":3.17,"hdop":2.00,"gdop":8.99,"pdop":8.42,"satellites":[{"PRN":19,"el":77,"az":148,"ss":20,"used":false},{"PRN":1,"el":32,"az":262,"ss":21,"used":false},{"PRN":22,"el":47,"az":66,"ss":22,"used":true},{"PRN":14,"el":20,"az":102,"ss":18,"used":true},{"PRN":11,"el":52,"az":273,"ss":17,"used":true},{"PRN":27,"el":45,"az":136,"ss":27,"used":true}]}
+DEBUG:root:02/09/2014 16:48:53 Got RaspberryPi Info{"tempc":"41.2'C","disk%used":"83%","diskavailable":"276M","load":"0.79,0.81,0.68","serial":"00000000b6e2f676"}
+
+DEBUG:root:02/09/2014 16:48:53 Got ADC Info{"a0":0.0,"a1":0.0,"a2":0.0,"a3":0.0,"a4":0.0,"a5":0.0,"a6":0.0,"a7":4.67870714985}
+
+INFO:cherrypy.access.3056845776:192.168.1.100 - - [02/Sep/2014:16:48:55] "GET / HTTP/1.1" 200 6864 "http://192.168.1.99/" "Mozilla/5.0 (Linux; Android 4.4.2; Nexus 10 Build/KOT49H) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/36.0.1985.135 Safari/537.36"
+DEBUG:root:02/09/2014 16:48:57 Got ADC Info{"a0":0.0,"a1":0.0,"a2":0.0,"a3":0.0,"a4":0.0,"a5":0.0,"a6":0.0,"a7":4.67369245837}
+
+DEBUG:root:02/09/2014 16:48:59 GOT GPS: {"lat":"51.474879561","lon":"-0.035492293","time":"1995-01-17T15:48:59.000Z","alt":"62.695","speed":"0.647"}
+INFO:cherrypy.access.3056845776:192.168.1.100 - - [02/Sep/2014:16:49:00] "GET / HTTP/1.1" 200 6957 "http://192.168.1.99/" "Mozilla/5.0 (Linux; Android 4.4.2; Nexus 10 Build/KOT49H) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/36.0.1985.135 Safari/537.36"
+DEBUG:root:02/09/2014 16:49:02 Got ADC Info{"a0":0.0,"a1":0.0,"a2":0.0,"a3":0.0,"a4":0.0,"a5":0.0,"a6":0.0,"a7":4.67369245837}
+
+DEBUG:root:02/09/2014 16:49:02 Checking network connection: Bus 001 Device 015: ID 046d:c52b Logitech, Inc. Unifying Receiver
+Bus 001 Device 018: ID 12d1:14db Huawei Technologies Co., Ltd. E353/E3131
+Bus 001 Device 014: ID 067b:2303 Prolific Technology, Inc. PL2303 Serial Port
+Bus 001 Device 013: ID 0424:ec00 Standard Microsystems Corp. SMSC9512/9514 Fast Ethernet Adapter
+Bus 001 Device 012: ID 0424:9514 Standard Microsystems Corp. SMC9514 Hub
+Bus 001 Device 001: ID 1d6b:0002 Linux Foundation 2.0 root hub
+
+DEBUG:root:02/09/2014 16:49:02 Network OK
+DEBUG:root:02/09/2014 16:49:06 Got ADC Info{"a0":0.0,"a1":0.0,"a2":0.0,"a3":0.0,"a4":0.0,"a5":0.0,"a6":0.0,"a7":4.68622918707}
+
+INFO:cherrypy.access.3056845776:192.168.1.100 - - [02/Sep/2014:16:49:06] "GET / HTTP/1.1" 200 7010 "http://192.168.1.99/" "Mozilla/5.0 (Linux; Android 4.4.2; Nexus 10 Build/KOT49H) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/36.0.1985.135 Safari/537.36"
+DEBUG:root:02/09/2014 16:49:07 app.py | ValueError | GrabGPS() | NO GPS FOUND: {"class":"TPV","tag":"MID2","device":"/dev/ttyUSB0","mode":2,"time":"1995-01-17T15:49:06.000Z","ept":0.005,"lat":51.474844306,"lon":-0.035362679,"epx":78.190,"epy":58.980,"track":158.9769,"speed":1.047,"eps":156.38}
+DEBUG:root:02/09/2014 16:49:09 Got ADC Info{"a0":0.0,"a1":0.0,"a2":0.0,"a3":0.0,"a4":0.0,"a5":0.0,"a6":0.0,"a7":4.67369245837}
+
+INFO:cherrypy.access.3056845776:192.168.1.100 - - [02/Sep/2014:16:49:11] "GET / HTTP/1.1" 200 7110 "http://192.168.1.99/" "Mozilla/5.0 (Linux; Android 4.4.2; Nexus 10 Build/KOT49H) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/36.0.1985.135 Safari/537.36"
+DEBUG:root:02/09/2014 16:49:13 Got ADC Info{"a0":0.0,"a1":0.0,"a2":0.0,"a3":0.0,"a4":0.0,"a5":0.0,"a6":0.0,"a7":4.6686777669}
+
+DEBUG:root:02/09/2014 16:49:14 Got RaspberryPi Info{"tempc":"41.7'C","disk%used":"83%","diskavailable":"276M","load":"1.22,0.91,0.71","serial":"00000000b6e2f676"}
+
+DEBUG:root:02/09/2014 16:49:14 GOT GPS: {"lat":"51.474862416","lon":"-0.035305082","time":"1995-01-17T15:49:14.000Z","alt":"79.553","speed":"1.098"}
+INFO:cherrypy.access.3056845776:192.168.1.100 - - [02/Sep/2014:16:49:16] "GET / HTTP/1.1" 200 7237 "http://192.168.1.99/" "Mozilla/5.0 (Linux; Android 4.4.2; Nexus 10 Build/KOT49H) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/36.0.1985.135 Safari/537.36"
+DEBUG:root:02/09/2014 16:49:17 Got ADC Info{"a0":0.0,"a1":0.0,"a2":0.0,"a3":0.0,"a4":0.0,"a5":0.0,"a6":0.0,"a7":4.67118511263}
+
+DEBUG:root:02/09/2014 16:49:21 Got ADC Info{"a0":0.0,"a1":0.0,"a2":0.0,"a3":0.0,"a4":0.0,"a5":0.0,"a6":0.0,"a7":4.67619980411}
+
+INFO:cherrypy.access.3056845776:192.168.1.100 - - [02/Sep/2014:16:49:21] "GET / HTTP/1.1" 200 7287 "http://192.168.1.99/" "Mozilla/5.0 (Linux; Android 4.4.2; Nexus 10 Build/KOT49H) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/36.0.1985.135 Safari/537.36"
+DEBUG:root:02/09/2014 16:49:22 GOT GPS: {"lat":"51.474962306","lon":"-0.035262037","time":"1995-01-17T15:49:21.000Z","alt":"69.426","speed":"0.176"}
+DEBUG:root:02/09/2014 16:49:25 Checking network connection: Bus 001 Device 015: ID 046d:c52b Logitech, Inc. Unifying Receiver
+Bus 001 Device 018: ID 12d1:14db Huawei Technologies Co., Ltd. E353/E3131
+Bus 001 Device 014: ID 067b:2303 Prolific Technology, Inc. PL2303 Serial Port
+Bus 001 Device 013: ID 0424:ec00 Standard Microsystems Corp. SMSC9512/9514 Fast Ethernet Adapter
+Bus 001 Device 012: ID 0424:9514 Standard Microsystems Corp. SMC9514 Hub
+Bus 001 Device 001: ID 1d6b:0002 Linux Foundation 2.0 root hub
+
+DEBUG:root:02/09/2014 16:49:25 Network OK
+DEBUG:root:02/09/2014 16:49:25 Got ADC Info{"a0":0.0,"a1":0.0,"a2":0.0,"a3":0.0,"a4":0.0,"a5":0.0,"a6":0.0,"a7":4.6686777669}
+
+INFO:cherrypy.access.3056845776:192.168.1.100 - - [02/Sep/2014:16:49:27] "GET / HTTP/1.1" 200 7432 "http://192.168.1.99/" "Mozilla/5.0 (Linux; Android 4.4.2; Nexus 10 Build/KOT49H) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/36.0.1985.135 Safari/537.36"
+DEBUG:root:02/09/2014 16:49:29 GOT GPS: {"lat":"51.475004601","lon":"-0.035362874","time":"1995-01-17T15:49:29.000Z","alt":"59.289","speed":"0.184"}
+DEBUG:root:02/09/2014 16:49:29 Got ADC Info{"a0":0.0,"a1":0.0,"a2":0.0,"a3":0.0,"a4":0.0,"a5":0.0,"a6":0.0,"a7":4.67369245837}
+
+INFO:cherrypy.access.3056845776:192.168.1.100 - - [02/Sep/2014:16:49:32] "GET / HTTP/1.1" 200 7525 "http://192.168.1.99/" "Mozilla/5.0 (Linux; Android 4.4.2; Nexus 10 Build/KOT49H) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/36.0.1985.135 Safari/537.36"
+DEBUG:root:02/09/2014 16:49:33 Got ADC Info{"a0":0.0,"a1":0.0,"a2":0.0,"a3":0.0,"a4":0.0,"a5":0.0,"a6":0.0,"a7":4.67118511263}
+
+DEBUG:root:02/09/2014 16:49:34 Got RaspberryPi Info{"tempc":"41.7'C","disk%used":"83%","diskavailable":"276M","load":"1.01,0.88,0.71","serial":"00000000b6e2f676"}
+
+DEBUG:root:02/09/2014 16:49:37 GOT GPS: {"lat":"51.475018786","lon":"-0.035406106","time":"1995-01-17T15:49:36.000Z","alt":"51.641","speed":"0.553"}
+DEBUG:root:02/09/2014 16:49:37 Got ADC Info{"a0":0.0,"a1":0.0,"a2":0.0,"a3":0.0,"a4":0.0,"a5":0.0,"a6":0.0,"a7":4.68121449559}
+
+INFO:cherrypy.access.3056845776:192.168.1.100 - - [02/Sep/2014:16:49:37] "GET / HTTP/1.1" 200 7610 "http://192.168.1.99/" "Mozilla/5.0 (Linux; Android 4.4.2; Nexus 10 Build/KOT49H) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/36.0.1985.135 Safari/537.36"
+DEBUG:root:02/09/2014 16:49:40 Got ADC Info{"a0":0.0,"a1":0.0,"a2":0.0,"a3":0.0,"a4":0.0,"a5":0.0,"a6":0.0,"a7":4.66115572968}
+
+INFO:cherrypy.access.3056845776:192.168.1.100 - - [02/Sep/2014:16:49:43] "GET / HTTP/1.1" 200 7753 "http://192.168.1.99/" "Mozilla/5.0 (Linux; Android 4.4.2; Nexus 10 Build/KOT49H) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/36.0.1985.135 Safari/537.36"
+DEBUG:root:02/09/2014 16:49:44 Got ADC Info{"a0":0.0,"a1":0.0,"a2":0.0,"a3":0.0,"a4":0.0,"a5":0.0,"a6":0.0,"a7":4.64109696376}
+
+DEBUG:root:02/09/2014 16:49:44 GOT GPS: {"lat":"51.475015924","lon":"-0.035391695","time":"1995-01-17T15:49:44.000Z","alt":"54.451","speed":"0.447"}
+DEBUG:root:02/09/2014 16:49:47 Checking network connection: Bus 001 Device 015: ID 046d:c52b Logitech, Inc. Unifying Receiver
+Bus 001 Device 018: ID 12d1:14db Huawei Technologies Co., Ltd. E353/E3131
+Bus 001 Device 014: ID 067b:2303 Prolific Technology, Inc. PL2303 Serial Port
+Bus 001 Device 013: ID 0424:ec00 Standard Microsystems Corp. SMSC9512/9514 Fast Ethernet Adapter
+Bus 001 Device 012: ID 0424:9514 Standard Microsystems Corp. SMC9514 Hub
+Bus 001 Device 001: ID 1d6b:0002 Linux Foundation 2.0 root hub
+
+DEBUG:root:02/09/2014 16:49:47 Network OK
+DEBUG:root:02/09/2014 16:49:48 Got ADC Info{"a0":0.0,"a1":0.0,"a2":0.0,"a3":0.0,"a4":0.0,"a5":0.0,"a6":0.0,"a7":4.6561410382}
+
+INFO:cherrypy.access.3056845776:192.168.1.100 - - [02/Sep/2014:16:49:48] "GET / HTTP/1.1" 200 7846 "http://192.168.1.99/" "Mozilla/5.0 (Linux; Android 4.4.2; Nexus 10 Build/KOT49H) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/36.0.1985.135 Safari/537.36"
+DEBUG:root:02/09/2014 16:49:51 Got ADC Info{"a0":0.0,"a1":0.0,"a2":0.0,"a3":0.0,"a4":0.0,"a5":0.0,"a6":0.0,"a7":4.68873653281}
+
+DEBUG:root:02/09/2014 16:49:52 GOT GPS: {"lat":"51.474871135","lon":"-0.035362741","time":"1995-01-17T15:49:51.000Z","alt":"64.72","speed":"0.48"}
+INFO:cherrypy.access.3056845776:192.168.1.100 - - [02/Sep/2014:16:49:53] "GET / HTTP/1.1" 200 7948 "http://192.168.1.99/" "Mozilla/5.0 (Linux; Android 4.4.2; Nexus 10 Build/KOT49H) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/36.0.1985.135 Safari/537.36"
+DEBUG:root:02/09/2014 16:49:55 Got RaspberryPi Info{"tempc":"41.2'C","disk%used":"83%","diskavailable":"276M","load":"0.80,0.84,0.70","serial":"00000000b6e2f676"}
+
+DEBUG:root:02/09/2014 16:49:56 Got ADC Info{"a0":0.0,"a1":0.0,"a2":0.0,"a3":0.0,"a4":0.0,"a5":0.0,"a6":0.0,"a7":4.68372184133}
+
+INFO:cherrypy.access.3056845776:192.168.1.100 - - [02/Sep/2014:16:49:58] "GET / HTTP/1.1" 200 8074 "http://192.168.1.99/" "Mozilla/5.0 (Linux; Android 4.4.2; Nexus 10 Build/KOT49H) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/36.0.1985.135 Safari/537.36"
+DEBUG:root:02/09/2014 16:49:59 GOT GPS: {"lat":"51.474868272","lon":"-0.035348331","time":"1995-01-17T15:49:59.000Z","alt":"67.53","speed":"0.423"}
+DEBUG:root:02/09/2014 16:49:59 Got ADC Info{"a0":0.0,"a1":0.0,"a2":0.0,"a3":0.0,"a4":0.0,"a5":0.0,"a6":0.0,"a7":4.68873653281}
+
+DEBUG:root:02/09/2014 16:50:03 Got ADC Info{"a0":0.0,"a1":0.0,"a2":0.0,"a3":0.0,"a4":0.0,"a5":0.0,"a6":0.0,"a7":4.68372184133}
+
+INFO:cherrypy.access.3056845776:192.168.1.100 - - [02/Sep/2014:16:50:03] "GET / HTTP/1.1" 200 8166 "http://192.168.1.99/" "Mozilla/5.0 (Linux; Android 4.4.2; Nexus 10 Build/KOT49H) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/36.0.1985.135 Safari/537.36"
+DEBUG:root:02/09/2014 16:50:07 GOT GPS: {"lat":"51.474880902","lon":"-0.035348339","time":"1995-01-17T15:50:06.000Z","alt":"67.689","speed":"0.878"}
+DEBUG:root:02/09/2014 16:50:07 Got ADC Info{"a0":0.0,"a1":0.0,"a2":0.0,"a3":0.0,"a4":0.0,"a5":0.0,"a6":0.0,"a7":4.66366307542}
+
+INFO:cherrypy.access.3056845776:192.168.1.100 - - [02/Sep/2014:16:50:09] "GET / HTTP/1.1" 200 8259 "http://192.168.1.99/" "Mozilla/5.0 (Linux; Android 4.4.2; Nexus 10 Build/KOT49H) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/36.0.1985.135 Safari/537.36"
+DEBUG:root:02/09/2014 16:50:10 Checking network connection: Bus 001 Device 015: ID 046d:c52b Logitech, Inc. Unifying Receiver
+Bus 001 Device 018: ID 12d1:14db Huawei Technologies Co., Ltd. E353/E3131
+Bus 001 Device 014: ID 067b:2303 Prolific Technology, Inc. PL2303 Serial Port
+Bus 001 Device 013: ID 0424:ec00 Standard Microsystems Corp. SMSC9512/9514 Fast Ethernet Adapter
+Bus 001 Device 012: ID 0424:9514 Standard Microsystems Corp. SMC9514 Hub
+Bus 001 Device 001: ID 1d6b:0002 Linux Foundation 2.0 root hub
+
+DEBUG:root:02/09/2014 16:50:10 Network OK
+DEBUG:root:02/09/2014 16:50:11 Got ADC Info{"a0":0.0,"a1":0.0,"a2":0.0,"a3":0.0,"a4":0.0,"a5":0.0,"a6":0.0,"a7":4.67870714985}
+
+DEBUG:root:02/09/2014 16:50:14 app.py | ValueError | GrabGPS() | NO GPS FOUND: {"class":"TPV","tag":"MID2","device":"/dev/ttyUSB0","mode":2,"time":"1995-01-17T15:50:14.000Z","ept":0.005,"lat":51.474931413,"lon":-0.035377160,"epx":78.190,"epy":58.980,"track":150.8670,"speed":0.514,"eps":156.38}
+INFO:cherrypy.access.3056845776:192.168.1.100 - - [02/Sep/2014:16:50:14] "GET / HTTP/1.1" 200 8362 "http://192.168.1.99/" "Mozilla/5.0 (Linux; Android 4.4.2; Nexus 10 Build/KOT49H) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/36.0.1985.135 Safari/537.36"
+DEBUG:root:02/09/2014 16:50:15 Got ADC Info{"a0":0.0,"a1":0.0,"a2":0.0,"a3":0.0,"a4":0.0,"a5":0.0,"a6":0.0,"a7":4.62605288932}
+
+DEBUG:root:02/09/2014 16:50:16 Got RaspberryPi Info{"tempc":"42.2'C","disk%used":"83%","diskavailable":"276M","load":"0.86,0.85,0.70","serial":"00000000b6e2f676"}
+
+DEBUG:root:02/09/2014 16:50:18 Got ADC Info{"a0":0.0,"a1":0.0,"a2":0.0,"a3":0.0,"a4":0.0,"a5":0.0,"a6":0.0,"a7":4.68121449559}
+
+INFO:cherrypy.access.3056845776:192.168.1.100 - - [02/Sep/2014:16:50:20] "GET / HTTP/1.1" 200 8447 "http://192.168.1.99/" "Mozilla/5.0 (Linux; Android 4.4.2; Nexus 10 Build/KOT49H) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/36.0.1985.135 Safari/537.36"
+DEBUG:root:02/09/2014 16:50:22 GOT GPS: {"lat":"51.474866581","lon":"-0.035305073","time":"1995-01-17T15:50:21.000Z","alt":"81.74","speed":"0.767"}
+DEBUG:root:02/09/2014 16:50:22 Got ADC Info{"a0":0.0,"a1":0.0,"a2":0.0,"a3":0.0,"a4":0.0,"a5":0.0,"a6":0.0,"a7":4.66617042116}
+
+INFO:cherrypy.access.3056845776:192.168.1.100 - - [02/Sep/2014:16:50:25] "GET / HTTP/1.1" 200 8589 "http://192.168.1.99/" "Mozilla/5.0 (Linux; Android 4.4.2; Nexus 10 Build/KOT49H) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/36.0.1985.135 Safari/537.36"
+DEBUG:root:02/09/2014 16:50:26 Got ADC Info{"a0":0.0,"a1":0.0,"a2":0.0,"a3":0.0,"a4":0.0,"a5":0.0,"a6":0.0,"a7":4.68622918707}
+
+DEBUG:root:02/09/2014 16:50:29 GOT GPS: {"lat":"51.474822806","lon":"-0.035362546","time":"1995-01-17T15:50:29.000Z","alt":"93.287","speed":"0.08"}
+DEBUG:root:02/09/2014 16:50:29 Got ADC Info{"a0":0.0,"a1":0.0,"a2":0.0,"a3":0.0,"a4":0.0,"a5":0.0,"a6":0.0,"a7":4.66366307542}
+
+INFO:cherrypy.access.3056845776:192.168.1.100 - - [02/Sep/2014:16:50:31] "GET / HTTP/1.1" 200 8639 "http://192.168.1.99/" "Mozilla/5.0 (Linux; Android 4.4.2; Nexus 10 Build/KOT49H) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/36.0.1985.135 Safari/537.36"
+DEBUG:root:02/09/2014 16:50:34 Got ADC Info{"a0":0.0,"a1":0.0,"a2":0.0,"a3":0.0,"a4":0.0,"a5":0.0,"a6":0.0,"a7":4.66617042116}
+
+DEBUG:root:02/09/2014 16:50:34 Checking network connection: Bus 001 Device 015: ID 046d:c52b Logitech, Inc. Unifying Receiver
+Bus 001 Device 018: ID 12d1:14db Huawei Technologies Co., Ltd. E353/E3131
+Bus 001 Device 014: ID 067b:2303 Prolific Technology, Inc. PL2303 Serial Port
+Bus 001 Device 013: ID 0424:ec00 Standard Microsystems Corp. SMSC9512/9514 Fast Ethernet Adapter
+Bus 001 Device 012: ID 0424:9514 Standard Microsystems Corp. SMC9514 Hub
+Bus 001 Device 001: ID 1d6b:0002 Linux Foundation 2.0 root hub
+
+DEBUG:root:02/09/2014 16:50:34 Network OK
+INFO:cherrypy.access.3056845776:192.168.1.100 - - [02/Sep/2014:16:50:36] "GET / HTTP/1.1" 200 8731 "http://192.168.1.99/" "Mozilla/5.0 (Linux; Android 4.4.2; Nexus 10 Build/KOT49H) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/36.0.1985.135 Safari/537.36"
+DEBUG:root:02/09/2014 16:50:37 GOT GPS: {"lat":"51.47479755","lon":"-0.035348135","time":"1995-01-17T15:50:36.000Z","alt":"92.968","speed":"0.411"}
+DEBUG:root:02/09/2014 16:50:37 Got RaspberryPi Info{"tempc":"41.2'C","disk%used":"83%","diskavailable":"276M","load":"1.00,0.88,0.71","serial":"00000000b6e2f676"}
+
+DEBUG:root:02/09/2014 16:50:38 Got ADC Info{"a0":0.0,"a1":0.0,"a2":0.0,"a3":0.0,"a4":0.0,"a5":0.0,"a6":0.0,"a7":4.67619980411}
+
+DEBUG:root:02/09/2014 16:50:41 Got ADC Info{"a0":0.0,"a1":0.0,"a2":0.0,"a3":0.0,"a4":0.0,"a5":0.0,"a6":0.0,"a7":4.67369245837}
+
+INFO:cherrypy.access.3056845776:192.168.1.100 - - [02/Sep/2014:16:50:41] "GET / HTTP/1.1" 200 8911 "http://192.168.1.99/" "Mozilla/5.0 (Linux; Android 4.4.2; Nexus 10 Build/KOT49H) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/36.0.1985.135 Safari/537.36"
+DEBUG:root:02/09/2014 16:50:44 GOT GPS: {"lat":"51.474832577","lon":"-0.035333752","time":"1995-01-17T15:50:44.000Z","alt":"96.256","speed":"0.463"}
+DEBUG:root:02/09/2014 16:50:45 Got ADC Info{"a0":0.0,"a1":0.0,"a2":0.0,"a3":0.0,"a4":0.0,"a5":0.0,"a6":0.0,"a7":4.67619980411}
+
+INFO:cherrypy.access.3056845776:192.168.1.100 - - [02/Sep/2014:16:50:47] "GET / HTTP/1.1" 200 8961 "http://192.168.1.99/" "Mozilla/5.0 (Linux; Android 4.4.2; Nexus 10 Build/KOT49H) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/36.0.1985.135 Safari/537.36"
+DEBUG:root:02/09/2014 16:50:49 Got ADC Info{"a0":0.0,"a1":0.0,"a2":0.0,"a3":0.0,"a4":0.0,"a5":0.0,"a6":0.0,"a7":4.67118511263}
+
+DEBUG:root:02/09/2014 16:50:52 GOT GPS: {"lat":"51.47486642","lon":"-0.035391393","time":"1995-01-17T15:50:51.000Z","alt":"88.145","speed":"0.453"}
+INFO:cherrypy.access.3056845776:192.168.1.100 - - [02/Sep/2014:16:50:52] "GET / HTTP/1.1" 200 9054 "http://192.168.1.99/" "Mozilla/5.0 (Linux; Android 4.4.2; Nexus 10 Build/KOT49H) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/36.0.1985.135 Safari/537.36"
+DEBUG:root:02/09/2014 16:50:53 Got ADC Info{"a0":0.0,"a1":0.0,"a2":0.0,"a3":0.0,"a4":0.0,"a5":0.0,"a6":0.0,"a7":4.69375122429}
+
+DEBUG:root:02/09/2014 16:50:56 Checking network connection: Bus 001 Device 015: ID 046d:c52b Logitech, Inc. Unifying Receiver
+Bus 001 Device 018: ID 12d1:14db Huawei Technologies Co., Ltd. E353/E3131
+Bus 001 Device 014: ID 067b:2303 Prolific Technology, Inc. PL2303 Serial Port
+Bus 001 Device 013: ID 0424:ec00 Standard Microsystems Corp. SMSC9512/9514 Fast Ethernet Adapter
+Bus 001 Device 012: ID 0424:9514 Standard Microsystems Corp. SMC9514 Hub
+Bus 001 Device 001: ID 1d6b:0002 Linux Foundation 2.0 root hub
+
+DEBUG:root:02/09/2014 16:50:56 Network OK
+DEBUG:root:02/09/2014 16:50:56 Got ADC Info{"a0":0.0,"a1":0.0,"a2":0.0,"a3":0.0,"a4":0.0,"a5":0.0,"a6":0.0,"a7":4.67619980411}
+
+INFO:cherrypy.access.3056845776:192.168.1.100 - - [02/Sep/2014:16:50:57] "GET / HTTP/1.1" 200 9196 "http://192.168.1.99/" "Mozilla/5.0 (Linux; Android 4.4.2; Nexus 10 Build/KOT49H) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/36.0.1985.135 Safari/537.36"
+DEBUG:root:02/09/2014 16:50:58 Got RaspberryPi Info{"tempc":"42.2'C","disk%used":"83%","diskavailable":"276M","load":"1.00,0.88,0.72","serial":"00000000b6e2f676"}
+
+DEBUG:root:02/09/2014 16:51:00 GOT GPS: {"lat":"51.474834255","lon":"-0.035420187","time":"1995-01-17T15:51:00.000Z","alt":"82.047","speed":"0.351"}
+DEBUG:root:02/09/2014 16:51:00 Got ADC Info{"a0":0.0,"a1":0.0,"a2":0.0,"a3":0.0,"a4":0.0,"a5":0.0,"a6":0.0,"a7":4.67619980411}
+
+INFO:cherrypy.access.3056845776:192.168.1.100 - - [02/Sep/2014:16:51:02] "GET / HTTP/1.1" 200 9284 "http://192.168.1.99/" "Mozilla/5.0 (Linux; Android 4.4.2; Nexus 10 Build/KOT49H) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/36.0.1985.135 Safari/537.36"
+DEBUG:root:02/09/2014 16:51:04 Got ADC Info{"a0":0.0,"a1":0.0,"a2":0.0,"a3":0.0,"a4":0.0,"a5":0.0,"a6":0.0,"a7":4.67369245837}
+
+DEBUG:root:02/09/2014 16:51:08 Got ADC Info{"a0":0.0,"a1":0.0,"a2":0.0,"a3":0.0,"a4":0.0,"a5":0.0,"a6":0.0,"a7":4.67118511263}
+
+DEBUG:root:02/09/2014 16:51:08 app.py | ValueError | GrabGPS() | NO GPS FOUND: {"class":"SKY","tag":"MID4","device":"/dev/ttyUSB0","time":"1995-01-17T15:51:08.000Z","xdop":5.21,"ydop":3.93,"vdop":5.31,"tdop":3.17,"hdop":2.00,"gdop":8.99,"pdop":8.42,"satellites":[{"PRN":27,"el":45,"az":136,"ss":26,"used":true},{"PRN":22,"el":47,"az":66,"ss":22,"used":true},{"PRN":14,"el":20,"az":102,"ss":23,"used":true},{"PRN":11,"el":52,"az":273,"ss":20,"used":true}]}
+INFO:cherrypy.access.3056845776:192.168.1.100 - - [02/Sep/2014:16:51:09] "GET / HTTP/1.1" 200 9427 "http://192.168.1.99/" "Mozilla/5.0 (Linux; Android 4.4.2; Nexus 10 Build/KOT49H) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/36.0.1985.135 Safari/537.36"
+DEBUG:root:02/09/2014 16:51:11 Got ADC Info{"a0":0.0,"a1":0.0,"a2":0.0,"a3":0.0,"a4":0.0,"a5":0.0,"a6":0.0,"a7":4.6686777669}
+
+INFO:cherrypy.access.3056845776:192.168.1.100 - - [02/Sep/2014:16:51:14] "GET / HTTP/1.1" 200 9477 "http://192.168.1.99/" "Mozilla/5.0 (Linux; Android 4.4.2; Nexus 10 Build/KOT49H) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/36.0.1985.135 Safari/537.36"
+DEBUG:root:02/09/2014 16:51:15 Got ADC Info{"a0":0.0,"a1":0.0,"a2":0.0,"a3":0.0,"a4":0.0,"a5":0.0,"a6":0.0,"a7":4.68372184133}
+
+DEBUG:root:02/09/2014 16:51:16 GOT GPS: {"lat":"51.474777994","lon":"-0.035448901","time":"1995-01-17T15:51:16.000Z","alt":"87.031","speed":"0.406"}
+DEBUG:root:02/09/2014 16:51:19 Got RaspberryPi Info{"tempc":"42.2'C","disk%used":"83%","diskavailable":"276M","load":"1.03,0.89,0.73","serial":"00000000b6e2f676"}
+
+INFO:cherrypy.access.3056845776:192.168.1.100 - - [02/Sep/2014:16:51:19] "GET / HTTP/1.1" 200 9526 "http://192.168.1.99/" "Mozilla/5.0 (Linux; Android 4.4.2; Nexus 10 Build/KOT49H) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/36.0.1985.135 Safari/537.36"
+INFO:cherrypy.error:[02/Sep/2014:16:51:20] ENGINE Bus STOPPING
+INFO:cherrypy.error:[02/Sep/2014:16:51:21] ENGINE HTTP Server cherrypy._cpwsgi_server.CPWSGIServer(('0.0.0.0', 80)) shut down
+INFO:cherrypy.error:[02/Sep/2014:16:51:21] ENGINE Stopped thread '_TimeoutMonitor'.
+INFO:cherrypy.error:[02/Sep/2014:16:51:21] ENGINE Stopped thread 'Autoreloader'.
+INFO:cherrypy.error:[02/Sep/2014:16:51:21] ENGINE Bus STOPPED
+INFO:cherrypy.error:[02/Sep/2014:16:51:21] ENGINE Bus EXITING
+INFO:cherrypy.error:[02/Sep/2014:16:51:21] ENGINE Bus EXITED

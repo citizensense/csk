@@ -49,6 +49,8 @@ class GrabSensors:
 			('a5',			['A4->16ADC->I2C',	[]	]),
 			('a6',			['A5->16ADC->I2C',	[]	]),
 			('a7',			['A6->16ADC->I2C',	[]	]),
+			('spec',		['A6->16ADC->I2C',	[]	]),
+			('spechumid',	['A6->16ADC->I2C',	[]	]),
 			('windspeed',	['RPI-WindSpeed',	[]	]),
 			('winddir',		['SPI-8ADC--MCP3008-WindDirection',			[]	]),
 			('soundenv',	['SPI-8ADC-SparkfunSoundDetector-SoundEnv',	[]	]),
@@ -97,15 +99,21 @@ class GrabSensors:
 			try:
 				# Prep  web interface output
 				mystr = ""
+				csvs = []
+				header = ""
+				hs = ''
 				for key in self.datamodel:
 					values = ""
+					header = header+hs+key
 					for value in self.datamodel[key][1]: 
 						timecode = str(value[0]) 
 						val = str(value[1])
 						values = val+', '+values
-					mystr += '<div><b>'+key+':</b> '+values+'</div>' 
+					mystr += '<div><b>'+key+':</b> '+values+'</div>'
+					hs = ','
 				# Display the latest data
-				self.webserver.setcontent('<pre>'+mystr+'</pre>', '')
+				thistime = time.strftime("%d/%m/%Y %H:%M:%S")
+				self.webserver.setcontent('<h2>'+thistime+'</h2>'+header+'<pre>'+mystr+'</pre>', '')
 				# Save data to the log file
 				#self.save.log(self.datapath, self.csvheader, csv)
 			finally:
