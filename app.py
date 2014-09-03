@@ -25,8 +25,7 @@ class GrabSensors:
 		self.log('INFO', 'Started script')
 		# Setup some base variables
 		self.lock = threading.Lock()
-		self.datapath = os.path.join(os.path.dirname(__file__), '../data/data.csv')
-		self.csvheader = 'timecode,value1,value2'
+		self.datapath = os.path.join(os.path.dirname(__file__), 'data/data.csv')
 		self.ND1000S = ND1000S() 
 		self.H3G = Huawei3G()
 		self.save = SaveData()
@@ -37,25 +36,25 @@ class GrabSensors:
 		self.webserver.setcontent('Started the server', 'From within app.py')
 		# Data model: (shortname, [logtitle, values, max, min])
 		self.datamodel = OrderedDict([
-			('lat',			['USB-ND1000S', 	[]	]),
-			('lon',			['ND1000S-LON', 	[]	]),
-			('groundspeed', ['ND1000S-SPEED', 	[]	]),
-			('altitude',	['ND1000S-ALT',		[]	]),
-			('a0',			['A0->16ADC->I2C',	[]	]),
-			('a1',			['A1->16ADC->I2C',	[]	]),
-			('a2',			['A2->16ADC->I2C',	[]	]),
-			('a3',			['A3->16ADC->I2C',	[]	]),
-			('a4',			['A3->16ADC->I2C',	[]	]),
-			('a5',			['A4->16ADC->I2C',	[]	]),
-			('a6',			['A5->16ADC->I2C',	[]	]),
-			('a7',			['A6->16ADC->I2C',	[]	]),
-			('spec',		['A6->16ADC->I2C',	[]	]),
-			('spechumid',	['A6->16ADC->I2C',	[]	]),
-			('windspeed',	['RPI-WindSpeed',	[]	]),
-			('winddir',		['SPI-8ADC--MCP3008-WindDirection',			[]	]),
-			('soundenv',	['SPI-8ADC-SparkfunSoundDetector-SoundEnv',	[]	]),
-			('soundgate',	['RPI-SparkfunSoundDetector-SoundGate',		[]	]),
-			('outsidetemp',	['I2C-AN2315-Temp',	[]	]),
+			('lat',				['USB-ND1000S', 	[]	]),
+			('lon',				['ND1000S-LON', 	[]	]),
+			('groundspeed', 	['ND1000S-SPEED', 	[]	]),
+			('altitude',		['ND1000S-ALT',		[]	]),
+			('PID',				['A1->16ADC->I2C',	[]	]),
+			('SO2 A4 [WE3]',	['A2->16ADC->I2C',	[]	]),
+			('SO2 A4 [AE3]',			['A3->16ADC->I2C',	[]	]),
+			('O3 A4 [WE2]',		['A4->16ADC->I2C',	[]	]),
+			('O3 A4 [AE2]',		['A5->16ADC->I2C',	[]	]),
+			('NO2 A4 [SN1]',	['A6->16ADC->I2C',	[]	]),
+			('NO2 A4 [AE1]',	['A7->16ADC->I2C',	[]	]),
+			('TEMP [PT+]',		['A8->16ADC->I2C',	[]	]),
+			('spec',			['A8->16ADC->I2C',	[]	]),
+			('spechumid',		['??/',				[]	]),
+			('windspeed',		['RPI-WindSpeed',	[]	]),
+			('winddir',			['SPI-8ADC--MCP3008-WindDirection',			[]	]),
+			('soundenv',		['SPI-8ADC-SparkfunSoundDetector-SoundEnv',	[]	]),
+			('soundgate',		['RPI-SparkfunSoundDetector-SoundGate',		[]	]),
+			('outsidetemp',		['I2C-AN2315-Temp',	[]	]),
 			('outsidehumid',['AN2315-Humid',	[]	]),
 			('rpiTempC',	['RPi-TempC',		[]	]),
 			('rpi%diskused',['RPi-disk % used',	[]	]),
@@ -63,6 +62,8 @@ class GrabSensors:
 			('rpiload',		['Rpi-CPU Load Ave',[]	]),
 			('networkup',	['HuaweiAvailable', []	])
 		])
+		# Place to store asychronosly generated values
+		self.csvbuffer = OrderedDict([])
 		# Initialise a list of threads so data can be aquired asynchronosly
 		threads = []
 		threads.append(threading.Thread(target=self.healthcheck) ) 	# Check device status
@@ -85,7 +86,15 @@ class GrabSensors:
 		# Create a lock so multiple threads don't get confused
 		self.lock.acquire()
 		try:
-			# Save the new data to our model
+			keyindex = list(self.datamodel.keys()).index(key)
+			# Create a buffer with n list locations to store this data if needed
+			if timecode not in self.csvbuffer: 
+				self.csvbuffer[timecode] = [""]*len(self.datamodel)
+			# Save to our csv buffer, ready for saving to the log
+			self.csvbuffer[timecode][keyindex] = ""+str(value)
+			# save the last n values to our model
+			if len(self.datamodel[key][1]) > 4:
+				self.datamodel[key][1].pop(0)
 			self.datamodel[key][1].append([timecode, value])
 		# Release the lock
 		finally:
@@ -99,7 +108,6 @@ class GrabSensors:
 			try:
 				# Prep  web interface output
 				mystr = ""
-				csvs = []
 				header = ""
 				hs = ''
 				for key in self.datamodel:
@@ -110,12 +118,19 @@ class GrabSensors:
 						val = str(value[1])
 						values = val+', '+values
 					mystr += '<div><b>'+key+':</b> '+values+'</div>'
-					hs = ','
+					hs = ', '
+				# Prep the CSV output
+				csvbuffer = ""
+				for timecode in self.csvbuffer:
+					csvbuffer = csvbuffer+str(timecode)+','.join(self.csvbuffer[timecode])+"\n"
 				# Display the latest data
 				thistime = time.strftime("%d/%m/%Y %H:%M:%S")
-				self.webserver.setcontent('<h2>'+thistime+'</h2>'+header+'<pre>'+mystr+'</pre>', '')
+				#csvbuffer = '<div>'+json.dumps(self.csvbuffer)+'</div>'
+				self.webserver.setcontent('<h2>'+thistime+'</h2><pre>'+mystr+'</pre>', header+'<hr /><pre>'+csvbuffer+'</pre>')
 				# Save data to the log file
-				#self.save.log(self.datapath, self.csvheader, csv)
+				self.save.log(self.datapath, header, csvbuffer)
+				# Now TODO: if the data has been saved, clear the buffer
+				self.csvbuffer = OrderedDict([])
 			finally:
 				self.lock.release()
 			time.sleep(5)
@@ -156,14 +171,14 @@ class GrabSensors:
 			try:
 				info=json.loads(jsonstr)
 				self.log('DEBUG',"Got ADC Info"+jsonstr)
-				self.newdata('a0', info["a0"] ) 
-				self.newdata('a1', info["a1"] )
-				self.newdata('a2', info["a2"] )
-				self.newdata('a3', info["a3"] )
-				self.newdata('a4', info["a4"] )
-				self.newdata('a5', info["a5"] )
-				self.newdata('a6', info["a6"] )
-				self.newdata('a7', info["a7"] )
+				self.newdata('PID', info["a1"] ) 
+				self.newdata('SO2 A4 [WE3]', info["a2"] )
+				self.newdata('SO2 A4 [AE3]', info["a3"] )
+				self.newdata('O3 A4 [WE2]', info["a4"] )
+				self.newdata('O3 A4 [AE2]', info["a5"] )
+				self.newdata('NO2 A4 [SN1]', info["a6"] )
+				self.newdata('NO2 A4 [AE1]', info["a7"] )
+				self.newdata('TEMP [PT+]', info["a8"] )
 			except ValueError:
 				self.log('DEBUG', 'app.py | JsonError | grabadc() | '+jsonstr)
 			time.sleep(3)

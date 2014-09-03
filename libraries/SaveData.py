@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-import subprocess, sys, time
+import os, subprocess, sys, time
 
 # Class to log data capturted by the kit
 class SaveData:
