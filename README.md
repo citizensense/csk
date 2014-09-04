@@ -6,7 +6,7 @@ CSK runs off a RaspberryPi and in its current configeration, includes sensors fo
 **Currently in active development**. No stable code as of yet! Thought our first deployment will be in October 2014, after which we will be publiching full build instructions.
 
 
-##Project credits: www.citizensense.net
+##Credits: www.citizensense.net
 Citizen Sense is an interdisciplinary research project that draws on science and technology studies (STS), digital media studies, creative practice (art, architecture and design), environmental studies and geography, and feminist technoscience.
 
 Kit developed by Tom Keene & Helen Pritchard.
