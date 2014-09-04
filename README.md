@@ -1,9 +1,11 @@
 Citizen Sense Kit (CSK)
 ======================
-CSK runs off a RaspberryPi and in its current configeration, includes sensors for nitrogen oxide (NO), nitrogen dioxide (NO2), ozone (O3), and benzene, toluene, ethylbenzene, and xylenes (BTEX), as well as GPS, humidity, temperature and particulate matter (PM) via a Speck (www.specksensor.org).
+CSK aims to a be an easily configerable Sensor recording and distribution platform built on the RaspberryPi computer.
+
+In its current configeration CSK includes sensors for nitrogen oxide (NO), nitrogen dioxide (NO2), ozone (O3), and benzene, toluene, ethylbenzene, and xylenes (BTEX), as well as GPS, humidity, temperature and particulate matter (PM), which is measured using a Speck (www.specksensor.org).
 
 
-**Currently in active development**. No stable code as of yet! Thought our first deployment will be in October 2014, after which we will be publiching full build instructions.
+**Currently in very active development**. No stable code as of yet! Thought our first deployment will be in October 2014, after which we will be publiching full build instructions.
 
 
 ##Credits
