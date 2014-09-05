@@ -15,7 +15,7 @@ import os
 
 # Initialise the ADC device using the default addresses and sample rate, change this value if you have changed the address selection jumpers
 # Sample rate can be 12,14, 16 or 18
-adc = ADCPi(0x68, 0x69, 12)
+adc = ADCPi(0x6a, 0x6b, 12)
 
 # change the 2.5 value to be half of the supply voltage.
 

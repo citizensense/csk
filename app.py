@@ -9,8 +9,8 @@
 # Include the 'libraries folder' in the system path
 import sys, os, time, logging, threading, subprocess, urllib
 from collections import OrderedDict
-sys.path.insert(0, '/home/csk/sensorcoms/libraries') #TODO:Make path generic
-import wiringpi2
+sys.path.insert(0, 'libraries') #TODO:Make path generic
+#import wiringpi2
 from Huawei3G import *
 from ND1000S import *
 from SaveData import *
@@ -76,7 +76,7 @@ class GrabSensors:
 			item.start()
 		# Setup GPOI Pin access
 		#wiringpi2.wiringPiSetup() # For sequencial pin numbering i.e [] in pin layout below
-		wiringpi2.wiringPiSetupGpio() # For GPIO pin numbering
+		#wiringpi2.wiringPiSetupGpio() # For GPIO pin numbering
 	
 	# If any threads have new data, then send it here
 	def newdata(self, key, value):
@@ -202,7 +202,6 @@ class GrabSensors:
 	# Thread to check the health of the systemn
 	def healthcheck(self):
 		while True:
-			#self.checklocalserver()
 			self.checknetwork()
 	
 	def checknetwork(self):
