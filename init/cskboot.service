@@ -1,0 +1,8 @@
+		[Unit]
+		Description=Boot GPSD and CSK Application
+		[Install]
+		WantedBy=multi-user.target
+		[Service]
+		Type=idle
+		RemainAfterExit=yes
+		ExecStart=/home/csk/csk/init/boot.sh
