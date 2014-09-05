@@ -1,0 +1,11 @@
+[Unit]
+Description=RTC clock
+Before=netctl-auto@wlan0.service
+[Type]
+Type=oneshot
+ 
+[Service]
+ExecStart=/usr/lib/systemd/scripts/rtc
+ 
+[Install]
+WantedBy=multi-user.target
