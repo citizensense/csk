@@ -16,6 +16,7 @@ from Huawei3G import *
 from ND1000S import *
 from SaveData import *
 from CherryPyWebServer import CherryPyWebServer
+from Alphasense import *
 
 class GrabSensors:
 	
@@ -30,6 +31,17 @@ class GrabSensors:
 		self.ND1000S = ND1000S() 
 		self.H3G = Huawei3G()
 		self.save = SaveData()
+		# Setup Alphasense calibration
+		weSN1 = 310     # VpcbWE-SN1-zero 
+		weSN2 = 412     # VpcbWE-SN2-zero
+		weSN3 = 280     # VpcbWE-SN3-zero
+		aeSN1 = 312     # VpcbAE-SN1-zero
+		aeSN2 = 413     # VpcbAE-SN2-zero
+		aeSN3 = 270     # VpcbAE-SN3-zero
+		SN1sensi = 0.54     # "Sensitivity (mV/ppb)"
+		SN2sensi = 0.238    # "Sensitivity (mV/ppb)"
+		SN3sensi = 0.362    # "Sensitivity (mV/ppb)"
+		self.alphasense = Alphasense(weSN1, weSN2, weSN3, aeSN1, aeSN2, aeSN3, SN1sensi, SN2sensi, SN3sensi)
 		# Start the webserver (runs in its own thread)
 		globalconfig = {'server.socket_host':"0.0.0.0", 'server.socket_port':80 } 
 		localconfig = {'/': {'tools.staticdir.root': '../public'}}
@@ -51,7 +63,7 @@ class GrabSensors:
 			('TEMP [PT+]',		['A8->16ADC->I2C',	[]	]),
 			('TEMP [PT+]',		['A8->16ADC->I2C',	[]	]),
             ('SO2ppb',		    ['',	[]	]),
-            ('03ppb',		    ['',	[]	]),
+            ('O3ppb',		    ['',	[]	]),
             ('NO2ppb',		    ['',	[]	]),
             ("Temp'C",		    ['',	[]	]),
 			('spec',			['A8->16ADC->I2C',	[]	]),
@@ -184,6 +196,14 @@ class GrabSensors:
 				self.newdata('NO2 A4 [SN1]', info["a6"] )
 				self.newdata('NO2 A4 [AE1]', info["a7"] )
 				self.newdata('TEMP [PT+]', info["a8"] )
+				temp = 23
+				SO2 = self.alphasense.readppb('NO2a4', info['a2'], info['a3'], temp) # sensor, we, ae, temp 
+				O3 = self.alphasense.readppb('O3a4', info['a4'], info['a5'], temp)
+				NO2 = self.alphasense.readppb('SO2a4', info['a6'], info['a7'], temp)  
+				self.newdata('SO2ppb', SO2 )
+				self.newdata('O3ppb', O3 )
+				self.newdata('NO2ppb', NO2 )
+				self.newdata("Temp'C", 23)
 			except ValueError:
 				self.log('DEBUG', 'app.py | JsonError | grabadc() | '+jsonstr)
 			time.sleep(3)

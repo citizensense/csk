@@ -8,9 +8,11 @@ class SaveData:
 	def log(self, datafilepath, header, csv):
 		# Lets check if the datafile exists
 		if not os.path.isfile(datafilepath):
-			# Create the file
-   			self.savestring(datafilepath, header)
-		self.savestring(datafilepath, csv)
+		    # Create the file
+		    self.savestring(datafilepath, header)
+		csv = csv.strip()
+		if len(csv) != 0: 
+		    self.savestring(datafilepath, csv)
 
 	# Save a string to a file
 	def savestring(self, filepath, string):
