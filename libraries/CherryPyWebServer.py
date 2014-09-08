@@ -13,7 +13,7 @@ class CherryPyWebServer:
 
 	def serverthread(self):
 		http.config.update(self.globalconfig)
-		http.quickstart( self.server )	
+		http.quickstart( self.server, '/', self.localconfig )	
 
 	def setcontent(self, body, log):
 		self.server.setcontent(body, log)

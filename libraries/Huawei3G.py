@@ -18,10 +18,10 @@ class Huawei3G:
 		on = 'echo 1 > /sys/devices/platform/bcm2708_usb/buspower' 
 		off = 'echo 0 > /sys/devices/platform/bcm2708_usb/buspower' 
 		subprocess.check_output(off, shell=True).decode("utf-8")
-		time.sleep(0.1)
-		subprocess.check_output(on, shell=True)
+		#time.sleep(0.1)
+		#subprocess.check_output(on, shell=True)
 		# Restart the systemd service to allow auto connect of the network
-		subprocess.check_output("netctl start eth1static", shell=True)
+		#subprocess.check_output("netctl start eth1static", shell=True)
 
 	def lsusb(self):
 		lsusb = subprocess.check_output("lsusb", shell=True).decode("utf-8")

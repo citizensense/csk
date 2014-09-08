@@ -9,7 +9,8 @@
 # Include the 'libraries folder' in the system path
 import sys, os, time, logging, threading, subprocess, urllib
 from collections import OrderedDict
-sys.path.insert(0, 'libraries') #TODO:Make path generic
+path = os.path.dirname(os.path.abspath(__file__))
+sys.path.insert(0, os.path.join(path, 'libraries') ) 
 #import wiringpi2
 from Huawei3G import *
 from ND1000S import *
@@ -48,6 +49,11 @@ class GrabSensors:
 			('NO2 A4 [SN1]',	['A6->16ADC->I2C',	[]	]),
 			('NO2 A4 [AE1]',	['A7->16ADC->I2C',	[]	]),
 			('TEMP [PT+]',		['A8->16ADC->I2C',	[]	]),
+			('TEMP [PT+]',		['A8->16ADC->I2C',	[]	]),
+            ('SO2ppb',		    ['',	[]	]),
+            ('03ppb',		    ['',	[]	]),
+            ('NO2ppb',		    ['',	[]	]),
+            ("Temp'C",		    ['',	[]	]),
 			('spec',			['A8->16ADC->I2C',	[]	]),
 			('spechumid',		['??/',				[]	]),
 			('windspeed',		['RPI-WindSpeed',	[]	]),
@@ -68,7 +74,6 @@ class GrabSensors:
 		threads = []
 		threads.append(threading.Thread(target=self.healthcheck) ) 	# Check device status
 		threads.append(threading.Thread(target=self.grabgps) ) 		# Grab GPS data
-		threads.append(threading.Thread(target=self.redled) ) 		# Blink the LED
 		threads.append(threading.Thread(target=self.grabrpiinfo) ) 	# Grab RaspberryPi Info
 		threads.append(threading.Thread(target=self.savedata) ) 	# Save Data to webGUI, LogFile
 		threads.append(threading.Thread(target=self.grabadc) ) 		# Grab data from ADC 
@@ -107,6 +112,7 @@ class GrabSensors:
 			self.lock.acquire() 
 			try:
 				# Prep  web interface output
+				thistime = time.strftime("%d/%m/%Y %H:%M:%S")
 				mystr = ""
 				header = ""
 				hs = ''
@@ -123,11 +129,10 @@ class GrabSensors:
 				csvbuffer = ""
 				for timecode in self.csvbuffer:
 					csvbuffer = csvbuffer+str(timecode)+','.join(self.csvbuffer[timecode])+"\n"
-				# Display the latest data
-				thistime = time.strftime("%d/%m/%Y %H:%M:%S")
-				#csvbuffer = '<div>'+json.dumps(self.csvbuffer)+'</div>'
+				# Export to the web interface
 				self.webserver.setcontent('<h2>'+thistime+'</h2><pre>'+mystr+'</pre>', header+'<hr /><pre>'+csvbuffer+'</pre>')
 				# Save data to the log file
+				# TODO: Check the string isn't empty!!
 				self.save.log(self.datapath, header, csvbuffer)
 				# Now TODO: if the data has been saved, clear the buffer
 				self.csvbuffer = OrderedDict([])
