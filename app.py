@@ -12,6 +12,7 @@ from collections import OrderedDict
 path = os.path.dirname(os.path.abspath(__file__))
 sys.path.insert(0, os.path.join(path, 'libraries') ) 
 #import wiringpi2
+from datetime import datetime
 from Huawei3G import *
 from ND1000S import *
 from SaveData import *
@@ -99,7 +100,7 @@ class GrabSensors:
 	def newdata(self, key, value):
 		# Create a timecode
 		timecode = int(time.time())
-		# Need to check the Rpi has the right time, otherwise we shouldn't save
+		# TODO: Need to check the Rpi has the right time, otherwise we shouldn't save
 		# Create a lock so multiple threads don't get confused
 		self.lock.acquire()
 		try:
@@ -126,7 +127,7 @@ class GrabSensors:
 				# Prep  web interface output
 				thistime = time.strftime("%d/%m/%Y %H:%M:%S")
 				mystr = ""
-				header = ""
+				header = "timestamp, humandate"
 				hs = ''
 				for key in self.datamodel:
 					values = ""
@@ -140,7 +141,8 @@ class GrabSensors:
 				# Prep the CSV output
 				csvbuffer = ""
 				for timecode in self.csvbuffer:
-					csvbuffer = csvbuffer+str(timecode)+','.join(self.csvbuffer[timecode])+"\n"
+				    ht = datetime.fromtimestamp( timecode ).strftime('%Y-%m-%d %H:%M:%S')
+				    csvbuffer = csvbuffer+str(timecode)+','+ht+','.join(self.csvbuffer[timecode])+"\n"
 				# Export to the web interface
 				self.webserver.setcontent('<h2>'+thistime+'</h2><pre>'+mystr+'</pre>', header+'<hr /><pre>'+csvbuffer+'</pre>')
 				# Save data to the log file

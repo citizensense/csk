@@ -5,30 +5,32 @@ import time
 import os
 
 # ================================================
-# ABElectronics ADC Pi ACS712 30 Amp current sensor demo
-# Version 1.0 Created 15/07/2014
-#
+# ABElectronics ADC Pi 
 # Requires python smbus to be installed
-# run with: python demo-acs712-30.py
 # ================================================
 
+# Retunr a millivolt value of the specified analog input
+def readVolts(theinput):
+		# return adc.readVoltage(theinput)*1000 # return as MilliVolts (mv)
+        return adc.readVoltage(theinput) # Return as Volts (V)
+
+def generateString():
+    a1 = '"a1":'+str(readVolts(1))+','
+    a2 = '"a2":'+str(readVolts(2))+','
+    a3 = '"a3":'+str(readVolts(3))+','
+    a4 = '"a4":'+str(readVolts(4))+','
+    a5 = '"a5":'+str(readVolts(5))+','
+    a6 = '"a6":'+str(readVolts(6))+','
+    a7 = '"a7":'+str(readVolts(7))+','
+    a8 = '"a8":'+str(readVolts(8))
+    return '{'+a1+a2+a3+a4+a5+a6+a7+a8+'}'
 
 # Initialise the ADC device using the default addresses and sample rate, change this value if you have changed the address selection jumpers
 # Sample rate can be 12,14, 16 or 18
-adc = ADCPi(0x6a, 0x6b, 12)
+try:
+    adc = ADCPi(0x6a, 0x6b, 16)
+    # Print the output in a JSON format
+    print(generateString())
+except:
+    print('Error: Could not connect to ADC')
 
-# change the 2.5 value to be half of the supply voltage.
-
-def calcCurrent(inval):
-		return ((inval) - 2.5) / 0.066;
-
-a1 = '"a1":'+str(adc.readVoltage(1))+','
-a2 = '"a2":'+str(adc.readVoltage(2))+','
-a3 = '"a3":'+str(adc.readVoltage(3))+','
-a4 = '"a4":'+str(adc.readVoltage(4))+','
-a5 = '"a5":'+str(adc.readVoltage(5))+','
-a6 = '"a6":'+str(adc.readVoltage(6))+','
-a7 = '"a7":'+str(adc.readVoltage(7))+','
-a8 = '"a8":'+str(adc.readVoltage(8))
-
-print('{'+a1+a2+a3+a4+a5+a6+a7+a8+'}')
