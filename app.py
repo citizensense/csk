@@ -56,10 +56,10 @@ class GrabSensors:
 			('altitude',		['ND1000S-ALT',		[]	]),
 			('PID',				['A1->16ADC->I2C',	[]	]),
 			('SO2 A4 [WE3]',	['A2->16ADC->I2C',	[]	]),
-			('SO2 A4 [AE3]',			['A3->16ADC->I2C',	[]	]),
+			('SO2 A4 [AE3]',	['A3->16ADC->I2C',	[]	]),
 			('O3 A4 [WE2]',		['A4->16ADC->I2C',	[]	]),
 			('O3 A4 [AE2]',		['A5->16ADC->I2C',	[]	]),
-			('NO2 A4 [SN1]',	['A6->16ADC->I2C',	[]	]),
+			('NO2 A4 [WE1]',	['A6->16ADC->I2C',	[]	]),
 			('NO2 A4 [AE1]',	['A7->16ADC->I2C',	[]	]),
 			('TEMP [PT+]',		['A8->16ADC->I2C',	[]	]),
 			('TEMP [PT+]',		['A8->16ADC->I2C',	[]	]),
@@ -191,17 +191,20 @@ class GrabSensors:
 				info=json.loads(jsonstr)
 				self.log('DEBUG',"Got ADC Info"+jsonstr)
 				self.newdata('PID', info["a1"] ) 
-				self.newdata('SO2 A4 [WE3]', info["a2"] )
-				self.newdata('SO2 A4 [AE3]', info["a3"] )
-				self.newdata('O3 A4 [WE2]', info["a4"] )
-				self.newdata('O3 A4 [AE2]', info["a5"] )
-				self.newdata('NO2 A4 [SN1]', info["a6"] )
-				self.newdata('NO2 A4 [AE1]', info["a7"] )
+				self.newdata('SO2 A4 [WE3]', info["a3"] )
+				self.newdata('SO2 A4 [AE3]', info["a2"] )
+				self.newdata('O3 A4 [WE2]', info["a5"] )
+				self.newdata('O3 A4 [AE2]', info["a4"] )
+				self.newdata('NO2 A4 [WE1]', info["a7"] )
+				self.newdata('NO2 A4 [AE1]', info["a6"] )
 				self.newdata('TEMP [PT+]', info["a8"] )
 				temp = 23
-				SO2 = self.alphasense.readppb('NO2a4', info['a2'], info['a3'], temp) # sensor, we, ae, temp 
-				O3 = self.alphasense.readppb('O3a4', info['a4'], info['a5'], temp)
-				NO2 = self.alphasense.readppb('SO2a4', info['a6'], info['a7'], temp)  
+				print(jsonstr)
+				# sensor, ae, we, temp 
+				SO2 = self.alphasense.readppb('SO2a4', info['a3'], info['a2'], temp) 
+				O3 = self.alphasense.readppb('O3a4', info['a5'], info['a4'], temp)
+				NO2 = self.alphasense.readppb('NO2a4', info['a7'], info['a6'], temp)  
+				print('APP NO2: '+str(NO2)+"-------\n")
 				self.newdata('SO2ppb', SO2 )
 				self.newdata('O3ppb', O3 )
 				self.newdata('NO2ppb', NO2 )

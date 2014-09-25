@@ -22,6 +22,9 @@ class Alphasense:
         VWE = mvWE          # Value read from electrode
         VAE = mvAE          # Value read from electrode
         N=self.tempcomp     # Temperature compensation value
+        s1 = '('+str(VWE)+'-'+str(VPCBWE)+')'
+        s2 = '-('+str(N)+'*('+str(VAE)+'-'+str(VPCBAE)+'))'
+        # print('COMPmv: '+s1+s2)
         return (VWE-VPCBWE)-(N*(VAE-VPCBAE))
 
     # Calculate ppb values
@@ -31,10 +34,15 @@ class Alphasense:
         # Millivolt compensation value for the sensor being read
         compmv = self.compGASmv(mvWE, mvAE) 
         # Return parts per billion
-        return compmv/self.sensitivity
+        # print('CONVERTTOppb: '+str(compmv)+'/'+str(self.sensitivity)  )
+        ppb = compmv/self.sensitivity
+        print(sensor+' ASPPB: '+str(ppb))
+        if ppb < 0: ppb =0
+        return ppb
     
     # Setup compensation variables
     def setcompensation(self, sensor, temp):
+        # print(sensor)
         if sensor == 'NO2a4':
             weSN = self.weSN1
             aeSN = self.aeSN1
@@ -80,12 +88,12 @@ if __name__ == "__main__":
     SN3sensi = 0.362    # "Sensitivity (mV/ppb)"
     alphasense = Alphasense(weSN1, weSN2, weSN3, aeSN1, aeSN2, aeSN3, SN1sensi, SN2sensi, SN3sensi)
     # Ready to calculate values
-    mvWE = 862 # Millivolts
-    mvAE = 312 # Millivolts
+    mvWE = 283.800195886  # Millivolts
+    mvAE = 313.261508325 # Millivolts
     temp = 23  # Degrees centigrade
     print('NO2ppb: '+str( alphasense.readppb('NO2a4', mvWE, mvAE, temp)) )
-    print('O3ppb: '+str( alphasense.readppb('O3a4', mvWE, mvAE, temp)) )
-    print('SO2ppb: '+str(alphasense.readppb('SO2a4', mvWE, mvAE, temp))  )
+    #print('O3ppb: '+str( alphasense.readppb('O3a4', mvWE, mvAE, temp)) )
+    #print('SO2ppb: '+str(alphasense.readppb('SO2a4', mvWE, mvAE, temp))  )
 
 
 

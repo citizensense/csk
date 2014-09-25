@@ -10,4 +10,4 @@ L3=$(uptime | cut -d' ' -f14 | rev | cut -c 2- | rev)
 #LOAD=$(awk "BEGIN{printf(\"%2.2f\n\", ($L1+$L2+$L3)/3); exit }")
 INFO=$(cat /proc/cpuinfo)
 SERIAL=$(cat /proc/cpuinfo | grep Serial | cut -f3 | cut -c 3-)
-echo -e "{\"tempc\":\"$TEMP\",\"disk%used\":\"$DISKUSED\",\"diskavailable\":\"$DISKAVAILABLE\",\"load\":\"$L1|$L2|$L3\",\"serial\":\"$SERIAL\"}" 
+echo -e "{\"tempc\":\"$TEMP\",\"disk%used\":\"$DISKUSED\",\"diskavailable\":\"$DISKAVAILABLE\",\"load\":\"$L1-$L2-$L3\",\"serial\":\"$SERIAL\"}" 

@@ -11,8 +11,8 @@ import os
 
 # Retunr a millivolt value of the specified analog input
 def readVolts(theinput):
-		# return adc.readVoltage(theinput)*1000 # return as MilliVolts (mv)
-        return adc.readVoltage(theinput) # Return as Volts (V)
+		return adc.readVoltage(theinput)*1000 # return as MilliVolts (mv)
+        # return adc.readVoltage(theinput) # Return as Volts (V)
 
 def generateString():
     a1 = '"a1":'+str(readVolts(1))+','
@@ -28,6 +28,7 @@ def generateString():
 # Initialise the ADC device using the default addresses and sample rate, change this value if you have changed the address selection jumpers
 # Sample rate can be 12,14, 16 or 18
 try:
+    # Set the i2c address (find out what it is with $ i2cdetect -y 1
     adc = ADCPi(0x6a, 0x6b, 16)
     # Print the output in a JSON format
     print(generateString())
