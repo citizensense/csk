@@ -53,3 +53,48 @@ class AM2315(object):
 
     def temperature(self):
         return self.values()[1]
+
+    def SDD(self,T,mode):
+        return 6.1078 * math.pow(10,((self.a(mode)*T)/(self.b(mode)+T)))
+    def DD(self,mode):
+        r = self.humidity()
+        T = self.temperature()
+        return r/100 * self.SDD(T,mode)
+    def a(self,mode):
+        T = self.temperature()
+        if T >= 0:
+           return 7.5
+        if T < 0 and mode == 0 :
+           return 7.6
+        if T < 0 and mode == 1 :
+           return 9.5
+    def b(self,mode):
+        T = self.temperature()
+        if T >= 0:
+           return 237
+        if T < 0 and mode == 0 :
+           return 240.7
+        if T < 0 and mode == 1 :
+           return 265.5
+    def TD(self,mode):
+        v=math.log10(self.DD(mode)/6.1078)
+        return (self.b(mode)*v)/(self.a(mode)-v)
+    def RR(self,mode):
+        T = self.temperature()
+        return 100*self.SDD(self.TD(T),mode) / self.SDD(T,mode)
+    def AFr(self,mode):
+        T = self.temperature()
+        return math.pow(10,5)*MW_CONST/R_CONST*self.DD(mode)/self.TK(T)
+    def TK(self,T):
+        return T+273.15
+    def crc16(self, char):
+         crc = 0xFFFF
+         for l in char:
+               crc = crc ^ l
+               for i in range(1,9):
+                   if (crc & 0x01):
+                      crc = crc >> 1
+                      crc = crc ^ 0xA001
+                   else:
+                      crc = crc >> 1
+         return crc
