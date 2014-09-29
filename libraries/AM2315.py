@@ -98,3 +98,10 @@ class AM2315(object):
                    else:
                       crc = crc >> 1
          return crc
+
+# Example
+def __main__():
+ #python3
+ sensor=AM2315()
+ sensor.temperature()
+ sensor.humidity()
