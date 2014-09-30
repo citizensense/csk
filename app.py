@@ -126,10 +126,16 @@ class GrabSensors:
     
     # Periodically attempt to post saved data to the server
     def postdata(self):
+        # Initialise the object
+        poster = PostData()
+        # Now send some data to a locally installed version of frackbox
+        url = 'http://192.168.1.100:8787/api'
         while True:
-            print('attempting to post')
-            time.sleep(30)
-        return
+            # Grab the latest data
+            data = {'header': 'one', 'csv': '33'}
+            # Then attempt to post it
+            poster.send(url, data)
+            time.sleep(20)
 
     # Iterate through the data model and save data to: LogFile, GUI, Web
     def savedata(self):
