@@ -29,7 +29,7 @@ class AM2315(object):
                    self.FUNCTION_CODE_READ,*self.readBytes ))
                time.sleep(self.AM2315_WAITTIME)
                read_results = bus.transaction(i2c.reading(self.AM2315_I2CADDR, 8)) 
-#               print(read_results)
+               #print(read_results)
                break
             except:
                i = i+1 

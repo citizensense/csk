@@ -15,11 +15,13 @@ class PostData:
         print(f.read().decode('utf-8'))
 
 if __name__ == "__main__":
+    import time
     # Initialise the object
     poster = PostData()
     # Now send some data to a locally installed version of frackbox
     url = 'http://192.168.1.100:8787/api'
-    data = {'spam': 1, 'eggs': 2, 'bacon': 0}
-    poster.send(url, data)
-
+    while True:
+        data = {'header': 1, 'csv': 2}
+        poster.send(url, data)
+        timer.sleep(5)
 

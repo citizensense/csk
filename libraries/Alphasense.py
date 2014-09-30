@@ -92,8 +92,8 @@ if __name__ == "__main__":
     mvAE = 313.261508325 # Millivolts
     temp = 23  # Degrees centigrade
     print('NO2ppb: '+str( alphasense.readppb('NO2a4', mvWE, mvAE, temp)) )
-    #print('O3ppb: '+str( alphasense.readppb('O3a4', mvWE, mvAE, temp)) )
-    #print('SO2ppb: '+str(alphasense.readppb('SO2a4', mvWE, mvAE, temp))  )
+    print('O3ppb: '+str( alphasense.readppb('O3a4', mvWE, mvAE, temp)) )
+    print('SO2ppb: '+str(alphasense.readppb('SO2a4', mvWE, mvAE, temp))  )
 
 
 
