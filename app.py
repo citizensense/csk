@@ -1,8 +1,7 @@
 #!/usr/bin/python3
 #############################################################################
-# Small application used to Asynchronously: 					   			#
+# Application used to Asynchronously: 					   			#
 # 	1. Grab sensor data	
-#	2. Check status of network and devices
 #	2. Save to local csv file					   							#
 #	3. Send to server						   								#
 #############################################################################
@@ -12,17 +11,22 @@ from collections import OrderedDict
 path = os.path.dirname(os.path.abspath(__file__))
 sys.path.insert(0, os.path.join(path, 'libraries') ) 
 #import wiringpi2
+import config
 from datetime import datetime
 from Huawei3G import *
 from ND1000S import *
 from SaveData import *
-from CherryPyWebServer import CherryPyWebServer
+from CherryPyWebServer import *
 from Alphasense import *
+from AM2315 import *
 
+# The application class
 class GrabSensors:
 	
 	# Initialise the object
 	def __init__(self):
+		# Load the config for this device
+		self.CONFIG = config.init()
 		# Setup logging
 		logging.basicConfig(filename='csk.log', level=logging.DEBUG)
 		self.log('INFO', 'Started script')
@@ -32,17 +36,8 @@ class GrabSensors:
 		self.ND1000S = ND1000S() 
 		self.H3G = Huawei3G()
 		self.save = SaveData()
-		# Setup Alphasense calibration
-		weSN1 = 310     # VpcbWE-SN1-zero 
-		weSN2 = 412     # VpcbWE-SN2-zero
-		weSN3 = 280     # VpcbWE-SN3-zero
-		aeSN1 = 312     # VpcbAE-SN1-zero
-		aeSN2 = 413     # VpcbAE-SN2-zero
-		aeSN3 = 270     # VpcbAE-SN3-zero
-		SN1sensi = 0.54     # "Sensitivity (mV/ppb)"
-		SN2sensi = 0.238    # "Sensitivity (mV/ppb)"
-		SN3sensi = 0.362    # "Sensitivity (mV/ppb)"
-		self.alphasense = Alphasense(weSN1, weSN2, weSN3, aeSN1, aeSN2, aeSN3, SN1sensi, SN2sensi, SN3sensi)
+		self.temp = 24      # These get set by an external temperature sensor
+		self.humid = 50     # These get set by an external humidity sensor
 		# Start the webserver (runs in its own thread)
 		globalconfig = {'server.socket_host':"0.0.0.0", 'server.socket_port':80 } 
 		localconfig = {'/': {'tools.staticdir.root': '../public'}}
@@ -66,7 +61,8 @@ class GrabSensors:
             ('SO2ppb',		    ['',	[]	]),
             ('O3ppb',		    ['',	[]	]),
             ('NO2ppb',		    ['',	[]	]),
-            ("Temp'C",		    ['',	[]	]),
+            ("ExtTemp",		    ['',	[]	]),
+			("ExtHumid",		['',	[]	]),
 			('spec',			['A8->16ADC->I2C',	[]	]),
 			('spechumid',		['??/',				[]	]),
 			('windspeed',		['RPI-WindSpeed',	[]	]),
@@ -85,12 +81,14 @@ class GrabSensors:
 		self.csvbuffer = OrderedDict([])
 		# Initialise a list of threads so data can be aquired asynchronosly
 		threads = []
-		threads.append(threading.Thread(target=self.healthcheck) ) 	# Check device status
-		threads.append(threading.Thread(target=self.grabgps) ) 		# Grab GPS data
-		threads.append(threading.Thread(target=self.grabrpiinfo) ) 	# Grab RaspberryPi Info
-		threads.append(threading.Thread(target=self.savedata) ) 	# Save Data to webGUI, LogFile
-		threads.append(threading.Thread(target=self.grabadc) ) 		# Grab data from ADC 
+		threads.append(threading.Thread(target=self.healthcheck) ) 	    # Check device status
+		threads.append(threading.Thread(target=self.grabgps) ) 		    # Grab GPS data
+		threads.append(threading.Thread(target=self.grabrpiinfo) ) 	    # Grab RaspberryPi Info
+		threads.append(threading.Thread(target=self.savedata) ) 	    # Save Data to webGUI ans LogFile
+		threads.append(threading.Thread(target=self.grabtemphumid) )    # Grab External temperature and humidity
+		threads.append(threading.Thread(target=self.grabalphasense) ) 	# Grab data from alphasense via an ABEelectronics ADC 
 		for item in threads:
+			print('started new thread')
 			item.start()
 		# Setup GPOI Pin access
 		#wiringpi2.wiringPiSetup() # For sequencial pin numbering i.e [] in pin layout below
@@ -125,7 +123,7 @@ class GrabSensors:
 			self.lock.acquire() 
 			try:
 				# Prep  web interface output
-				thistime = time.strftime("%d/%m/%Y %H:%M:%S")
+				thistime = time.strftime("%d/%m/%Y %H:%M:%S")+" Serial: "+self.CONFIG['serial']
 				mystr = ""
 				header = "timestamp, humandate"
 				hs = ''
@@ -168,6 +166,19 @@ class GrabSensors:
 			# Print to log and console	
 			logging.warning(msg)
 	
+    # Grab temperature / Humidity values
+    def grabtemphumid():
+        sensor=AM2315()
+        while True:
+        try:
+            self.temp = sensor.temperature() 
+            self.humid = sensor.humidity()
+            self.newdata('ExtTemp', self.temp )
+            self.newdata('ExtHumid', self.humid)
+        except Exception as e:
+            self.log('DEBUG', 'app.py | Exception | grabtemphumid() | '+str(e)
+            sleep(10)
+
 	# Grab GPS data 
 	def grabgps(self):
 		while True:
@@ -183,9 +194,22 @@ class GrabSensors:
 				self.log('DEBUG', 'app.py | ValueError | GrabGPS() | '+data)
 			time.sleep(6)
 	
-	# Grab ADC data from the ABelectronicsADC
-	def grabadc(self):
+	# Grab ADC data from the ABelectronicsADC -> alphasense
+	def grabalphasense(self):
+	    # Setup Alphasense calibration values
+		weSN1 = self.CONFIG['alphasense']['weSN1']          # VpcbWE-SN1-zero 
+		weSN2 = self.CONFIG['alphasense']['weSN2']          # VpcbWE-SN2-zero
+		weSN3 = self.CONFIG['alphasense']['weSN3']          # VpcbWE-SN3-zero
+		aeSN1 = self.CONFIG['alphasense']['aeSN1']          # VpcbAE-SN1-zero
+		aeSN2 = self.CONFIG['alphasense']['aeSN2']          # VpcbAE-SN2-zero
+		aeSN3 = self.CONFIG['alphasense']['aeSN3']          # VpcbAE-SN3-zero
+		SN1sensi = self.CONFIG['alphasense']['SN1sensi']    # "Sensitivity (mV/ppb)"
+		SN2sensi = self.CONFIG['alphasense']['SN2sensi']    # "Sensitivity (mV/ppb)"
+		SN3sensi = self.CONFIG['alphasense']['SN3sensi']    # "Sensitivity (mV/ppb)"
+		alphasense = Alphasense(weSN1, weSN2, weSN3, aeSN1, aeSN2, aeSN3, SN1sensi, SN2sensi, SN3sensi)
+		# Now loop through a grab values
 		while True: 
+		    # TODO: Replace with python3. The ADC library is provided as python2 so we use this subprocess hack to get the vars
 			jsonstr = subprocess.check_output("python2 libraries/ABEadcPi.py", shell=True).decode("utf-8")
 			try:
 				info=json.loads(jsonstr)
@@ -198,13 +222,13 @@ class GrabSensors:
 				self.newdata('NO2 A4 [WE1]', info["a7"] )
 				self.newdata('NO2 A4 [AE1]', info["a6"] )
 				self.newdata('TEMP [PT+]', info["a8"] )
-				temp = 23
-				print(jsonstr)
+				temp = self.temp
+				humidity = self.humid			
 				# sensor, ae, we, temp 
-				SO2 = self.alphasense.readppb('SO2a4', info['a3'], info['a2'], temp) 
-				O3 = self.alphasense.readppb('O3a4', info['a5'], info['a4'], temp)
-				NO2 = self.alphasense.readppb('NO2a4', info['a7'], info['a6'], temp)  
-				print('APP NO2: '+str(NO2)+"-------\n")
+				SO2 = alphasense.readppb('SO2a4', info['a3'], info['a2'], temp) 
+				O3 = alphasense.readppb('O3a4', info['a5'], info['a4'], temp)
+				NO2 = alphasense.readppb('NO2a4', info['a7'], info['a6'], temp)  
+				# Save the data
 				self.newdata('SO2ppb', SO2 )
 				self.newdata('O3ppb', O3 )
 				self.newdata('NO2ppb', NO2 )
