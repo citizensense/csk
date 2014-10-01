@@ -6,6 +6,7 @@ def init():
 
     # Config values
     CONFIG = {
+        'dbfile':'data/db.sqlite3',
         'posturl':'http://frackbox.citizensense.net/api',
         '0000000080c169f1':{
             'name':'kit 1',
@@ -104,8 +105,11 @@ def init():
     try:
         info=json.loads(jsonstr)
         serial = info["serial"] 
+        MAC = info["MAC"]
+        CONFIG[serial]['MAC'] = MAC 
         CONFIG[serial]['serial'] = serial
         CONFIG[serial]['posturl'] = CONFIG['posturl']
+        CONFIG[serial]['dbfile'] = CONFIG['dbfile'] 
         return CONFIG[serial] 
     except ValueError:
         return False

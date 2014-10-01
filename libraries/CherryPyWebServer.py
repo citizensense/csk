@@ -35,7 +35,7 @@ class Rest:
 		return """
         <html>
 		<head>
-			<meta http-equiv="refresh" content=5; URL="/">
+			<meta http-equiv="refresh" content=20; URL="/">
 			<style>
 				#leftcol{
 					float:left;
@@ -50,20 +50,21 @@ class Rest:
 				.padd{
 					margin:10px;
 				}
+                th, td{
+                    font-size:80%;
+                    vertical-align: text-top;
+                    font-family:"Lucida Console", Monaco, monospace;
+                    overflow:hidden;
+                    border:1px solid #ccc;
+                    white-space: nowrap;   
+                }
 			</style>
 		</head>
-		<body>
+		<body class="padd">
+		"""+BODY+"""
 
-		<div id="leftcol">
-			<div class="padd">
-				"""+BODY+"""
-			</div>
-		</div>
-
-		<div id="rightcol">
-			<div class="padd">
-				"""+LOG+"""
-			</div>
+		<div>
+			"""+LOG+"""
 		</div>
 
 		</body>

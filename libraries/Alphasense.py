@@ -36,7 +36,7 @@ class Alphasense:
         # Return parts per billion
         # print('CONVERTTOppb: '+str(compmv)+'/'+str(self.sensitivity)  )
         ppb = compmv/self.sensitivity
-        print(sensor+' ASPPB: '+str(ppb))
+        #print(sensor+' ASPPB: '+str(ppb))
         if ppb < 0: ppb =0
         return ppb
     

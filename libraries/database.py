@@ -80,7 +80,7 @@ class Database:
                 qry = 'INSERT INTO {0}({1}) VALUES({2}) '.format(tablename, fieldnames, q)
                 self.msg +="\nMultiplenodes:\n"+qry 
                 cursor.executemany(qry, data['values'])
-                myid = None
+                myid = 'Lots inserted'
             # Prep the vars for inserting a single record
             else:
                 qry = 'INSERT INTO {}({}) VALUES({})'.format(tablename, fieldnames,q)
@@ -89,6 +89,27 @@ class Database:
                 myid = cursor.lastrowid
             self.db.commit()
             return myid
+        except Exception as e:
+            self.msg += '\n'+str(e) 
+            return False
+     
+    # Run any query
+    def query(self, qry, response='rows'):
+        self.msg ="\n====database query() (runs any query)===="
+        self.msg += "\nRespond as: "+response 
+        self.msg += "\n"+qry   
+        try:
+            # Create a cursor
+            cursor = self.db.cursor()
+            cursor.execute(qry)
+            rows = []
+            n = 0
+            self.db.commit() 
+            for row in cursor:
+                if response == 'rows': rows.append(row)
+                if response == 'count': n = n+1
+            if response == 'rows': return rows
+            if response == 'count': return n
         except Exception as e:
             self.msg += '\n'+str(e) 
             return False

@@ -20,6 +20,7 @@ from CherryPyWebServer import *
 from Alphasense import *
 from AM2315 import *
 from PostData import *
+from database import *
 
 # The application class
 class GrabSensors:
@@ -31,7 +32,14 @@ class GrabSensors:
         # Setup logging
         logging.basicConfig(filename='csk.log', level=logging.DEBUG)
         self.log('INFO', 'Started script')
-        # Setup means to post data to the server
+        # Setup means to save and post data to the server
+        dbstruct = self.dbstructure()
+        db = Database(self.CONFIG['dbfile'], dbstruct)
+        self.log('INFO', db.printmsg() )  
+        # Build a new database if need be
+        db.build()
+        self.log('INFO', db.printmsg())  
+        # A class to help us post data
         self.poster = PostData()
         # Setup some base variables
         self.lock = threading.Lock()
@@ -39,8 +47,8 @@ class GrabSensors:
         self.ND1000S = ND1000S() 
         self.H3G = Huawei3G()
         self.save = SaveData()
-        self.temp = 24      # These get set by an external temperature sensor
-        self.humid = 50     # These get set by an external humidity sensor
+        self.temp = 999      # These get set by an external temperature sensor
+        self.humid = 999     # These get set by an external humidity sensor
         # Start the webserver (runs in its own thread)
         globalconfig = {'server.socket_host':"0.0.0.0", 'server.socket_port':80 } 
         localconfig = {'/': {'tools.staticdir.root': '../public'}}
@@ -50,35 +58,26 @@ class GrabSensors:
         self.datamodel = OrderedDict([
             ('lat',             ['USB-ND1000S',     []  ]),
             ('lon',             ['ND1000S-LON',     []  ]),
-            ('groundspeed',     ['ND1000S-SPEED',   []  ]),
-            ('altitude',        ['ND1000S-ALT',     []  ]),
-            ('PID',             ['A1->16ADC->I2C',  []  ]),
-            ('SO2 A4 [WE3]',    ['A2->16ADC->I2C',  []  ]),
-            ('SO2 A4 [AE3]',    ['A3->16ADC->I2C',  []  ]),
-            ('O3 A4 [WE2]',     ['A4->16ADC->I2C',  []  ]),
-            ('O3 A4 [AE2]',     ['A5->16ADC->I2C',  []  ]),
-            ('NO2 A4 [WE1]',    ['A6->16ADC->I2C',  []  ]),
-            ('NO2 A4 [AE1]',    ['A7->16ADC->I2C',  []  ]),
-            ('TEMP [PT+]',      ['A8->16ADC->I2C',  []  ]),
-            ('TEMP [PT+]',      ['A8->16ADC->I2C',  []  ]),
+            ('speed',           ['ND1000S-SPEED',   []  ]),
+            ('alt',             ['ND1000S-ALT',     []  ]),
+            ("XTemp",         ['',    []  ]),
+            ("XHumid",        ['',    []  ]),
+            ('winddir',         ['SPI-8ADC--MCP3008-WindDirection',         []  ]),
             ('SO2ppb',          ['',    []  ]),
             ('O3ppb',           ['',    []  ]),
             ('NO2ppb',          ['',    []  ]),
-            ("ExtTemp",         ['',    []  ]),
-            ("ExtHumid",        ['',    []  ]),
-            ('spec',            ['A8->16ADC->I2C',  []  ]),
-            ('spechumid',       ['??/',             []  ]),
-            ('windspeed',       ['RPI-WindSpeed',   []  ]),
-            ('winddir',         ['SPI-8ADC--MCP3008-WindDirection',         []  ]),
-            ('soundenv',        ['SPI-8ADC-SparkfunSoundDetector-SoundEnv', []  ]),
-            ('soundgate',       ['RPI-SparkfunSoundDetector-SoundGate',     []  ]),
-            ('outsidetemp',     ['I2C-AN2315-Temp', []  ]),
-            ('outsidehumid',['AN2315-Humid',    []  ]),
-            ('rpiTempC',    ['RPi-TempC',       []  ]),
-            ('rpi%diskused',['RPi-disk % used', []  ]),
-            ('rpidiskavail',['RPi-diskAvail',   []  ]),
-            ('rpiload',     ['Rpi-CPU Load Ave',[]  ]),
-            ('networkup',   ['HuaweiAvailable', []  ])
+            ('PID',             ['A1->16ADC->I2C',  []  ]),
+            ('SO2we3',          ['A2->16ADC->I2C',  []  ]),
+            ('SO2ae3',          ['A3->16ADC->I2C',  []  ]),
+            ('O3we2',           ['A4->16ADC->I2C',  []  ]),
+            ('O3ae2',           ['A5->16ADC->I2C',  []  ]),
+            ('NO2we1',          ['A6->16ADC->I2C',  []  ]),
+            ('NO2ae1',          ['A7->16ADC->I2C',  []  ]),
+            ('PT+',             ['A8->16ADC->I2C',  []  ]),
+            ('CPU',             ['RPi-TempC',       []  ]),
+            ('Disk',            ['RPi-diskAvail',   []  ]),
+            ('Load',            ['Rpi-CPU Load Ave',[]  ]),
+            ('network',         ['HuaweiAvailable', []  ])
         ])
         # Place to store asychronosly generated values
         self.csvbuffer = OrderedDict([])
@@ -91,18 +90,28 @@ class GrabSensors:
         threads.append(threading.Thread(target=self.grabtemphumid) )    # Grab External temperature and humidity
         threads.append(threading.Thread(target=self.grabalphasense) )   # Grab data from alphasense via an ABEelectronics ADC 
         threads.append(threading.Thread(target=self.postdata) )         # Post data to server
+        threads.append(threading.Thread(target=self.setweb) )           # Set data on the web interface
         for item in threads:
-            print('started new thread')
             item.start()
         # Setup GPOI Pin access
         #wiringpi2.wiringPiSetup() # For sequencial pin numbering i.e [] in pin layout below
         #wiringpi2.wiringPiSetupGpio() # For GPIO pin numbering
     
     # The database model to save data in
-    def dbmodel(self):
-        return
+    def dbstructure(self):
+        # The database model
+        dbstruct = OrderedDict([
+            # A place to store csvs
+            ('csvs', [
+                ('cid', 'INTEGER PRIMARY KEY'),
+                ('timestamp', 'INTEGER'),
+                ('csv', 'TEXT'),
+                ('uploaded', 'INTEGER') # 0=notuploaded 1=uploaded
+            ])
+        ])
+        return dbstruct
 
-    # If any threads have new data, then send it here
+    # If any threads have new data then save it here
     def newdata(self, key, value):
         # Create a timecode
         timecode = int(time.time())
@@ -126,19 +135,65 @@ class GrabSensors:
     
     # Periodically attempt to post saved data to the server
     def postdata(self):
+        # Initialise a database connection
+        dbstruct = self.dbstructure()
+        db = Database(self.CONFIG['dbfile'], dbstruct)
         # Initialise the object
         poster = PostData()
         # Now send some data to a locally installed version of frackbox
         url = 'http://192.168.1.100:8787/api'
+        # Generate an array of key names
+        keys = ["timestamp","humandate"]
+        for key in self.datamodel: keys.append(key)
+        keys = json.dumps(keys)
+        # Now periodically upload the data
         while True:
-            # Grab the latest data
-            data = {'header': 'one', 'csv': '33'}
-            # Then attempt to post it
-            poster.send(url, data)
-            time.sleep(20)
+            toupload = -1
+            while toupload is not 0:
+                # Grab data to upload
+                rows = db.query('SELECT cid, csv FROM csvs WHERE uploaded = 0 LIMIT 100')
+                values = []
+                cids = []
+                for row in rows:
+                    cids.append(row[0])
+                    values.append(row[1])
+                toupload = len(cids)
+                # Then attempt to post it
+                if toupload > 0:
+                    jsonvalues = json.dumps(values)
+                    data = {
+                        'serial':self.CONFIG['serial'],
+                        'name':self.CONFIG['name'], 
+                        'MAC':self.CONFIG['MAC'],
+                        'jsonkeys': keys, 
+                        'jsonvalues': jsonvalues
+                    }
+                    resp = poster.send(url, data)
+                    if resp is not False:
+                        if len(resp['errors']) > 0: 
+                            print(resp['errors'])
+                        else:
+                            # Update database as we have successfully uploaded all data
+                            print('Sucessfully uploaded')
+                            where = 'cid='+' OR cid='.join(map(str, cids))
+                            qry = "UPDATE csvs SET uploaded=1 WHERE {}".format(where)
+                            rows = db.query(qry)
+                            #print(db.msg)
+                    else:
+                        print(resp)
+                        print(poster.msg)
+                        # Lets pause a bit and wait again
+                        toupload = 0
+                time.sleep(1)
+            # If its a success then update the 'uploaded' flag
+            time.sleep(30)
 
     # Iterate through the data model and save data to: LogFile, GUI, Web
+    # TODO: This is messy! Seperate data, display etc...
     def savedata(self):
+        # Setup the database object
+        dbstruct = self.dbstructure()
+        self.db = Database(self.CONFIG['dbfile'], dbstruct)
         while True:
             # Block if the lock is already held by another process
             self.lock.acquire() 
@@ -146,7 +201,7 @@ class GrabSensors:
                 # Prep  web interface output
                 thistime = time.strftime("%d/%m/%Y %H:%M:%S")+" Serial: "+self.CONFIG['serial']
                 mystr = ""
-                header = "timestamp, humandate"
+                header = "timestamp, humandate, "
                 hs = ''
                 for key in self.datamodel:
                     values = ""
@@ -159,11 +214,17 @@ class GrabSensors:
                     hs = ', '
                 # Prep the CSV output
                 csvbuffer = ""
+                rows = []
                 for timecode in self.csvbuffer:
                     ht = datetime.fromtimestamp( timecode ).strftime('%Y-%m-%d %H:%M:%S')
-                    csvbuffer = csvbuffer+str(timecode)+','+ht+','.join(self.csvbuffer[timecode])+"\n"
+                    line = str(timecode)+','+ht+','+','.join(self.csvbuffer[timecode])
+                    # Prep data ready for database
+                    rows.append([timecode, line, 0])
+                    csvbuffer = csvbuffer+line+'\n'
+                # save all the lovely new data to the database
+                if len(rows) > 0: self.savetodb(rows)
                 # Export to the web interface
-                self.webserver.setcontent('<h2>'+thistime+'</h2><pre>'+mystr+'</pre>', header+'<hr /><pre>'+csvbuffer+'</pre>')
+                #self.setweb(header, csvbuffer)
                 # Save data to the log file
                 # TODO: Check the string isn't empty!!
                 self.save.log(self.datapath, header, csvbuffer)
@@ -172,6 +233,52 @@ class GrabSensors:
             finally:
                 self.lock.release()
             time.sleep(5)
+    
+    # Create the weblayout
+    def setweb(self):
+        # Setup the database object and query
+        dbstruct = self.dbstructure()
+        db = Database(self.CONFIG['dbfile'], dbstruct)
+        qry = 'SELECT cid, uploaded, csv FROM csvs ORDER BY cid DESC LIMIT 40'
+        # Build the header
+        table = '<table><tr><th>'
+        keys = ["cid","up","timestamp","humandate"]
+        for key in self.datamodel:
+            keys.append(key)
+        keyheader = '</th><th>'.join(keys)
+        table += keyheader+"</th></tr>"
+        # Now loop through and keep updating the display
+        while True:
+            # How many rows in the database
+            num = db.query('SELECT count(*) FROM csvs') 
+            uploaded = db.query('SELECT uploaded FROM csvs WHERE uploaded = 1;', 'count') 
+            num = num[0][0]
+            toupload = num-uploaded
+            # Lets grab the latest data
+            rows = db.query(qry)
+            rowsstr = ''
+            for row in rows:
+                vals = row[2].replace(',', '</td><td>')
+                rowsstr += '<tr><td>{}</td><td>{}</td><td>{}</td></tr>'.format(row[0], row[1], vals)
+            # And build th final table
+            body = table+rowsstr+'</table>'
+            # Then build the heade string
+            header = '<strong>Date:</strong> {} <strong>Device:</strong> {} <strong>ID:</strong> {} '.format(time.strftime("%d/%m/%Y %H:%M:%S"), self.CONFIG['name'], self.CONFIG['serial'] ) 
+            header += '<strong>mac:</strong> {} '.format(self.CONFIG['MAC'])
+            header += '<hr />'
+            header += '<strong>Rows:</strong> {} '.format(num)
+            header += '<strong>Uploaded</strong> {} '.format(uploaded)
+            header += '<strong>To upload: </strong> {}'.format(toupload)
+            header += '<br /><br />'
+            self.webserver.setcontent(header, body)
+            time.sleep(10)
+
+    # Save data to the database
+    def savetodb(self, rows):
+        data = {}
+        data['fieldnames'] = ['timestamp', 'csv', 'uploaded']
+        data['values'] = rows
+        cids = self.db.create('csvs', data)
 
     # Used for application debugging
     def log(self, level, msg):
@@ -194,12 +301,13 @@ class GrabSensors:
             try:
                 temp = sensor.temperature() 
                 humid = sensor.humidity()
-                if temp != 999:
+                #TODO: Dirty fix checking for zero values, sort with proper media check
+                if temp != 999 and temp != 0.0:
                     self.temp = temp
-                    self.newdata('ExtTemp', temp )
+                    self.newdata('XTemp', temp )
                 if humid != 999:
                     self.humid = humid
-                    self.newdata('ExtHumid', humid)
+                    self.newdata('XHumid', humid)
             except Exception as e:
                 self.log('DEBUG', 'app.py | Exception | grabtemphumid() | '+str(e) )
             time.sleep(10)
@@ -213,8 +321,8 @@ class GrabSensors:
                 self.log('DEBUG',"GOT GPS: "+data)
                 self.newdata('lat', info["lat"] )
                 self.newdata('lon', info["lon"] )
-                self.newdata('groundspeed', info["speed"] )
-                self.newdata('altitude', info["alt"] )
+                self.newdata('speed', info["speed"] )
+                self.newdata('alt', info["alt"] )
             except ValueError:
                 self.log('DEBUG', 'app.py | ValueError | GrabGPS() | '+data)
             time.sleep(6)
@@ -240,15 +348,16 @@ class GrabSensors:
                 info=json.loads(jsonstr)
                 self.log('DEBUG',"Got ADC Info"+jsonstr)
                 self.newdata('PID', info["a1"] ) 
-                self.newdata('SO2 A4 [WE3]', info["a3"] )
-                self.newdata('SO2 A4 [AE3]', info["a2"] )
-                self.newdata('O3 A4 [WE2]', info["a5"] )
-                self.newdata('O3 A4 [AE2]', info["a4"] )
-                self.newdata('NO2 A4 [WE1]', info["a7"] )
-                self.newdata('NO2 A4 [AE1]', info["a6"] )
-                self.newdata('TEMP [PT+]', info["a8"] )
+                self.newdata('SO2we3', info["a3"] )
+                self.newdata('SO2ae3', info["a2"] )
+                self.newdata('O3we2', info["a5"] )
+                self.newdata('O3ae2', info["a4"] )
+                self.newdata('NO2we1', info["a7"] )
+                self.newdata('NO2ae1', info["a6"] )
+                self.newdata('PT+', info["a8"] )
+                # Grab the external temperature
                 temp = self.temp
-                humidity = self.humid           
+                humidity = self.humid          
                 # sensor, ae, we, temp 
                 SO2 = alphasense.readppb('SO2a4', info['a3'], info['a2'], temp) 
                 O3 = alphasense.readppb('O3a4', info['a5'], info['a4'], temp)
@@ -269,10 +378,9 @@ class GrabSensors:
             try:
                 info=json.loads(jsonstr)
                 self.log('DEBUG',"Got RaspberryPi Info"+jsonstr)
-                self.newdata('rpiTempC', info["tempc"] ) 
-                self.newdata('rpi%diskused', info["disk%used"] )
-                self.newdata('rpidiskavail', info["diskavailable"] )
-                self.newdata('rpiload', info["load"] )
+                self.newdata('CPU', info["tempc"] ) 
+                self.newdata('Disk', info["disk%used"]+'/'+info["diskavailable"] )
+                self.newdata('Load', info["load"] )
                 #self.newdata(tc, 'deviceinfo', info["serial"] )
             except ValueError:
                 self.log('DEBUG', 'app.py | ValueError | GrabGPS() | '+jsonstr)
@@ -287,10 +395,10 @@ class GrabSensors:
             self.log('DEBUG','Checking network connection: '+lsusb)
             if network == "Network OK":
                 self.log('DEBUG','Network OK')
-                self.newdata('networkup', 1)
+                self.newdata('network', 1)
             else:
                 self.log('WARN','USB HAS BEEN reset: Network not connected')
-                self.newdata('networkup', 0)
+                self.newdata('network', 0)
             time.sleep(20)
 
     # Thread to blink an led

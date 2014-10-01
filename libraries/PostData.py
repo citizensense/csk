@@ -1,11 +1,13 @@
 #!/usr/bin/python3
 import urllib.request
 import urllib.parse
+import json
 
 class PostData:
 
     # Simple method to post some data
     def send(self, url, data):
+        self.msg = 'Posting data'
         data = urllib.parse.urlencode(data)
         data = data.encode('utf-8')
         request = urllib.request.Request(url)
@@ -14,8 +16,14 @@ class PostData:
         try:
             f = urllib.request.urlopen(request, data)
         except Exception as e:
-            return e
-        return f.read().decode('utf-8')
+            self.msg += 'POST Error: '+str(e)
+            return False
+        response = f.read().decode('utf-8')
+        try:
+            return json.loads(response)            
+        except Exception as e:
+            self.msg += 'Json Response Error: '+str(e) 
+            return False
 
 if __name__ == "__main__":
     import time

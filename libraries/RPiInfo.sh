@@ -7,7 +7,8 @@ MEM=$(free -mh | grep '+ buffers')
 L1=$(uptime | cut -d' ' -f12 | rev | cut -c 2- | rev)
 L2=$(uptime | cut -d' ' -f13 | rev | cut -c 2- | rev)
 L3=$(uptime | cut -d' ' -f14 | rev | cut -c 2- | rev)
+MAC=$(ip maddr | grep eth1 -B0 -A1 | grep link | cut -d' ' -f 3)
 #LOAD=$(awk "BEGIN{printf(\"%2.2f\n\", ($L1+$L2+$L3)/3); exit }")
 INFO=$(cat /proc/cpuinfo)
 SERIAL=$(cat /proc/cpuinfo | grep Serial | cut -f3 | cut -c 3-)
-echo -e "{\"tempc\":\"$TEMP\",\"disk%used\":\"$DISKUSED\",\"diskavailable\":\"$DISKAVAILABLE\",\"load\":\"$L1-$L2-$L3\",\"serial\":\"$SERIAL\"}" 
+echo -e "{\"tempc\":\"$TEMP\",\"disk%used\":\"$DISKUSED\",\"diskavailable\":\"$DISKAVAILABLE\",\"load\":\"$L1-$L2-$L3\",\"serial\":\"$SERIAL\",\"MAC\":\"$MAC\"}" 
