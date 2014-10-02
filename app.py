@@ -28,6 +28,7 @@ class GrabSensors:
     # Initialise the object
     def __init__(self):
         # Load the config for this device
+        self.log('INFO', 'Attempt to load the config')
         self.CONFIG = config.init()
         # Setup logging
         logging.basicConfig(filename='csk.log', level=logging.DEBUG)
@@ -141,7 +142,8 @@ class GrabSensors:
         # Initialise the object
         poster = PostData()
         # Now send some data to a locally installed version of frackbox
-        url = 'http://192.168.1.100:8787/api'
+        #url = 'http://192.168.1.100:8787/api'
+        url = self.CONFIG['posturl']
         # Generate an array of key names
         keys = ["timestamp","humandate"]
         for key in self.datamodel: keys.append(key)

@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-import json,subprocess
+import json, subprocess, time
 
 # Construct the config for this sspecific device
 def init():
@@ -99,20 +99,24 @@ def init():
             'methane':False
         }
     }
-
+    
     # Load the config for this specific device
-    jsonstr = subprocess.check_output("libraries/RPiInfo.sh", shell=True).decode("utf-8")
-    try:
-        info=json.loads(jsonstr)
-        serial = info["serial"] 
-        MAC = info["MAC"]
-        CONFIG[serial]['MAC'] = MAC 
-        CONFIG[serial]['serial'] = serial
-        CONFIG[serial]['posturl'] = CONFIG['posturl']
-        CONFIG[serial]['dbfile'] = CONFIG['dbfile'] 
-        return CONFIG[serial] 
-    except ValueError:
-        return False
+    loaded = False
+    while loaded is not True:
+        try:
+            jsonstr = subprocess.check_output("libraries/RPiInfo.sh", shell=True).decode("utf-8")
+            info=json.loads(jsonstr)
+            serial = info["serial"] 
+            MAC = info["MAC"]
+            CONFIG[serial]['MAC'] = MAC 
+            CONFIG[serial]['serial'] = serial
+            CONFIG[serial]['posturl'] = CONFIG['posturl']
+            CONFIG[serial]['dbfile'] = CONFIG['dbfile'] 
+            loaded = True
+        except Exception as e:
+            print(e)
+        time.sleep(10)
+    return CONFIG[serial]
 
 if __name__=='__main__':
     print(init())
