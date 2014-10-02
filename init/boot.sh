@@ -5,13 +5,13 @@
 loadkeys uk
 setfont ter-p24b.psf.gz
 
-# Run the sensor app 
-killall app.py
-#/home/csk/csk/app.py &
-
 # Startup GPSD
 killall gpsd
 gpsd /dev/ttyUSB0 -F /var/run/gpsd.sock &
+
+# Run the sensor app 
+killall app.py
+/home/csk/csk/app.py &
 
 # Check if we got to the end of the script
 MYDATE=date

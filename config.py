@@ -38,7 +38,7 @@ def init():
             },
             'methane':False
         },
-        '0':{
+        '0000000008e366f4':{
             'name':'kit 3',
             'alphasense':{
                 'weSN1':310,        # VpcbWE-SN1-zero 
