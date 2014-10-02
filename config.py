@@ -23,7 +23,7 @@ def init():
             },
             'methane':False
         },
-        '0':{
+        '000000006217b4aa':{
             'name':'kit 2',
             'alphasense':{
                 'weSN1':310,        # VpcbWE-SN1-zero 
@@ -83,7 +83,7 @@ def init():
             },
             'methane':False
         },
-        '0':{
+        '000000003068b18f':{
             'name':'kit 6',
             'alphasense':{
                 'weSN1':310,        # VpcbWE-SN1-zero 
