@@ -7,6 +7,7 @@ def init():
     # Config values
     CONFIG = {
         'dbfile':'data/db.sqlite3',
+        #'posturl':'http://192.168.1.100:8787/api',
         'posturl':'http://frackbox.citizensense.net/api',
         '0000000080c169f1':{
             'name':'kit 1',

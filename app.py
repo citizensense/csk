@@ -142,7 +142,6 @@ class GrabSensors:
         # Initialise the object
         poster = PostData()
         # Now send some data to a locally installed version of frackbox
-        #url = 'http://192.168.1.100:8787/api'
         url = self.CONFIG['posturl']
         # Generate an array of key names
         keys = ["timestamp","humandate"]
@@ -371,7 +370,7 @@ class GrabSensors:
                 self.newdata("Temp'C", 23)
             except ValueError:
                 self.log('DEBUG', 'app.py | JsonError | grabadc() | '+jsonstr)
-            time.sleep(3)
+            time.sleep(4)
 
     # Grab RpiInfo
     def grabrpiinfo(self):
