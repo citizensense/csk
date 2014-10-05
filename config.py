@@ -105,7 +105,7 @@ def init():
     loaded = False
     while loaded is not True:
         try:
-            jsonstr = subprocess.check_output("libraries/RPiInfo.sh", shell=True).decode("utf-8")
+            jsonstr = subprocess.check_output("/home/csk/csk/libraries/RPiInfo.sh", shell=True).decode("utf-8")
             info=json.loads(jsonstr)
             serial = info["serial"] 
             MAC = info["MAC"]

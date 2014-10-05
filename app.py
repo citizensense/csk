@@ -324,7 +324,7 @@ class GrabSensors:
                 self.newdata('lon', info["lon"] )
                 self.newdata('speed', info["speed"] )
                 self.newdata('alt', info["alt"] )
-            except ValueError:
+            except ValueError as e:
                 self.log('DEBUG', 'app.py | ValueError | GrabGPS() | '+data)
             time.sleep(6)
     
@@ -375,7 +375,7 @@ class GrabSensors:
     # Grab RpiInfo
     def grabrpiinfo(self):
         while True: 
-            jsonstr = subprocess.check_output("libraries/RPiInfo.sh", shell=True).decode("utf-8")
+            jsonstr = subprocess.check_output("/home/csk/csk/libraries/RPiInfo.sh", shell=True).decode("utf-8")
             try:
                 info=json.loads(jsonstr)
                 self.log('DEBUG',"Got RaspberryPi Info"+jsonstr)
@@ -394,11 +394,11 @@ class GrabSensors:
             network = self.H3G.checkconnection()
             lsusb = self.H3G.lsusb()
             self.log('DEBUG','Checking network connection: '+lsusb)
-            if network == "Network OK":
+            if network == True:
                 self.log('DEBUG','Network OK')
                 self.newdata('network', 1)
             else:
-                self.log('WARN','USB HAS BEEN reset: Network not connected')
+                self.log('WARN','Network not connected')
                 self.newdata('network', 0)
             time.sleep(20)
 
