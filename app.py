@@ -317,15 +317,18 @@ class GrabSensors:
     def grabgps(self):
         while True:
             data = self.ND1000S.grabdata()
-            try:
-                info=json.loads(data)
-                self.log('DEBUG',"GOT GPS: "+data)
-                self.newdata('lat', info["lat"] )
-                self.newdata('lon', info["lon"] )
-                self.newdata('speed', info["speed"] )
-                self.newdata('alt', info["alt"] )
-            except ValueError as e:
-                self.log('DEBUG', 'app.py | ValueError | GrabGPS() | '+data)
+            if data is not False:
+                try:
+                    info=json.loads(data)
+                    self.log('DEBUG',"GOT GPS: "+data)
+                    self.newdata('lat', info["lat"] )
+                    self.newdata('lon', info["lon"] )
+                    self.newdata('speed', info["speed"] )
+                    self.newdata('alt', info["alt"] )
+                except ValueError as e:
+                    self.log('DEBUG', 'app.py | ValueError | GrabGPS() | '+data)
+            else:
+                    self.log('DEBUG', 'app.py | ValueError | GrabGPS() | '+self.ND1000S.msg)
             time.sleep(6)
     
     # Grab ADC data from the ABelectronicsADC -> alphasense
@@ -344,7 +347,10 @@ class GrabSensors:
         # Now loop through a grab values
         while True: 
             # TODO: Replace with python3. The ADC library is provided as python2 so we use this subprocess hack to get the vars
-            jsonstr = subprocess.check_output("python2 libraries/ABEadcPi.py", shell=True).decode("utf-8")
+            try:
+                jsonstr = subprocess.check_output("python2 libraries/ABEadcPi.py", shell=True).decode("utf-8")
+            except:
+                print('No alphasense ADC!')
             try:
                 info=json.loads(jsonstr)
                 self.log('DEBUG',"Got ADC Info"+jsonstr)
@@ -392,8 +398,6 @@ class GrabSensors:
         while True:
             # CHECK NETWORK / 3G DONGLE IS CONNECTED
             network = self.H3G.checkconnection()
-            lsusb = self.H3G.lsusb()
-            self.log('DEBUG','Checking network connection: '+lsusb)
             if network == True:
                 self.log('DEBUG','Network OK')
                 self.newdata('network', 1)
