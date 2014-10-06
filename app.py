@@ -347,10 +347,11 @@ class GrabSensors:
         # Now loop through a grab values
         while True: 
             # TODO: Replace with python3. The ADC library is provided as python2 so we use this subprocess hack to get the vars
+            jsonstr = False
             try:
                 jsonstr = subprocess.check_output("python2 libraries/ABEadcPi.py", shell=True).decode("utf-8")
             except:
-                print('No alphasense ADC!')
+                self.log('WARN',"No alphasense ADC")
             try:
                 info=json.loads(jsonstr)
                 self.log('DEBUG',"Got ADC Info"+jsonstr)
@@ -375,7 +376,7 @@ class GrabSensors:
                 self.newdata('NO2ppb', NO2 )
                 self.newdata("Temp'C", 23)
             except ValueError:
-                self.log('DEBUG', 'app.py | JsonError | grabadc() | '+jsonstr)
+                self.log('DEBUG', 'app.py | JsonError | grabadc() | '+str(jsonstr))
             time.sleep(4)
 
     # Grab RpiInfo
@@ -390,7 +391,7 @@ class GrabSensors:
                 self.newdata('Load', info["load"] )
                 #self.newdata(tc, 'deviceinfo', info["serial"] )
             except ValueError:
-                self.log('DEBUG', 'app.py | ValueError | GrabGPS() | '+jsonstr)
+                self.log('DEBUG', 'app.py | ValueError | GrabGPS() | '+str(jsonstr))
             time.sleep(20)
 
     # Thread to check the network status

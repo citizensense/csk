@@ -5,15 +5,8 @@
 loadkeys uk
 setfont ter-p24b.psf.gz
 
-# Give the system time to load the hardware clock
-#sleep 20
-
-# Startup GPSD
-#killall gpsd
-#gpsd /dev/ttyUSB0 -F /var/run/gpsd.sock &
-
 # Run the sensor app 
-/home/csk/csk/app.py &
+/home/csk/csk/app.py > /dev/null &
 
 # Check if we got to the end of the script
 MYDATE=$(date)

@@ -22,7 +22,7 @@ def generateString(ports):
     a6 = '"a6":'+str(readVolts(6))+','
     a7 = '"a7":'+str(readVolts(7))+','
     a8 = '"a8":'+str(readVolts(8))+','
-    bus = '"bus":'+ports
+    bus = '"bus":"'+ports+'"'
     return '{'+a1+a2+a3+a4+a5+a6+a7+a8+bus+'}'
 
 # Initialise the ADC device using the default addresses and sample rate, change this value if you have changed the address selection jumpers
