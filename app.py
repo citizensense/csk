@@ -67,6 +67,7 @@ class GrabSensors:
             ('NOppb',          ['',    []  ]),
             ('O3ppb',           ['',    []  ]),
             ('NO2ppb',          ['',    []  ]),
+            ('NO2V2ppb',         ['',    []  ]),
             ('PID',             ['A1->16ADC->I2C',  []  ]),
             ('NOwe3',          ['A2->16ADC->I2C',  []  ]),
             ('NOae3',          ['A3->16ADC->I2C',  []  ]),
@@ -355,26 +356,26 @@ class GrabSensors:
             try:
                 info=json.loads(str(jsonstr))
                 self.log('DEBUG',"Got ADC Info"+jsonstr)
-                self.newdata('PID', info["a1"] ) 
-                self.newdata('NOwe3', info["a3"] )
-                self.newdata('NOae3', info["a2"] )
-                self.newdata('O3we2', info["a5"] )
-                self.newdata('O3ae2', info["a4"] )
-                self.newdata('NO2we1', info["a7"] )
-                self.newdata('NO2ae1', info["a6"] )
-                self.newdata('PT+', info["a8"] )
+                self.newdata('PID', int(info["a1"]) ) 
+                self.newdata('NOwe3', int(info["a3"]) )
+                self.newdata('NOae3', int(info["a2"]) )
+                self.newdata('O3we2', int(info["a5"]) )
+                self.newdata('O3ae2', int(info["a4"]) )
+                self.newdata('NO2we1', int(info["a7"]) )
+                self.newdata('NO2ae1', int(info["a6"]) )
+                self.newdata('PT+', int(info["a8"]) )
                 # Grab the external temperature
                 temp = self.temp
                 humidity = self.humid          
                 # sensor, ae, we, temp 
-                SO2 = alphasense.readppb('NOa4', info['a3'], info['a2'], temp) 
+                NO = alphasense.readppb('NOa4', info['a3'], info['a2'], temp) 
                 O3 = alphasense.readppb('O3a4', info['a5'], info['a4'], temp)
                 NO2 = alphasense.readppb('NO2a4', info['a7'], info['a6'], temp)  
                 # Save the data
-                self.newdata('NOppb', SO2 )
-                self.newdata('O3ppb', O3 )
-                self.newdata('NO2ppb', NO2 )
-                self.newdata("Temp'C", 23)
+                self.newdata('NOppb', int(NO) )
+                self.newdata('O3ppb', int(O3) )
+                self.newdata('NO2ppb', int(NO2) )
+                #self.newdata("Temp'C", 23)
             except ValueError:
                 self.log('DEBUG', 'app.py | JsonError | grabadc() | '+str(jsonstr))
             time.sleep(4)
