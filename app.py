@@ -64,12 +64,12 @@ class GrabSensors:
             ("XTemp",         ['',    []  ]),
             ("XHumid",        ['',    []  ]),
             ('winddir',         ['SPI-8ADC--MCP3008-WindDirection',         []  ]),
-            ('SO2ppb',          ['',    []  ]),
+            ('NOppb',          ['',    []  ]),
             ('O3ppb',           ['',    []  ]),
             ('NO2ppb',          ['',    []  ]),
             ('PID',             ['A1->16ADC->I2C',  []  ]),
-            ('SO2we3',          ['A2->16ADC->I2C',  []  ]),
-            ('SO2ae3',          ['A3->16ADC->I2C',  []  ]),
+            ('NOwe3',          ['A2->16ADC->I2C',  []  ]),
+            ('NOae3',          ['A3->16ADC->I2C',  []  ]),
             ('O3we2',           ['A4->16ADC->I2C',  []  ]),
             ('O3ae2',           ['A5->16ADC->I2C',  []  ]),
             ('NO2we1',          ['A6->16ADC->I2C',  []  ]),
@@ -349,15 +349,15 @@ class GrabSensors:
             # TODO: Replace with python3. The ADC library is provided as python2 so we use this subprocess hack to get the vars
             jsonstr = False
             try:
-                jsonstr = subprocess.check_output("python2 libraries/ABEadcPi.py", shell=True).decode("utf-8")
+                jsonstr = subprocess.check_output("python2 /home/csk/csk/libraries/ABEadcPi.py", shell=True).decode("utf-8")
             except:
                 self.log('WARN',"No alphasense ADC")
             try:
-                info=json.loads(jsonstr)
+                info=json.loads(str(jsonstr))
                 self.log('DEBUG',"Got ADC Info"+jsonstr)
                 self.newdata('PID', info["a1"] ) 
-                self.newdata('SO2we3', info["a3"] )
-                self.newdata('SO2ae3', info["a2"] )
+                self.newdata('NOwe3', info["a3"] )
+                self.newdata('NOae3', info["a2"] )
                 self.newdata('O3we2', info["a5"] )
                 self.newdata('O3ae2', info["a4"] )
                 self.newdata('NO2we1', info["a7"] )
@@ -367,11 +367,11 @@ class GrabSensors:
                 temp = self.temp
                 humidity = self.humid          
                 # sensor, ae, we, temp 
-                SO2 = alphasense.readppb('SO2a4', info['a3'], info['a2'], temp) 
+                SO2 = alphasense.readppb('NOa4', info['a3'], info['a2'], temp) 
                 O3 = alphasense.readppb('O3a4', info['a5'], info['a4'], temp)
                 NO2 = alphasense.readppb('NO2a4', info['a7'], info['a6'], temp)  
                 # Save the data
-                self.newdata('SO2ppb', SO2 )
+                self.newdata('NOppb', SO2 )
                 self.newdata('O3ppb', O3 )
                 self.newdata('NO2ppb', NO2 )
                 self.newdata("Temp'C", 23)

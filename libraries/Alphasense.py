@@ -56,6 +56,13 @@ class Alphasense:
             sensi = self.SN2sensi
             if temp <= 9: tempcomp = 0.75   # -30c to 9c = 0.75
             if temp >= 10: tempcomp = 1.28  # 10c to 50c = 1.28
+        elif sensor == 'NOa4':
+            weSN = self.weSN3
+            aeSN = self.aeSN3
+            sensi = self.SN3sensi
+            if temp <= 19: tempcomp = 1.15  # -30c to 19c = 1.15
+            if temp >= 20: tempcomp = 1.82  # 20c to 29c = 1.82
+            if temp >= 30:  tempcomp = 3.93 # 30c to 50c = 3.93
         elif sensor == 'SO2a4':
             weSN = self.weSN3
             aeSN = self.aeSN3
@@ -93,7 +100,7 @@ if __name__ == "__main__":
     temp = 23  # Degrees centigrade
     print('NO2ppb: '+str( alphasense.readppb('NO2a4', mvWE, mvAE, temp)) )
     print('O3ppb: '+str( alphasense.readppb('O3a4', mvWE, mvAE, temp)) )
-    print('SO2ppb: '+str(alphasense.readppb('SO2a4', mvWE, mvAE, temp))  )
+    print('NOppb: '+str(alphasense.readppb('NOa4', mvWE, mvAE, temp))  )
 
 
 
