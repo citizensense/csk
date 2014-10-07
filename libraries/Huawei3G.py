@@ -13,16 +13,34 @@ class Huawei3G:
         self.msg = "==========checkconnection()========"
         eth = -1
         wlan = -1
-
+        wwan0 = -1
         # Search for a network interface
         try:
             ipa = subprocess.check_output("ip a", shell=True).decode("utf-8")
             eth1 = ipa.find('eth1')
             wlan0 = ipa.find('wlan0')
+            wwan0 = ipa.find('wwan0')
         except Exception as e:
             self.msg += '\nError: couldn\'t run "ip a" | {} '.format(str(e))
             return False
-
+        # If wwan0 is found the make sure the network is put up
+        if wwan0 > -1:
+            self.msg += "\nFound network device: wwan0"
+            try:
+                wwan0 = subprocess.check_output("ip a show wwan0", shell=True).decode("utf-8")
+                if wwan0.find('UP') == -1:
+                    self.msg += '\nNetwork device is DOWN: wwan0'
+                    self.netctlstart('wwan0')
+                    self.msg += '\nTry this script in a bit and see if we are connected'
+                    return False
+                else:
+                    self.msg += '\nNetwork device is UP: wwan0'
+                    if self.findip('wwan0').strip() == '192.168.1.99/24':
+                        self.msg += "wwan0 Network looks good... "
+                    return True
+            except Exception as e: 
+                self.msg += "Error: Unable to run ip a show eth1 | {} ".format(e)
+                return False
         # If eth1 isnt found then reload the dongle
         if eth1 == -1:
             self.msg += "\nCouldn't find network device eth1"
@@ -44,7 +62,7 @@ class Huawei3G:
                 else:
                     self.msg += '\nNetwork device is UP: eth1'
                     if self.findip('eth1').strip() == '192.168.1.99/24':
-                        self.msg += "Network looks good... "
+                        self.msg += "eth1 Network looks good... "
                     return True
             except Exception as e: 
                 self.msg += "Error: Unable to run ip a show eth1 | {} ".format(e)
@@ -53,7 +71,7 @@ class Huawei3G:
     # Switch the 3G dongle into network mode
     def huawiereboot(self):
         try:
-            subprocess.check_output('usb_modeswitch -c /home/csk/csk/init/usbmodeswitchE353.config', shell=True).decode("utf-8")
+            subprocess.check_output('usb_modeswitch -c /home/csk/csk/init/E353.config', shell=True).decode("utf-8")
             self.msg += "\nAttempted to switched 3G dongle to network mode"
             return True
         except Exception as e:
@@ -107,19 +125,11 @@ if __name__ == "__main__":
         print(network.msg)
         time.sleep(5)
 
+# OLDER DONGLES
 # Example output with 3G dongle in network device mode
-#Bus 001 Device 024: ID 12d1:14db Huawei Technologies Co., Ltd. E353/E3131
-#Bus 001 Device 005: ID 046d:c52b Logitech, Inc. Unifying Receiver
-#Bus 001 Device 004: ID 067b:2303 Prolific Technology, Inc. PL2303 Serial Port
-#Bus 001 Device 003: ID 0424:ec00 Standard Microsystems Corp. SMSC9512/9514 Fast Ethernet Adapter
-#Bus 001 Device 002: ID 0424:9514 Standard Microsystems Corp. SMC9514 Hub
-#Bus 001 Device 001: ID 1d6b:0002 Linux Foundation 2.0 root hub 
+  # Bus 001 Device 024: ID 12d1:14db Huawei Technologies Co., Ltd. E353/E3131
+# In MAss Storage mode
+  # Bus 001 Device 006: ID 12d1:1f01 Huawei Technologies Co., Ltd. E353/E3131 (Mass storage mode)
 
-# Example ouput with 3G dongle in MAss Storage mode
-# Bus 001 Device 005: ID 067b:2303 Prolific Technology, Inc. PL2303 Serial Port
-# Bus 001 Device 006: ID 12d1:1f01 Huawei Technologies Co., Ltd. E353/E3131 (Mass storage mode)
-# Bus 001 Device 004: ID 046d:c52b Logitech, Inc. Unifying Receiver
-# Bus 001 Device 003: ID 0424:ec00 Standard Microsystems Corp. SMSC9512/9514 Fast Ethernet Adapter
-# Bus 001 Device 002: ID 0424:9514 Standard Microsystems Corp. SMC9514 Hub
-# Bus 001 Device 001: ID 1d6b:0002 Linux Foundation 2.0 root hub
-
+# NEWER DONGLES
+  # Bus 001 Device 007: ID 12d1:1c1e Huawei Technologies Co., Ltd. 

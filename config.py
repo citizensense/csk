@@ -35,7 +35,7 @@ def init():
                 'ae3z':285,        # VpcbAE-SN3-zero
                 '1sensi':0.423,    # "Sensitivity (mV/ppb)"
                 '2sensiO3':0.290,  # "Sensitivity (mV/ppb)"
-                '2sensiNO2':0.407, # "Sensitivity (mV/ppb)"
+                '2sensiO3no2':0.407, # "Sensitivity (mV/ppb)"
                 '3sensi':0.367     # "Sensitivity (mV/ppb)" 
             },
             'methane':False
@@ -50,8 +50,8 @@ def init():
                 'ae2z':415,        # VpcbAE-SN2-zero
                 'ae3z':267,        # VpcbAE-SN3-zero
                 '1sensi':0.479,    # "Sensitivity (mV/ppb)"
-                '2sensi03':0.293,  # "Sensitivity (mV/ppb)"
-                '2sensiNO2':0.382,
+                '2sensiO3':0.293,  # "Sensitivity (mV/ppb)"
+                '2sensiO3no2':0.382,
                 '3sensi':0.371     # "Sensitivity (mV/ppb)" 
             },
             'methane':False
@@ -67,7 +67,7 @@ def init():
                 'ae3z':284,        # VpcbAE-SN3-zero
                 '1sensi':0.376,    # "Sensitivity (mV/ppb)"
                 '2sensiO3':0.404,  # "Sensitivity (mV/ppb)"
-                '2sensiNO2':0.416
+                '2sensiO3no2':0.416,
                 '3sensi':0.352     # "Sensitivity (mV/ppb)" 
             },
             'methane':False
@@ -83,7 +83,7 @@ def init():
                 'ae3z':284,        # VpcbAE-SN3-zero
                 '1sensi':0.314,    # "Sensitivity (mV/ppb)"
                 '2sensiO3':0.351,  # "Sensitivity (mV/ppb)"
-                '2sensiNO2':0.420,
+                '2sensiO3no2':0.420,
                 '3sensi':0.380     # "Sensitivity (mV/ppb)" 
             },
             'methane':False
@@ -97,9 +97,10 @@ def init():
                 'ae1z':0,        # VpcbAE-SN1-zero
                 'ae2z':0,        # VpcbAE-SN2-zero
                 'ae3z':0,        # VpcbAE-SN3-zero
-                '1sensi':0.0,     # "Sensitivity (mV/ppb)"
-                '2sensi':0.0,     # "Sensitivity (mV/ppb)"
-                '3sensi':0.0      # "Sensitivity (mV/ppb)" 
+                '1sensi':0.0,    # "Sensitivity (mV/ppb)"
+                '2sensiO3':0.0,  # "Sensitivity (mV/ppb)"
+                '2sensiO3no2':0.0,
+                '3sensi':0.0     # "Sensitivity (mV/ppb)" 
             },
             'methane':False
         }

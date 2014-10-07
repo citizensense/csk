@@ -67,8 +67,9 @@ class GrabSensors:
             ('winddir',         ['SPI-8ADC--MCP3008-WindDirection',         []  ]),
             ('NOppb',          ['',    []  ]),
             ('O3ppb',           ['',    []  ]),
+            ('O3no2ppb',           ['',    []  ]),
             ('NO2ppb',          ['',    []  ]),
-            ('NO2V2ppb',         ['',    []  ]),
+            ('PIDppm',           ['',    []  ]),
             ('PID',             ['A1->16ADC->I2C',  []  ]),
             ('NOwe3',          ['A2->16ADC->I2C',  []  ]),
             ('NOae3',          ['A3->16ADC->I2C',  []  ]),
@@ -349,16 +350,8 @@ class GrabSensors:
     # Grab ADC data from the ABelectronicsADC -> alphasense
     def grabalphasense(self):
         # Setup Alphasense calibration values
-        weSN1 = self.CONFIG['alphasense']['weSN1']          # VpcbWE-SN1-zero 
-        weSN2 = self.CONFIG['alphasense']['weSN2']          # VpcbWE-SN2-zero
-        weSN3 = self.CONFIG['alphasense']['weSN3']          # VpcbWE-SN3-zero
-        aeSN1 = self.CONFIG['alphasense']['aeSN1']          # VpcbAE-SN1-zero
-        aeSN2 = self.CONFIG['alphasense']['aeSN2']          # VpcbAE-SN2-zero
-        aeSN3 = self.CONFIG['alphasense']['aeSN3']          # VpcbAE-SN3-zero
-        SN1sensi = self.CONFIG['alphasense']['SN1sensi']    # "Sensitivity (mV/ppb)"
-        SN2sensi = self.CONFIG['alphasense']['SN2sensi']    # "Sensitivity (mV/ppb)"
-        SN3sensi = self.CONFIG['alphasense']['SN3sensi']    # "Sensitivity (mV/ppb)"
-        alphasense = Alphasense(weSN1, weSN2, weSN3, aeSN1, aeSN2, aeSN3, SN1sensi, SN2sensi, SN3sensi)
+        calibration = self.CONFIG['alphasense']
+        alphasense = Alphasense(calibration)
         # Now loop through a grab values
         while True: 
             # TODO: Replace with python3. The ADC library is provided as python2 so we use this subprocess hack to get the vars
@@ -382,14 +375,17 @@ class GrabSensors:
                 temp = self.temp
                 humidity = self.humid          
                 # sensor, ae, we, temp 
-                NO = alphasense.readppb('NOa4', info['a3'], info['a2'], temp) 
-                O3 = alphasense.readppb('O3a4', info['a5'], info['a4'], temp)
-                NO2 = alphasense.readppb('NO2a4', info['a7'], info['a6'], temp)  
+                NO = alphasense.readppb('NO', info['a3'], info['a2'], temp) 
+                O3 = alphasense.readppb('O3', info['a5'], info['a4'], temp)
+                O3no2 = alphasense.readppb('O3no2', info['a5'], info['a4'], temp)
+                NO2 = alphasense.readppb('NO2', info['a7'], info['a6'], temp)  
+                PID = alphasense.readpidppm(info['a1'])
                 # Save the data
                 self.newdata('NOppb', int(NO) )
                 self.newdata('O3ppb', int(O3) )
+                self.newdata('O3no2ppb', int(O3no2) )
                 self.newdata('NO2ppb', int(NO2) )
-                #self.newdata("Temp'C", 23)
+                self.newdata('PIDppm', int(PID) )
             except ValueError:
                 self.log('DEBUG', 'app.py | JsonError | grabadc() | '+str(jsonstr))
             time.sleep(4)

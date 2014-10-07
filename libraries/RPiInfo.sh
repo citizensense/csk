@@ -12,6 +12,9 @@ if [ -z "$MAC" ]; then
     MAC=$(ip link show wlan0 | grep link/ether | cut -d' ' -f6)
 fi
 if [ -z "$MAC" ]; then
+    MAC=$(ip link show wwan0 | grep link/ether | cut -d' ' -f6)
+fi
+if [ -z "$MAC" ]; then
     MAC="no-network-interface"
 fi
 #LOAD=$(awk "BEGIN{printf(\"%2.2f\n\", ($L1+$L2+$L3)/3); exit }")
