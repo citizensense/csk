@@ -401,6 +401,7 @@ class GrabSensors:
             try:
                 info=json.loads(jsonstr)
                 self.log('DEBUG',"Got RaspberryPi Info"+jsonstr)
+                self.CONFIG['MAC'] = info["MAC"] 
                 self.newdata('CPU', info["tempc"] ) 
                 self.newdata('Disk', info["disk%used"]+'/'+info["diskavailable"] )
                 self.newdata('Load', info["load"] )
