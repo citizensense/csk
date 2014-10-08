@@ -376,10 +376,15 @@ class GrabSensors:
                 humidity = self.humid          
                 # sensor, ae, we, temp 
                 NO = alphasense.readppb('NO', info['a3'], info['a2'], temp) 
+                print(alphasense.msg)
                 O3 = alphasense.readppb('O3', info['a5'], info['a4'], temp)
+                print(alphasense.msg)
                 O3no2 = alphasense.readppb('O3no2', info['a5'], info['a4'], temp)
+                print(alphasense.msg)
                 NO2 = alphasense.readppb('NO2', info['a7'], info['a6'], temp)  
+                print(alphasense.msg)
                 PID = alphasense.readpidppm(info['a1'])
+                print(alphasense.msg)
                 # Save the data
                 self.newdata('NOppb', int(NO) )
                 self.newdata('O3ppb', int(O3) )

@@ -10,6 +10,7 @@ class Alphasense:
     
     # Calculate ppb values
     def readppb(self, sensor, we, ae, temp):
+        self.msg = '-------------'
         n = self.tempcompensation(sensor, temp)
         if sensor == 'NO2': 
             wez = self.c['we1z']
@@ -33,12 +34,14 @@ class Alphasense:
         if aemv < 0: aemv = 0
         mv = wemv-aemv
         ppb = mv/sensi
-        self.msg = 'CALC {0}: \nwemv={1}-{2} = {3} \naemv={4}-({5}*{6}) = {8}\nmv={7}-{8} = {9} \nppb={9}/{10} ---------------------\n'.format(sensor, we, wez, wemv, ae, n, aez, wemv, aemv, mv, sensi)
+        self.msg += '\nCALC {0}: \nwemv={1}-{2} = {3} \naemv={4}-({5}*{6}) = {8}\nmv={7}-{8} = {9} \nppb={9}/{10}\nppb={11}\n------------\n'.format(sensor, we, wez, wemv, ae, n, aez, wemv, aemv, mv, sensi, ppb)
         return ppb
  
     def readpidppm(self, pidout):
-        self.msg = 'CALC PID:\n({}-45)/2'.format(pidout)
-        return (pidout-45)/2
+        self.msg = '------------\nCALC PID:\nppm = ({}-45)/2'.format(pidout)
+        ppm = (pidout-45)/2
+        self.msg += '\nppm: {}\n-----------\n'.format(ppm)
+        return ppm
 
     # Compensated GAS mv
     def compGASmv(self, mvWE, mvAE):
@@ -54,29 +57,31 @@ class Alphasense:
    
     # Calculate compensation variables
     def tempcompensation(self, sensor, temp):
-        #print('READSENSOR=========:::'+sensor+' temp:'+str(temp))
+        self.msg += '\nTemp compensation: '+sensor+' temp: '+str(temp)
         if sensor == 'NO2':
-            if temp > -30: tempcomp = 1.09 # -30c to 19c = 1.09
-            if temp > 20: tempcomp = 1.35  # 20c to 29c = 1.35
-            if temp > 30: tempcomp = 2.0   # 30c to 50c = 2
+            if temp < -30: tempcomp = 1.09 # out of bounds
+            if temp >= -30: tempcomp = 1.09 # -30c to 19c = 1.09
+            if temp >= 20: tempcomp = 1.35  # 20c to 29c = 1.35
+            if temp >= 30: tempcomp = 2.0   # 30c to 50c = 2
         elif sensor == 'O3':
             if temp < 10: tempcomp = 0.75   # -30c to 9c = 0.75
-            if temp > 10: tempcomp = 1.28  # 10c to 50c = 1.28
+            if temp >= 10: tempcomp = 1.28  # 10c to 50c = 1.28
         elif sensor == 'O3no2':
             if temp < 20: tempcomp = 1.15  # -30c to 19c = 1.15
-            if temp > 20: tempcomp = 1.82  # 20c to 29c = 1.82
-            if temp > 30:  tempcomp = 3.93 # 30c to 50c = 3.93
+            if temp >= 20: tempcomp = 1.82  # 20c to 29c = 1.82
+            if temp >= 30:  tempcomp = 3.93 # 30c to 50c = 3.93
         elif sensor == 'SO2':
             if temp < 20: tempcomp = 1.15  # -30c to 19c = 1.15
-            if temp > 20: tempcomp = 1.82  # 20c to 29c = 1.82
-            if temp > 30:  tempcomp = 3.93 # 30c to 50c = 3.93
+            if temp >= 20: tempcomp = 1.82  # 20c to 29c = 1.82
+            if temp >= 30:  tempcomp = 3.93 # 30c to 50c = 3.93
         elif sensor == 'NO':
             if temp < 20: tempcomp = 1.48  # -30c to 19c = 1.48
-            if temp > 20: tempcomp = 2.02  # 20c to 29c = 2.02
-            if temp > 30: tempcomp = 1.72  # 30c to 50c = 1.72
+            if temp >= 20: tempcomp = 2.02  # 20c to 29c = 2.02
+            if temp >= 30: tempcomp = 1.72  # 30c to 50c = 1.72
         return tempcomp
 
 if __name__ == "__main__":
+    import time
     calibration = {
         'we1z':300,        # VpcbWE-SN1-zero 
         'we2z':409,        # VpcbWE-SN2-zero
@@ -94,17 +99,20 @@ if __name__ == "__main__":
     # Ready to calculate values
     we = 500      # Millivolts
     ae = 400      # Millivolts
-    pidout =  98.5678  # Millivilts
-    temp = 20 # Degrees centigrade
-    print('\nwe: {} ae: {} temp: {}'.format(we, ae, temp))
-    print('NO2ppb: {} '.format(alphasense.readppb('NO2', we, ae, temp), ))
-    print(alphasense.msg)
-    print('O3ppb: {}'.format( alphasense.readppb('O3', we, ae, temp)) )
-    print(alphasense.msg)
-    print('O3NO2ppb: {}'.format( alphasense.readppb('O3no2', we, ae, temp)) )
-    print(alphasense.msg)
-    print('NOppb: {}\n'.format(alphasense.readppb('NO', we, ae, temp))  )
-    print(alphasense.msg)
-    print('PIDppm: {}\n'.format(alphasense.readpidppm(pidout))  )
-    print(alphasense.msg)
+    pidout =  98.5678  # Millivolts
+    temp = -40
+    while True:
+        temp += 1 # Degrees centigrade
+        print('\nwe: {} ae: {} temp: {} \n================\n'.format(we, ae, temp))
+        alphasense.readppb('NO2', we, ae, temp)
+        print(alphasense.msg)
+        alphasense.readppb('O3', we, ae, temp)
+        print(alphasense.msg)
+        alphasense.readppb('O3no2', we, ae, temp)
+        print(alphasense.msg)
+        alphasense.readppb('NO', we, ae, temp)
+        print(alphasense.msg)
+        alphasense.readpidppm(pidout)
+        print(alphasense.msg)
+        time.sleep(0.5)
 
