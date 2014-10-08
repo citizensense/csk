@@ -244,7 +244,7 @@ class GrabSensors:
         # Setup the database object and query
         dbstruct = self.dbstructure()
         db = Database(self.CONFIG['dbfile'], dbstruct)
-        qry = 'SELECT cid, uploaded, csv FROM csvs ORDER BY cid DESC LIMIT 40'
+        qry = 'SELECT cid, uploaded, csv FROM csvs ORDER BY cid DESC LIMIT 400'
         # Build the header
         table = '<table><tr><th>'
         keys = ["cid","up","timestamp","humandate"]
@@ -363,7 +363,7 @@ class GrabSensors:
             try:
                 info=json.loads(str(jsonstr))
                 self.log('DEBUG',"Got ADC Info"+jsonstr)
-                self.newdata('PID', int(info["a1"]) ) 
+                self.newdata('PID', info["a1"] ) 
                 self.newdata('NOwe3', int(info["a3"]) )
                 self.newdata('NOae3', int(info["a2"]) )
                 self.newdata('O3we2', int(info["a5"]) )
@@ -385,7 +385,7 @@ class GrabSensors:
                 self.newdata('O3ppb', int(O3) )
                 self.newdata('O3no2ppb', int(O3no2) )
                 self.newdata('NO2ppb', int(NO2) )
-                self.newdata('PIDppm', int(PID) )
+                self.newdata('PIDppm', PID )
             except ValueError:
                 self.log('DEBUG', 'app.py | JsonError | grabadc() | '+str(jsonstr))
             time.sleep(4)

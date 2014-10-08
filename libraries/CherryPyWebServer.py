@@ -10,6 +10,8 @@ class CherryPyWebServer:
         self.server = Rest()
         thread = threading.Thread(target=self.serverthread)
         thread.start()
+        # Grab the config and output our values
+        self.myconfig = str(config.init()).replace(',', ',\n')
 
     def serverthread(self):
         http.config.update(self.globalconfig)
@@ -87,8 +89,6 @@ class Rest:
         """ % uuid
     
     def systeminfo(self):
-        # Grab the config and output our values
-        myconfig = str(config.init()).replace(',', ',\n')
         # Show i2c
         try:
             i2c = subprocess.check_output("i2cdetect -y 1", shell=True).decode('utf-8')
@@ -115,7 +115,8 @@ class Rest:
         except:
             sysctl = 'sysctl: Failed to load service info'
         # Buildthe output string
-        msg = '<h3>Config</h3><pre>{}</pre>'.format(myconfig)
+        #msg = '<h3>Config</h3><pre>{}</pre>'.format(self.myconfig)
+        msg = ''
         msg += '<h3>I2C</h3><pre>{}</pre>'.format(i2c)
         msg += '<h3>ps aux | grep app</h3><pre>{}</pre>'.format(ps)
         msg += '<h3>ip a</h3><pre>{}</pre>'.format(ipa)

@@ -54,26 +54,26 @@ class Alphasense:
    
     # Calculate compensation variables
     def tempcompensation(self, sensor, temp):
-        # print(sensor)
+        #print('READSENSOR=========:::'+sensor+' temp:'+str(temp))
         if sensor == 'NO2':
-            if temp >= -30: tempcomp = 1.09 # -30c to 19c = 1.09
-            if temp >= 20: tempcomp = 1.35  # 20c to 29c = 1.35
-            if temp >= 30: tempcomp = 2.0   # 30c to 50c = 2
+            if temp > -30: tempcomp = 1.09 # -30c to 19c = 1.09
+            if temp > 20: tempcomp = 1.35  # 20c to 29c = 1.35
+            if temp > 30: tempcomp = 2.0   # 30c to 50c = 2
         elif sensor == 'O3':
-            if temp <= 9: tempcomp = 0.75   # -30c to 9c = 0.75
-            if temp >= 10: tempcomp = 1.28  # 10c to 50c = 1.28
+            if temp < 10: tempcomp = 0.75   # -30c to 9c = 0.75
+            if temp > 10: tempcomp = 1.28  # 10c to 50c = 1.28
         elif sensor == 'O3no2':
-            if temp <= 19: tempcomp = 1.15  # -30c to 19c = 1.15
-            if temp >= 20: tempcomp = 1.82  # 20c to 29c = 1.82
-            if temp >= 30:  tempcomp = 3.93 # 30c to 50c = 3.93
+            if temp < 20: tempcomp = 1.15  # -30c to 19c = 1.15
+            if temp > 20: tempcomp = 1.82  # 20c to 29c = 1.82
+            if temp > 30:  tempcomp = 3.93 # 30c to 50c = 3.93
         elif sensor == 'SO2':
-            if temp <= 19: tempcomp = 1.15  # -30c to 19c = 1.15
-            if temp >= 20: tempcomp = 1.82  # 20c to 29c = 1.82
-            if temp >= 30:  tempcomp = 3.93 # 30c to 50c = 3.93
+            if temp < 20: tempcomp = 1.15  # -30c to 19c = 1.15
+            if temp > 20: tempcomp = 1.82  # 20c to 29c = 1.82
+            if temp > 30:  tempcomp = 3.93 # 30c to 50c = 3.93
         elif sensor == 'NO':
-            if temp <= 19: tempcomp = 1.48  # -30c to 19c = 1.48
-            if temp >= 20: tempcomp = 2.02  # 20c to 29c = 2.02
-            if temp >= 30: tempcomp = 1.72  # 30c to 50c = 1.72
+            if temp < 20: tempcomp = 1.48  # -30c to 19c = 1.48
+            if temp > 20: tempcomp = 2.02  # 20c to 29c = 2.02
+            if temp > 30: tempcomp = 1.72  # 30c to 50c = 1.72
         return tempcomp
 
 if __name__ == "__main__":

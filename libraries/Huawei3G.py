@@ -7,6 +7,7 @@ class Huawei3G:
     
     def __init__(self):
         self.msg = ''
+        self.strangecount = 0
 
     def checkconnection(self):
         # Setup base vars
@@ -71,12 +72,27 @@ class Huawei3G:
     # Switch the 3G dongle into network mode
     def huawiereboot(self):
         try:
-            subprocess.check_output('usb_modeswitch -c /home/csk/csk/init/E353.config', shell=True).decode("utf-8")
-            self.msg += "\nAttempted to switched 3G dongle to network mode"
+            b = subprocess.check_output('usb_modeswitch -c /home/csk/csk/init/E353.config', shell=True).decode("utf-8")
+            self.msg += "\nAttempted to switch 3G dongle to network mode: "
             return True
         except Exception as e:
             self.msg += "\nHuawei: usb_modeswitch not working | {}".format(e)
             return False
+    
+    # power on/off USB bus
+    def usbpoweroffon(self):
+        chmod = "chmod 777 /sys/devices/platform/bcm2708_usb/bussuspend"
+        off = "echo '1' > /sys/devices/platform/bcm2708_usb/bussuspend"
+        on = "echo '0' > /sys/devices/platform/bcm2708_usb/bussuspend"
+        try:
+            subprocess.check_output(chmod, shell=True).decode('utf-8')
+            subprocess.check_output(off, shell=True).decode('utf-8')
+            self.msg += "\nUSB bus power off"+str(b)
+            time.sleep(0.2)
+            subprocess.check_output(on, shell=True) 
+            self.msg += "\nUSB bus power on"
+        except Exception as e:
+            self.msg += "\nError: USB bus power off/on: ".format(e)
 
     # Start the network configeration
     def netctlstart(self, device):
@@ -109,6 +125,10 @@ class Huawei3G:
                 return False
             if lsusb.find(search) == -1: 
                 self.msg += '\nHuawei: In a strange mode: Possibly no sim card!'
+                self.strangecount += 1
+                if self.strangecount >= 2:
+                    #self.usbpoweroffon()
+                    self.strangecount = 0
                 return False
             else: 
                 return True
@@ -126,10 +146,13 @@ if __name__ == "__main__":
         time.sleep(5)
 
 # OLDER DONGLES
-# Example output with 3G dongle in network device mode
-  # Bus 001 Device 024: ID 12d1:14db Huawei Technologies Co., Ltd. E353/E3131
-# In MAss Storage mode
-  # Bus 001 Device 006: ID 12d1:1f01 Huawei Technologies Co., Ltd. E353/E3131 (Mass storage mode)
+ # Example output with 3G dongle in network device mode
+ # Bus 001 Device 024: ID 12d1:14db Huawei Technologies Co., Ltd. E353/E3131
+ 
+ # In MAss Storage mode
+ # Bus 001 Device 006: ID 12d1:1f01 Huawei Technologies Co., Ltd. E353/E3131 (Mass storage mode)
 
 # NEWER DONGLES
   # Bus 001 Device 007: ID 12d1:1c1e Huawei Technologies Co., Ltd. 
+
+  # Bus 001 Device 006: ID 12d1:14fe Huawei Technologies Co., Ltd. Modem (Mass Storage Mode)
