@@ -12,6 +12,7 @@ class Alphasense:
     def readppb(self, sensor, we, ae, temp):
         self.msg = '-------------'
         n = self.tempcompensation(sensor, temp)
+        sensi = 0.0
         if sensor == 'NO2': 
             wez = self.c['we1z']
             aez = self.c['ae1z']

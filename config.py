@@ -18,9 +18,9 @@ def init():
                 'ae1z':0,         # VpcbAE-SN1-zero
                 'ae2z':0,         # VpcbAE-SN2-zero
                 'ae3z':0,         # VpcbAE-SN3-zero
-                '1sensi':0.0,     # "Sensitivity (mV/ppb)"
-                '2sensi':0.0,     # "Sensitivity (mV/ppb)"
-                '3sensi':0.0      # "Sensitivity (mV/ppb)" 
+                '1sensi':0.1,     # "Sensitivity (mV/ppb)"
+                '2sensi':0.1,     # "Sensitivity (mV/ppb)"
+                '3sensi':0.1      # "Sensitivity (mV/ppb)" 
             },
             'methane':False
         },
@@ -97,10 +97,10 @@ def init():
                 'ae1z':0,        # VpcbAE-SN1-zero
                 'ae2z':0,        # VpcbAE-SN2-zero
                 'ae3z':0,        # VpcbAE-SN3-zero
-                '1sensi':0.0,    # "Sensitivity (mV/ppb)"
-                '2sensiO3':0.0,  # "Sensitivity (mV/ppb)"
-                '2sensiO3no2':0.0,
-                '3sensi':0.0     # "Sensitivity (mV/ppb)" 
+                '1sensi':0.1,    # "Sensitivity (mV/ppb)"
+                '2sensiO3':0.1,  # "Sensitivity (mV/ppb)"
+                '2sensiO3no2':0.1,
+                '3sensi':0.1     # "Sensitivity (mV/ppb)" 
             },
             'methane':False
         }

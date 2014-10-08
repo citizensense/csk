@@ -117,9 +117,7 @@ class GrabSensors:
         return dbstruct
 
     # If any threads have new data then save it here
-    def newdata(self, key, value):
-        # Create a timecode
-        timecode = int(time.time())
+    def newdata(self, key, value, timecode = int(time.time())):
         # TODO: Need to check the Rpi has the right time, otherwise we shouldn't save
         # Create a lock so multiple threads don't get confused
         self.lock.acquire()
@@ -363,14 +361,15 @@ class GrabSensors:
             try:
                 info=json.loads(str(jsonstr))
                 self.log('DEBUG',"Got ADC Info"+jsonstr)
-                self.newdata('PID', info["a1"] ) 
-                self.newdata('NOwe3', int(info["a3"]) )
-                self.newdata('NOae3', int(info["a2"]) )
-                self.newdata('O3we2', int(info["a5"]) )
-                self.newdata('O3ae2', int(info["a4"]) )
-                self.newdata('NO2we1', int(info["a7"]) )
-                self.newdata('NO2ae1', int(info["a6"]) )
-                self.newdata('PT+', int(info["a8"]) )
+                tc = int(time.time())
+                self.newdata('PID', info["a1"], tc ) 
+                self.newdata('NOwe3', int(info["a3"]), tc )
+                self.newdata('NOae3', int(info["a2"]), tc )
+                self.newdata('O3we2', int(info["a5"]), tc )
+                self.newdata('O3ae2', int(info["a4"]), tc )
+                self.newdata('NO2we1', int(info["a7"]), tc )
+                self.newdata('NO2ae1', int(info["a6"]), tc )
+                self.newdata('PT+', int(info["a8"]), tc )
                 # Grab the external temperature
                 temp = self.temp
                 humidity = self.humid          
@@ -386,11 +385,11 @@ class GrabSensors:
                 PID = alphasense.readpidppm(info['a1'])
                 print(alphasense.msg)
                 # Save the data
-                self.newdata('NOppb', int(NO) )
-                self.newdata('O3ppb', int(O3) )
-                self.newdata('O3no2ppb', int(O3no2) )
-                self.newdata('NO2ppb', int(NO2) )
-                self.newdata('PIDppm', PID )
+                self.newdata('NOppb', int(NO), tc )
+                self.newdata('O3ppb', int(O3), tc )
+                self.newdata('O3no2ppb', int(O3no2), tc )
+                self.newdata('NO2ppb', int(NO2), tc )
+                self.newdata('PIDppm', PID, tc )
             except ValueError:
                 self.log('DEBUG', 'app.py | JsonError | grabadc() | '+str(jsonstr))
             time.sleep(4)
