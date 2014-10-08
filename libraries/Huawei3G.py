@@ -126,8 +126,8 @@ class Huawei3G:
             if lsusb.find(search) == -1: 
                 self.msg += '\nHuawei: In a strange mode: Possibly no sim card!'
                 self.strangecount += 1
-                if self.strangecount >= 2:
-                    #self.usbpoweroffon()
+                if self.strangecount >= 10:
+                    subprocess.check_output("sudo reboot", shell=True).decode("utf-8")
                     self.strangecount = 0
                 return False
             else: 
