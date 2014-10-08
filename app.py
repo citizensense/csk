@@ -273,6 +273,7 @@ class GrabSensors:
             header += '<strong>Uploaded</strong> {} '.format(uploaded)
             header += '<strong>To upload: </strong> {}'.format(toupload)
             header += '<br /><br />'
+            body += "<h2>Config</h2><pre>{}</pre>".format(self.CONFIG)
             self.webserver.setcontent(header, body)
             time.sleep(10)
 
