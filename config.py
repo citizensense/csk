@@ -9,7 +9,7 @@ def init():
         'dbfile':'data/db.sqlite3',
         #'posturl':'http://192.168.1.100:8787/api',
         'posturl':'http://frackbox.citizensense.net/api',
-        '0000000080c169f1':{
+        'notset':{
             'name':'kit 1',
             'alphasense':{
                 'we1z':0,         # VpcbWE-SN1-zero 
@@ -72,7 +72,7 @@ def init():
             },
             'methane':False
         },
-        '00000000cb78dc37':{
+        '0000000080c169f1':{
             'name':'kit 5',
             'alphasense':{
                 'we1z':305,        # VpcbWE-SN1-zero 
