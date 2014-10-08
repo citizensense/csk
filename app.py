@@ -21,6 +21,7 @@ from Alphasense import *
 from AM2315 import *
 from PostData import *
 from database import *
+from winddir import winddir
 
 # The application class
 class GrabSensors:
@@ -31,7 +32,7 @@ class GrabSensors:
         self.log('INFO', 'Attempt to load the config')
         self.CONFIG = config.init()
         # Setup logging
-        logging.basicConfig(filename='csk.log', level=logging.DEBUG)
+        logging.basicConfig(filename='/home/csk/csk/csk.log', level=logging.DEBUG)
         self.log('INFO', 'Started script')
         # Setup means to save and post data to the server
         dbstruct = self.dbstructure()
@@ -64,12 +65,14 @@ class GrabSensors:
             ("XTemp",         ['',    []  ]),
             ("XHumid",        ['',    []  ]),
             ('winddir',         ['SPI-8ADC--MCP3008-WindDirection',         []  ]),
-            ('SO2ppb',          ['',    []  ]),
+            ('NOppb',          ['',    []  ]),
             ('O3ppb',           ['',    []  ]),
+            ('O3no2ppb',           ['',    []  ]),
             ('NO2ppb',          ['',    []  ]),
+            ('PIDppm',           ['',    []  ]),
             ('PID',             ['A1->16ADC->I2C',  []  ]),
-            ('SO2we3',          ['A2->16ADC->I2C',  []  ]),
-            ('SO2ae3',          ['A3->16ADC->I2C',  []  ]),
+            ('NOwe3',          ['A2->16ADC->I2C',  []  ]),
+            ('NOae3',          ['A3->16ADC->I2C',  []  ]),
             ('O3we2',           ['A4->16ADC->I2C',  []  ]),
             ('O3ae2',           ['A5->16ADC->I2C',  []  ]),
             ('NO2we1',          ['A6->16ADC->I2C',  []  ]),
@@ -90,6 +93,7 @@ class GrabSensors:
         threads.append(threading.Thread(target=self.savedata) )         # Save Data to webGUI ans LogFile
         threads.append(threading.Thread(target=self.grabtemphumid) )    # Grab External temperature and humidity
         threads.append(threading.Thread(target=self.grabalphasense) )   # Grab data from alphasense via an ABEelectronics ADC 
+        threads.append(threading.Thread(target=self.grabwinddir) )      # Grab data from wind direction sensor
         threads.append(threading.Thread(target=self.postdata) )         # Post data to server
         threads.append(threading.Thread(target=self.setweb) )           # Set data on the web interface
         for item in threads:
@@ -113,9 +117,7 @@ class GrabSensors:
         return dbstruct
 
     # If any threads have new data then save it here
-    def newdata(self, key, value):
-        # Create a timecode
-        timecode = int(time.time())
+    def newdata(self, key, value, timecode = int(time.time())):
         # TODO: Need to check the Rpi has the right time, otherwise we shouldn't save
         # Create a lock so multiple threads don't get confused
         self.lock.acquire()
@@ -172,17 +174,17 @@ class GrabSensors:
                     resp = poster.send(url, data)
                     if resp is not False:
                         if len(resp['errors']) > 0: 
-                            print(resp['errors'])
+                            self.log('WARN', 'POST response:'+str(resp['errors']) )
                         else:
                             # Update database as we have successfully uploaded all data
-                            print('Sucessfully uploaded')
+                            self.log('DEBUG', 'Sucessfully uploaded')
                             where = 'cid='+' OR cid='.join(map(str, cids))
                             qry = "UPDATE csvs SET uploaded=1 WHERE {}".format(where)
                             rows = db.query(qry)
                             #print(db.msg)
                     else:
-                        print(resp)
-                        print(poster.msg)
+                        self.log('DEBUG', str(resp))
+                        self.log('DEBUG', poster.msg)
                         # Lets pause a bit and wait again
                         toupload = 0
                 time.sleep(1)
@@ -240,7 +242,7 @@ class GrabSensors:
         # Setup the database object and query
         dbstruct = self.dbstructure()
         db = Database(self.CONFIG['dbfile'], dbstruct)
-        qry = 'SELECT cid, uploaded, csv FROM csvs ORDER BY cid DESC LIMIT 40'
+        qry = 'SELECT cid, uploaded, csv FROM csvs ORDER BY cid DESC LIMIT 400'
         # Build the header
         table = '<table><tr><th>'
         keys = ["cid","up","timestamp","humandate"]
@@ -271,6 +273,7 @@ class GrabSensors:
             header += '<strong>Uploaded</strong> {} '.format(uploaded)
             header += '<strong>To upload: </strong> {}'.format(toupload)
             header += '<br /><br />'
+            body += "<h2>Config</h2><pre>{}</pre>".format(self.CONFIG)
             self.webserver.setcontent(header, body)
             time.sleep(10)
 
@@ -312,79 +315,100 @@ class GrabSensors:
             except Exception as e:
                 self.log('DEBUG', 'app.py | Exception | grabtemphumid() | '+str(e) )
             time.sleep(10)
+   
+    # Grab temperature / Humidity values
+    def grabwinddir(self):
+        wind = winddir()
+        # Read the wind direction
+        while True:
+            compass = wind.grabdir()
+            if compass is not False:
+                self.newdata('winddir', compass)
+            else:
+                self.log('WARN', 'Wind dir is false:{}'.format(wind.msg))
+            time.sleep(5)
 
     # Grab GPS data 
     def grabgps(self):
         while True:
             data = self.ND1000S.grabdata()
-            try:
-                info=json.loads(data)
-                self.log('DEBUG',"GOT GPS: "+data)
-                self.newdata('lat', info["lat"] )
-                self.newdata('lon', info["lon"] )
-                self.newdata('speed', info["speed"] )
-                self.newdata('alt', info["alt"] )
-            except ValueError:
-                self.log('DEBUG', 'app.py | ValueError | GrabGPS() | '+data)
+            if data is not False:
+                try:
+                    info=json.loads(data)
+                    self.log('DEBUG',"GOT GPS: "+data)
+                    self.newdata('lat', info["lat"] )
+                    self.newdata('lon', info["lon"] )
+                    self.newdata('speed', info["speed"] )
+                    self.newdata('alt', info["alt"] )
+                except ValueError as e:
+                    self.log('DEBUG', 'app.py | ValueError | GrabGPS() | '+data)
+            else:
+                    self.log('DEBUG', 'app.py | ValueError | GrabGPS() | '+self.ND1000S.msg)
             time.sleep(6)
     
     # Grab ADC data from the ABelectronicsADC -> alphasense
     def grabalphasense(self):
         # Setup Alphasense calibration values
-        weSN1 = self.CONFIG['alphasense']['weSN1']          # VpcbWE-SN1-zero 
-        weSN2 = self.CONFIG['alphasense']['weSN2']          # VpcbWE-SN2-zero
-        weSN3 = self.CONFIG['alphasense']['weSN3']          # VpcbWE-SN3-zero
-        aeSN1 = self.CONFIG['alphasense']['aeSN1']          # VpcbAE-SN1-zero
-        aeSN2 = self.CONFIG['alphasense']['aeSN2']          # VpcbAE-SN2-zero
-        aeSN3 = self.CONFIG['alphasense']['aeSN3']          # VpcbAE-SN3-zero
-        SN1sensi = self.CONFIG['alphasense']['SN1sensi']    # "Sensitivity (mV/ppb)"
-        SN2sensi = self.CONFIG['alphasense']['SN2sensi']    # "Sensitivity (mV/ppb)"
-        SN3sensi = self.CONFIG['alphasense']['SN3sensi']    # "Sensitivity (mV/ppb)"
-        alphasense = Alphasense(weSN1, weSN2, weSN3, aeSN1, aeSN2, aeSN3, SN1sensi, SN2sensi, SN3sensi)
+        calibration = self.CONFIG['alphasense']
+        alphasense = Alphasense(calibration)
         # Now loop through a grab values
         while True: 
             # TODO: Replace with python3. The ADC library is provided as python2 so we use this subprocess hack to get the vars
-            jsonstr = subprocess.check_output("python2 libraries/ABEadcPi.py", shell=True).decode("utf-8")
+            jsonstr = False
             try:
-                info=json.loads(jsonstr)
+                jsonstr = subprocess.check_output("python2 /home/csk/csk/libraries/ABEadcPi.py", shell=True).decode("utf-8")
+            except:
+                self.log('WARN',"No alphasense ADC")
+            try:
+                info=json.loads(str(jsonstr))
                 self.log('DEBUG',"Got ADC Info"+jsonstr)
-                self.newdata('PID', info["a1"] ) 
-                self.newdata('SO2we3', info["a3"] )
-                self.newdata('SO2ae3', info["a2"] )
-                self.newdata('O3we2', info["a5"] )
-                self.newdata('O3ae2', info["a4"] )
-                self.newdata('NO2we1', info["a7"] )
-                self.newdata('NO2ae1', info["a6"] )
-                self.newdata('PT+', info["a8"] )
+                tc = int(time.time())
+                self.newdata('PID', info["a1"], tc ) 
+                self.newdata('NOwe3', int(info["a3"]), tc )
+                self.newdata('NOae3', int(info["a2"]), tc )
+                self.newdata('O3we2', int(info["a5"]), tc )
+                self.newdata('O3ae2', int(info["a4"]), tc )
+                self.newdata('NO2we1', int(info["a7"]), tc )
+                self.newdata('NO2ae1', int(info["a6"]), tc )
+                self.newdata('PT+', int(info["a8"]), tc )
                 # Grab the external temperature
                 temp = self.temp
                 humidity = self.humid          
                 # sensor, ae, we, temp 
-                SO2 = alphasense.readppb('SO2a4', info['a3'], info['a2'], temp) 
-                O3 = alphasense.readppb('O3a4', info['a5'], info['a4'], temp)
-                NO2 = alphasense.readppb('NO2a4', info['a7'], info['a6'], temp)  
+                NO = alphasense.readppb('NO', info['a3'], info['a2'], temp) 
+                print(alphasense.msg)
+                O3 = alphasense.readppb('O3', info['a5'], info['a4'], temp)
+                print(alphasense.msg)
+                O3no2 = alphasense.readppb('O3no2', info['a5'], info['a4'], temp)
+                print(alphasense.msg)
+                NO2 = alphasense.readppb('NO2', info['a7'], info['a6'], temp)  
+                print(alphasense.msg)
+                PID = alphasense.readpidppm(info['a1'])
+                print(alphasense.msg)
                 # Save the data
-                self.newdata('SO2ppb', SO2 )
-                self.newdata('O3ppb', O3 )
-                self.newdata('NO2ppb', NO2 )
-                self.newdata("Temp'C", 23)
+                self.newdata('NOppb', int(NO), tc )
+                self.newdata('O3ppb', int(O3), tc )
+                self.newdata('O3no2ppb', int(O3no2), tc )
+                self.newdata('NO2ppb', int(NO2), tc )
+                self.newdata('PIDppm', PID, tc )
             except ValueError:
-                self.log('DEBUG', 'app.py | JsonError | grabadc() | '+jsonstr)
+                self.log('DEBUG', 'app.py | JsonError | grabadc() | '+str(jsonstr))
             time.sleep(4)
 
     # Grab RpiInfo
     def grabrpiinfo(self):
         while True: 
-            jsonstr = subprocess.check_output("libraries/RPiInfo.sh", shell=True).decode("utf-8")
+            jsonstr = subprocess.check_output("/home/csk/csk/libraries/RPiInfo.sh", shell=True).decode("utf-8")
             try:
                 info=json.loads(jsonstr)
                 self.log('DEBUG',"Got RaspberryPi Info"+jsonstr)
+                self.CONFIG['MAC'] = info["MAC"] 
                 self.newdata('CPU', info["tempc"] ) 
                 self.newdata('Disk', info["disk%used"]+'/'+info["diskavailable"] )
                 self.newdata('Load', info["load"] )
                 #self.newdata(tc, 'deviceinfo', info["serial"] )
             except ValueError:
-                self.log('DEBUG', 'app.py | ValueError | GrabGPS() | '+jsonstr)
+                self.log('DEBUG', 'app.py | ValueError | GrabGPS() | '+str(jsonstr))
             time.sleep(20)
 
     # Thread to check the network status
@@ -392,13 +416,11 @@ class GrabSensors:
         while True:
             # CHECK NETWORK / 3G DONGLE IS CONNECTED
             network = self.H3G.checkconnection()
-            lsusb = self.H3G.lsusb()
-            self.log('DEBUG','Checking network connection: '+lsusb)
-            if network == "Network OK":
+            if network == True:
                 self.log('DEBUG','Network OK')
                 self.newdata('network', 1)
             else:
-                self.log('WARN','USB HAS BEEN reset: Network not connected')
+                self.log('WARN','Network not connected')
                 self.newdata('network', 0)
             time.sleep(20)
 
