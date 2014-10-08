@@ -7,12 +7,12 @@ MEM=$(free -mh | grep '+ buffers')
 L1=$(uptime | cut -d' ' -f12 | rev | cut -c 2- | rev)
 L2=$(uptime | cut -d' ' -f13 | rev | cut -c 2- | rev)
 L3=$(uptime | cut -d' ' -f14 | rev | cut -c 2- | rev)
-MAC=$(ip link show eth1 | grep link/ether | cut -d' ' -f6)
+MAC=$(ip a | grep eth1 -A1 | grep link/ether | cut -d' ' -f6)
 if [ -z "$MAC" ]; then
-    MAC=$(ip link show wlan0 | grep link/ether | cut -d' ' -f6)
+    MAC=$(ip a | grep wlan0 -A1 | grep link/ether | cut -d' ' -f6)
 fi
 if [ -z "$MAC" ]; then
-    MAC=$(ip link show wwan0 | grep link/ether | cut -d' ' -f6)
+    MAC=$(ip a | grep wwan0 -A1 | grep link/ether | cut -d' ' -f6)
 fi
 if [ -z "$MAC" ]; then
     MAC="no-network-interface"

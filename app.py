@@ -176,7 +176,7 @@ class GrabSensors:
                     resp = poster.send(url, data)
                     if resp is not False:
                         if len(resp['errors']) > 0: 
-                            self.log('WARN', str(resp['errors']) )
+                            self.log('WARN', 'POST response:'+str(resp['errors']) )
                         else:
                             # Update database as we have successfully uploaded all data
                             self.log('DEBUG', 'Sucessfully uploaded')
@@ -185,7 +185,7 @@ class GrabSensors:
                             rows = db.query(qry)
                             #print(db.msg)
                     else:
-                        sefl.log('DEBUG', str(resp))
+                        self.log('DEBUG', str(resp))
                         self.log('DEBUG', poster.msg)
                         # Lets pause a bit and wait again
                         toupload = 0
