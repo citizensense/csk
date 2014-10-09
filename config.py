@@ -8,8 +8,8 @@ def init():
     CONFIG = {
         'timeadjustment':-5, # +/- Hours from GMT
         'dbfile':'data/db.sqlite3',
-        'posturl':'http://192.168.1.100:8787/api',
-        #'posturl':'http://frackbox.citizensense.net/api',
+        #'posturl':'http://192.168.1.100:8787/api',
+        'posturl':'http://frackbox.citizensense.net/api',
         'notset':{
             'name':'kit 1',
             'alphasense':{
@@ -28,9 +28,9 @@ def init():
         '000000006217b4aa':{
             'name':'kit 2',
             'alphasense':{
-                'we1z':300,        # VpcbWE-SN1-zero 
-                'we2z':409,        # VpcbWE-SN2-zero
-                'we3z':281,        # VpcbWE-SN3-zero
+                'we1z':310,        # VpcbWE-SN1-zero 
+                'we2z':413,        # VpcbWE-SN2-zero
+                'we3z':269,        # VpcbWE-SN3-zero
                 'ae1z':303,        # VpcbAE-SN1-zero
                 'ae2z':419,        # VpcbAE-SN2-zero
                 'ae3z':285,        # VpcbAE-SN3-zero
@@ -44,12 +44,12 @@ def init():
         '0000000008e366f4':{
             'name':'kit 3',
             'alphasense':{
-                'we1z':320,        # VpcbWE-SN1-zero 
+                'we1z':309,        # VpcbWE-SN1-zero 
                 'we2z':419,        # VpcbWE-SN2-zero
-                'we3z':269,        # VpcbWE-SN3-zero
-                'ae1z':317,        # VpcbAE-SN1-zero
+                'we3z':260,        # VpcbWE-SN3-zero
+                'ae1z':312,        # VpcbAE-SN1-zero
                 'ae2z':415,        # VpcbAE-SN2-zero
-                'ae3z':267,        # VpcbAE-SN3-zero
+                'ae3z':260,        # VpcbAE-SN3-zero
                 '1sensi':0.479,    # "Sensitivity (mV/ppb)"
                 '2sensiO3':0.293,  # "Sensitivity (mV/ppb)"
                 '2sensiO3no2':0.382,
@@ -77,8 +77,8 @@ def init():
             'name':'kit 5',
             'alphasense':{
                 'we1z':305,        # VpcbWE-SN1-zero 
-                'we2z':351,        # VpcbWE-SN2-zero
-                'we3z':266,        # VpcbWE-SN3-zero
+                'we2z':420,        # VpcbWE-SN2-zero
+                'we3z':260,        # VpcbWE-SN3-zero
                 'ae1z':313,        # VpcbAE-SN1-zero
                 'ae2z':435,        # VpcbAE-SN2-zero
                 'ae3z':284,        # VpcbAE-SN3-zero

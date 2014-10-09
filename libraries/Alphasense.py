@@ -40,8 +40,9 @@ class Alphasense:
  
     def readpidppm(self, pidout):
         self.msg = '------------\nCALC PID:\nppm = ({}-45)/2'.format(pidout)
-        ppm = (pidout-45)/2
+        ppm = (pidout-45)/2 
         self.msg += '\nppm: {}\n-----------\n'.format(ppm)
+        if pidout <= 45.0: ppm = 0
         return ppm
 
     # Compensated GAS mv
