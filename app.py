@@ -172,6 +172,7 @@ class GrabSensors:
                         'jsonvalues': jsonvalues
                     }
                     resp = poster.send(url, data)
+                    print('POST TO: {} \n {}'.format(url, poster.msg))
                     if resp is not False:
                         if len(resp['errors']) > 0: 
                             self.log('WARN', 'POST response:'+str(resp['errors']) )
@@ -183,8 +184,7 @@ class GrabSensors:
                             rows = db.query(qry)
                             #print(db.msg)
                     else:
-                        self.log('DEBUG', str(resp))
-                        self.log('DEBUG', poster.msg)
+                        self.log('WARN', 'POSTresp: '+str(resp))
                         # Lets pause a bit and wait again
                         toupload = 0
                 time.sleep(1)
@@ -219,7 +219,9 @@ class GrabSensors:
                 csvbuffer = ""
                 rows = []
                 for timecode in self.csvbuffer:
-                    ht = datetime.fromtimestamp( timecode ).strftime('%Y-%m-%d %H:%M:%S')
+                    # Work out locsal time in human format
+                    htimecode = timecode+self.CONFIG['timeadjustment']
+                    ht = datetime.fromtimestamp( htimecode ).strftime('%Y-%m-%d %H:%M:%S')
                     line = str(timecode)+','+ht+','+','.join(self.csvbuffer[timecode])
                     # Prep data ready for database
                     rows.append([timecode, line, 0])
@@ -376,15 +378,15 @@ class GrabSensors:
                 humidity = self.humid          
                 # sensor, ae, we, temp 
                 NO = alphasense.readppb('NO', info['a3'], info['a2'], temp) 
-                print(alphasense.msg)
+                #print(alphasense.msg)
                 O3 = alphasense.readppb('O3', info['a5'], info['a4'], temp)
-                print(alphasense.msg)
+                #print(alphasense.msg)
                 O3no2 = alphasense.readppb('O3no2', info['a5'], info['a4'], temp)
-                print(alphasense.msg)
+                #print(alphasense.msg)
                 NO2 = alphasense.readppb('NO2', info['a7'], info['a6'], temp)  
-                print(alphasense.msg)
+                #print(alphasense.msg)
                 PID = alphasense.readpidppm(info['a1'])
-                print(alphasense.msg)
+                #print(alphasense.msg)
                 # Save the data
                 self.newdata('NOppb', int(NO), tc )
                 self.newdata('O3ppb', int(O3), tc )

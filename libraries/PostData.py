@@ -31,9 +31,12 @@ if __name__ == "__main__":
     poster = PostData()
     # Now send some data to a locally installed version of frackbox
     url = 'http://192.168.1.100:8787/api'
+    url = 'http://frackbox.citizensense.net/api'
+    print('Test POST to: {}'.format(url))
     while True:
         data = {'header': 1, 'csv': 2}
         resp = poster.send(url, data)
         print(str(resp))
+        print(poster.msg)
         time.sleep(5)
 

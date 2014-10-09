@@ -6,9 +6,10 @@ def init():
 
     # Config values
     CONFIG = {
+        'timeadjustment':-5, # +/- Hours from GMT
         'dbfile':'data/db.sqlite3',
-        #'posturl':'http://192.168.1.100:8787/api',
-        'posturl':'http://frackbox.citizensense.net/api',
+        'posturl':'http://192.168.1.100:8787/api',
+        #'posturl':'http://frackbox.citizensense.net/api',
         'notset':{
             'name':'kit 1',
             'alphasense':{
@@ -118,6 +119,8 @@ def init():
             CONFIG[serial]['serial'] = serial
             CONFIG[serial]['posturl'] = CONFIG['posturl']
             CONFIG[serial]['dbfile'] = CONFIG['dbfile'] 
+            # Convert +/- hours to seconds
+            CONFIG[serial]['timeadjustment'] = (CONFIG['timeadjustment']*60)*60
             loaded = True
         except Exception as e:
             print(e)
