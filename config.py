@@ -60,9 +60,9 @@ def init():
         '00000000b6e2f676':{
             'name':'kit 4',
             'alphasense':{
-                'we1z':299,        # VpcbWE-SN1-zero 
-                'we2z':409,        # VpcbWE-SN2-zero
-                'we3z':267,        # VpcbWE-SN3-zero
+                'we1z':297,        # VpcbWE-SN1-zero 
+                'we2z':407,        # VpcbWE-SN2-zero
+                'we3z':255,        # VpcbWE-SN3-zero
                 'ae1z':309,        # VpcbAE-SN1-zero
                 'ae2z':419,        # VpcbAE-SN2-zero
                 'ae3z':284,        # VpcbAE-SN3-zero

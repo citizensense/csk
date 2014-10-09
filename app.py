@@ -246,7 +246,7 @@ class GrabSensors:
         # Setup the database object and query
         dbstruct = self.dbstructure()
         db = Database(self.CONFIG['dbfile'], dbstruct)
-        qry = 'SELECT cid, uploaded, csv FROM csvs ORDER BY cid DESC LIMIT 400'
+        qry = 'SELECT cid, uploaded, csv FROM csvs ORDER BY timestamp DESC LIMIT 400'
         # Build the header
         table = '<table><tr><th>'
         keys = ["cid","up","timestamp","humandate"]
