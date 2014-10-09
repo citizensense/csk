@@ -28,6 +28,8 @@ class GrabSensors:
     
     # Initialise the object
     def __init__(self):
+        # Seconds until the device will reboot 
+        self.secondstillreboot = '?'
         # Load the config for this device
         self.log('INFO', 'Attempt to load the config')
         self.CONFIG = config.init()
@@ -269,7 +271,8 @@ class GrabSensors:
             body = table+rowsstr+'</table>'
             # Then build the heade string
             header = '<strong>Date:</strong> {} <strong>Device:</strong> {} <strong>ID:</strong> {} '.format(time.strftime("%d/%m/%Y %H:%M:%S"), self.CONFIG['name'], self.CONFIG['serial'] ) 
-            header += '<strong>mac:</strong> {} '.format(self.CONFIG['MAC'])
+            header += '<strong>MAC:</strong> {} '.format(self.CONFIG['MAC'])
+            header += '<strong>Reboot in:</strong> {}'.format(self.H3G.willrebootin())
             header += '<hr />'
             header += '<strong>Rows:</strong> {} '.format(num)
             header += '<strong>Uploaded</strong> {} '.format(uploaded)

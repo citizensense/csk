@@ -6,12 +6,24 @@ import subprocess, logging, sys, time
 class Huawei3G:
     
     def __init__(self):
+        self.rebootafter = 120 # Minutes until a reboot
+        self.started = int(time.time())
         self.msg = ''
         self.strangecount = 0
+    
+    def willrebootin(self):
+        elapsed = int(time.time())-self.started
+        secondstillreboot = (self.rebootafter*60)-elapsed
+        return '{} seconds'.format(secondstillreboot)
 
     def checkconnection(self):
+        # Because the dongles sometimes get stuck we need to reboot after a set amount of time
+        elapsed = int(time.time())-self.started
+        if elapsed >= self.rebootafter*60:
+            subprocess.check_output("reboot", shell=True).decode("utf-8")
         # Setup base vars
         self.msg = "==========checkconnection()========"
+        self.msg += '\nWill reboot in: {}'.format(self.willrebootin())
         eth = -1
         wlan = -1
         wwan0 = -1
