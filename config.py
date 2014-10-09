@@ -77,8 +77,8 @@ def init():
             'name':'kit 5',
             'alphasense':{
                 'we1z':305,        # VpcbWE-SN1-zero 
-                'we2z':351,        # VpcbWE-SN2-zero
-                'we3z':266,        # VpcbWE-SN3-zero
+                'we2z':420,        # VpcbWE-SN2-zero
+                'we3z':260,        # VpcbWE-SN3-zero
                 'ae1z':313,        # VpcbAE-SN1-zero
                 'ae2z':435,        # VpcbAE-SN2-zero
                 'ae3z':284,        # VpcbAE-SN3-zero
