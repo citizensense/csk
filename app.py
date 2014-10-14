@@ -177,6 +177,7 @@ class GrabSensors:
                     }
                     resp = poster.send(url, data)
                     print('POST TO URL:{} \n {}'.format(url, poster.msg))
+                    self.log('WARN', 'POSTer.msg: '+poster.msg )
                     #print(json.dumps(data))
                     if resp is not False:
                         if len(resp['errors']) > 0: 
@@ -259,30 +260,33 @@ class GrabSensors:
         table += keyheader+"</th></tr>"
         # Now loop through and keep updating the display
         while True:
-            # How many rows in the database
-            num = db.query('SELECT count(*) FROM csvs') 
-            uploaded = db.query('SELECT uploaded FROM csvs WHERE uploaded = 1;', 'count') 
-            num = num[0][0]
-            toupload = num-uploaded
-            # Lets grab the latest data
-            rows = db.query(qry)
-            rowsstr = ''
-            for row in rows:
-                vals = row[2].replace(',', '</td><td>')
-                rowsstr += '<tr><td>{}</td><td>{}</td><td>{}</td></tr>'.format(row[0], row[1], vals)
-            # And build th final table
-            body = table+rowsstr+'</table>'
-            # Then build the heade string
-            header = '<strong>Date:</strong> {} <strong>Device:</strong> {} <strong>ID:</strong> {} '.format(time.strftime("%d/%m/%Y %H:%M:%S"), self.CONFIG['name'], self.CONFIG['serial'] ) 
-            header += '<strong>MAC:</strong> {} '.format(self.CONFIG['MAC'])
-            header += '<strong>Reboot in:</strong> {}'.format(self.H3G.willrebootin())
-            header += '<hr />'
-            header += '<strong>Rows:</strong> {} '.format(num)
-            header += '<strong>Uploaded</strong> {} '.format(uploaded)
-            header += '<strong>To upload: </strong> {}'.format(toupload)
-            header += '<br /><br />'
-            body += "<h2>Config</h2><pre>{}</pre>".format(self.CONFIG)
-            self.webserver.setcontent(header, body)
+            try:   
+                # How many rows in the database
+                num = db.query('SELECT count(*) FROM csvs') 
+                uploaded = db.query('SELECT uploaded FROM csvs WHERE uploaded = 1;', 'count') 
+                num = num[0][0]
+                toupload = num-uploaded
+                # Lets grab the latest data
+                rows = db.query(qry)
+                rowsstr = ''
+                for row in rows:
+                    vals = row[2].replace(',', '</td><td>')
+                    rowsstr += '<tr><td>{}</td><td>{}</td><td>{}</td></tr>'.format(row[0], row[1], vals)
+                # And build th final table
+                body = table+rowsstr+'</table>'
+                # Then build the heade string
+                header = '<strong>Date:</strong> {} <strong>Device:</strong> {} <strong>ID:</strong> {} '.format(time.strftime("%d/%m/%Y %H:%M:%S"), self.CONFIG['name'], self.CONFIG['serial'] ) 
+                header += '<strong>MAC:</strong> {} '.format(self.CONFIG['MAC'])
+                header += '<strong>Reboot in:</strong> {}'.format(self.H3G.willrebootin())
+                header += '<hr />'
+                header += '<strong>Rows:</strong> {} '.format(num)
+                header += '<strong>Uploaded</strong> {} '.format(uploaded)
+                header += '<strong>To upload: </strong> {}'.format(toupload)
+                header += '<br /><br />'
+                body += "<h2>Config</h2><pre>{}</pre>".format(self.CONFIG)
+                self.webserver.setcontent(header, body)
+            except Excpetion as e:
+                self.log('WARN', 'setweb(): '+str(e) )
             time.sleep(10)
 
     # Save data to the database
