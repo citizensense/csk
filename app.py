@@ -160,6 +160,8 @@ class GrabSensors:
                 values = []
                 cids = []
                 for row in rows:
+                    #print(row)
+                    #print('row0: '+row[0]+' row1: '+row[1])
                     cids.append(row[0])
                     values.append(row[1])
                 toupload = len(cids)
@@ -174,7 +176,8 @@ class GrabSensors:
                         'jsonvalues': jsonvalues
                     }
                     resp = poster.send(url, data)
-                    print('POST TO: {} \n {}'.format(url, poster.msg))
+                    print('POST TO URL:{} \n {}'.format(url, poster.msg))
+                    #print(json.dumps(data))
                     if resp is not False:
                         if len(resp['errors']) > 0: 
                             self.log('WARN', 'POST response:'+str(resp['errors']) )
@@ -246,7 +249,7 @@ class GrabSensors:
         # Setup the database object and query
         dbstruct = self.dbstructure()
         db = Database(self.CONFIG['dbfile'], dbstruct)
-        qry = 'SELECT cid, uploaded, csv FROM csvs ORDER BY timestamp DESC LIMIT 400'
+        qry = 'SELECT cid, uploaded, csv FROM csvs ORDER BY cid DESC LIMIT 400'
         # Build the header
         table = '<table><tr><th>'
         keys = ["cid","up","timestamp","humandate"]
@@ -305,9 +308,9 @@ class GrabSensors:
     
     # Grab temperature / Humidity values
     def grabtemphumid(self):
-        sensor=AM2315()
         while True:
             try:
+                sensor=AM2315()
                 temp = sensor.temperature() 
                 humid = sensor.humidity()
                 #TODO: Dirty fix checking for zero values, sort with proper media check
@@ -318,18 +321,21 @@ class GrabSensors:
                     self.humid = humid
                     self.newdata('XHumid', humid)
             except Exception as e:
+                self.temp = 20
+                self.newdata('XTemp', 'n/a')
                 self.log('DEBUG', 'app.py | Exception | grabtemphumid() | '+str(e) )
             time.sleep(10)
    
     # Grab temperature / Humidity values
     def grabwinddir(self):
-        wind = winddir()
         # Read the wind direction
         while True:
+            wind = winddir()
             compass = wind.grabdir()
             if compass is not False:
                 self.newdata('winddir', compass)
             else:
+                self.newdata('winddir', 'n/a')
                 self.log('WARN', 'Wind dir is false:{}'.format(wind.msg))
             time.sleep(5)
 
