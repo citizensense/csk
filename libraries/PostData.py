@@ -15,6 +15,7 @@ class PostData:
         request.add_header("Content-Type","application/x-www-form-urlencoded;charset=utf-8")
         try:
             f = urllib.request.urlopen(request, data)
+            #f2 = urllib2.urlopen(f, timeout=10)
         except Exception as e:
             self.msg += 'POST Error: '+str(e)
             return False

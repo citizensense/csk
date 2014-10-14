@@ -55,9 +55,9 @@ class GrabSensors:
         self.humid = 999     # These get set by an external humidity sensor
         # Start the webserver (runs in its own thread)
         globalconfig = {'server.socket_host':"0.0.0.0", 'server.socket_port':80 } 
-        localconfig = {'/': {'tools.staticdir.root': '../public'}}
+        localconfig = {'/': {'tools.staticdir.root': '/home/csk/csk/public'}}
         self.webserver = CherryPyWebServer(globalconfig, localconfig) 
-        self.webserver.setcontent('Started the server', 'From within app.py')
+        self.webserver.setcontent('Started the server', ' ')
         # Data model: (shortname, [logtitle, values, max, min])
         self.datamodel = OrderedDict([
             ('lat',             ['USB-ND1000S',     []  ]),
@@ -156,7 +156,7 @@ class GrabSensors:
             toupload = -1
             while toupload is not 0:
                 # Grab data to upload
-                rows = db.query('SELECT cid, csv FROM csvs WHERE uploaded = 0 LIMIT 2')
+                rows = db.query('SELECT cid, csv FROM csvs WHERE uploaded = 0 LIMIT 4')
                 values = []
                 cids = []
                 for row in rows:
@@ -176,13 +176,13 @@ class GrabSensors:
                         'jsonvalues': jsonvalues
                     }
                     resp = poster.send(url, data)
-                    print('POST TO URL:{} \n {}'.format(url, poster.msg))
+                    #print('POST TO URL:{} \n {}'.format(url, poster.msg))
                     self.log('WARN', 'POSTer.msg: '+poster.msg )
                     self.log('WARN', 'POST resp: '+str(resp) )  
                     #print(json.dumps(data))
                     if resp is not False:
                         if len(resp['errors']) > 0: 
-                            self.log('WARN', 'POST response:'+str(resp['errors']) )
+                            self.log('WARN', 'POST ERRORS:'+str(resp['errors']) )
                         else:
                             # Update database as we have successfully uploaded all data
                             self.log('DEBUG', 'Sucessfully uploaded')
@@ -190,13 +190,14 @@ class GrabSensors:
                             qry = "UPDATE csvs SET uploaded=1 WHERE {}".format(where)
                             rows = db.query(qry)
                             #print(db.msg)
+                            self.log('WARN', 'POST sucess DB: '+str(db.msg) ) 
                     else:
-                        self.log('WARN', 'POSTresp: '+str(resp))
+                        #self.log('WARN', 'FALSEPOSTresp: '+str(resp))
                         # Lets pause a bit and wait again
                         toupload = 0
-                time.sleep(0.1)
+                time.sleep(0.4)
             # If its a success then update the 'uploaded' flag
-            #time.sleep(2)
+            time.sleep(0.2)
 
     # Iterate through the data model and save data to: LogFile, GUI, Web
     # TODO: This is messy! Seperate data, display etc...
