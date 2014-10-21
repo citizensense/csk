@@ -14,8 +14,7 @@ class PostData:
         # adding charset parameter to the Content-Type header.
         request.add_header("Content-Type","application/x-www-form-urlencoded;charset=utf-8")
         try:
-            f = urllib.request.urlopen(request, data, 10)
-            #f2 = urllib2.urlopen(f, timeout=10)
+            f = urllib.request.urlopen(request, data, 15)
         except urllib.request.URLError:
             self.msg += 'No network connection: '+str(e)
             return False
@@ -24,7 +23,8 @@ class PostData:
         try:
             return json.loads(response)            
         except Exception as e:
-            self.msg += 'Have a reponse but unable to decode it as JSON: {}\nException e: {}'.format(response, e) 
+            self.msg += 'Have a reponse but unable to decode it as JSON: \n{}'.format(response) 
+            self.msg += 'Very likely there is  no network connection'
             return False
     
 if __name__ == "__main__":
@@ -40,5 +40,5 @@ if __name__ == "__main__":
         resp = poster.send(url, data)
         print(str(resp))
         print(poster.msg)
-        time.sleep(5)
+        time.sleep(1)
 

@@ -140,6 +140,9 @@ class GrabSensors:
     
     # Periodically attempt to post saved data to the server
     def postdata(self):
+        # Prep a 'failed posts' counter
+        failedposts = 0
+        timeout = (60*60)  # 1 hour
         # Initialise a database connection
         dbstruct = self.dbstructure()
         db = Database(self.CONFIG['dbfile'], dbstruct)
@@ -178,8 +181,11 @@ class GrabSensors:
                     self.log('WARN', 'POSTer.msg: '+poster.msg )
                     self.log('WARN', 'POSTer resp: '+str(resp) )  
                     if resp is not False:
+                        failedposts = 0
+                        # We have posted data, but have errors from the server
                         if len(resp['errors']) > 0: 
                             self.log('WARN', 'POST ERRORS:'+str(resp['errors']) )
+                        # All is fine
                         else:
                             # Update database as we have successfully uploaded all data
                             self.log('DEBUG', 'Sucessfully uploaded')
@@ -189,10 +195,14 @@ class GrabSensors:
                             #print(db.msg)
                             self.log('WARN', 'POST sucess DB: '+str(db.msg) ) 
                     else:
-                        #self.log('WARN', 'FALSEPOSTresp: '+str(resp))
+                        failedposts = failedposts+1
+                        if failedposts >= timeout*2:
+                            self.log('WARN', 'REBOOT AS NO NETWORK CONNECTION: '+str(timeout))
+                            subprocess.check_output("reboot", shell=True).decode("utf-8")
+                        self.log('WARN', 'UNABLE TO POST DATA [FailedPosts: {}]'.format(failedposts))
                         # Lets pause a bit and wait again
                         toupload = 0
-                time.sleep(0.4)
+                time.sleep(0.5)
             # If its a success then update the 'uploaded' flag
             time.sleep(0.2)
 
