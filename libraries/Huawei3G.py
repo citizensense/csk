@@ -2,7 +2,6 @@
 import subprocess, logging, sys, time
 
 # Class to grab data from a ND100S GPS unit
-# TODO: The power off method didn't work. Try nomodeset
 class Huawei3G:
     
     def __init__(self):
@@ -11,6 +10,7 @@ class Huawei3G:
         self.msg = ''
         self.strangecount = 0
     
+    # TODO: Rework reboot
     def willrebootin(self):
         elapsed = int(time.time())-self.started
         secondstillreboot = (self.rebootafter*60)-elapsed
@@ -23,7 +23,7 @@ class Huawei3G:
         #    subprocess.check_output("reboot", shell=True).decode("utf-8")
         # Setup base vars
         self.msg = "==========checkconnection()========"
-        self.msg += '\nWill reboot in: {}'.format(self.willrebootin())
+        #self.msg += '\nWill reboot in: {}'.format(self.willrebootin())
         eth = -1
         wlan = -1
         wwan0 = -1

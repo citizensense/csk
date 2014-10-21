@@ -14,18 +14,19 @@ class PostData:
         # adding charset parameter to the Content-Type header.
         request.add_header("Content-Type","application/x-www-form-urlencoded;charset=utf-8")
         try:
-            f = urllib.request.urlopen(request, data)
+            f = urllib.request.urlopen(request, data, 10)
             #f2 = urllib2.urlopen(f, timeout=10)
-        except Exception as e:
-            self.msg += 'POST Error: '+str(e)
+        except urllib.request.URLError:
+            self.msg += 'No network connection: '+str(e)
             return False
+        # Looks like we have a response
         response = f.read().decode('utf-8')
         try:
             return json.loads(response)            
         except Exception as e:
-            self.msg += 'Json Response Error: '+str(e) 
+            self.msg += 'Have a reponse but unable to decode it as JSON: {}\nException e: {}'.format(response, e) 
             return False
-
+    
 if __name__ == "__main__":
     import time
     # Initialise the object

@@ -155,17 +155,16 @@ class GrabSensors:
         while True:
             toupload = -1
             while toupload is not 0:
-                # Grab data to upload
+                # Grab data to upload 
                 rows = db.query('SELECT cid, csv FROM csvs WHERE uploaded = 0 LIMIT 4')
                 values = []
                 cids = []
+                # Prep for upload
                 for row in rows:
-                    #print(row)
-                    #print('row0: '+row[0]+' row1: '+row[1])
                     cids.append(row[0])
                     values.append(row[1])
                 toupload = len(cids)
-                # Then attempt to post it
+                # If we have data to post, then attempt to post it!
                 if toupload > 0:
                     jsonvalues = json.dumps(values)
                     data = {
@@ -176,10 +175,8 @@ class GrabSensors:
                         'jsonvalues': jsonvalues
                     }
                     resp = poster.send(url, data)
-                    #print('POST TO URL:{} \n {}'.format(url, poster.msg))
                     self.log('WARN', 'POSTer.msg: '+poster.msg )
-                    self.log('WARN', 'POST resp: '+str(resp) )  
-                    #print(json.dumps(data))
+                    self.log('WARN', 'POSTer resp: '+str(resp) )  
                     if resp is not False:
                         if len(resp['errors']) > 0: 
                             self.log('WARN', 'POST ERRORS:'+str(resp['errors']) )

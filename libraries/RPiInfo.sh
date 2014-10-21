@@ -1,6 +1,6 @@
 TEMP=$(/opt/vc/bin/vcgencmd measure_temp | cut -d= -f2)
-DISKAVAILABLE=$(df -h | grep '/dev/root' | cut -d' ' -f12)
-DISKUSED=$(df -h | grep '/dev/root' | cut -d' ' -f14)
+DISKAVAILABLE=$(df -h | grep '/dev/root' | cut -d' ' -f9)
+DISKUSED=$(df -h | grep '/dev/root' | cut -d' ' -f11)
 VOLTS=$(/opt/vc/bin/vcgencmd measure_volts)
 #GPU=$(/opt/vc/bin/vcgencmd get_mem arm/gpu)
 MEM=$(free -mh | grep '+ buffers')

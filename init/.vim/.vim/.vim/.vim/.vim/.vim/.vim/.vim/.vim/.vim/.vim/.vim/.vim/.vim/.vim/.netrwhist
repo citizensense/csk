@@ -1,0 +1,10 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhist_cnt =8
+let g:netrw_dirhist_1='/home/tom/frackbox/templates'
+let g:netrw_dirhist_2='/home/tom/frackbox'
+let g:netrw_dirhist_3='/home/tom/frackbox/public'
+let g:netrw_dirhist_4='/home/tom/frackbox/public/css'
+let g:netrw_dirhist_5='/home/tom/frackbox/templates'
+let g:netrw_dirhist_6='/home/tom/frackbox'
+let g:netrw_dirhist_7='/home/tom/frackbox/templates'
+let g:netrw_dirhist_8='/home/tom/frackbox'
