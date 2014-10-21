@@ -6,8 +6,7 @@ loadkeys uk
 setfont ter-p24b.psf.gz
 
 # Run the sensor app 
-cd /home/csk/csk
-./app.py > /dev/null &
+/home/csk/csk/app.py &
 
 # Check if we got to the end of the script
 MYDATE=$(date)

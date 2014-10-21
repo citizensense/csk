@@ -28,13 +28,14 @@ class GrabSensors:
     
     # Initialise the object
     def __init__(self):
+        self.msg = '----app.py init()----'
         # Seconds until the device will reboot 
-        self.secondstillreboot = '?'
+        self.failedposts = '?'
         # Load the config for this device
         self.log('INFO', 'Attempt to load the config')
         self.CONFIG = config.init()
         # Setup logging
-        logging.basicConfig(filename='/home/csk/csk/csk.log', level=logging.DEBUG)
+        logging.basicConfig('/home/csk/csk/csk.log', level=logging.DEBUG)
         self.log('INFO', 'Started script')
         # Setup means to save and post data to the server
         dbstruct = self.dbstructure()
@@ -100,6 +101,7 @@ class GrabSensors:
         threads.append(threading.Thread(target=self.setweb) )           # Set data on the web interface
         for item in threads:
             item.start()
+        self.msg += "\nfinshed starting all threads"
         # Setup GPOI Pin access
         #wiringpi2.wiringPiSetup() # For sequencial pin numbering i.e [] in pin layout below
         #wiringpi2.wiringPiSetupGpio() # For GPIO pin numbering
@@ -140,8 +142,9 @@ class GrabSensors:
     
     # Periodically attempt to post saved data to the server
     def postdata(self):
+        self.msg += "\nStarted postdata()"
         # Prep a 'failed posts' counter
-        failedposts = 0
+        self.failedposts = 0
         timeout = (60*60)  # 1 hour
         # Initialise a database connection
         dbstruct = self.dbstructure()
@@ -195,9 +198,9 @@ class GrabSensors:
                             #print(db.msg)
                             self.log('WARN', 'POST sucess DB: '+str(db.msg) ) 
                     else:
-                        failedposts = failedposts+1
-                        if failedposts >= timeout*2:
-                            self.log('WARN', 'REBOOT AS NO NETWORK CONNECTION: '+str(timeout))
+                        self.failedposts = self.failedposts+1
+                        if self.failedposts >= timeout*2:
+                            self.log('WARN', 'NO NETWORK CONNECTION REBOOT: '+str(timeout))
                             subprocess.check_output("reboot", shell=True).decode("utf-8")
                         self.log('WARN', 'UNABLE TO POST DATA [FailedPosts: {}]'.format(failedposts))
                         # Lets pause a bit and wait again
@@ -286,13 +289,14 @@ class GrabSensors:
                 # Then build the heade string
                 header = '<strong>Date:</strong> {} <strong>Device:</strong> {} <strong>ID:</strong> {} '.format(time.strftime("%d/%m/%Y %H:%M:%S"), self.CONFIG['name'], self.CONFIG['serial'] ) 
                 header += '<strong>MAC:</strong> {} '.format(self.CONFIG['MAC'])
-                header += '<strong>Reboot in:</strong> {}'.format(self.H3G.willrebootin())
+                header += '<strong>Failed posts:</strong> {}'.format(self.failedposts)
                 header += '<hr />'
                 header += '<strong>Rows:</strong> {} '.format(num)
                 header += '<strong>Uploaded</strong> {} '.format(uploaded)
                 header += '<strong>To upload: </strong> {}'.format(toupload)
                 header += '<br /><br />'
                 body += "<h2>Config</h2><pre>{}</pre>".format(self.CONFIG)
+                body += "<h2>Started Threads</h2><pre>{}</pre>".format(self.msg)
                 self.webserver.setcontent(header, body)
             except Excpetion as e:
                 self.log('WARN', 'setweb(): '+str(e) )
@@ -321,6 +325,7 @@ class GrabSensors:
     
     # Grab temperature / Humidity values
     def grabtemphumid(self):
+        self.msg += "\ngrabtemphumid()"
         while True:
             try:
                 sensor=AM2315()
@@ -341,6 +346,7 @@ class GrabSensors:
    
     # Grab temperature / Humidity values
     def grabwinddir(self):
+        self.msg += "\ngrabwinddir()"
         # Read the wind direction
         while True:
             wind = winddir()
@@ -354,6 +360,7 @@ class GrabSensors:
 
     # Grab GPS data 
     def grabgps(self):
+        self.msg += "\ngrabgps()"
         while True:
             data = self.ND1000S.grabdata()
             if data is not False:
@@ -372,6 +379,7 @@ class GrabSensors:
     
     # Grab ADC data from the ABelectronicsADC -> alphasense
     def grabalphasense(self):
+        self.msg += "\ngrabalphasense()"
         # Setup Alphasense calibration values
         calibration = self.CONFIG['alphasense']
         alphasense = Alphasense(calibration)
@@ -421,6 +429,7 @@ class GrabSensors:
 
     # Grab RpiInfo
     def grabrpiinfo(self):
+        self.msg += "\ngrabrpiinfo()"
         while True: 
             jsonstr = subprocess.check_output("/home/csk/csk/libraries/RPiInfo.sh", shell=True).decode("utf-8")
             try:
@@ -437,15 +446,16 @@ class GrabSensors:
 
     # Thread to check the network status
     def checknetwork(self):
+        self.msg += "\nchecknetwork()"
         while True:
             # CHECK NETWORK / 3G DONGLE IS CONNECTED
             network = self.H3G.checkconnection()
             if network == True:
                 self.log('DEBUG','Network OK')
-                self.newdata('network', 1)
+                self.newdata('network', 'OK | {}'.format(self.failedposts))
             else:
                 self.log('WARN','Network not connected')
-                self.newdata('network', 0)
+                self.newdata('network', 'KO | {}'.format(self.failedposts))
             time.sleep(20)
 
     # Thread to blink an led
