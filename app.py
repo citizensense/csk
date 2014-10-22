@@ -205,6 +205,7 @@ class GrabSensors:
                     self.log('WARN', 'POSTer resp: '+str(resp) )  
                     if resp is not False:
                         self.failedposts = 0
+                        self.timepassed = 0
                         # We have posted data, but have errors from the server
                         if len(resp['errors']) > 0: 
                             self.log('WARN', 'POST ERRORS:'+str(resp['errors']) )
