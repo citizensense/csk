@@ -511,10 +511,10 @@ class GrabSensors:
             network = self.H3G.checkconnection()
             if network == True:
                 self.log('DEBUG','Network OK')
-                self.newdata('network', 'OK | {}'.format(self.failedposts))
+                self.newdata('network', 'OK|{}|{}'.format(self.failedposts, self.postlimit))
             else:
                 self.log('WARN','Network not connected')
-                self.newdata('network', 'KO | {}'.format(self.failedposts))
+                self.newdata('network', 'KO|{}|{}'.format(self.failedposts, self.postlimit))
             self.healthcheck['checknetwork'] = self.counter 
             time.sleep(20)
 
