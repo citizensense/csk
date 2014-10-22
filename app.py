@@ -238,7 +238,7 @@ class GrabSensors:
                     else:
                         failed = True
             except Exception as e:
-                self.log('WARN', 'Failure with POST method: {}'format(str(e)) )
+                self.log('WARN', 'Failure with POST method: {}'.format(str(e) ) )
                 failed = True
             # Start a counter if we have failed to upload
             if failed is True:
