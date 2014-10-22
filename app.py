@@ -169,6 +169,7 @@ class GrabSensors:
         # Prep a 'failed posts' counter
         self.failedposts = 0
         self.timeout = 60*60  # 1 hour
+        postlimit = 4
         # Initialise a database connection
         dbstruct = self.dbstructure()
         db = Database(self.CONFIG['dbfile'], dbstruct)
@@ -184,10 +185,13 @@ class GrabSensors:
             # All is ok
             failed = False
             # Grab data to upload 
-            rows = db.query('SELECT cid, csv FROM csvs WHERE uploaded = 0 LIMIT 4')
-            self.log('WARN', 'DB MSG: {}'.format(db.msg))
+            qry = 'SELECT cid, csv FROM csvs WHERE uploaded = 0 LIMIT {}'.format(postlimit)
+            rows = db.query(qry)
+            self.log('WARN', 'DB for POST: {}'.format(qry))
             values = []
             cids = []
+            postlimit += 2
+            if postlimit >= 500: postlimit = 500
             # Prep for upload
             try:
                 for row in rows:
@@ -244,7 +248,8 @@ class GrabSensors:
                 if self.timepassed >= self.timeout:
                     self.log('WARN', 'NO NETWORK CONNECTION REBOOT: '+str(self.timeout))
                     subprocess.check_output("reboot", shell=True).decode("utf-8")
-                self.log('WARN', 'UNABLE TO POST DATA [FailedPosts: {} timepassed: {} counter: {}]'.format(self.failedposts, self.timepassed, self.counter))
+                self.log('WARN', 'UNABLE TO POST DATA [FailedPosts: {} timepassed: {} counter: {} postlimit: {}]'.format(self.failedposts, self.timepassed, self.counter, postlimit))
+                postlimit = 2
             # And round again!
             self.healthcheck['postdata'] = self.counter 
             time.sleep(0.2)
