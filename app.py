@@ -322,7 +322,8 @@ class GrabSensors:
                 header += '<strong>To upload: </strong> {} '.format(toupload)
                 header += '<strong>Failed posts:</strong> {} '.format(self.failedposts)
                 header += '<strong>Failed for:</strong> {} secs '.format(self.timepassed)
-                header += '<strong>Reboot in:</strong> {} secs '.format(self.timeout-self.timepassed)
+                if self.failedposts > 0:
+                    header += '<strong>Reboot in:</strong> {} secs '.format(self.timeout-self.timepassed)
                 header += '<br /><br />'
                 body += "<h2>Config</h2><pre>{}</pre>".format(self.CONFIG)
                 body += "<h2>Started Threads</h2><pre>{}</pre>".format(self.msg)
