@@ -33,6 +33,7 @@ class GrabSensors:
         self.timepassed = 0
         self.healthcheck = {}
         self.failedposts = 0
+        self.postlimit = 2
         # Load the config for this device
         self.log('INFO', 'Attempt to load the config')
         self.CONFIG = config.init()
@@ -169,7 +170,7 @@ class GrabSensors:
         # Prep a 'failed posts' counter
         self.failedposts = 0
         self.timeout = 60*60  # 1 hour
-        postlimit = 4
+        self.postlimit = 2
         # Initialise a database connection
         dbstruct = self.dbstructure()
         db = Database(self.CONFIG['dbfile'], dbstruct)
@@ -182,61 +183,63 @@ class GrabSensors:
         keys = json.dumps(keys)
         # Now periodically upload the data
         while True:
-            # All is ok
-            failed = False
-            # Grab data to upload 
-            qry = 'SELECT cid, csv FROM csvs WHERE uploaded = 0 LIMIT {}'.format(postlimit)
-            rows = db.query(qry)
-            self.log('WARN', 'DB for POST: {}'.format(qry))
-            values = []
-            cids = []
-            postlimit += 2
-            if postlimit >= 500: postlimit = 500
-            # Prep for upload
             try:
-                for row in rows:
-                    cids.append(row[0])
-                    values.append(row[1])
-            except Exception as e:
-                self.log('WARN', 'DB Error. rows = {}'.format(str(rows) ))
-                db = Database(self.CONFIG['dbfile'], dbstruct) 
-                failed = True
-            # If we have data to post, then attempt to post it!
-            if len(cids) > 0:
-                jsonvalues = json.dumps(values)
-                data = {
-                    'serial':self.CONFIG['serial'],
-                    'name':self.CONFIG['name'], 
-                    'MAC':self.CONFIG['MAC'],
-                    'jsonkeys': keys, 
-                    'jsonvalues': jsonvalues
-                }
+                # All is ok
+                failed = False
+                # Grab data to upload 
+                qry = 'SELECT cid, csv FROM csvs WHERE uploaded = 0 LIMIT {}'.format(self.postlimit)
+                rows = db.query(qry)
+                self.log('WARN', 'DB for POST: {}'.format(qry))
+                values = []
+                cids = []
+                # Prep for upload
                 try:
-                    poster = PostData()
-                    resp = poster.send(url, data)
-                    self.log('WARN', 'POSTer.msg: '+poster.msg )
-                    self.log('WARN', 'POSTer resp: '+str(resp) )  
+                    for row in rows:
+                        cids.append(row[0])
+                        values.append(row[1])
                 except Exception as e:
-                    resp = False
-                    self.log('WARN', 'POST Error ')
-                # Do we have a respose to read
-                if resp is not False:
-                    self.failedposts = 0
-                    self.timepassed = 0
-                    # We have posted data, but have errors from the server
-                    if len(resp['errors']) > 0: 
-                        self.log('WARN', 'POST ERRORS:'+str(resp['errors']) )
-                    # All is fine
-                    else:
-                        # Update database as we have successfully uploaded all data
-                        self.log('DEBUG', 'Sucessfully uploaded')
-                        where = 'cid='+' OR cid='.join(map(str, cids))
-                        qry = "UPDATE csvs SET uploaded=1 WHERE {}".format(where)
-                        rows = db.query(qry)
-                        #print(db.msg)
-                        self.log('WARN', 'POST sucess DB: '+str(db.msg) ) 
-                else:
+                    self.log('WARN', 'DB Error. rows = {}'.format(str(rows) ))
+                    db = Database(self.CONFIG['dbfile'], dbstruct) 
                     failed = True
+                # If we have data to post, then attempt to post it!
+                if len(cids) > 0:
+                    jsonvalues = json.dumps(values)
+                    data = {
+                        'serial':self.CONFIG['serial'],
+                        'name':self.CONFIG['name'], 
+                        'MAC':self.CONFIG['MAC'],
+                        'jsonkeys': keys, 
+                        'jsonvalues': jsonvalues
+                    }
+                    try:
+                        poster = PostData()
+                        resp = poster.send(url, data)
+                        self.log('WARN', 'POSTer.msg: '+poster.msg )
+                        self.log('WARN', 'POSTer resp: '+str(resp) )  
+                    except Exception as e:
+                        resp = False
+                        self.log('WARN', 'POST Error ')
+                    # Do we have a respose to read
+                    if resp is not False:
+                        self.failedposts = 0
+                        self.timepassed = 0
+                        # We have posted data, but have errors from the server
+                        if len(resp['errors']) > 0: 
+                            self.log('WARN', 'POST ERRORS:'+str(resp['errors']) )
+                        # All is fine
+                        else:
+                            # Update database as we have successfully uploaded all data
+                            self.log('DEBUG', 'Sucessfully uploaded')
+                            where = 'cid='+' OR cid='.join(map(str, cids))
+                            qry = "UPDATE csvs SET uploaded=1 WHERE {}".format(where)
+                            rows = db.query(qry)
+                            #print(db.msg)
+                            self.log('WARN', 'POST sucess DB: '+str(db.msg) ) 
+                    else:
+                        failed = True
+            except Exception as e:
+                self.log('WARN', 'Failure with POST method: {}'format(str(e)) )
+                failed = True
             # Start a counter if we have failed to upload
             if failed is True:
                 # start a time to see how long we havent posted for
@@ -248,9 +251,13 @@ class GrabSensors:
                 if self.timepassed >= self.timeout:
                     self.log('WARN', 'NO NETWORK CONNECTION REBOOT: '+str(self.timeout))
                     subprocess.check_output("reboot", shell=True).decode("utf-8")
-                self.log('WARN', 'UNABLE TO POST DATA [FailedPosts: {} timepassed: {} counter: {} postlimit: {}]'.format(self.failedposts, self.timepassed, self.counter, postlimit))
-                postlimit = 2
+                self.log('WARN', 'UNABLE TO POST DATA [FailedPosts: {} timepassed: {} counter: {} postlimit: {}]'.format(self.failedposts, self.timepassed, self.counter, self.postlimit))
+                self.postlimit = 2 
+            else:
+                 self.postlimit = self.postlimit*2
             # And round again!
+            if self.postlimit >= 500: self.postlimit = 500
+            if self.postlimit <= 2: self.postlimit = 2
             self.healthcheck['postdata'] = self.counter 
             time.sleep(0.2)
 
@@ -339,6 +346,7 @@ class GrabSensors:
                 header += '<strong>Rows:</strong> {} '.format(num)
                 header += '<strong>Uploaded</strong> {} '.format(uploaded)
                 header += '<strong>To upload: </strong> {} '.format(toupload)
+                header += '<strong>Post: {} rows</strong>'.format(self.postlimit)
                 header += '<strong>Failed posts:</strong> {} '.format(self.failedposts)
                 header += '<strong>Failed for:</strong> {} secs '.format(self.timepassed)
                 if self.failedposts > 0:
