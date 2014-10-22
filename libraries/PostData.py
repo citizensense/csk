@@ -16,15 +16,14 @@ class PostData:
         try:
             f = urllib.request.urlopen(request, data, 15)
         except urllib.request.URLError:
-            self.msg += 'No network connection: '+str(e)
+            self.msg += 'Connection timed out. No network connection.'
             return False
         # Looks like we have a response
         response = f.read().decode('utf-8')
         try:
             return json.loads(response)            
         except Exception as e:
-            self.msg += 'Have a reponse but unable to decode it as JSON: \n{}'.format(response) 
-            self.msg += 'Very likely there is  no network connection'
+            self.msg += '. Problem. Very likely there is  no network connection'
             return False
     
 if __name__ == "__main__":

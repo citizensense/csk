@@ -29,13 +29,15 @@ class GrabSensors:
     # Initialise the object
     def __init__(self):
         self.msg = '----app.py init()----'
+        self.counter = 0
+        self.timepassed = 0
         # Seconds until the device will reboot 
         self.failedposts = '?'
         # Load the config for this device
         self.log('INFO', 'Attempt to load the config')
         self.CONFIG = config.init()
         # Setup logging
-        logging.basicConfig('/home/csk/csk/csk.log', level=logging.DEBUG)
+        logging.basicConfig(filename='/home/csk/csk/csk.log', level=logging.DEBUG)
         self.log('INFO', 'Started script')
         # Setup means to save and post data to the server
         dbstruct = self.dbstructure()
@@ -90,6 +92,7 @@ class GrabSensors:
         self.csvbuffer = OrderedDict([])
         # Initialise a list of threads so data can be aquired asynchronosly
         threads = []
+        threads.append(threading.Thread(target=self.timepassing) )      # Keep track of how much time has passed
         threads.append(threading.Thread(target=self.checknetwork) )     # Check and sort out network
         threads.append(threading.Thread(target=self.grabgps) )          # Grab GPS data
         threads.append(threading.Thread(target=self.grabrpiinfo) )      # Grab RaspberryPi Info
@@ -119,6 +122,13 @@ class GrabSensors:
             ])
         ])
         return dbstruct
+    
+    # Counter to keep track of how much time has passed
+    def timepassing(self):
+        self.msg += '\nstarted timepassing()'
+        while True:
+            self.counter = self.counter+1
+            time.sleep(1)
 
     # If any threads have new data then save it here
     def newdata(self, key, value, timecode = int(time.time())):
@@ -145,12 +155,11 @@ class GrabSensors:
         self.msg += "\nStarted postdata()"
         # Prep a 'failed posts' counter
         self.failedposts = 0
-        timeout = (60*60)  # 1 hour
+        self.timeout = (60*60)  # 1 hour
         # Initialise a database connection
         dbstruct = self.dbstructure()
         db = Database(self.CONFIG['dbfile'], dbstruct)
-        # Initialise the object
-        poster = PostData()
+        self.log('WARN', 'POST DB INIT MSG: {}'.format(db.msg))
         # Now send some data to a locally installed version of frackbox
         url = self.CONFIG['posturl']
         # Generate an array of key names
@@ -161,14 +170,21 @@ class GrabSensors:
         while True:
             toupload = -1
             while toupload is not 0:
+                failed = False
                 # Grab data to upload 
                 rows = db.query('SELECT cid, csv FROM csvs WHERE uploaded = 0 LIMIT 4')
+                self.log('WARN', 'DB MSG: {}'.format(db.msg))
                 values = []
                 cids = []
                 # Prep for upload
-                for row in rows:
-                    cids.append(row[0])
-                    values.append(row[1])
+                try:
+                    for row in rows:
+                        cids.append(row[0])
+                        values.append(row[1])
+                except Exception as e:
+                    self.log('WARN', 'DB Error. rows = {}'.format(str(rows) ))
+                    db = Database(self.CONFIG['dbfile'], dbstruct) 
+                    failed = True
                 toupload = len(cids)
                 # If we have data to post, then attempt to post it!
                 if toupload > 0:
@@ -180,11 +196,15 @@ class GrabSensors:
                         'jsonkeys': keys, 
                         'jsonvalues': jsonvalues
                     }
-                    resp = poster.send(url, data)
+                    try:
+                        poster = PostData()
+                        resp = poster.send(url, data)
+                    except Exception as e:
+                        resp = False
                     self.log('WARN', 'POSTer.msg: '+poster.msg )
                     self.log('WARN', 'POSTer resp: '+str(resp) )  
                     if resp is not False:
-                        failedposts = 0
+                        self.failedposts = 0
                         # We have posted data, but have errors from the server
                         if len(resp['errors']) > 0: 
                             self.log('WARN', 'POST ERRORS:'+str(resp['errors']) )
@@ -198,13 +218,20 @@ class GrabSensors:
                             #print(db.msg)
                             self.log('WARN', 'POST sucess DB: '+str(db.msg) ) 
                     else:
-                        self.failedposts = self.failedposts+1
-                        if self.failedposts >= timeout*2:
-                            self.log('WARN', 'NO NETWORK CONNECTION REBOOT: '+str(timeout))
-                            subprocess.check_output("reboot", shell=True).decode("utf-8")
-                        self.log('WARN', 'UNABLE TO POST DATA [FailedPosts: {}]'.format(failedposts))
-                        # Lets pause a bit and wait again
-                        toupload = 0
+                        failed = True
+                if failed is True:
+                    # stert a time to see how long we havent posted for
+                    if self.failedposts == 0: timerstart = self.counter 
+                    # Looks like we have a failed post
+                    self.failedposts = self.failedposts+1
+                    # If 1 hour has passed then restart
+                    self.timepassed = self.counter-timerstart
+                    if self.timepassed >= self.timeout:
+                        self.log('WARN', 'NO NETWORK CONNECTION REBOOT: '+str(timeout))
+                        subprocess.check_output("reboot", shell=True).decode("utf-8")
+                    self.log('WARN', 'UNABLE TO POST DATA [FailedPosts: {} timepassed: {} counter: {}]'.format(self.failedposts, self.timepassed, self.counter))
+                    # Lets pause a bit and wait again
+                    toupload = 0
                 time.sleep(0.5)
             # If its a success then update the 'uploaded' flag
             time.sleep(0.2)
@@ -289,11 +316,13 @@ class GrabSensors:
                 # Then build the heade string
                 header = '<strong>Date:</strong> {} <strong>Device:</strong> {} <strong>ID:</strong> {} '.format(time.strftime("%d/%m/%Y %H:%M:%S"), self.CONFIG['name'], self.CONFIG['serial'] ) 
                 header += '<strong>MAC:</strong> {} '.format(self.CONFIG['MAC'])
-                header += '<strong>Failed posts:</strong> {}'.format(self.failedposts)
                 header += '<hr />'
                 header += '<strong>Rows:</strong> {} '.format(num)
                 header += '<strong>Uploaded</strong> {} '.format(uploaded)
-                header += '<strong>To upload: </strong> {}'.format(toupload)
+                header += '<strong>To upload: </strong> {} '.format(toupload)
+                header += '<strong>Failed posts:</strong> {} '.format(self.failedposts)
+                header += '<strong>Failed for:</strong> {} secs '.format(self.timepassed)
+                header += '<strong>Reboot in:</strong> {} secs '.format(self.timeout-self.timepassed)
                 header += '<br /><br />'
                 body += "<h2>Config</h2><pre>{}</pre>".format(self.CONFIG)
                 body += "<h2>Started Threads</h2><pre>{}</pre>".format(self.msg)
