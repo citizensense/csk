@@ -28,11 +28,11 @@ class GrabSensors:
     
     # Initialise the object
     def __init__(self):
-        self.msg = '----app.py init()----'
+        # vars to keep track of the health of the system
         self.counter = 0
         self.timepassed = 0
-        # Seconds until the device will reboot 
-        self.failedposts = '?'
+        self.healthcheck = {}
+        self.failedposts = 0
         # Load the config for this device
         self.log('INFO', 'Attempt to load the config')
         self.CONFIG = config.init()
@@ -51,7 +51,6 @@ class GrabSensors:
         # Setup some base variables
         self.lock = threading.Lock()
         self.datapath = os.path.join(os.path.dirname(__file__), 'data/data.csv')
-        self.ND1000S = ND1000S() 
         self.H3G = Huawei3G()
         self.save = SaveData()
         self.temp = 999      # These get set by an external temperature sensor
@@ -104,7 +103,17 @@ class GrabSensors:
         threads.append(threading.Thread(target=self.setweb) )           # Set data on the web interface
         for item in threads:
             item.start()
-        self.msg += "\nfinshed starting all threads"
+        self.healthcheck['---init()---'] = self.counter
+        self.healthcheck['timepassing'] = self.counter
+        self.healthcheck['checknetwork'] = self.counter
+        self.healthcheck['grabgps'] = self.counter
+        self.healthcheck['grabrpiinfo'] = self.counter
+        self.healthcheck['savedata'] = self.counter
+        self.healthcheck['grabtemphumid'] = self.counter
+        self.healthcheck['grabalphasense'] = self.counter
+        self.healthcheck['grabwinddir'] = self.counter
+        self.healthcheck['postdata'] = self.counter
+        self.healthcheck['setweb'] = self.counter
         # Setup GPOI Pin access
         #wiringpi2.wiringPiSetup() # For sequencial pin numbering i.e [] in pin layout below
         #wiringpi2.wiringPiSetupGpio() # For GPIO pin numbering
@@ -125,14 +134,19 @@ class GrabSensors:
     
     # Counter to keep track of how much time has passed
     def timepassing(self):
-        self.msg += '\nstarted timepassing()'
         while True:
             self.counter = self.counter+1
+            # Reboot once a day just in case...
+            if self.counter > (60*60)*24:
+                subprocess.check_output("reboot", shell=True).decode("utf-8")
             time.sleep(1)
+            self.healthcheck['timepassing'] = self.counter
 
     # If any threads have new data then save it here
-    def newdata(self, key, value, timecode = int(time.time())):
+    def newdata(self, key, value, timecode = False):
         # TODO: Need to check the Rpi has the right time, otherwise we shouldn't save
+        if timecode == False:
+            timecode = int(time.time())
         # Create a lock so multiple threads don't get confused
         self.lock.acquire()
         try:
@@ -152,10 +166,9 @@ class GrabSensors:
     
     # Periodically attempt to post saved data to the server
     def postdata(self):
-        self.msg += "\nStarted postdata()"
         # Prep a 'failed posts' counter
         self.failedposts = 0
-        self.timeout = (60*60)  # 1 hour
+        self.timeout = 60*60  # 1 hour
         # Initialise a database connection
         dbstruct = self.dbstructure()
         db = Database(self.CONFIG['dbfile'], dbstruct)
@@ -168,73 +181,72 @@ class GrabSensors:
         keys = json.dumps(keys)
         # Now periodically upload the data
         while True:
-            toupload = -1
-            while toupload is not 0:
-                failed = False
-                # Grab data to upload 
-                rows = db.query('SELECT cid, csv FROM csvs WHERE uploaded = 0 LIMIT 4')
-                self.log('WARN', 'DB MSG: {}'.format(db.msg))
-                values = []
-                cids = []
-                # Prep for upload
+            # All is ok
+            failed = False
+            # Grab data to upload 
+            rows = db.query('SELECT cid, csv FROM csvs WHERE uploaded = 0 LIMIT 4')
+            self.log('WARN', 'DB MSG: {}'.format(db.msg))
+            values = []
+            cids = []
+            # Prep for upload
+            try:
+                for row in rows:
+                    cids.append(row[0])
+                    values.append(row[1])
+            except Exception as e:
+                self.log('WARN', 'DB Error. rows = {}'.format(str(rows) ))
+                db = Database(self.CONFIG['dbfile'], dbstruct) 
+                failed = True
+            # If we have data to post, then attempt to post it!
+            if len(cids) > 0:
+                jsonvalues = json.dumps(values)
+                data = {
+                    'serial':self.CONFIG['serial'],
+                    'name':self.CONFIG['name'], 
+                    'MAC':self.CONFIG['MAC'],
+                    'jsonkeys': keys, 
+                    'jsonvalues': jsonvalues
+                }
                 try:
-                    for row in rows:
-                        cids.append(row[0])
-                        values.append(row[1])
-                except Exception as e:
-                    self.log('WARN', 'DB Error. rows = {}'.format(str(rows) ))
-                    db = Database(self.CONFIG['dbfile'], dbstruct) 
-                    failed = True
-                toupload = len(cids)
-                # If we have data to post, then attempt to post it!
-                if toupload > 0:
-                    jsonvalues = json.dumps(values)
-                    data = {
-                        'serial':self.CONFIG['serial'],
-                        'name':self.CONFIG['name'], 
-                        'MAC':self.CONFIG['MAC'],
-                        'jsonkeys': keys, 
-                        'jsonvalues': jsonvalues
-                    }
-                    try:
-                        poster = PostData()
-                        resp = poster.send(url, data)
-                    except Exception as e:
-                        resp = False
+                    poster = PostData()
+                    resp = poster.send(url, data)
                     self.log('WARN', 'POSTer.msg: '+poster.msg )
                     self.log('WARN', 'POSTer resp: '+str(resp) )  
-                    if resp is not False:
-                        self.failedposts = 0
-                        self.timepassed = 0
-                        # We have posted data, but have errors from the server
-                        if len(resp['errors']) > 0: 
-                            self.log('WARN', 'POST ERRORS:'+str(resp['errors']) )
-                        # All is fine
-                        else:
-                            # Update database as we have successfully uploaded all data
-                            self.log('DEBUG', 'Sucessfully uploaded')
-                            where = 'cid='+' OR cid='.join(map(str, cids))
-                            qry = "UPDATE csvs SET uploaded=1 WHERE {}".format(where)
-                            rows = db.query(qry)
-                            #print(db.msg)
-                            self.log('WARN', 'POST sucess DB: '+str(db.msg) ) 
+                except Exception as e:
+                    resp = False
+                    self.log('WARN', 'POST Error ')
+                # Do we have a respose to read
+                if resp is not False:
+                    self.failedposts = 0
+                    self.timepassed = 0
+                    # We have posted data, but have errors from the server
+                    if len(resp['errors']) > 0: 
+                        self.log('WARN', 'POST ERRORS:'+str(resp['errors']) )
+                    # All is fine
                     else:
-                        failed = True
-                if failed is True:
-                    # stert a time to see how long we havent posted for
-                    if self.failedposts == 0: timerstart = self.counter 
-                    # Looks like we have a failed post
-                    self.failedposts = self.failedposts+1
-                    # If 1 hour has passed then restart
-                    self.timepassed = self.counter-timerstart
-                    if self.timepassed >= self.timeout:
-                        self.log('WARN', 'NO NETWORK CONNECTION REBOOT: '+str(timeout))
-                        subprocess.check_output("reboot", shell=True).decode("utf-8")
-                    self.log('WARN', 'UNABLE TO POST DATA [FailedPosts: {} timepassed: {} counter: {}]'.format(self.failedposts, self.timepassed, self.counter))
-                    # Lets pause a bit and wait again
-                    toupload = 0
-                time.sleep(0.5)
-            # If its a success then update the 'uploaded' flag
+                        # Update database as we have successfully uploaded all data
+                        self.log('DEBUG', 'Sucessfully uploaded')
+                        where = 'cid='+' OR cid='.join(map(str, cids))
+                        qry = "UPDATE csvs SET uploaded=1 WHERE {}".format(where)
+                        rows = db.query(qry)
+                        #print(db.msg)
+                        self.log('WARN', 'POST sucess DB: '+str(db.msg) ) 
+                else:
+                    failed = True
+            # Start a counter if we have failed to upload
+            if failed is True:
+                # start a time to see how long we havent posted for
+                if self.failedposts == 0: timerstart = self.counter 
+                # Looks like we have a failed post
+                self.failedposts = self.failedposts+1
+                # If 1 hour has passed then restart
+                self.timepassed = self.counter-timerstart
+                if self.timepassed >= self.timeout:
+                    self.log('WARN', 'NO NETWORK CONNECTION REBOOT: '+str(self.timeout))
+                    subprocess.check_output("reboot", shell=True).decode("utf-8")
+                self.log('WARN', 'UNABLE TO POST DATA [FailedPosts: {} timepassed: {} counter: {}]'.format(self.failedposts, self.timepassed, self.counter))
+            # And round again!
+            self.healthcheck['postdata'] = self.counter 
             time.sleep(0.2)
 
     # Iterate through the data model and save data to: LogFile, GUI, Web
@@ -283,6 +295,7 @@ class GrabSensors:
                 self.csvbuffer = OrderedDict([])
             finally:
                 self.lock.release()
+            self.healthcheck['savedata'] = self.counter 
             time.sleep(5)
     
     # Create the weblayout
@@ -327,11 +340,15 @@ class GrabSensors:
                     header += '<strong>Reboot in:</strong> {} secs '.format(self.timeout-self.timepassed)
                 header += '<br /><br />'
                 body += "<h2>Config</h2><pre>{}</pre>".format(self.CONFIG)
-                body += "<h2>Started Threads</h2><pre>{}</pre>".format(self.msg)
+                hc = ''
+                for item in self.healthcheck:
+                    hc += '{}: {} secs since last ran\n'.format(item, self.counter-self.healthcheck[item])
+                body += "<h2>Thread Health</h2><pre>{}</pre>".format(hc)
                 self.webserver.setcontent(header, body)
-            except Excpetion as e:
+            except Exception as e:
                 self.log('WARN', 'setweb(): '+str(e) )
-            time.sleep(10)
+            self.healthcheck['setweb'] = self.counter 
+            time.sleep(3)
 
     # Save data to the database
     def savetodb(self, rows):
@@ -356,7 +373,6 @@ class GrabSensors:
     
     # Grab temperature / Humidity values
     def grabtemphumid(self):
-        self.msg += "\ngrabtemphumid()"
         while True:
             try:
                 sensor=AM2315()
@@ -373,11 +389,11 @@ class GrabSensors:
                 self.temp = 20
                 self.newdata('XTemp', 'n/a')
                 self.log('DEBUG', 'app.py | Exception | grabtemphumid() | '+str(e) )
+            self.healthcheck['grabtemphumid'] = self.counter
             time.sleep(10)
    
     # Grab temperature / Humidity values
     def grabwinddir(self):
-        self.msg += "\ngrabwinddir()"
         # Read the wind direction
         while True:
             wind = winddir()
@@ -387,13 +403,14 @@ class GrabSensors:
             else:
                 self.newdata('winddir', 'n/a')
                 self.log('WARN', 'Wind dir is false:{}'.format(wind.msg))
+            self.healthcheck['grabwinddir'] = self.counter 
             time.sleep(5)
 
     # Grab GPS data 
     def grabgps(self):
-        self.msg += "\ngrabgps()"
+        ND = ND1000S() 
         while True:
-            data = self.ND1000S.grabdata()
+            data = ND.grabdata()
             if data is not False:
                 try:
                     info=json.loads(data)
@@ -403,14 +420,14 @@ class GrabSensors:
                     self.newdata('speed', info["speed"] )
                     self.newdata('alt', info["alt"] )
                 except ValueError as e:
-                    self.log('DEBUG', 'app.py | ValueError | GrabGPS() | '+data)
+                    self.log('DEBUG', 'app.py | ValueError | GrabGPS() | '+str(data))
             else:
-                    self.log('DEBUG', 'app.py | ValueError | GrabGPS() | '+self.ND1000S.msg)
+                    self.log('DEBUG', 'app.py | ValueError | GrabGPS() | '+ND.msg)
+            self.healthcheck['grabgps'] = self.counter 
             time.sleep(6)
     
     # Grab ADC data from the ABelectronicsADC -> alphasense
     def grabalphasense(self):
-        self.msg += "\ngrabalphasense()"
         # Setup Alphasense calibration values
         calibration = self.CONFIG['alphasense']
         alphasense = Alphasense(calibration)
@@ -456,11 +473,11 @@ class GrabSensors:
                 self.newdata('PIDppm', PID, tc )
             except ValueError:
                 self.log('DEBUG', 'app.py | JsonError | grabadc() | '+str(jsonstr))
+            self.healthcheck['grabalphasense'] = self.counter 
             time.sleep(4)
 
     # Grab RpiInfo
     def grabrpiinfo(self):
-        self.msg += "\ngrabrpiinfo()"
         while True: 
             jsonstr = subprocess.check_output("/home/csk/csk/libraries/RPiInfo.sh", shell=True).decode("utf-8")
             try:
@@ -472,12 +489,12 @@ class GrabSensors:
                 self.newdata('Load', info["load"] )
                 #self.newdata(tc, 'deviceinfo', info["serial"] )
             except ValueError:
-                self.log('DEBUG', 'app.py | ValueError | GrabGPS() | '+str(jsonstr))
+                self.log('DEBUG', 'app.py | ValueError | grabrpiinfo() | '+str(jsonstr))
+            self.healthcheck['grabrpiinfo'] = self.counter 
             time.sleep(20)
 
     # Thread to check the network status
     def checknetwork(self):
-        self.msg += "\nchecknetwork()"
         while True:
             # CHECK NETWORK / 3G DONGLE IS CONNECTED
             network = self.H3G.checkconnection()
@@ -487,6 +504,7 @@ class GrabSensors:
             else:
                 self.log('WARN','Network not connected')
                 self.newdata('network', 'KO | {}'.format(self.failedposts))
+            self.healthcheck['checknetwork'] = self.counter 
             time.sleep(20)
 
     # Thread to blink an led
