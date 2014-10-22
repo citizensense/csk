@@ -7,7 +7,7 @@ def init():
     # Config values
     CONFIG = {
         'timeadjustment':-5, # +/- Hours from GMT
-        'dbfile':'data/db.sqlite3',
+        'dbfile':'/home/csk/csk/data/db.sqlite3',
         #'posturl':'http://192.168.1.100:8787/api',
         'posturl':'http://frackbox.citizensense.net/api',
         'notset':{
