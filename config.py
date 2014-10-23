@@ -10,7 +10,7 @@ def init():
         'dbfile':'/home/csk/csk/data/db.sqlite3',
         #'posturl':'http://192.168.1.100:8787/api',
         'posturl':'http://frackbox.citizensense.net/api',
-        'notset':{
+        '00000000cb78dc37':{
             'name':'kit 1',
             'alphasense':{
                 'we1z':0,         # VpcbWE-SN1-zero 
