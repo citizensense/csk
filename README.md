@@ -20,3 +20,7 @@ Tom Keene, Researcher
 
 Helen Pritchard, Researcher
 
+## License
+Released under the GNU GENERAL PUBLIC LICENSE see LICENCE document for details
+
+
