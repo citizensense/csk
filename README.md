@@ -11,8 +11,12 @@ This Kit has been developed by Tom Keene & Helen Pritchard as part of Citizen Se
 
 #####The project team includes:
 Jennifer Gabrys, Principal Investigator
+
 Nick Shapiro, Post-Doctoral Researcher
+
 Nerea Calvillo, Researcher
+
 Tom Keene, Researcher
+
 Helen Pritchard, Researcher
 
