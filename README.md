@@ -7,18 +7,7 @@ CSK aims to a be an easily configerable Sensor recording and distribution platfo
 
 
 ##Credits
-This Kit has been developed by Tom Keene & Helen Pritchard as part of Citizen Sense: www.citizensense.net
-
-#####The project team includes:
-Jennifer Gabrys, Principal Investigator
-
-Nick Shapiro, Post-Doctoral Researcher
-
-Nerea Calvillo, Researcher
-
-Tom Keene, Researcher
-
-Helen Pritchard, Researcher
+The research leading to these results has received funding from the European Research Council under the European Union's Seventh Framework Programme (FP/2007-2013) / ERC Grant Agreement n. 313347, “Citizen Sensing and Environmental Practice: Assessing Participatory Engagements with Environments through Sensor Technologies.” For more information on the project and contributors, see http://www.citizensense.net
 
 ## License
 Released under the GNU GENERAL PUBLIC LICENSE see LICENCE document for details
